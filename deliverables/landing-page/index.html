@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northstar Desk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  </head>
+  <body class="bg-white text-zinc-950 antialiased dark:bg-zinc-950 dark:text-white">
+    <div id="root"></div>
+    <script>
+      const e = React.createElement;
+
+      function App() {
+        const [dark, setDark] = React.useState(false);
+        React.useEffect(() => {
+          document.documentElement.classList.toggle("dark", dark);
+        }, [dark]);
+
+        return e("main", { className: "min-h-screen" },
+          e("nav", { className: "mx-auto flex max-w-6xl items-center justify-between px-5 py-5" },
+            e("strong", { className: "text-lg tracking-tight" }, "Northstar Desk"),
+            e("button", {
+              onClick: () => setDark(!dark),
+              className: "rounded-md border border-zinc-300 px-3 py-2 text-sm font-semibold dark:border-zinc-700"
+            }, dark ? "Light" : "Dark")
+          ),
+          e("section", { className: "mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1.1fr_.9fr] md:items-center" },
+            e("div", null,
+              e("p", { className: "mb-4 text-sm font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400" }, "Operations for small SaaS teams"),
+              e("h1", { className: "max-w-3xl text-5xl font-black leading-tight tracking-tight md:text-7xl" }, "Turn customer signals into a clean weekly operating rhythm."),
+              e("p", { className: "mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-300" }, "Northstar Desk combines feedback intake, roadmap scoring, renewal risk, and launch notes in one focused workspace."),
+              e("div", { className: "mt-8 flex flex-wrap gap-3" },
+                e("a", { href: "#contact", className: "rounded-md bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-500" }, "Book a demo"),
+                e("a", { href: "#features", className: "rounded-md border border-zinc-300 px-5 py-3 text-sm font-bold dark:border-zinc-700" }, "View features")
+              )
+            ),
+            e("div", { className: "rounded-lg border border-zinc-200 bg-zinc-50 p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900" },
+              ["Feedback triage", "Renewal risk", "Launch readiness", "Roadmap impact"].map((label, i) =>
+                e("div", { key: label, className: "mb-3 flex items-center justify-between rounded-md bg-white p-4 dark:bg-zinc-950" },
+                  e("span", { className: "font-semibold" }, label),
+                  e("span", { className: "text-sm text-emerald-600 dark:text-emerald-400" }, `${92 - i * 7}%`)
+                )
+              )
+            )
+          ),
+          e("section", { id: "features", className: "border-y border-zinc-200 bg-zinc-50 py-14 dark:border-zinc-800 dark:bg-zinc-900" },
+            e("div", { className: "mx-auto grid max-w-6xl gap-5 px-5 md:grid-cols-3" },
+              [
+                ["Prioritize", "Score requests by revenue, retention risk, and implementation effort."],
+                ["Align", "Produce weekly briefs for product, sales, success, and leadership."],
+                ["Ship", "Track launch blockers and turn decisions into customer-facing notes."]
+              ].map(([title, copy]) => e("article", { key: title, className: "rounded-lg bg-white p-6 dark:bg-zinc-950" },
+                e("h2", { className: "text-xl font-black" }, title),
+                e("p", { className: "mt-3 leading-7 text-zinc-600 dark:text-zinc-300" }, copy)
+              ))
+            )
+          ),
+          e("section", { id: "contact", className: "mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-2" },
+            e("div", null,
+              e("h2", { className: "text-3xl font-black" }, "Start with one workflow."),
+              e("p", { className: "mt-4 leading-7 text-zinc-600 dark:text-zinc-300" }, "Send a note and we will map your current feedback-to-roadmap flow.")
+            ),
+            e("form", { className: "grid gap-3 rounded-lg border border-zinc-200 p-5 dark:border-zinc-800" },
+              e("input", { className: "rounded-md border border-zinc-300 bg-transparent px-4 py-3 dark:border-zinc-700", placeholder: "Name" }),
+              e("input", { className: "rounded-md border border-zinc-300 bg-transparent px-4 py-3 dark:border-zinc-700", placeholder: "Email" }),
+              e("textarea", { className: "min-h-28 rounded-md border border-zinc-300 bg-transparent px-4 py-3 dark:border-zinc-700", placeholder: "What should improve first?" }),
+              e("button", { className: "rounded-md bg-zinc-950 px-5 py-3 text-sm font-bold text-white dark:bg-white dark:text-zinc-950", type: "button" }, "Send")
+            )
+          )
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(e(App));
+    </script>
+  </body>
+</html>
+
