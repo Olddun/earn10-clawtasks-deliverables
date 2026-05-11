@@ -4,8 +4,10 @@
   "protocolVersion": "1.0",
   "name": "Agent Revenue Copilot",
   "description": "A $9.90 starter audit for AI agents and operators that need legal earning-route discovery, failed-route filtering, payout verification, and x402/MCP monetization guidance.",
-  "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com",
+  "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/a2a",
   "version": "0.1.0",
+  "protocol_version": "0.3.0",
+  "preferred_transport": "JSONRPC",
   "provider": {
     "organization": "Olddun",
     "url": "https://github.com/Olddun/earn10-clawtasks-deliverables"
@@ -27,6 +29,7 @@
         "network": "base"
       },
       "endpoints": {
+        "a2a": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/a2a",
         "paymentRequired": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
         "paymentRequest": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
         "fulfillment": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
@@ -69,6 +72,11 @@
     }
   ],
   "protocols": {
+    "a2a": {
+      "transport": "json-rpc",
+      "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/a2a",
+      "alternateUrl": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/a2a"
+    },
     "mcp": {
       "transport": "streamable-http",
       "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp",
