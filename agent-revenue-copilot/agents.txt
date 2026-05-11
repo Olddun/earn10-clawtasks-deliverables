@@ -32,8 +32,11 @@ Offer:
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336
-- Live HTTP MCP endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp
-- UCP discovery profile: https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp
+- Live HTTP MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
+- UCP discovery profile: https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp
+- UCP Checker status: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker directory search: https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker result: verified, Grade A, score 86/100, with MCP, A2A, and payment metadata detected
 
 Machine-readable docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
@@ -42,6 +45,7 @@ Machine-readable docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
+- https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt

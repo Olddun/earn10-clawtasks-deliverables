@@ -125,8 +125,10 @@ Fallback paid routes:
 - OpenAPI buyer surface: [openapi.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json)
 - CLI discovery path: `npx github:Olddun/earn10-clawtasks-deliverables -- --json`
 - MCP discovery path: `npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp`
-- Live HTTP MCP endpoint: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp`
-- UCP discovery profile: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp`
+- Live HTTP MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp`
+- UCP discovery profile: `https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp`
+- UCP Checker status: `https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com`
+- UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
@@ -167,6 +169,7 @@ Best options, in order:
 - `bin/agent-revenue-copilot-mcp.mjs`
 - `.well-known/ucp`
 - `.well-known/ucp.json`
+- UCP Checker verified status page
 - GitHub README and raw Markdown
 - x402/Pyrimid catalog entry
 - PayanAgent service

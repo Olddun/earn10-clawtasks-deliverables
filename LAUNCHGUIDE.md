@@ -58,7 +58,7 @@ io.github.Olddun/agent-revenue-copilot
 Live streamable HTTP endpoint:
 
 ```text
-https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp
+https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
 ```
 
 Static MCP metadata:
@@ -117,7 +117,7 @@ Remote endpoint for clients that support streamable HTTP:
   "mcpServers": {
     "agent-revenue-copilot": {
       "type": "streamable-http",
-      "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp"
+      "url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp"
     }
   }
 }
@@ -182,7 +182,7 @@ Direct metadata checks:
 
 ```bash
 curl -s https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
-curl -s https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json
+curl -s https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json
 ```
 
 Public sample:

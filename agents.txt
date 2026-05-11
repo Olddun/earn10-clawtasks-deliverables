@@ -34,14 +34,17 @@ Paid route:
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
-- Live payment request: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json
-- 402 payment endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay
-- Live HTTP MCP endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp
+- Live payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json
+- 402 payment endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay
+- Live HTTP MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
 - UCP discovery profile: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
-- Live UCP discovery profile: https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp
+- Live UCP discovery profile: https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp
+- UCP Checker status: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker directory search: https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker result: verified, Grade A, score 86/100, with MCP, A2A, and payment metadata detected.
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
 - Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
@@ -56,6 +59,7 @@ Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
+- https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md

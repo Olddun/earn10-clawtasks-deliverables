@@ -73,9 +73,9 @@
       "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
       "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
-      "live_payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
-      "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
-      "live_mcp_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp"
+      "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+      "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
+      "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp"
     },
     "legacy_service_ids": [
       {
@@ -97,8 +97,24 @@
     ],
     "free_alternative": "Use the public AI Agent Earn USDC Playbook and failure-path map before buying."
   },
+  "third_party_verification": {
+    "ucp_checker": {
+      "status": "verified",
+      "score": "86/100",
+      "grade": "A",
+      "checked_domain": "defining-maps-accomplished-test.trycloudflare.com",
+      "status_url": "https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com",
+      "directory_search": "https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com",
+      "detected": [
+        "MCP endpoint",
+        "A2A agent card",
+        "payment metadata"
+      ],
+      "note": "Verification is a discovery and metadata signal, not proof of a paid sale."
+    }
+  },
   "fulfillment": {
-    "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
+    "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",
     "input_schema": {
       "type": "object",
@@ -138,10 +154,12 @@
     "agent_inbox_setup": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md",
     "payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
     "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
-    "live_payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
-    "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
-    "live_mcp_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp",
-    "ucp": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp",
+    "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+    "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
+    "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
+    "ucp": "https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp",
+    "ucp_checker_status": "https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com",
+    "ucp_checker_directory": "https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com",
     "direct_payment_check": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/direct-payment-check.mjs",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt",
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"

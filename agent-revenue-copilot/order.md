@@ -40,7 +40,7 @@ Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources 
 - Service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - Service name: `Agent Revenue Copilot starter audit - $9.90`
 - Price: `990` cents
-- Delivery endpoint: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute`
+- Delivery endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/execute`
 - Delivery kind: `agent-revenue-copilot`
 - Status: active
 

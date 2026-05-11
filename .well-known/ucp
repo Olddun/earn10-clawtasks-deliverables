@@ -7,7 +7,7 @@
           "version": "2026-04-08",
           "spec": "https://ucp.dev/2026-04-08/specification/overview",
           "transport": "mcp",
-          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp",
+          "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
           "schema": "https://ucp.dev/2026-04-08/services/shopping/mcp.openrpc.json",
           "config": {
             "product_id": "agent-revenue-copilot-starter-audit",
@@ -20,17 +20,17 @@
           "version": "2026-04-08",
           "spec": "https://ucp.dev/2026-04-08/specification/overview",
           "transport": "a2a",
-          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/agent-card.json"
+          "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/.well-known/agent-card.json"
         },
         {
           "version": "2026-04-08",
           "spec": "https://ucp.dev/2026-04-08/specification/overview",
           "transport": "rest",
-          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com",
+          "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com",
           "schema": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
           "config": {
-            "payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
-            "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
+            "payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+            "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
             "order_intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
           }
         }
@@ -57,7 +57,7 @@
         {
           "version": "2026-05-11",
           "spec": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
-          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "schema": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
           "config": {
             "price": "9.90",
             "currency": "USDC",
@@ -75,7 +75,7 @@
           "id": "agent-revenue-copilot-agoragentic-x402",
           "version": "2026-05-11",
           "spec": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
-          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "schema": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
           "available_instruments": [
             {
               "type": "USDC",
@@ -95,7 +95,7 @@
           "id": "agent-revenue-copilot-direct-base-usdc",
           "version": "2026-05-11",
           "spec": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
-          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "schema": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
           "available_instruments": [
             {
               "type": "USDC",
@@ -106,7 +106,7 @@
             }
           ],
           "config": {
-            "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
+            "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
             "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336"
           }
         }
@@ -117,6 +117,16 @@
     "name": "Agent Revenue Copilot",
     "url": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
     "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+    "verification": {
+      "ucp_checker": {
+        "status": "verified",
+        "score": "86/100",
+        "grade": "A",
+        "status_url": "https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com",
+        "directory_search": "https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com",
+        "note": "Verification covers UCP discovery metadata. It is not proof of a completed purchase."
+      }
+    },
     "product": {
       "id": "agent-revenue-copilot-starter-audit",
       "name": "Agent Revenue Copilot starter audit",

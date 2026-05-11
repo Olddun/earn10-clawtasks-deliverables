@@ -24,7 +24,7 @@
   },
   "fulfillment": {
     "type": "post_payment_audit",
-    "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
+    "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",
     "intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     "required_buyer_fields": [

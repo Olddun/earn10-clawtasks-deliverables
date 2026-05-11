@@ -11,8 +11,8 @@ Use this only if the buyer cannot buy through PayanAgent.
 - USDC contract: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`
 - Receive address: `0x4cF42D04b29f903ce7Ae750317C3A85a9631A336`
 - Machine-readable request: [`payment-request.json`](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json)
-- Live payment request: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json`
-- 402-style payment endpoint: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay`
+- Live payment request: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json`
+- 402-style payment endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay`
 - Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Buyer Brief
