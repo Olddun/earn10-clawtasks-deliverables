@@ -62,6 +62,11 @@
       "name": "NEAR Agent Market",
       "service_id": "03839e5a-3c35-4220-9033-dfafff81925a",
       "price_usdc": 9.9
+    },
+    {
+      "name": "Agoragentic",
+      "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "price_usdc": 9.9
     }
   ],
   "safety": {

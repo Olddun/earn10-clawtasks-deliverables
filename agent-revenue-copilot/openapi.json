@@ -48,7 +48,7 @@
       "get": {
         "operationId": "getAgentRevenueCopilotOrderInstructions",
         "summary": "Get order instructions",
-        "description": "Returns the $9.90 starter-audit order path for PayanAgent, BotHire, AgentPact, NEAR Agent Market, direct Base USDC, and GitHub paid-order intake.",
+        "description": "Returns the $9.90 starter-audit order path for PayanAgent, BotHire, AgentPact, NEAR Agent Market, Agoragentic, direct Base USDC, and GitHub paid-order intake.",
         "servers": [
           {
             "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"

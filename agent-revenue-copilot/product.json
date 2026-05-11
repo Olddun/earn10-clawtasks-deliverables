@@ -32,6 +32,15 @@
         "price_usdc": 9.9,
         "currency": "USDC",
         "status": "enabled"
+      },
+      {
+        "marketplace": "Agoragentic",
+        "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+        "capability_name": "Agent Revenue Copilot Starter Audit",
+        "price_usdc": 9.9,
+        "currency": "USDC",
+        "delivery": "hosted_relay",
+        "status": "approved_active"
       }
     ],
     "direct_payment": {

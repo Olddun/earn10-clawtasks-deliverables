@@ -14,6 +14,7 @@ Use any active route:
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`
+- Agoragentic capability: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 

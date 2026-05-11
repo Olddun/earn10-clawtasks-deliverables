@@ -41,6 +41,15 @@ Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents 
 - Price: `9.90 USDC`
 - Status: enabled
 
+## Additional Capability
+
+- Marketplace: Agoragentic
+- Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Capability name: `Agent Revenue Copilot Starter Audit`
+- Price: `9.90 USDC`
+- Delivery mode: hosted relay
+- Status: approved and active
+
 ## Buyer Input
 
 Send constraints like this:

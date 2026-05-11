@@ -95,6 +95,7 @@ Current canonical paid route:
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`
+- Agoragentic capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
@@ -148,6 +149,7 @@ Best options, in order:
 - GitHub README and raw Markdown
 - x402/Pyrimid catalog entry
 - PayanAgent service
+- Agoragentic capability
 - Agent marketplace service names matching buyer intent
 
 ### Human-readable
