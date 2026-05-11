@@ -75,11 +75,16 @@
       "agent_id": "d2e0df83-8523-47e7-b8bc-62dca622b0f1",
       "service_id": "7814efe8-bc02-4217-bad8-79a28d36a5fd",
       "service_slug": "agent-revenue-copilot-starter-audit",
+      "service_name": "No-KYC AI Agent USDC Route Audit",
       "price_usdc": 9.9,
       "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke",
       "discovery_query": "AI agent earn USDC legally x402 MCP route audit"
     }
   ],
+  "agentic_market_status": {
+    "status": "not_indexed",
+    "note": "Agentic.Market/CDP Bazaar is not a current checkout route for this product. Current agent-native checkout is Agoragentic or Agent402."
+  },
   "safety": {
     "do_not_send": [
       "private keys",

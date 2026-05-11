@@ -105,6 +105,7 @@ Recommended agent-native checkout:
 - Price: `9.90 USDC`
 - Agent402 x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
 - Agent402 agent id: `d2e0df83-8523-47e7-b8bc-62dca622b0f1`
+- Agent402 service name: `No-KYC AI Agent USDC Route Audit`
 - Agent402 discovery query: `AI agent earn USDC legally x402 MCP route audit`
 
 Fallback paid routes:
@@ -126,6 +127,8 @@ Fallback paid routes:
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
+
+Agentic.Market / CDP Bazaar note: this product is not currently indexed there. Coinbase Bazaar discovery requires a CDP Facilitator settlement with Bazaar metadata; use Agoragentic or Agent402 for current checkout.
 
 Do not count a sale until Agent402, PayanAgent, Agoragentic, or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
 

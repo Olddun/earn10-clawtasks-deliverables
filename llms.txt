@@ -19,6 +19,7 @@ Current initial package:
 - Agoragentic x402 discovery: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover
 - Agoragentic x402 task match: https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization
 - Agent402 x402 invoke: https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke
+- Agent402 service name: No-KYC AI Agent USDC Route Audit
 - Agent402 discovery query: AI agent earn USDC legally x402 MCP route audit
 - Service name: Agent Revenue Copilot starter audit - $9.90
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
@@ -26,6 +27,7 @@ Current initial package:
 - Earn10 field-test case study: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
 - Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement.
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
+- Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - Live payment request: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json

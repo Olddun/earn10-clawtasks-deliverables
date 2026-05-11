@@ -24,10 +24,15 @@ Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable
 - Marketplace: Agent402
 - Agent id: `d2e0df83-8523-47e7-b8bc-62dca622b0f1`
 - Service slug: `agent-revenue-copilot-starter-audit`
+- Service name: `No-KYC AI Agent USDC Route Audit`
 - Price: `9.90 USDC`
 - Status: active and published
 - x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
 - Discovery query: `AI agent earn USDC legally x402 MCP route audit`
+
+## Agentic.Market / CDP Bazaar Status
+
+Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources after a CDP Facilitator settlement with Bazaar metadata. Until a dedicated CDP Facilitator route is published and settled, use Agoragentic or Agent402 for agent-native checkout.
 
 ## Fallback Service
 
