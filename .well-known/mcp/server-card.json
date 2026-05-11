@@ -9,7 +9,9 @@
   },
   "transport": {
     "type": "streamable-http",
-    "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp"
+    "url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
+    "sse_compatible_url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
+    "sse_message_url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/messages"
   },
   "pricing": {
     "model": "one-time",

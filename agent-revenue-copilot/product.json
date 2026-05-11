@@ -75,7 +75,9 @@
       "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
       "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
       "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
-      "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp"
+      "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
+      "sse_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
+      "sse_mcp_message_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/messages"
     },
     "legacy_service_ids": [
       {
@@ -162,6 +164,7 @@
     "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
     "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
     "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
+    "sse_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
     "ucp": "https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp",
     "ucp_checker_status": "https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com",
     "ucp_checker_directory": "https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com",

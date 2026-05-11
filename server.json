@@ -23,6 +23,8 @@
       "url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp"
     }
   ],
+  "oma_sse_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
+  "oma_sse_message_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/messages",
   "stdio": {
     "command": "npx",
     "args": [

@@ -128,6 +128,7 @@ Fallback paid routes:
 - CLI discovery path: `npx github:Olddun/earn10-clawtasks-deliverables -- --json`
 - MCP discovery path: `npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp`
 - Live HTTP MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp`
+- Live SSE-compatible MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse`
 - UCP discovery profile: `https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp`
 - UCP Checker status: `https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com`
 - UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.

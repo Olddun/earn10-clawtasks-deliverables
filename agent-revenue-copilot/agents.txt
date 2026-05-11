@@ -38,6 +38,7 @@ Offer:
 - Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Live HTTP MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
+- Live SSE-compatible MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse
 - UCP discovery profile: https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp
 - UCP Checker status: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
 - UCP Checker directory search: https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com

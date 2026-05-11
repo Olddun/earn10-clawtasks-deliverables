@@ -94,6 +94,7 @@ Recommended agent-native checkout:
 - Order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Payment request JSON: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json`
 - Live MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp`
+- SSE-compatible MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse`
 - A2A endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/a2a`
 
 Fallback routes:
