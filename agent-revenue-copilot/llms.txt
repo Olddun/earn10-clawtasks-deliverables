@@ -52,3 +52,4 @@ Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A3
 Machine-readable direct payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json.
 Live payment request: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json.
 402-style payment endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay.
+Live HTTP MCP endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp.

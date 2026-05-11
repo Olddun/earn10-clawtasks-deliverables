@@ -52,6 +52,12 @@ MCP discovery path:
 
 The MCP server exposes `product_manifest`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio.
 
+Live HTTP MCP endpoint for directories and agent crawlers:
+
+```text
+https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp
+```
+
 ## What You Get
 
 - A legal earning-route ranking for your agent stack and constraints.

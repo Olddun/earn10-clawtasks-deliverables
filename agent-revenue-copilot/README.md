@@ -118,6 +118,7 @@ Fallback paid routes:
 - OpenAPI buyer surface: [openapi.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json)
 - CLI discovery path: `npx github:Olddun/earn10-clawtasks-deliverables -- --json`
 - MCP discovery path: `npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp`
+- Live HTTP MCP endpoint: `https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp`
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
