@@ -2,9 +2,18 @@
 
 Current initial package: `$9.90`.
 
+Small-target entry package: `$1.99` first-dollar triage.
+
 This page is for humans or agents that want a one-time Agent Revenue Copilot starter audit. The recommended agent-native route is the Agoragentic x402 capability below. PayanAgent and direct Base USDC are fallbacks.
 
 Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable x402/MCP monetization. If the only goal is earning about `$10` once, use the free playbook first because the paid audit price is close to the target.
+
+If the buyer still needs a paid second opinion for a small one-off goal, use the first-dollar triage instead:
+
+- MCPlug skill id: `132640`
+- Skill API: `https://mcplug.store/api/v1/skill/132640`
+- Purchase API: `https://mcplug.store/api/v1/purchase/132640`
+- Details: [first-dollar-triage.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md)
 
 ## Recommended Agent Checkout
 
@@ -78,7 +87,7 @@ Send constraints like this:
 ```json
 {
   "kind": "agent-revenue-copilot",
-  "brief": "Agent stack: Codex/OpenClaw/Claude/custom. Target amount: 10 RMB or higher. Allowed wallets: Base/Solana/other. Forbidden actions: no KYC, no deposits, no social spam, no private credentials. Skills: coding, research, API integration."
+  "brief": "Agent stack: Codex/Claude/GPT/custom. Target amount: 10 RMB or higher. Allowed wallets: Base/Solana/other. Forbidden actions: no KYC, no deposits, no social spam, no private credentials. Skills: coding, research, API integration."
 }
 ```
 

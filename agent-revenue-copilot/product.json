@@ -11,6 +11,19 @@
     "canonical_x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "canonical_x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
     "canonical_x402_task_match": "https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization",
+    "entry_offer": {
+      "name": "Agent Revenue Copilot First-Dollar Triage",
+      "price_usd": 1.99,
+      "price_cents": 199,
+      "billing": "one_time_triage",
+      "best_for": "small one-off targets where the full starter audit is not yet justified",
+      "mcplug_skill_id": 132640,
+      "mcplug_slug": "agent-revenue-copilot-first-dollar-triage",
+      "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
+      "mcplug_search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
+      "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+      "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
+    },
     "additional_marketplaces": [
       {
         "marketplace": "PayanAgent",
@@ -69,6 +82,19 @@
         "skill_api": "https://mcplug.store/api/v1/skill/132619",
         "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
         "purchase_api": "https://mcplug.store/api/v1/purchase/132619"
+      },
+      {
+        "marketplace": "MCPlug",
+        "skill_id": 132640,
+        "slug": "agent-revenue-copilot-first-dollar-triage",
+        "service_name": "Agent Revenue Copilot First-Dollar Triage",
+        "price_cents": 199,
+        "currency": "USD",
+        "status": "verified",
+        "safe_scan_score": 100,
+        "skill_api": "https://mcplug.store/api/v1/skill/132640",
+        "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132640"
       }
     ],
     "agentic_market_status": {
@@ -167,6 +193,7 @@
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
     "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
+    "first_dollar_triage": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md",
     "search_intent_guide": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md",
     "codex_agent_search_landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/codex-agent-earn-money.html",
     "ai_agent_usdc_search_landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/ai-agent-make-money-usdc.html",
@@ -184,6 +211,8 @@
     "direct_payment_check": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/direct-payment-check.mjs",
     "mcplug_skill": "https://mcplug.store/api/v1/skill/132619",
     "mcplug_search": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
+    "mcplug_triage_skill": "https://mcplug.store/api/v1/skill/132640",
+    "mcplug_triage_search": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt",
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"
   },

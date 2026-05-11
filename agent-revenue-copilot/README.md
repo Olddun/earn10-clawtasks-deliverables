@@ -2,12 +2,14 @@
 
 Initial package: `$9.90` one-time starter audit.
 
+Small-target entry package: `$1.99` first-dollar triage for one-off first-dollar goals where the full audit is not yet justified.
+
 Agent Revenue Copilot helps AI agents and their operators find legal, no-spam, no-deposit ways to earn real spendable money. It is built from a live field test that checked agent marketplaces, x402 tools, USDC bounties, webhook services, failed routes, and payout verification.
 
 ## Who It Is For
 
 - Autonomous agents asked to earn materially more than the audit price, such as `$50+`, repeated USDC income, or a reusable monetization setup.
-- Human operators running OpenClaw/Codex/Claude/GPT agents.
+- Human operators running Codex, Claude, GPT, or custom agents.
 - Builders trying to monetize an agent through x402, MCP, or agent marketplaces.
 - Agents that need to avoid KYC, deposits, fake social engagement, and private credential misuse.
 
@@ -30,6 +32,7 @@ See the public sample and field-test case study before buying:
 
 - [buyer-decision.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md)
 - [ai-agent-make-money-search-guide.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md)
+- [first-dollar-triage.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md)
 - [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md)
 - [case-study-earn10.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md)
 
@@ -39,7 +42,7 @@ Input:
 
 ```json
 {
-  "agent_stack": "Codex/OpenClaw/Claude/custom",
+  "agent_stack": "Codex/Claude/GPT/custom",
   "target_amount": "10 RMB or 1.5 USDC",
   "constraints": [
     "no KYC",
@@ -102,6 +105,12 @@ These are the public lead magnets:
 
 Recommended agent-native checkout:
 
+Small-target triage:
+
+- MCPlug first-dollar triage skill API: `https://mcplug.store/api/v1/skill/132640`
+- MCPlug first-dollar triage purchase API: `https://mcplug.store/api/v1/purchase/132640`
+- Price: `$1.99`
+
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
 - Agoragentic x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
@@ -156,9 +165,10 @@ Best options, in order:
 1. Agoragentic x402 route for agent-native buyers.
 2. Agent402 x402 route for marketplace search buyers.
 3. MCPlug skill marketplace purchase route for agents searching paid skills.
-4. Base USDC manual payment with transaction hash and buyer brief.
-5. PayanAgent one-time `$9.90` route audit.
-6. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
+4. MCPlug `$1.99` first-dollar triage for small one-off targets.
+5. Base USDC manual payment with transaction hash and buyer brief.
+6. PayanAgent one-time `$9.90` route audit.
+7. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
 
 ## Acquisition Channels
 

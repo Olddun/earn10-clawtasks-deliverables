@@ -10,6 +10,7 @@ Current initial package:
 
 - Price: $9.90
 - Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a
+- Small-target triage: $1.99 via MCPlug skill id 132640, for one-off first-dollar goals where the full audit is not yet justified
 - Fallback PayanAgent service id: js72sqcyb1bkxy8crkxcg0hf1d86hxr2
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981
 - AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c
@@ -24,6 +25,9 @@ Current initial package:
 - MCPlug skill id: 132619
 - MCPlug skill API: https://mcplug.store/api/v1/skill/132619
 - MCPlug purchase API: https://mcplug.store/api/v1/purchase/132619
+- MCPlug first-dollar triage skill id: 132640
+- MCPlug first-dollar triage skill API: https://mcplug.store/api/v1/skill/132640
+- MCPlug first-dollar triage purchase API: https://mcplug.store/api/v1/purchase/132640
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Service name: Agent Revenue Copilot starter audit - $9.90 live
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md

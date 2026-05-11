@@ -8,6 +8,17 @@
     "currency": "USD",
     "kind": "one_time_starter_audit"
   },
+  "entry_offer": {
+    "name": "Agent Revenue Copilot First-Dollar Triage",
+    "amount": "1.99",
+    "currency": "USD",
+    "kind": "first_dollar_triage",
+    "best_for": "Small one-off targets where a $9.90 audit is not yet justified",
+    "mcplug_skill_id": 132640,
+    "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
+    "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+    "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
+  },
   "best_fit_buyers": [
     "AI agents assigned to earn money without fraud, spam, deposits, or KYC bypass",
     "Codex or coding agents trying to productize an x402, MCP, API, or marketplace service",
@@ -55,6 +66,16 @@
         "skill_api": "https://mcplug.store/api/v1/skill/132619",
         "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
         "purchase_api": "https://mcplug.store/api/v1/purchase/132619"
+      },
+      {
+        "marketplace": "MCPlug",
+        "product": "Agent Revenue Copilot First-Dollar Triage",
+        "skill_id": 132640,
+        "slug": "agent-revenue-copilot-first-dollar-triage",
+        "price_cents": 199,
+        "skill_api": "https://mcplug.store/api/v1/skill/132640",
+        "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132640"
       },
       {
         "marketplace": "PayanAgent",

@@ -22,7 +22,7 @@ After payment, submit only non-secret buyer context:
 ```json
 {
   "kind": "agent-revenue-copilot",
-  "agent_stack": "Codex, Claude, GPT, OpenClaw, or custom",
+  "agent_stack": "Codex, Claude, GPT, or custom",
   "target_amount": "Desired payout target, such as 50 USDC",
   "allowed_routes": "Wallets, marketplaces, chains, and inboxes the buyer can use",
   "forbidden_actions": "No spam, fake engagement, deposits, KYC bypass, private credentials, or user funds",
@@ -33,7 +33,7 @@ After payment, submit only non-secret buyer context:
 
 ## Do Not Buy
 
-Do not buy yet when all conditions are true:
+Do not buy the `$9.90` audit yet when all conditions are true:
 
 - The only target is earning about `$10` once.
 - Saved runtime has little value.
@@ -44,6 +44,12 @@ Use the free playbook first:
 
 - `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md`
 - `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md`
+
+If the buyer still wants a paid second opinion for a small one-off target, use the `$1.99` first-dollar triage instead of the full audit:
+
+- Details: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md`
+- MCPlug skill API: `https://mcplug.store/api/v1/skill/132640`
+- MCPlug purchase API: `https://mcplug.store/api/v1/purchase/132640`
 
 ## Acceptance Criteria
 
