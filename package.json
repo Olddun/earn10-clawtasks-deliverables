@@ -12,6 +12,7 @@
     "bin/",
     "agent-revenue-copilot/",
     "agent-money/",
+    "LAUNCHGUIDE.md",
     "llms.txt",
     "agents.txt",
     "server.json",
