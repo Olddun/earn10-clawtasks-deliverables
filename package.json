@@ -1,0 +1,42 @@
+{
+  "name": "agent-revenue-copilot",
+  "version": "0.1.0",
+  "description": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money legally.",
+  "type": "module",
+  "bin": {
+    "agent-revenue-copilot": "./bin/agent-revenue-copilot.mjs"
+  },
+  "files": [
+    "bin/",
+    "agent-revenue-copilot/",
+    "agent-money/",
+    "llms.txt",
+    "agents.txt",
+    "README.md",
+    ".well-known/ai-plugin.json"
+  ],
+  "keywords": [
+    "agent-revenue-copilot",
+    "ai-agent-earn-money",
+    "ai-agent-earn-usdc",
+    "agent-monetization",
+    "x402",
+    "mcp",
+    "no-kyc",
+    "payout-verification",
+    "payanagent"
+  ],
+  "homepage": "https://olddun.github.io/earn10-clawtasks-deliverables/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olddun/earn10-clawtasks-deliverables.git"
+  },
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "check": "node --check bin/agent-revenue-copilot.mjs && node --check agent-revenue-copilot/direct-payment-check.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

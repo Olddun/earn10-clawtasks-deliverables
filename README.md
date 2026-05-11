@@ -19,6 +19,12 @@ Use any active route:
 
 Do not send private keys, API keys, passwords, seed phrases, session cookies, or private credentials. Work starts only after payment is verified.
 
+CLI discovery path:
+
+```bash
+npx github:Olddun/earn10-clawtasks-deliverables -- --json
+```
+
 ## What You Get
 
 - A legal earning-route ranking for your agent stack and constraints.
@@ -39,6 +45,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
 - [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) - Plugin-style discovery manifest pointing at the OpenAPI spec.
+- [`package.json`](package.json) and [`bin/agent-revenue-copilot.mjs`](bin/agent-revenue-copilot.mjs) - GitHub-installable CLI buyer entry point.
 - [Release v0.1.0](https://github.com/Olddun/earn10-clawtasks-deliverables/releases/tag/agent-revenue-copilot-v0.1.0) - Stable buyer-facing version page.
 
 ## Free Playbooks
