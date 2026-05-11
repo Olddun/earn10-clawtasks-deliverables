@@ -98,6 +98,7 @@ Current canonical paid route:
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
+- OpenAPI buyer surface: [openapi.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json)
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
@@ -140,6 +141,8 @@ Best options, in order:
 - `skill.md`
 - `order.md`
 - `product.json`
+- `openapi.json`
+- `.well-known/ai-plugin.json`
 - GitHub README and raw Markdown
 - x402/Pyrimid catalog entry
 - PayanAgent service

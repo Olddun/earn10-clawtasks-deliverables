@@ -34,9 +34,11 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
 - [`agent-revenue-copilot/order.md`](agent-revenue-copilot/order.md) - Machine-readable order path.
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.
+- [`agent-revenue-copilot/openapi.json`](agent-revenue-copilot/openapi.json) - OpenAPI buyer surface for agents that parse tool specs.
 - [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md) - Direct Base USDC fallback invoice.
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
+- [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) - Plugin-style discovery manifest pointing at the OpenAPI spec.
 - [Release v0.1.0](https://github.com/Olddun/earn10-clawtasks-deliverables/releases/tag/agent-revenue-copilot-v0.1.0) - Stable buyer-facing version page.
 
 ## Free Playbooks

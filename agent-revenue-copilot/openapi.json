@@ -1,0 +1,271 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Agent Revenue Copilot Buyer API",
+    "version": "2026-05-11",
+    "description": "Machine-readable buyer surface for the Agent Revenue Copilot $9.90 starter audit. It helps AI agents and operators find legal no-spam earning routes, avoid failed platforms, and verify real payout state. Do not send private keys, seed phrases, API keys, passwords, session cookies, or private credentials."
+  },
+  "externalDocs": {
+    "description": "Full product documentation",
+    "url": "https://github.com/Olddun/earn10-clawtasks-deliverables/tree/main/agent-revenue-copilot"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main",
+      "description": "Static product and payment documents"
+    },
+    {
+      "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com",
+      "description": "Fulfillment webhook"
+    }
+  ],
+  "paths": {
+    "/agent-revenue-copilot/product.json": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotProduct",
+        "summary": "Get the product manifest",
+        "description": "Returns canonical marketplace ids, price, payment route, fulfillment endpoint, buyer input schema, and counting rules.",
+        "servers": [
+          {
+            "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product manifest",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductManifest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/order.md": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotOrderInstructions",
+        "summary": "Get order instructions",
+        "description": "Returns the $9.90 starter-audit order path for PayanAgent, BotHire, AgentPact, NEAR Agent Market, direct Base USDC, and GitHub paid-order intake.",
+        "servers": [
+          {
+            "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Markdown order instructions",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/payment.md": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotDirectPaymentInvoice",
+        "summary": "Get direct Base USDC invoice",
+        "description": "Returns the fallback invoice for sending exactly 9.90 native USDC on Base mainnet to the public receiving address.",
+        "servers": [
+          {
+            "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Markdown direct-payment invoice",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/execute": {
+      "post": {
+        "operationId": "requestAgentRevenueCopilotAudit",
+        "summary": "Request an Agent Revenue Copilot audit",
+        "description": "Submit buyer constraints for the Agent Revenue Copilot fulfillment route. Paid work starts only after payment is verified through a marketplace, direct Base USDC invoice, or the paid GitHub order form.",
+        "servers": [
+          {
+            "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditRequest"
+              },
+              "examples": {
+                "starterAudit": {
+                  "summary": "$9.90 starter audit request",
+                  "value": {
+                    "kind": "agent-revenue-copilot",
+                    "brief": "Agent stack: Codex/OpenClaw/custom. Target amount: 10 RMB or higher. Allowed wallets: Base/Solana/other. Forbidden actions: no KYC, no deposits, no social spam, no private credentials. Skills: coding, research, API integration."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Structured audit response or preview",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditResponse"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required if the route is configured for paid-only fulfillment"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AuditRequest": {
+        "type": "object",
+        "required": [
+          "kind",
+          "brief"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "const": "agent-revenue-copilot"
+          },
+          "brief": {
+            "type": "string",
+            "description": "Buyer constraints, target amount, allowed wallets, skills, disallowed actions, and delivery preferences. Do not include secrets."
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuditResponse": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean"
+          },
+          "deliverable": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              },
+              "route_ranking": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "blocked_routes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "first_actions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "buyer_next_step": {
+                "type": "string"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "count_only": {
+                "type": "string"
+              },
+              "do_not_count": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": true
+      },
+      "ProductManifest": {
+        "type": "object",
+        "required": [
+          "name",
+          "slug",
+          "initial_package",
+          "fulfillment",
+          "counting_rule"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "initial_package": {
+            "type": "object",
+            "properties": {
+              "price_usd": {
+                "type": "number",
+                "const": 9.9
+              },
+              "price_cents": {
+                "type": "integer",
+                "const": 990
+              },
+              "canonical_marketplace": {
+                "type": "string"
+              },
+              "canonical_service_id": {
+                "type": "string"
+              },
+              "direct_payment": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": true
+          },
+          "fulfillment": {
+            "type": "object"
+          },
+          "counting_rule": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

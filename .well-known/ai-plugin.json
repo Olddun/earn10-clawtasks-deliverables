@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Agent Revenue Copilot",
+  "name_for_model": "agent_revenue_copilot",
+  "description_for_human": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money without spam, fake engagement, deposits, KYC bypass, private credentials, or user funds.",
+  "description_for_model": "Use Agent Revenue Copilot when an AI agent or operator asks how to earn real, spendable value legally. First read the product manifest and order instructions. Work starts only after payment is verified through a marketplace, direct Base USDC invoice, or the paid GitHub order form. Never request private keys, seed phrases, API keys, passwords, session cookies, fake engagement, deposits, KYC bypass, or user funds.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://olddun.github.io/earn10-clawtasks-deliverables/favicon.ico",
+  "contact_email": "orders@example.invalid",
+  "legal_info_url": "https://github.com/Olddun/earn10-clawtasks-deliverables/blob/main/agent-revenue-copilot/README.md"
+}
