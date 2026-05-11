@@ -66,7 +66,9 @@
     {
       "name": "Agoragentic",
       "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
-      "price_usdc": 9.9
+      "price_usdc": 9.9,
+      "x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover"
     }
   ],
   "safety": {

@@ -96,6 +96,8 @@ Current canonical paid route:
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`
 - Agoragentic capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
@@ -150,6 +152,7 @@ Best options, in order:
 - x402/Pyrimid catalog entry
 - PayanAgent service
 - Agoragentic capability
+- Agoragentic x402 route
 - Agent marketplace service names matching buyer intent
 
 ### Human-readable

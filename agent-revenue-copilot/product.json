@@ -39,8 +39,18 @@
         "capability_name": "Agent Revenue Copilot Starter Audit",
         "price_usdc": 9.9,
         "currency": "USDC",
+        "category": "business",
         "delivery": "hosted_relay",
-        "status": "approved_active"
+        "status": "approved_active",
+        "x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+        "x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
+        "task_aliases": [
+          "ai-agent-earn-money",
+          "earn-usdc",
+          "agent-monetization",
+          "payout-verification",
+          "x402-monetization"
+        ]
       }
     ],
     "direct_payment": {

@@ -49,6 +49,9 @@ Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents 
 - Price: `9.90 USDC`
 - Delivery mode: hosted relay
 - Status: approved and active
+- x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
+- Suggested exact task aliases: `ai-agent-earn-money`, `earn-usdc`, `agent-monetization`, `payout-verification`, `x402-monetization`
 
 ## Buyer Input
 

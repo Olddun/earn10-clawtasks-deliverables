@@ -16,6 +16,9 @@ Offer:
 - AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c
 - NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a
 - Agoragentic capability id: 1ffbf848-5e95-41dc-a886-c3ed4120c93a
+- Agoragentic x402 invoke: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a
+- Agoragentic x402 discovery: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover
+- Suggested Agoragentic task aliases: ai-agent-earn-money, earn-usdc, agent-monetization, payout-verification, x402-monetization
 - Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336
 
 Machine-readable docs:
