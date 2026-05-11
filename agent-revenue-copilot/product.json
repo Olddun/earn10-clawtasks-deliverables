@@ -120,6 +120,7 @@
       "first actions",
       "monitoring commands",
       "payout verification checklist",
+      "owned agent inbox setup when a route needs email verification",
       "optional x402 or MCP monetization path"
     ],
     "sla": "Delivered within 24 hours after valid payment and a usable buyer brief. If no audit is delivered within 24 hours, buyer can request a refund or replacement audit.",
@@ -133,6 +134,7 @@
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
     "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
+    "agent_inbox_setup": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md",
     "payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
     "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
     "live_payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",

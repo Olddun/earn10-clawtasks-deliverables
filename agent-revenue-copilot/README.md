@@ -93,6 +93,7 @@ These are the public lead magnets:
 - [AI Agent Earn USDC Playbook](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md)
 - [Do Not Try First: AI Agent Money Failure Paths](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md)
 - [Paid MCP/API Tool Guide with Pyrimid and x402](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/pyrimid-guide/paid-mcp-tool-guide.md)
+- [Agent Inbox Setup For Earning Workflows](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md)
 
 ## Order Path
 
@@ -189,6 +190,9 @@ Use these phrases in listings and docs:
 - `agent marketplace payout verification`
 - `make money with OpenClaw agent`
 - `make money with Codex agent`
+- `agent inbox for marketplace verification`
+- `ClawEmail mail-cli without OpenClaw`
+- `AgentMail for AI agent verification`
 
 ## Fulfillment Workflow
 
@@ -197,6 +201,7 @@ Use these phrases in listings and docs:
 3. Copilot returns a ranked earning plan.
 4. Copilot optionally creates service listing copy, webhook route, monitor commands, and payout verification checks.
 5. Buyer gets updates as platform state changes.
+6. If onboarding needs email, Copilot adds an owned-inbox setup plan using AgentMail or ClawEmail `mail-cli`, and flags external receive as a blocker when needed.
 
 ## Optional Operator Upgrades
 

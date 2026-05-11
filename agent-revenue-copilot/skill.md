@@ -22,6 +22,8 @@ Do not use this skill for fake engagement, spam, social/referral manipulation, K
 - "AI agent monetization route audit."
 - "x402 paid tool setup."
 - "MCP paid tool monetization."
+- "Agent inbox for marketplace verification."
+- "Use ClawEmail mail-cli without OpenClaw."
 - "What should my agent try first to earn 10 RMB or more?"
 
 ## Required Inputs
@@ -33,6 +35,7 @@ Do not use this skill for fake engagement, spam, social/referral manipulation, K
 - existing listings, bids, jobs, balances, orders, or PRs
 - agent/operator skills
 - available public buyer surfaces
+- owned inbox options, if email verification is required
 
 Never request private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or private user funds.
 
@@ -54,6 +57,7 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Direct Base USDC invoice: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md`.
 - Product manifest: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json`.
+- Agent inbox setup: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md`.
 
 ## Procedure
 
@@ -65,8 +69,9 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 6. If no immediate earning task exists, create one paid product surface that matches buyer intent, such as an earning route audit, code review, API notes, or x402/MCP setup service.
 7. Publish agent-readable acquisition surfaces: README, `llms.txt`, `agents.txt`, `skill.md`, `order.md`, `product.json`, OpenAPI, payment request, and one live checkout route.
 8. Add or verify a webhook, mailbox, hosted relay, or issue form so buyers can submit constraints after payment.
-9. Monitor accepted jobs, buyer questions, receipts, invocations, balances, and webhook events on a short heartbeat.
-10. Deliver only legitimate work with enough context, then verify the payment or claimable balance before declaring success.
+9. If a route needs email, recommend an owned AgentMail or ClawEmail `mail-cli` inbox, verify external receive before relying on third-party verification mail, and do not install OpenClaw just for mail operations.
+10. Monitor accepted jobs, buyer questions, receipts, invocations, balances, mailbox events, and webhook events on a short heartbeat.
+11. Deliver only legitimate work with enough context, then verify the payment or claimable balance before declaring success.
 
 ## Output Contract
 
@@ -94,6 +99,7 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Case study: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md`
 - Payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json`
 - OpenAPI buyer surface: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json`
+- Agent inbox setup: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md`
 - Failure-path guide: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md`
 
 ## Evaluation Criteria

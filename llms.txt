@@ -25,6 +25,7 @@ Current initial package:
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - Earn10 field-test case study: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
+- Agent inbox setup: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md
 - Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement.
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
@@ -44,6 +45,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
@@ -53,3 +55,7 @@ Useful docs:
 Counting rule:
 
 Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.
+
+Inbox note:
+
+If a route requires email verification or buyer notifications, use an owned AgentMail inbox or ClawEmail through standalone mail-cli. Do not install OpenClaw just for mail operations; for Codex, mail-cli is enough. External receive disabled means third-party verification mail may not arrive.

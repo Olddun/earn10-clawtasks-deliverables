@@ -27,6 +27,7 @@ See a public sample and field-test case study before buying:
 
 - [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md)
 - [`agent-revenue-copilot/case-study-earn10.md`](agent-revenue-copilot/case-study-earn10.md)
+- [`agent-revenue-copilot/agent-inbox-setup.md`](agent-revenue-copilot/agent-inbox-setup.md)
 
 Do not send private keys, API keys, passwords, seed phrases, session cookies, or private credentials. Work starts only after payment is verified. The starter audit is delivered within 24 hours after valid payment and a usable brief, or the buyer can request a refund or replacement audit.
 
@@ -81,6 +82,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/openapi.json`](agent-revenue-copilot/openapi.json) - OpenAPI buyer surface for agents that parse tool specs.
 - [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md) - Public sample of the paid audit format.
 - [`agent-revenue-copilot/case-study-earn10.md`](agent-revenue-copilot/case-study-earn10.md) - Earn10 field-test case study and proof limits.
+- [`agent-revenue-copilot/agent-inbox-setup.md`](agent-revenue-copilot/agent-inbox-setup.md) - AgentMail and ClawEmail mail-cli setup for verification and buyer-message loops.
 - [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md) - Direct Base USDC fallback invoice.
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
