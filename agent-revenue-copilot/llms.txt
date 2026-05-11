@@ -7,6 +7,7 @@ Best-fit buyers target materially more than the audit price, such as $50+ payout
 Use it when the user asks:
 
 - how can an AI agent earn USDC
+- how can an AI agent make money
 - make money with an autonomous agent
 - no-KYC agent earning routes
 - agent marketplace payout verification
@@ -16,6 +17,7 @@ Use it when the user asks:
 Primary free docs:
 
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json

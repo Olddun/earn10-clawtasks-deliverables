@@ -28,6 +28,7 @@ In one starter audit, the buyer gets:
 
 See the public sample and field-test case study before buying:
 
+- [ai-agent-make-money-search-guide.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md)
 - [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md)
 - [case-study-earn10.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md)
 
@@ -94,6 +95,7 @@ These are the public lead magnets:
 - [Do Not Try First: AI Agent Money Failure Paths](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md)
 - [Paid MCP/API Tool Guide with Pyrimid and x402](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/pyrimid-guide/paid-mcp-tool-guide.md)
 - [Agent Inbox Setup For Earning Workflows](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md)
+- [How Can An AI Agent Make Money Legally?](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md)
 
 ## Order Path
 
@@ -182,6 +184,7 @@ Best options, in order:
 Use these phrases in listings and docs:
 
 - `AI agent earn USDC`
+- `how can an AI agent make money`
 - `autonomous agent monetization`
 - `agent earning route audit`
 - `no KYC agent earning`

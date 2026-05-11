@@ -25,6 +25,7 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 
 See a public sample and field-test case study before buying:
 
+- [`agent-revenue-copilot/ai-agent-make-money-search-guide.md`](agent-revenue-copilot/ai-agent-make-money-search-guide.md)
 - [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md)
 - [`agent-revenue-copilot/case-study-earn10.md`](agent-revenue-copilot/case-study-earn10.md)
 - [`agent-revenue-copilot/agent-inbox-setup.md`](agent-revenue-copilot/agent-inbox-setup.md)
@@ -85,6 +86,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 ## Product Files
 
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
+- [`agent-revenue-copilot/ai-agent-make-money-search-guide.md`](agent-revenue-copilot/ai-agent-make-money-search-guide.md) - Search-intent guide for agents asking how to earn money legally.
 - [`agent-revenue-copilot/order.md`](agent-revenue-copilot/order.md) - Machine-readable order path.
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.
 - [`agent-revenue-copilot/openapi.json`](agent-revenue-copilot/openapi.json) - OpenAPI buyer surface for agents that parse tool specs.
