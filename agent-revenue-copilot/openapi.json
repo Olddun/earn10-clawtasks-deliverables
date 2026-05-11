@@ -119,6 +119,33 @@
         }
       }
     },
+    "/agent-revenue-copilot/triage-payment-request.json": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotTriagePaymentRequest",
+        "summary": "Get machine-readable first-dollar triage payment request",
+        "description": "Returns the exact Base mainnet USDC token, 1.99 USDC amount, recipient, verification rule, and post-payment intake route for automated buyers. Available as both a static raw GitHub document and a live webhook endpoint.",
+        "servers": [
+          {
+            "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          },
+          {
+            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Machine-readable first-dollar triage payment request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TriagePaymentRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/agent-revenue-copilot/pay": {
       "get": {
         "operationId": "getAgentRevenueCopilotPaymentRequired",
@@ -136,6 +163,30 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PaymentRequired"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/triage/pay": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotTriagePaymentRequired",
+        "summary": "Get 402-style first-dollar triage payment requirements",
+        "description": "Returns HTTP 402 with the Base USDC exact-payment requirement for the $1.99 first-dollar triage. This endpoint does not mark revenue complete by itself; payment must still be verified.",
+        "servers": [
+          {
+            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+          }
+        ],
+        "responses": {
+          "402": {
+            "description": "Payment required response for the $1.99 first-dollar triage",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TriagePaymentRequired"
                 }
               }
             }
@@ -165,7 +216,7 @@
                   "summary": "$9.90 starter audit request",
                   "value": {
                     "kind": "agent-revenue-copilot",
-                    "brief": "Agent stack: Codex/OpenClaw/custom. Target amount: 10 RMB or higher. Allowed wallets: Base/Solana/other. Forbidden actions: no KYC, no deposits, no social spam, no private credentials. Skills: coding, research, API integration."
+                    "brief": "Agent stack: Codex/Claude/GPT/custom. Target amount: 10 RMB or higher. Allowed wallets: Base/Solana/other. Forbidden actions: no KYC, no deposits, no social spam, no private credentials. Skills: coding, research, API integration."
                   }
                 }
               }
@@ -401,6 +452,88 @@
         },
         "additionalProperties": true
       },
+      "TriagePaymentRequest": {
+        "type": "object",
+        "required": [
+          "name",
+          "price",
+          "network",
+          "token",
+          "recipient",
+          "fulfillment",
+          "verification"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "const": "Agent Revenue Copilot First-Dollar Triage"
+          },
+          "price": {
+            "type": "object",
+            "required": [
+              "amount",
+              "currency",
+              "decimals"
+            ],
+            "properties": {
+              "amount": {
+                "type": "string",
+                "const": "1.99"
+              },
+              "currency": {
+                "type": "string",
+                "const": "USDC"
+              },
+              "decimals": {
+                "type": "integer",
+                "const": 6
+              }
+            },
+            "additionalProperties": true
+          },
+          "network": {
+            "type": "object",
+            "properties": {
+              "chain_id": {
+                "type": "integer",
+                "const": 8453
+              }
+            },
+            "additionalProperties": true
+          },
+          "token": {
+            "type": "object",
+            "properties": {
+              "symbol": {
+                "type": "string",
+                "const": "USDC"
+              },
+              "contract": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "recipient": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "fulfillment": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      },
       "PaymentRequired": {
         "type": "object",
         "required": [
@@ -448,6 +581,65 @@
                 "maxAmountRequired": {
                   "type": "string",
                   "const": "9900000"
+                },
+                "payTo": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      },
+      "TriagePaymentRequired": {
+        "type": "object",
+        "required": [
+          "error",
+          "product",
+          "amount",
+          "currency",
+          "payment_request",
+          "accepts"
+        ],
+        "properties": {
+          "error": {
+            "type": "string",
+            "const": "payment_required"
+          },
+          "product": {
+            "type": "string",
+            "const": "Agent Revenue Copilot First-Dollar Triage"
+          },
+          "amount": {
+            "type": "string",
+            "const": "1.99"
+          },
+          "currency": {
+            "type": "string",
+            "const": "USDC"
+          },
+          "payment_request": {
+            "$ref": "#/components/schemas/TriagePaymentRequest"
+          },
+          "accepts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "scheme": {
+                  "type": "string"
+                },
+                "network": {
+                  "type": "string",
+                  "const": "base"
+                },
+                "asset": {
+                  "type": "string"
+                },
+                "maxAmountRequired": {
+                  "type": "string",
+                  "const": "1990000"
                 },
                 "payTo": {
                   "type": "string"

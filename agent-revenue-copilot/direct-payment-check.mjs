@@ -2,7 +2,12 @@
 const BASE_RPC = process.env.BASE_RPC_URL || "https://mainnet.base.org";
 const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
-const TARGET_USDC = 9.9;
+const targetArg = process.argv.find((arg) => arg.startsWith("--target-usdc="));
+const TARGET_USDC = targetArg ? Number(targetArg.split("=")[1]) : 9.9;
+
+if (!Number.isFinite(TARGET_USDC) || TARGET_USDC <= 0) {
+  throw new Error("Invalid --target-usdc value");
+}
 
 function encodeBalanceOf(address) {
   const clean = address.toLowerCase().replace(/^0x/, "");

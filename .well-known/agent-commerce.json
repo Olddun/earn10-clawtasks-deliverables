@@ -17,6 +17,9 @@
     "mcplug_skill_id": 132640,
     "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
     "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+    "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
+    "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+    "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
     "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
   },
   "best_fit_buyers": [
@@ -49,6 +52,9 @@
       "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
       "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
       "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
+      "triage_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
+      "live_triage_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "triage_payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
       "sse_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
       "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
       "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html"

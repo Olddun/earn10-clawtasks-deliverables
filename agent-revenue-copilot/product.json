@@ -22,6 +22,9 @@
       "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
       "mcplug_search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
       "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+      "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
+      "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
       "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
     },
     "additional_marketplaces": [
@@ -112,6 +115,9 @@
       "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
       "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
+      "triage_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
+      "live_triage_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "triage_payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
       "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
       "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
       "live_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",

@@ -42,6 +42,15 @@ Send only non-secret context:
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
 
+## Direct Base USDC Route
+
+Use this route when the buyer needs a transparent, machine-readable payment request instead of a marketplace checkout:
+
+- Price: `1.99 USDC`
+- Payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
+- Live payment request: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- 402-style endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay`
+
 ## Escalate To The Starter Audit
 
 Escalate to the `$9.90` starter audit only if at least one condition is true:

@@ -13,6 +13,9 @@ If the buyer still needs a paid second opinion for a small one-off goal, use the
 - MCPlug skill id: `132640`
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
+- Direct Base USDC payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
+- Live Base USDC payment request: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Live triage 402 endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - Details: [first-dollar-triage.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md)
 
 ## Recommended Agent Checkout

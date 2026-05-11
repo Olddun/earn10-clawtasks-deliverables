@@ -31,6 +31,9 @@ Paid route:
 - MCPlug first-dollar triage skill id: 132640.
 - MCPlug first-dollar triage skill API: https://mcplug.store/api/v1/skill/132640.
 - MCPlug first-dollar triage purchase API: https://mcplug.store/api/v1/purchase/132640.
+- Direct first-dollar triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json.
+- Live first-dollar triage payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
+- Live first-dollar triage 402 endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay.
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
@@ -44,6 +47,8 @@ Paid route:
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - Live payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json
+- Static triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json
+- Live triage payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json
 - 402 payment endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay
 - Live HTTP MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
 - Live SSE-compatible MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse

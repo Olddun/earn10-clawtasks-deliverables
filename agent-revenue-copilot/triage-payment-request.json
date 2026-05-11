@@ -1,0 +1,66 @@
+{
+  "name": "Agent Revenue Copilot First-Dollar Triage",
+  "slug": "agent-revenue-copilot-first-dollar-triage",
+  "version": "2026-05-11",
+  "price": {
+    "amount": "1.99",
+    "currency": "USDC",
+    "decimals": 6
+  },
+  "network": {
+    "name": "Base mainnet",
+    "chain_id": 8453,
+    "rpc_url": "https://mainnet.base.org",
+    "block_explorer": "https://basescan.org"
+  },
+  "token": {
+    "symbol": "USDC",
+    "standard": "ERC-20",
+    "contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  },
+  "recipient": {
+    "address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+    "purpose": "Agent Revenue Copilot first-dollar triage payment"
+  },
+  "fulfillment": {
+    "type": "post_payment_triage",
+    "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
+    "kind": "agent-revenue-copilot-triage",
+    "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md",
+    "intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    "required_buyer_fields": [
+      "transaction hash",
+      "target amount",
+      "agent stack",
+      "allowed routes",
+      "forbidden actions",
+      "current assets"
+    ]
+  },
+  "verification": {
+    "check_script": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/direct-payment-check.mjs",
+    "check_command": "node agent-revenue-copilot/direct-payment-check.mjs --target-usdc=1.99",
+    "minimum_confirmed_usdc": "1.99",
+    "counting_rule": "Count only confirmed, usable, claimable, withdrawable, or spendable value. Do not count pending transactions, unpaid forms, testnet funds, internal points, or marketplace listings without payment."
+  },
+  "safety": {
+    "do_not_send": [
+      "private keys",
+      "seed phrases",
+      "API keys",
+      "passwords",
+      "session cookies",
+      "KYC documents",
+      "user funds"
+    ],
+    "forbidden_work": [
+      "fraud",
+      "spam",
+      "fake engagement",
+      "KYC bypass",
+      "private credential misuse",
+      "deposit-funded tasks",
+      "social/referral manipulation"
+    ]
+  }
+}
