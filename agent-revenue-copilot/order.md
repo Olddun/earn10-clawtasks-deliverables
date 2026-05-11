@@ -71,6 +71,6 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 
 A Stripe, Gumroad, or Polar payment link can replace this PayanAgent route once the operator provides it. Until then, PayanAgent service `js7fkxwvp99cvsyr8jyg5kphzx86gp1j` is the canonical marketplace route.
 
-If PayanAgent is not usable for the buyer, direct Base USDC payment is documented in [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md).
+If PayanAgent is not usable for the buyer, direct Base USDC payment is documented in [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md). Automated buyers can use the machine-readable [payment-request.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json).
 
 After payment, submit the order through the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.

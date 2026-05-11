@@ -84,6 +84,7 @@ function marketplaceLines(product) {
       return `${route.marketplace}: ${id} (${route.price_usdc} USDC)`;
     }),
     `Direct Base USDC: ${initial.direct_payment.amount} ${initial.direct_payment.token} to ${initial.direct_payment.receive_address}`,
+    `Machine-readable payment request: ${initial.direct_payment.payment_request}`,
   ];
   return routes.map((line) => `- ${line}`).join("\n");
 }
@@ -99,6 +100,7 @@ ${marketplaceLines(product)}
 Order instructions:
 - ${product.public_docs.order}
 - ${product.public_docs.payment}
+- ${product.public_docs.payment_request}
 - ${product.public_docs.openapi}
 
 Safe buyer input:

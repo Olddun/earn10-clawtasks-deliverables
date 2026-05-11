@@ -16,6 +16,7 @@ Primary free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
@@ -34,3 +35,4 @@ Additional AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c.
 Additional NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a.
 
 Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336, using native USDC on Base contract 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
+Machine-readable direct payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json.

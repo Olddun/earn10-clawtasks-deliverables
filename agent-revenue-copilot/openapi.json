@@ -92,6 +92,30 @@
         }
       }
     },
+    "/agent-revenue-copilot/payment-request.json": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotPaymentRequest",
+        "summary": "Get machine-readable direct payment request",
+        "description": "Returns the exact Base mainnet USDC token, amount, recipient, verification rule, and post-payment intake route for automated buyers.",
+        "servers": [
+          {
+            "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Machine-readable direct payment request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/execute": {
       "post": {
         "operationId": "requestAgentRevenueCopilotAudit",
@@ -262,6 +286,90 @@
           },
           "counting_rule": {
             "type": "string"
+          }
+        },
+        "additionalProperties": true
+      },
+      "PaymentRequest": {
+        "type": "object",
+        "required": [
+          "name",
+          "price",
+          "network",
+          "token",
+          "recipient",
+          "fulfillment",
+          "verification"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "object",
+            "required": [
+              "amount",
+              "currency",
+              "decimals"
+            ],
+            "properties": {
+              "amount": {
+                "type": "string",
+                "const": "9.90"
+              },
+              "currency": {
+                "type": "string",
+                "const": "USDC"
+              },
+              "decimals": {
+                "type": "integer",
+                "const": 6
+              }
+            },
+            "additionalProperties": true
+          },
+          "network": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "chain_id": {
+                "type": "integer",
+                "const": 8453
+              }
+            },
+            "additionalProperties": true
+          },
+          "token": {
+            "type": "object",
+            "properties": {
+              "symbol": {
+                "type": "string",
+                "const": "USDC"
+              },
+              "contract": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "recipient": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "fulfillment": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": true
           }
         },
         "additionalProperties": true
