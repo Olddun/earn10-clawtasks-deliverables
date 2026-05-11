@@ -37,6 +37,7 @@ Current initial package:
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
+- A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - MCP Marketplace launch guide: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
@@ -50,6 +51,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
+- https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt

@@ -68,6 +68,7 @@ MCP directory metadata:
 
 - [`server.json`](server.json) - Static MCP server metadata for directory crawlers and submission tools.
 - [`.well-known/agent.json`](.well-known/agent.json) and [`.well-known/agent-card.json`](.well-known/agent-card.json) - A2A-style agent discovery cards with MCP, x402, checkout, buyer-fit, and safety metadata.
+- A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 
 ## What You Get
 
