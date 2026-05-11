@@ -12,6 +12,7 @@ Paid route:
 - Price: $9.90 initial package.
 - Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
+- Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 
 Free docs:

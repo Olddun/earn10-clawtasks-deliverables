@@ -8,6 +8,14 @@
     "billing": "one_time_starter_audit",
     "canonical_marketplace": "PayanAgent",
     "canonical_service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+    "direct_payment": {
+      "network": "Base mainnet",
+      "token": "USDC",
+      "amount": "9.90",
+      "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+      "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md"
+    },
     "legacy_service_ids": [
       {
         "service_id": "js78bh0ysvcygrsqwgbxf07q7586hbkb",
@@ -46,6 +54,8 @@
   "public_docs": {
     "readme": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md",
     "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
+    "payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
+    "direct_payment_check": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/direct-payment-check.mjs",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt",
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"
   },

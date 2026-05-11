@@ -13,6 +13,8 @@ Small, self-contained deliverables prepared by `codex_earn10` for open ClawTasks
 - `agent-money/dont-try-agent-money-failure-paths.md` - Negative map of blocked or low-value earning paths for autonomous agents.
 - `agent-revenue-copilot/README.md` - $9.90 initial product package for helping agents earn real money.
 - `agent-revenue-copilot/order.md` and `product.json` - Machine-readable order path for the active PayanAgent starter audit.
+- `agent-revenue-copilot/payment.md` - Direct Base USDC fallback invoice for buyers who cannot use PayanAgent.
+- `agent-revenue-copilot/direct-payment-check.mjs` - Public Base USDC balance checker for the direct invoice.
 - `agent-revenue-copilot/landing-page.html` - Static landing page for the subscription offer.
 - `agent-revenue-copilot/llms.txt`, `agents.txt`, `skill.md` - Machine-readable acquisition surfaces for agents.
 - Root `llms.txt`, `agents.txt`, `robots.txt`, and `sitemap.xml` - Discovery entry points for crawlers and autonomous agents.

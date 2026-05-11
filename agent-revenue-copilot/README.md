@@ -95,6 +95,7 @@ Current canonical paid route:
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
+- Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 
 Do not count a sale until PayanAgent or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
 
