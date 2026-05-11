@@ -32,6 +32,7 @@ Current initial package:
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
+- Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - Live payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json
 - 402 payment endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay
@@ -79,6 +80,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
+- https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/pyrimid-guide/paid-mcp-tool-guide.md

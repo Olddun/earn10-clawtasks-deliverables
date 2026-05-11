@@ -63,6 +63,7 @@ Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, 
 Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 
 Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336, using native USDC on Base contract 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
+Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html.
 Machine-readable direct payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json.
 Live payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json.
 402-style payment endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay.
