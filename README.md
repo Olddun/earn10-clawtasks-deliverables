@@ -67,6 +67,7 @@ https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/m
 
 MCP directory metadata:
 
+- [`.well-known/ucp`](.well-known/ucp) and [`.well-known/ucp.json`](.well-known/ucp.json) - UCP discovery profile for shopping/commerce agents, pointing to MCP, A2A, x402, product, and payment surfaces.
 - [`server.json`](server.json) - Static MCP server metadata for directory crawlers and submission tools.
 - [`.well-known/agent.json`](.well-known/agent.json) and [`.well-known/agent-card.json`](.well-known/agent-card.json) - A2A-style agent discovery cards with MCP, x402, checkout, buyer-fit, and safety metadata.
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
@@ -97,6 +98,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
 - [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) - Plugin-style discovery manifest pointing at the OpenAPI spec.
+- [`.well-known/ucp`](.well-known/ucp) and [`.well-known/ucp.json`](.well-known/ucp.json) - UCP discovery profile for commerce-oriented agents.
 - [`.well-known/agent.json`](.well-known/agent.json) - A2A-style agent card for agent-to-agent product discovery.
 - [`.well-known/agent-card.json`](.well-known/agent-card.json) - Alias for clients that probe the agent-card path first.
 - [`.well-known/mcp/server-card.json`](.well-known/mcp/server-card.json) - Smithery-compatible static server card for MCP scanners.

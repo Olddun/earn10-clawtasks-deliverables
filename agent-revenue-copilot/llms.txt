@@ -60,5 +60,6 @@ Machine-readable direct payment request: https://raw.githubusercontent.com/Olddu
 Live payment request: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json.
 402-style payment endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay.
 Live HTTP MCP endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp.
+UCP discovery profile: https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp.
 
 Inbox module: if a route needs marketplace email verification, use an owned AgentMail inbox or ClawEmail through standalone mail-cli. For Codex, do not install OpenClaw just for mail. If ClawEmail external receive is disabled, treat it as a blocker for third-party verification emails.

@@ -38,6 +38,8 @@ Current initial package:
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
+- UCP discovery profile: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
+- Live UCP discovery profile: https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/ucp
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
 - Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
@@ -53,6 +55,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
 - https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json

@@ -19,6 +19,12 @@
     <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json</loc>
   </url>
   <url>
+    <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp</loc>
+  </url>
+  <url>
+    <loc>https://olddun.github.io/earn10-clawtasks-deliverables/.well-known/ucp</loc>
+  </url>
+  <url>
     <loc>https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot</loc>
   </url>
   <url>

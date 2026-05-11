@@ -1,0 +1,157 @@
+{
+  "ucp": {
+    "version": "2026-04-08",
+    "services": {
+      "dev.ucp.shopping": [
+        {
+          "version": "2026-04-08",
+          "spec": "https://ucp.dev/2026-04-08/specification/overview",
+          "transport": "mcp",
+          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp",
+          "schema": "https://ucp.dev/2026-04-08/services/shopping/mcp.openrpc.json",
+          "config": {
+            "product_id": "agent-revenue-copilot-starter-audit",
+            "product_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json",
+            "catalog_fallback": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md",
+            "checkout_fallback": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a"
+          }
+        },
+        {
+          "version": "2026-04-08",
+          "spec": "https://ucp.dev/2026-04-08/specification/overview",
+          "transport": "a2a",
+          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/agent-card.json"
+        },
+        {
+          "version": "2026-04-08",
+          "spec": "https://ucp.dev/2026-04-08/specification/overview",
+          "transport": "rest",
+          "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com",
+          "schema": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
+          "config": {
+            "payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+            "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
+            "order_intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+          }
+        }
+      ]
+    },
+    "capabilities": {
+      "dev.ucp.shopping.catalog.lookup": [
+        {
+          "version": "2026-04-08",
+          "spec": "https://ucp.dev/latest/specification/catalog/lookup/",
+          "schema": "https://ucp.dev/2026-04-08/schemas/shopping/catalog.json",
+          "config": {
+            "lookup_ids": [
+              "agent-revenue-copilot",
+              "agent-revenue-copilot-starter-audit",
+              "ai-agent-earn-usdc",
+              "x402-mcp-monetization"
+            ],
+            "continue_url": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html"
+          }
+        }
+      ],
+      "com.agoragentic.x402.checkout": [
+        {
+          "version": "2026-05-11",
+          "spec": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
+          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "config": {
+            "price": "9.90",
+            "currency": "USDC",
+            "network": "Base mainnet",
+            "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+            "fallback_checkout": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke",
+            "manual_payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md"
+          }
+        }
+      ]
+    },
+    "payment_handlers": {
+      "com.agoragentic.x402": [
+        {
+          "id": "agent-revenue-copilot-agoragentic-x402",
+          "version": "2026-05-11",
+          "spec": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
+          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "available_instruments": [
+            {
+              "type": "USDC",
+              "constraints": {
+                "network": "Base mainnet",
+                "amount": "9.90"
+              }
+            }
+          ],
+          "config": {
+            "checkout_url": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a"
+          }
+        }
+      ],
+      "io.github.olddun.direct_usdc": [
+        {
+          "id": "agent-revenue-copilot-direct-base-usdc",
+          "version": "2026-05-11",
+          "spec": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
+          "schema": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+          "available_instruments": [
+            {
+              "type": "USDC",
+              "constraints": {
+                "network": "Base mainnet",
+                "amount": "9.90"
+              }
+            }
+          ],
+          "config": {
+            "payment_required_endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
+            "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336"
+          }
+        }
+      ]
+    }
+  },
+  "business": {
+    "name": "Agent Revenue Copilot",
+    "url": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
+    "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+    "product": {
+      "id": "agent-revenue-copilot-starter-audit",
+      "name": "Agent Revenue Copilot starter audit",
+      "price": "9.90",
+      "currency": "USDC",
+      "delivery": "24h route audit after valid payment and usable buyer brief",
+      "buyer_fit": [
+        "operators targeting $50+ payouts",
+        "repeated agent earning workflows",
+        "builders monetizing x402 or MCP tools",
+        "teams where wasted agent runtime costs more than $9.90"
+      ],
+      "not_for": [
+        "one-off attempts to earn about $10 when saved runtime has little value"
+      ]
+    },
+    "safety": {
+      "forbidden_work": [
+        "fraud",
+        "spam",
+        "fake engagement",
+        "KYC bypass",
+        "private credential misuse",
+        "deposit-funded tasks",
+        "social/referral manipulation"
+      ],
+      "do_not_send": [
+        "private keys",
+        "seed phrases",
+        "API keys",
+        "passwords",
+        "session cookies",
+        "KYC documents",
+        "user funds"
+      ]
+    }
+  }
+}

@@ -20,6 +20,8 @@
     ".well-known/agent.json",
     ".well-known/agent-card.json",
     ".well-known/ai-plugin.json",
+    ".well-known/ucp",
+    ".well-known/ucp.json",
     ".well-known/mcp/server-card.json"
   ],
   "keywords": [
