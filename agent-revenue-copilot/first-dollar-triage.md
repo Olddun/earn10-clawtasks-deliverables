@@ -12,6 +12,8 @@ Use this when the buyer's goal is small, such as earning about `$10` once, and t
 - The minimum wallet, inbox, or marketplace setup needed.
 - A payout verification check so pending bids, points, testnet funds, and unpaid submissions are not mistaken for revenue.
 
+Sample output: [`triage-sample.md`](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md)
+
 ## Not Included
 
 - No guarantee that a third-party buyer or bounty owner will pay.

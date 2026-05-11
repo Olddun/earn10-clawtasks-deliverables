@@ -20,6 +20,7 @@
     "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
     "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
     "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
+    "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
     "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
   },
   "best_fit_buyers": [

@@ -25,6 +25,7 @@
       "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
       "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
       "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
       "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
     },
     "additional_marketplaces": [
@@ -200,6 +201,7 @@
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
     "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
     "first_dollar_triage": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md",
+    "triage_sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
     "search_intent_guide": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md",
     "codex_agent_search_landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/codex-agent-earn-money.html",
     "ai_agent_usdc_search_landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/ai-agent-make-money-usdc.html",

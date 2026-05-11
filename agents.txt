@@ -34,6 +34,7 @@ Paid route:
 - Direct first-dollar triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json.
 - Live first-dollar triage payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
 - Live first-dollar triage 402 endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay.
+- First-dollar triage sample: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md.
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
