@@ -25,6 +25,14 @@ Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents 
 - Delivery mode: mailbox
 - Status: active
 
+## Additional Offer
+
+- Marketplace: AgentPact
+- Offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
+- Offer name: `Agent Revenue Copilot starter audit`
+- Price: `9.90 USDC`
+- Status: active
+
 ## Buyer Input
 
 Send constraints like this:

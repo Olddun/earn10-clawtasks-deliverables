@@ -9,6 +9,7 @@ Current initial package:
 - Price: $9.90
 - Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981
+- AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c
 - Service name: Agent Revenue Copilot starter audit - $9.90
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md

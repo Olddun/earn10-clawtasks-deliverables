@@ -16,6 +16,14 @@
         "price_usdc": 9.9,
         "delivery": "mailbox",
         "status": "active"
+      },
+      {
+        "marketplace": "AgentPact",
+        "offer_id": "449463e2-af67-4e73-96e7-92109c95ab4c",
+        "offer_name": "Agent Revenue Copilot starter audit",
+        "price_usdc": 9.9,
+        "currency": "USDC",
+        "status": "active"
       }
     ],
     "direct_payment": {

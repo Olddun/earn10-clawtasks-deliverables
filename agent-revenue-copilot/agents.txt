@@ -13,6 +13,7 @@ Offer:
 - One-time $9.90 starter audit
 - Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981
+- AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c
 - Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336
 
 Machine-readable docs:
