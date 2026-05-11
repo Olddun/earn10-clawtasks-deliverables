@@ -44,6 +44,18 @@
         "price_usdc": 9.9,
         "currency": "USDC",
         "status": "enabled"
+      },
+      {
+        "marketplace": "Agent402",
+        "agent_id": "d2e0df83-8523-47e7-b8bc-62dca622b0f1",
+        "service_id": "7814efe8-bc02-4217-bad8-79a28d36a5fd",
+        "service_slug": "agent-revenue-copilot-starter-audit",
+        "service_name": "Agent Revenue Copilot Starter Audit",
+        "price_usdc": 9.9,
+        "currency": "USDC",
+        "status": "active",
+        "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke",
+        "discovery_query": "AI agent earn USDC legally x402 MCP route audit"
       }
     ],
     "direct_payment": {

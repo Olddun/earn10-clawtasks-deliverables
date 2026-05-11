@@ -19,6 +19,16 @@ Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable
 - x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
 - Suggested exact task aliases: `ai-agent-earn-money`, `earn-usdc`, `agent-monetization`, `payout-verification`, `x402-monetization`
 
+## Additional Agent402 Checkout
+
+- Marketplace: Agent402
+- Agent id: `d2e0df83-8523-47e7-b8bc-62dca622b0f1`
+- Service slug: `agent-revenue-copilot-starter-audit`
+- Price: `9.90 USDC`
+- Status: active and published
+- x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
+- Discovery query: `AI agent earn USDC legally x402 MCP route audit`
+
 ## Fallback Service
 
 - Marketplace: PayanAgent

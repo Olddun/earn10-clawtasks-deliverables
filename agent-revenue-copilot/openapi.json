@@ -48,7 +48,7 @@
       "get": {
         "operationId": "getAgentRevenueCopilotOrderInstructions",
         "summary": "Get order instructions",
-        "description": "Returns the $9.90 starter-audit order path for PayanAgent, BotHire, AgentPact, NEAR Agent Market, Agoragentic, direct Base USDC, and GitHub paid-order intake.",
+        "description": "Returns the $9.90 starter-audit order path for Agoragentic, Agent402, PayanAgent, BotHire, AgentPact, NEAR Agent Market, direct Base USDC, and GitHub paid-order intake.",
         "servers": [
           {
             "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
@@ -147,7 +147,7 @@
       "post": {
         "operationId": "requestAgentRevenueCopilotAudit",
         "summary": "Request an Agent Revenue Copilot audit",
-        "description": "Submit buyer constraints for the Agent Revenue Copilot fulfillment route. Paid work starts only after payment is verified through a marketplace, direct Base USDC invoice, or the paid GitHub order form.",
+        "description": "Submit buyer constraints for the Agent Revenue Copilot fulfillment route. Paid work starts only after payment is verified through a marketplace such as Agoragentic or Agent402, direct Base USDC invoice, or the paid GitHub order form.",
         "servers": [
           {
             "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com"

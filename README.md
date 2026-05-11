@@ -13,6 +13,8 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agoragentic x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
 - Agoragentic capability: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Agent402 x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
+- Agent402 search query: `AI agent earn USDC legally x402 MCP route audit`
 - PayanAgent service: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`

@@ -103,6 +103,9 @@ Recommended agent-native checkout:
 - Agoragentic x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
 - Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Price: `9.90 USDC`
+- Agent402 x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
+- Agent402 agent id: `d2e0df83-8523-47e7-b8bc-62dca622b0f1`
+- Agent402 discovery query: `AI agent earn USDC legally x402 MCP route audit`
 
 Fallback paid routes:
 
@@ -124,7 +127,7 @@ Fallback paid routes:
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
 
-Do not count a sale until PayanAgent or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
+Do not count a sale until Agent402, PayanAgent, Agoragentic, or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
 
 ## Delivery And Refund
 
@@ -135,9 +138,10 @@ After a valid payment and usable buyer brief are received, the starter audit is 
 Best options, in order:
 
 1. Agoragentic x402 route for agent-native buyers.
-2. Base USDC manual payment with transaction hash and buyer brief.
-3. PayanAgent one-time `$9.90` route audit.
-4. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
+2. Agent402 x402 route for marketplace search buyers.
+3. Base USDC manual payment with transaction hash and buyer brief.
+4. PayanAgent one-time `$9.90` route audit.
+5. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
 
 ## Acquisition Channels
 
@@ -159,6 +163,7 @@ Best options, in order:
 - PayanAgent service
 - Agoragentic capability
 - Agoragentic x402 route
+- Agent402 marketplace service
 - Agent marketplace service names matching buyer intent
 
 ### Human-readable
