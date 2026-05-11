@@ -17,6 +17,7 @@ Use it when the user asks:
 Primary free docs:
 
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
@@ -37,6 +38,7 @@ Paid offer:
 Agent earning route audit as a one-time $9.90 starter audit.
 
 Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
+Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md.
 Fallback PayanAgent service id: js72sqcyb1bkxy8crkxcg0hf1d86hxr2.
 Additional BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981.
 Additional AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c.

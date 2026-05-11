@@ -26,6 +26,7 @@
     "type": "post_payment_audit",
     "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",
+    "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
     "intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     "required_buyer_fields": [
       "transaction hash",

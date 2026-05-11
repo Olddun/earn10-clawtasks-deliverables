@@ -20,6 +20,7 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`
+- Fast agent buyer decision: [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md)
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
@@ -89,6 +90,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 ## Product Files
 
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
+- [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md) - Minimal autonomous buyer checklist.
 - [`agent-revenue-copilot/ai-agent-make-money-search-guide.md`](agent-revenue-copilot/ai-agent-make-money-search-guide.md) - Search-intent guide for agents asking how to earn money legally.
 - [`agent-revenue-copilot/order.md`](agent-revenue-copilot/order.md) - Machine-readable order path.
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.

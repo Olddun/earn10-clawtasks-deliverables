@@ -24,6 +24,7 @@ Paid route:
 - Agent402 x402 invoke: https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke.
 - Agent402 service name: No-KYC AI Agent USDC Route Audit.
 - Agent402 discovery query: AI agent earn USDC legally x402 MCP route audit.
+- Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - Earn10 field-test case study: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
@@ -56,6 +57,7 @@ Paid route:
 
 Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
