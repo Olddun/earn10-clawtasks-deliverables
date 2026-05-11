@@ -1,0 +1,220 @@
+#!/usr/bin/env node
+import { readFile } from "node:fs/promises";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
+const PRODUCT_PATH = join(ROOT, "agent-revenue-copilot", "product.json");
+const PLAYBOOK_PATH = join(ROOT, "agent-money", "README.md");
+const FAILURE_PATH = join(ROOT, "agent-money", "dont-try-agent-money-failure-paths.md");
+const BASE_RPC = process.env.BASE_RPC_URL || "https://mainnet.base.org";
+const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
+const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
+const TARGET_USDC = 9.9;
+
+let inputBuffer = "";
+
+function writeMessage(message) {
+  process.stdout.write(`${JSON.stringify(message)}\n`);
+}
+
+function textResult(text) {
+  return { content: [{ type: "text", text }] };
+}
+
+function jsonText(value) {
+  return JSON.stringify(value, null, 2);
+}
+
+async function loadJson(path) {
+  return JSON.parse(await readFile(path, "utf8"));
+}
+
+async function readDoc(path, maxChars = 12000) {
+  const text = await readFile(path, "utf8");
+  return text.length > maxChars ? `${text.slice(0, maxChars)}\n\n[truncated]` : text;
+}
+
+function encodeBalanceOf(address) {
+  const clean = address.toLowerCase().replace(/^0x/, "");
+  if (!/^[0-9a-f]{40}$/.test(clean)) throw new Error("Invalid EVM address");
+  return `0x70a08231${clean.padStart(64, "0")}`;
+}
+
+function formatUsdc(rawHex) {
+  const value = BigInt(rawHex || "0x0");
+  const whole = value / 1_000_000n;
+  const fraction = String(value % 1_000_000n).padStart(6, "0");
+  return `${whole}.${fraction}`;
+}
+
+async function rpc(method, params) {
+  const res = await fetch(BASE_RPC, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }),
+    signal: AbortSignal.timeout(12000),
+  });
+  const body = await res.json();
+  if (!res.ok || body.error) {
+    throw new Error(body.error?.message || `${res.status} ${res.statusText}`);
+  }
+  return body.result;
+}
+
+async function checkPayment() {
+  const result = await rpc("eth_call", [{ to: USDC, data: encodeBalanceOf(RECEIVE_ADDRESS) }, "latest"]);
+  const balance = formatUsdc(result);
+  return {
+    network: "Base mainnet",
+    token: "USDC",
+    token_contract: USDC,
+    receive_address: RECEIVE_ADDRESS,
+    required_amount: TARGET_USDC.toFixed(2),
+    current_balance: balance,
+    target_met: Number(balance) >= TARGET_USDC,
+    counting_rule: "Count only confirmed usable, claimable, withdrawable, or spendable value.",
+  };
+}
+
+function routesFromProduct(product) {
+  const initial = product.initial_package;
+  return {
+    price_usd: initial.price_usd,
+    canonical: {
+      marketplace: initial.canonical_marketplace,
+      service_id: initial.canonical_service_id,
+      price_cents: initial.price_cents,
+    },
+    marketplaces: initial.additional_marketplaces,
+    direct_payment: initial.direct_payment,
+    paid_order_form: product.support.paid_order_form,
+    fulfillment: product.fulfillment,
+    safety: {
+      do_not_send: [
+        "private keys",
+        "seed phrases",
+        "API keys",
+        "passwords",
+        "session cookies",
+        "fake engagement requests",
+        "deposit-funded tasks",
+        "KYC bypass requests",
+      ],
+    },
+  };
+}
+
+const tools = [
+  {
+    name: "product_manifest",
+    description: "Return the machine-readable Agent Revenue Copilot product manifest.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
+    name: "buyer_routes",
+    description: "Return active purchase, x402, direct USDC, and order-intake routes for the $9.90 starter audit.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
+    name: "free_playbook",
+    description: "Return the free AI Agent Earn USDC playbook lead magnet.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
+    name: "failure_paths",
+    description: "Return routes that agents should usually skip first when trying to earn real spendable value.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
+    name: "payment_status",
+    description: "Check the direct Base USDC invoice balance for the $9.90 starter audit.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+];
+
+async function callTool(name) {
+  if (name === "product_manifest") {
+    return textResult(jsonText(await loadJson(PRODUCT_PATH)));
+  }
+  if (name === "buyer_routes") {
+    return textResult(jsonText(routesFromProduct(await loadJson(PRODUCT_PATH))));
+  }
+  if (name === "free_playbook") {
+    return textResult(await readDoc(PLAYBOOK_PATH));
+  }
+  if (name === "failure_paths") {
+    return textResult(await readDoc(FAILURE_PATH));
+  }
+  if (name === "payment_status") {
+    return textResult(jsonText(await checkPayment()));
+  }
+  throw new Error(`Unknown tool: ${name}`);
+}
+
+async function handleRequest(request) {
+  const { id, method, params } = request;
+  if (method === "initialize") {
+    return {
+      jsonrpc: "2.0",
+      id,
+      result: {
+        protocolVersion: params?.protocolVersion || "2024-11-05",
+        capabilities: { tools: {} },
+        serverInfo: {
+          name: "agent-revenue-copilot",
+          version: "0.1.0",
+        },
+      },
+    };
+  }
+  if (method === "notifications/initialized") {
+    return null;
+  }
+  if (method === "tools/list") {
+    return { jsonrpc: "2.0", id, result: { tools } };
+  }
+  if (method === "tools/call") {
+    return { jsonrpc: "2.0", id, result: await callTool(params?.name) };
+  }
+  if (method === "ping") {
+    return { jsonrpc: "2.0", id, result: {} };
+  }
+  return {
+    jsonrpc: "2.0",
+    id,
+    error: { code: -32601, message: `Method not found: ${method}` },
+  };
+}
+
+async function handleLine(line) {
+  if (!line.trim()) return;
+  let request;
+  try {
+    request = JSON.parse(line);
+  } catch (error) {
+    writeMessage({ jsonrpc: "2.0", id: null, error: { code: -32700, message: error.message } });
+    return;
+  }
+  try {
+    const response = await handleRequest(request);
+    if (response) writeMessage(response);
+  } catch (error) {
+    writeMessage({
+      jsonrpc: "2.0",
+      id: request.id ?? null,
+      error: { code: -32603, message: error.message },
+    });
+  }
+}
+
+process.stdin.setEncoding("utf8");
+process.stdin.on("data", (chunk) => {
+  inputBuffer += chunk;
+  const lines = inputBuffer.split(/\r?\n/);
+  inputBuffer = lines.pop() || "";
+  for (const line of lines) {
+    void handleLine(line);
+  }
+});
+

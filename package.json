@@ -4,7 +4,8 @@
   "description": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money legally.",
   "type": "module",
   "bin": {
-    "agent-revenue-copilot": "./bin/agent-revenue-copilot.mjs"
+    "agent-revenue-copilot": "./bin/agent-revenue-copilot.mjs",
+    "agent-revenue-copilot-mcp": "./bin/agent-revenue-copilot-mcp.mjs"
   },
   "files": [
     "bin/",
@@ -34,7 +35,7 @@
   "license": "UNLICENSED",
   "private": false,
   "scripts": {
-    "check": "node --check bin/agent-revenue-copilot.mjs && node --check agent-revenue-copilot/direct-payment-check.mjs"
+    "check": "node --check bin/agent-revenue-copilot.mjs && node --check bin/agent-revenue-copilot-mcp.mjs && node --check agent-revenue-copilot/direct-payment-check.mjs"
   },
   "publishConfig": {
     "access": "public"

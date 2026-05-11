@@ -25,6 +25,7 @@ Paid route:
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - OpenAPI buyer surface: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
 - CLI: npx github:Olddun/earn10-clawtasks-deliverables -- --json
+- MCP: npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp
 
 Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
