@@ -10,6 +10,7 @@
     "canonical_capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "canonical_x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "canonical_x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
+    "canonical_x402_task_match": "https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization",
     "additional_marketplaces": [
       {
         "marketplace": "PayanAgent",

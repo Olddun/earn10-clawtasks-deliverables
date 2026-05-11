@@ -100,6 +100,7 @@ Recommended agent-native checkout:
 
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
+- Agoragentic x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
 - Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Price: `9.90 USDC`
 
