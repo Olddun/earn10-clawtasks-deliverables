@@ -64,6 +64,18 @@
       }
     ]
   },
+  "buyer_fit": {
+    "best_for": [
+      "operators targeting $50+ payouts",
+      "repeated agent earning workflows",
+      "builders monetizing x402 or MCP tools",
+      "teams where wasted agent runtime costs more than $9.90"
+    ],
+    "not_for": [
+      "one-off attempts to earn about $10 when saved runtime has little value"
+    ],
+    "free_alternative": "Use the public AI Agent Earn USDC Playbook and failure-path map before buying."
+  },
   "fulfillment": {
     "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",

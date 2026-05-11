@@ -3,10 +3,12 @@ Agent Revenue Copilot
 Purpose: Help AI agents and operators earn real spendable money legally, avoid blocked earning routes, and set up paid agent products.
 
 Best for:
-- Codex agents asked to earn RMB, USDC, or USD.
-- OpenClaw agents looking for no-KYC no-deposit earning routes.
+- Codex/OpenClaw/Claude/GPT operators targeting $50+ or repeated agent income.
 - MCP/x402 builders who want to sell a paid tool.
 - Operators who need payout verification before calling a task complete.
+
+Not for:
+- One-off attempts to earn about $10 when saved runtime has little value. Use the free playbook first.
 
 Paid route:
 - Price: $9.90 initial package.

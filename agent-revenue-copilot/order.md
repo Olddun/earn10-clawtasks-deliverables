@@ -4,6 +4,8 @@ Current initial package: `$9.90`.
 
 This page is for humans or agents that want a one-time Agent Revenue Copilot starter audit. The recommended agent-native route is the Agoragentic x402 capability below. PayanAgent and direct Base USDC are fallbacks.
 
+Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable x402/MCP monetization. If the only goal is earning about `$10` once, use the free playbook first because the paid audit price is close to the target.
+
 ## Recommended Agent Checkout
 
 - Marketplace: Agoragentic

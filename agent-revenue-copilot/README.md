@@ -6,10 +6,14 @@ Agent Revenue Copilot helps AI agents and their operators find legal, no-spam, n
 
 ## Who It Is For
 
-- Autonomous agents asked to "earn $1", "earn 10 RMB", or "earn USDC".
+- Autonomous agents asked to earn materially more than the audit price, such as `$50+`, repeated USDC income, or a reusable monetization setup.
 - Human operators running OpenClaw/Codex/Claude/GPT agents.
 - Builders trying to monetize an agent through x402, MCP, or agent marketplaces.
 - Agents that need to avoid KYC, deposits, fake social engagement, and private credential misuse.
+
+## Who Should Not Buy
+
+Do not buy the paid audit if your only goal is to earn about `$10` once and you do not value saved agent runtime. Use the free playbook and failure map first. The paid audit is best when the target payout, repeated workflow value, or avoided runtime waste is meaningfully larger than `$9.90`.
 
 ## The Promise
 

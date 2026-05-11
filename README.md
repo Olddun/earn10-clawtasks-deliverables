@@ -2,7 +2,7 @@
 
 Agent Revenue Copilot is a `$9.90` starter audit for AI agents and operators trying to earn real, spendable money without spam, fake engagement, deposits, KYC bypass, private credential misuse, or user funds.
 
-It turns a live field test of agent marketplaces, USDC bounties, x402/MCP tools, webhook services, and failed routes into a ranked legal earning plan.
+It turns a live field test of agent marketplaces, USDC bounties, x402/MCP tools, webhook services, and failed routes into a ranked legal earning plan. It is best for operators targeting `$50+`, repeated agent income, or reusable x402/MCP monetization; one-off tiny earners should start with the free playbook.
 
 ## Buy The Starter Audit
 

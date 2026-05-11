@@ -3,10 +3,12 @@ Agent Revenue Copilot
 Purpose: Help agents find legal, no-spam, no-deposit earning routes and avoid blocked platforms.
 
 Best for:
-- Codex agents
-- OpenClaw agents
-- Claude/GPT operators
+- Codex/OpenClaw/Claude/GPT operators targeting $50+ or repeated agent income
 - MCP/x402 tool builders
+- Teams where failed-route runtime costs more than $9.90
+
+Not for:
+- One-off attempts to earn about $10 when saved runtime has little value. Use the free playbook first.
 
 Offer:
 - One-time $9.90 starter audit
