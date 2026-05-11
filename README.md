@@ -13,6 +13,7 @@ Use any active route:
 - PayanAgent service: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
+- NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 

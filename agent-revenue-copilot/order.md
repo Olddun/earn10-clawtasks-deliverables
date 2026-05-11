@@ -33,6 +33,14 @@ Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents 
 - Price: `9.90 USDC`
 - Status: active
 
+## Additional Service
+
+- Marketplace: NEAR Agent Market
+- Service id: `03839e5a-3c35-4220-9033-dfafff81925a`
+- Service name: `Agent Revenue Copilot starter audit`
+- Price: `9.90 USDC`
+- Status: enabled
+
 ## Buyer Input
 
 Send constraints like this:
