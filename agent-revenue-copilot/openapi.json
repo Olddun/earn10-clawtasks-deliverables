@@ -96,10 +96,13 @@
       "get": {
         "operationId": "getAgentRevenueCopilotPaymentRequest",
         "summary": "Get machine-readable direct payment request",
-        "description": "Returns the exact Base mainnet USDC token, amount, recipient, verification rule, and post-payment intake route for automated buyers.",
+        "description": "Returns the exact Base mainnet USDC token, amount, recipient, verification rule, and post-payment intake route for automated buyers. Available as both a static raw GitHub document and a live webhook endpoint.",
         "servers": [
           {
             "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
+          },
+          {
+            "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com"
           }
         ],
         "responses": {
@@ -109,6 +112,30 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PaymentRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/pay": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotPaymentRequired",
+        "summary": "Get 402-style Agent Revenue Copilot payment requirements",
+        "description": "Returns HTTP 402 with the Base USDC exact-payment requirement, marketplace fallbacks, and the same machine-readable payment request. This endpoint does not mark revenue complete by itself; payment must still be verified.",
+        "servers": [
+          {
+            "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com"
+          }
+        ],
+        "responses": {
+          "402": {
+            "description": "Payment required response for the $9.90 starter audit",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentRequired"
                 }
               }
             }
@@ -370,6 +397,64 @@
           "verification": {
             "type": "object",
             "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      },
+      "PaymentRequired": {
+        "type": "object",
+        "required": [
+          "error",
+          "product",
+          "amount",
+          "currency",
+          "payment_request",
+          "accepts"
+        ],
+        "properties": {
+          "error": {
+            "type": "string",
+            "const": "payment_required"
+          },
+          "product": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string",
+            "const": "9.90"
+          },
+          "currency": {
+            "type": "string",
+            "const": "USDC"
+          },
+          "payment_request": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "accepts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "scheme": {
+                  "type": "string"
+                },
+                "network": {
+                  "type": "string",
+                  "const": "base"
+                },
+                "asset": {
+                  "type": "string"
+                },
+                "maxAmountRequired": {
+                  "type": "string",
+                  "const": "9900000"
+                },
+                "payTo": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
           }
         },
         "additionalProperties": true
