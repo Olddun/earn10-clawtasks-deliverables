@@ -13,6 +13,7 @@
     "agent-money/",
     "llms.txt",
     "agents.txt",
+    "server.json",
     "README.md",
     ".well-known/ai-plugin.json"
   ],

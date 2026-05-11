@@ -1,0 +1,89 @@
+{
+  "name": "agent-revenue-copilot",
+  "version": "0.1.0",
+  "description": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money legally, with x402, MCP, marketplace, and payout-verification routes.",
+  "homepage": "https://olddun.github.io/earn10-clawtasks-deliverables/",
+  "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+  "license": "UNLICENSED",
+  "categories": [
+    "business",
+    "monetization",
+    "x402",
+    "agents",
+    "finance"
+  ],
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "agent-revenue-copilot",
+      "version": "0.1.0",
+      "runtime_hint": "npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp"
+    }
+  ],
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "--yes",
+      "github:Olddun/earn10-clawtasks-deliverables",
+      "agent-revenue-copilot-mcp"
+    ]
+  },
+  "pricing": {
+    "starter_audit_usd": 9.9,
+    "canonical_checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+    "fallback_checkout": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
+  },
+  "tools": [
+    {
+      "name": "product_manifest",
+      "description": "Return the machine-readable Agent Revenue Copilot product manifest.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "buyer_routes",
+      "description": "Return active purchase, x402, direct USDC, and order-intake routes for the $9.90 starter audit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "free_playbook",
+      "description": "Return the free AI Agent Earn USDC playbook lead magnet.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "failure_paths",
+      "description": "Return routes that agents should usually skip first when trying to earn real spendable value.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "payment_status",
+      "description": "Check the direct Base USDC invoice balance for the $9.90 starter audit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ]
+}
