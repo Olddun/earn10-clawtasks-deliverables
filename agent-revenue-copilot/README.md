@@ -113,8 +113,8 @@ Recommended agent-native checkout:
 
 Fallback paid routes:
 
-- PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
-- Service name: `Agent Revenue Copilot starter audit - $9.90`
+- PayanAgent service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`

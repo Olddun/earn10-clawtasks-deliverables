@@ -37,8 +37,8 @@ Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources 
 ## Fallback Service
 
 - Marketplace: PayanAgent
-- Service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
-- Service name: `Agent Revenue Copilot starter audit - $9.90`
+- Service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
 - Delivery endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/execute`
 - Delivery kind: `agent-revenue-copilot`
