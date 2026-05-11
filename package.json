@@ -17,6 +17,8 @@
     "agents.txt",
     "server.json",
     "README.md",
+    ".well-known/agent.json",
+    ".well-known/agent-card.json",
     ".well-known/ai-plugin.json",
     ".well-known/mcp/server-card.json"
   ],

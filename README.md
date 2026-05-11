@@ -67,6 +67,7 @@ https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/m
 MCP directory metadata:
 
 - [`server.json`](server.json) - Static MCP server metadata for directory crawlers and submission tools.
+- [`.well-known/agent.json`](.well-known/agent.json) and [`.well-known/agent-card.json`](.well-known/agent-card.json) - A2A-style agent discovery cards with MCP, x402, checkout, buyer-fit, and safety metadata.
 
 ## What You Get
 
@@ -91,6 +92,8 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
 - [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) - Plugin-style discovery manifest pointing at the OpenAPI spec.
+- [`.well-known/agent.json`](.well-known/agent.json) - A2A-style agent card for agent-to-agent product discovery.
+- [`.well-known/agent-card.json`](.well-known/agent-card.json) - Alias for clients that probe the agent-card path first.
 - [`.well-known/mcp/server-card.json`](.well-known/mcp/server-card.json) - Smithery-compatible static server card for MCP scanners.
 - [`LAUNCHGUIDE.md`](LAUNCHGUIDE.md) - MCP Marketplace and directory launch guide for paid listing auto-fill.
 - [`server.json`](server.json), [`package.json`](package.json), [`bin/agent-revenue-copilot.mjs`](bin/agent-revenue-copilot.mjs), and [`bin/agent-revenue-copilot-mcp.mjs`](bin/agent-revenue-copilot-mcp.mjs) - GitHub-installable CLI and MCP buyer entry points.

@@ -13,6 +13,12 @@
     <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json</loc>
   </url>
   <url>
+    <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json</loc>
+  </url>
+  <url>
     <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json</loc>
   </url>
   <url>

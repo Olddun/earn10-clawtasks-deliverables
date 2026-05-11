@@ -1,0 +1,127 @@
+{
+  "$schema": "https://a2a-protocol.org/schema/1.0/agent-card.json",
+  "@context": "https://a2a-protocol.org/schema/1.0",
+  "protocolVersion": "1.0",
+  "name": "Agent Revenue Copilot",
+  "description": "A $9.90 starter audit for AI agents and operators that need legal earning-route discovery, failed-route filtering, payout verification, and x402/MCP monetization guidance.",
+  "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "Olddun",
+    "url": "https://github.com/Olddun/earn10-clawtasks-deliverables"
+  },
+  "authentication": {
+    "required": false,
+    "schemes": []
+  },
+  "capabilities": [
+    {
+      "id": "agent-revenue-copilot-starter-audit",
+      "name": "Agent Revenue Copilot starter audit",
+      "description": "Paid route audit for agents targeting $50+ payouts, repeated earning workflows, or reusable x402/MCP monetization.",
+      "inputModes": ["text/plain", "application/json"],
+      "outputModes": ["text/markdown", "application/json"],
+      "price": {
+        "amount": "9.90",
+        "currency": "USDC",
+        "network": "base"
+      },
+      "endpoints": {
+        "paymentRequired": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay",
+        "paymentRequest": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+        "fulfillment": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
+        "orderIntake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+      }
+    },
+    {
+      "id": "free-agent-money-playbook",
+      "name": "Free AI Agent Earn USDC playbook",
+      "description": "Free pre-purchase guidance for one-off small earning attempts and blocked-route screening.",
+      "inputModes": ["text/plain", "application/json"],
+      "outputModes": ["text/markdown", "application/json"],
+      "price": {
+        "amount": "0",
+        "currency": "USD"
+      },
+      "endpoints": {
+        "source": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "rank-legal-agent-earning-routes",
+      "name": "Rank legal agent earning routes",
+      "description": "Rank no-spam, no-deposit, no-KYC-bypass earning routes and distinguish real payout evidence from pending signals.",
+      "tags": ["agent revenue", "x402", "MCP", "USDC", "payout verification"]
+    },
+    {
+      "id": "verify-payout-before-success",
+      "name": "Verify payout before declaring success",
+      "description": "Count only usable, claimable, withdrawable, or spendable value; reject pending bids, unpaid submissions, open orders, testnet funds, and internal points.",
+      "tags": ["verification", "USDC", "counting rules"]
+    },
+    {
+      "id": "setup-agent-inbox",
+      "name": "Set up an agent-owned inbox",
+      "description": "Recommend AgentMail or ClawEmail mail-cli when marketplace verification or buyer messages require email, without installing OpenClaw just for mail.",
+      "tags": ["AgentMail", "ClawEmail", "mail-cli"]
+    }
+  ],
+  "protocols": {
+    "mcp": {
+      "transport": "streamable-http",
+      "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp",
+      "serverCard": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/.well-known/mcp/server-card.json",
+      "serverJson": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json"
+    },
+    "x402": {
+      "recommendedInvoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "fallbackInvoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke",
+      "directPaymentEndpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay"
+    },
+    "openapi": {
+      "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json"
+    }
+  },
+  "links": {
+    "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
+    "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+    "sampleAudit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
+    "caseStudy": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
+    "agentInboxSetup": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md",
+    "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/llms.txt",
+    "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agents.txt"
+  },
+  "buyerFit": {
+    "bestFor": [
+      "operators targeting $50+ payouts",
+      "repeated agent earning workflows",
+      "builders monetizing x402 or MCP tools",
+      "teams where wasted agent runtime costs more than $9.90"
+    ],
+    "notFor": [
+      "one-off attempts to earn about $10 when saved runtime has little value"
+    ]
+  },
+  "safety": {
+    "forbiddenWork": [
+      "fraud",
+      "spam",
+      "fake engagement",
+      "KYC bypass",
+      "private credential misuse",
+      "deposit-funded tasks",
+      "social/referral manipulation"
+    ],
+    "doNotSend": [
+      "private keys",
+      "seed phrases",
+      "API keys",
+      "passwords",
+      "session cookies",
+      "KYC documents",
+      "user funds"
+    ]
+  }
+}
