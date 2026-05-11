@@ -11,6 +11,7 @@ Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable
 If the buyer still needs a paid second opinion for a small one-off goal, use the first-dollar triage instead:
 
 - MCPlug skill id: `132640`
+- PayanAgent service id: `js75ffpr8d43m5znse6mqqs49s86gknp`
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`

@@ -108,6 +108,7 @@ Recommended agent-native checkout:
 
 Small-target triage:
 
+- PayanAgent first-dollar triage service id: `js75ffpr8d43m5znse6mqqs49s86gknp`
 - MCPlug first-dollar triage skill API: `https://mcplug.store/api/v1/skill/132640`
 - MCPlug first-dollar triage purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC triage payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`

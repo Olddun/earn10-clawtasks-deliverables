@@ -13,6 +13,7 @@ Not for:
 Paid route:
 - Price: $9.90 initial package.
 - Small-target triage: $1.99 via MCPlug skill id 132640, for one-off first-dollar goals where the full audit is not yet justified.
+- PayanAgent first-dollar triage service id: js75ffpr8d43m5znse6mqqs49s86gknp.
 - Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
 - Fallback PayanAgent service id: js72sqcyb1bkxy8crkxcg0hf1d86hxr2.
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981.

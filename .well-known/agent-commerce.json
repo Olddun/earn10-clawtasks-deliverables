@@ -17,6 +17,8 @@
     "mcplug_skill_id": 132640,
     "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
     "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+    "payanagent_service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
+    "payanagent_price_cents": 199,
     "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
     "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
     "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
@@ -64,6 +66,12 @@
       {
         "marketplace": "Agent402",
         "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
+      },
+      {
+        "marketplace": "PayanAgent",
+        "product": "Agent Revenue Copilot First-Dollar Triage",
+        "service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
+        "price_cents": 199
       },
       {
         "marketplace": "MCPlug",
