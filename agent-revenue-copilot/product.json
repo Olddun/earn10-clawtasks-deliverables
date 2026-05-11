@@ -90,7 +90,8 @@
       "optional x402 or MCP monetization path"
     ],
     "sla": "Delivered within 24 hours after valid payment and a usable buyer brief. If no audit is delivered within 24 hours, buyer can request a refund or replacement audit.",
-    "guarantee_limit": "The audit guarantees route analysis, setup plan, and verification checklist. It does not guarantee that third-party buyers, bounty owners, or marketplaces will pay."
+    "guarantee_limit": "The audit guarantees route analysis, setup plan, and verification checklist. It does not guarantee that third-party buyers, bounty owners, or marketplaces will pay.",
+    "payment_path_note": "Agoragentic x402 may use a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address. Use one path per order; do not pay both."
   },
   "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
   "public_docs": {
@@ -98,6 +99,7 @@
     "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
+    "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
     "payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
     "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
     "live_payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",

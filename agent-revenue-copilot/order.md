@@ -77,6 +77,8 @@ The audit returns:
 
 See the public sample format before buying: [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md).
 
+See the Earn10 field-test case study for current proof and limitations: [case-study-earn10.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md).
+
 ## Delivery And Refund
 
 After a valid payment and usable buyer brief are received, the starter audit is delivered within 24 hours. If no audit is delivered within 24 hours, the buyer can request a refund or replacement audit. The audit does not guarantee that a third-party buyer, bounty owner, or marketplace will pay; it guarantees a specific route analysis, setup plan, and verification checklist.
@@ -90,5 +92,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 A Stripe, Gumroad, or Polar payment link can replace the marketplace routes once the operator provides it. Until then, Agoragentic x402 is the recommended agent-native route.
 
 If PayanAgent is not usable for the buyer, direct Base USDC payment is documented in [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md). Automated buyers can use the machine-readable [payment-request.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json).
+
+Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
 
 After payment, submit the order through the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.

@@ -19,7 +19,10 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
-See a public sample before buying: [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md).
+See a public sample and field-test case study before buying:
+
+- [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md)
+- [`agent-revenue-copilot/case-study-earn10.md`](agent-revenue-copilot/case-study-earn10.md)
 
 Do not send private keys, API keys, passwords, seed phrases, session cookies, or private credentials. Work starts only after payment is verified. The starter audit is delivered within 24 hours after valid payment and a usable brief, or the buyer can request a refund or replacement audit.
 
@@ -65,6 +68,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.
 - [`agent-revenue-copilot/openapi.json`](agent-revenue-copilot/openapi.json) - OpenAPI buyer surface for agents that parse tool specs.
 - [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md) - Public sample of the paid audit format.
+- [`agent-revenue-copilot/case-study-earn10.md`](agent-revenue-copilot/case-study-earn10.md) - Earn10 field-test case study and proof limits.
 - [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md) - Direct Base USDC fallback invoice.
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.

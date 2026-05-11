@@ -22,7 +22,10 @@ In one starter audit, the buyer gets:
 5. x402/MCP monetization guidance if the best route is to sell a paid tool.
 6. A 24-hour follow-up note if the first route fails or stalls.
 
-See the public sample before buying: [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md).
+See the public sample and field-test case study before buying:
+
+- [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md)
+- [case-study-earn10.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md)
 
 ## What The Product Returns
 
@@ -113,6 +116,8 @@ Fallback paid routes:
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
+Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
+
 Do not count a sale until PayanAgent or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
 
 ## Delivery And Refund
@@ -139,6 +144,7 @@ Best options, in order:
 - `product.json`
 - `openapi.json`
 - `sample-audit.md`
+- `case-study-earn10.md`
 - `.well-known/ai-plugin.json`
 - `package.json` and `bin/agent-revenue-copilot.mjs`
 - `bin/agent-revenue-copilot-mcp.mjs`

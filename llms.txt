@@ -18,7 +18,9 @@ Current initial package:
 - Service name: Agent Revenue Copilot starter audit - $9.90
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
+- Earn10 field-test case study: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
 - Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement.
+- Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - Live payment request: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json
@@ -33,6 +35,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md

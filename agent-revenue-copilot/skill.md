@@ -49,7 +49,9 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`.
 - Order file: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md`.
 - Public sample audit: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md`.
+- Earn10 field-test case study: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md`.
 - Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement.
+- Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Direct Base USDC invoice: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md`.
 - Product manifest: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json`.
 
@@ -89,6 +91,7 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Order instructions: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md`
 - Product manifest: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json`
 - Sample audit: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md`
+- Case study: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md`
 - Payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json`
 - OpenAPI buyer surface: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json`
 - Failure-path guide: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md`
