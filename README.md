@@ -23,6 +23,7 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - Fast agent buyer decision: [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md)
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
+- Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
 
 See a public sample and field-test case study before buying:
 

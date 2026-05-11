@@ -166,6 +166,7 @@
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"
   },
   "support": {
+    "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
     "github_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/1",
     "paid_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   }

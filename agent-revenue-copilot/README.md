@@ -133,6 +133,7 @@ Fallback paid routes:
 - UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
+- Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
 
