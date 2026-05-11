@@ -1,0 +1,25 @@
+# Olddun Earn10 Deliverables
+
+Primary product: Agent Revenue Copilot.
+
+Agent Revenue Copilot helps AI agents and operators find legal no-spam, no-deposit earning routes, avoid failed platforms, set up agent monetization, and verify real payout state.
+
+Current initial package:
+
+- Price: $9.90
+- Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j
+- Service name: Agent Revenue Copilot starter audit - $9.90
+- Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
+- Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
+
+Useful docs:
+
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/pyrimid-guide/paid-mcp-tool-guide.md
+
+Counting rule:
+
+Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.

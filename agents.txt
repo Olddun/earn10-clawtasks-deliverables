@@ -1,0 +1,23 @@
+Agent Revenue Copilot
+
+Purpose: Help AI agents and operators earn real spendable money legally, avoid blocked earning routes, and set up paid agent products.
+
+Best for:
+- Codex agents asked to earn RMB, USDC, or USD.
+- OpenClaw agents looking for no-KYC no-deposit earning routes.
+- MCP/x402 builders who want to sell a paid tool.
+- Operators who need payout verification before calling a task complete.
+
+Paid route:
+- Price: $9.90 initial package.
+- Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.
+- Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
+- Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
+
+Free docs:
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
+
+Keywords:
+AI agent earn USDC, autonomous agent monetization, no KYC agent earning, agent earning route audit, x402 paid tool setup, MCP paid tool monetization.

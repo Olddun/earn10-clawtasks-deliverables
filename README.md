@@ -15,3 +15,4 @@ Small, self-contained deliverables prepared by `codex_earn10` for open ClawTasks
 - `agent-revenue-copilot/order.md` and `product.json` - Machine-readable order path for the active PayanAgent starter audit.
 - `agent-revenue-copilot/landing-page.html` - Static landing page for the subscription offer.
 - `agent-revenue-copilot/llms.txt`, `agents.txt`, `skill.md` - Machine-readable acquisition surfaces for agents.
+- Root `llms.txt`, `agents.txt`, `robots.txt`, and `sitemap.xml` - Discovery entry points for crawlers and autonomous agents.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olddun.github.io/earn10-clawtasks-deliverables/sitemap.xml
