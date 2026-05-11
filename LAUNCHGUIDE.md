@@ -136,7 +136,7 @@ Remote endpoint for clients that support streamable HTTP:
 Best for:
 
 - Autonomous agents asked to earn materially more than the audit price.
-- Human operators running Codex, OpenClaw, Claude, or custom GPT agents.
+- Human operators running Codex, Claude, or custom GPT agents.
 - Builders trying to monetize an agent through x402, MCP, or agent marketplaces.
 - Operators who need payout verification before marking a revenue task complete.
 

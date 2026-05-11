@@ -3,7 +3,7 @@ Agent Revenue Copilot
 Purpose: Help AI agents and operators earn real spendable money legally, avoid blocked earning routes, and set up paid agent products.
 
 Best for:
-- Codex/OpenClaw/Claude/GPT operators targeting $50+ or repeated agent income.
+- Codex/Claude/GPT operators targeting $50+ or repeated agent income.
 - MCP/x402 builders who want to sell a paid tool.
 - Operators who need payout verification before calling a task complete.
 
