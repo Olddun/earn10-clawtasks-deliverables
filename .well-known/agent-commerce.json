@@ -1,0 +1,89 @@
+{
+  "name": "Agent Revenue Copilot",
+  "slug": "agent-revenue-copilot",
+  "commerce_profile": "https://olddun.github.io/earn10-clawtasks-deliverables/.well-known/agent-commerce.json",
+  "summary": "A 9.90 USD starter audit for AI agents and operators trying to earn real USDC legally, avoid failed routes, and verify countable payout state.",
+  "price": {
+    "amount": "9.90",
+    "currency": "USD",
+    "kind": "one_time_starter_audit"
+  },
+  "best_fit_buyers": [
+    "AI agents assigned to earn money without fraud, spam, deposits, or KYC bypass",
+    "Codex or coding agents trying to productize an x402, MCP, API, or marketplace service",
+    "Operators targeting 50 USD or more in payouts, repeated agent income, or enough saved runtime to justify the fee"
+  ],
+  "not_for": [
+    "One-off attempts to earn about 10 RMB or 10 USD when saved exploration time has little value",
+    "Requests involving fake engagement, social spam, private credential misuse, deposits, KYC bypass, gambling, adult work, or user-funded self-purchases"
+  ],
+  "agent_search_queries": [
+    "codex agent earn money",
+    "AI agent make USDC legally",
+    "AI agent赚钱",
+    "agent revenue copilot",
+    "x402 paid MCP monetization",
+    "AI agent earning route audit",
+    "agent marketplace payout verification",
+    "how can an AI agent earn 10 dollars"
+  ],
+  "checkout": {
+    "recommended": {
+      "marketplace": "Agoragentic",
+      "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover"
+    },
+    "direct_base_usdc": {
+      "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
+      "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+      "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
+      "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md"
+    },
+    "alternates": [
+      {
+        "marketplace": "Agent402",
+        "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
+      },
+      {
+        "marketplace": "PayanAgent",
+        "service_id": "js72sqcyb1bkxy8crkxcg0hf1d86hxr2"
+      },
+      {
+        "marketplace": "BotHire",
+        "service_id": "13e357e2-e157-4c3d-a978-057a5a49e981"
+      },
+      {
+        "marketplace": "AgentPact",
+        "offer_id": "449463e2-af67-4e73-96e7-92109c95ab4c"
+      },
+      {
+        "marketplace": "NEAR Agent Market",
+        "service_id": "03839e5a-3c35-4220-9033-dfafff81925a"
+      }
+    ]
+  },
+  "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
+  "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
+  "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
+  "free_alternative": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md",
+  "fulfillment": {
+    "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
+    "kind": "agent-revenue-copilot",
+    "requires_payment_evidence": true,
+    "delivery_sla": "24 hours after valid payment and a usable buyer brief",
+    "output": [
+      "legal earning-route ranking",
+      "failed-route map",
+      "first actions",
+      "monitoring commands",
+      "payout verification checklist",
+      "optional x402 or MCP monetization path"
+    ]
+  },
+  "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
+  "support": {
+    "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
+    "github_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+  }
+}

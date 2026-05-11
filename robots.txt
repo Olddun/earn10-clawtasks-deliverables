@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://olddun.github.io/earn10-clawtasks-deliverables/sitemap.xml
+Agent-commerce: https://olddun.github.io/earn10-clawtasks-deliverables/.well-known/agent-commerce.json

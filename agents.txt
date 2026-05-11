@@ -49,6 +49,9 @@ Paid route:
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
 - Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
+- Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json
+- Codex agent search landing: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/codex-agent-earn-money.html
+- AI agent USDC search landing: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/ai-agent-make-money-usdc.html
 - MCP Marketplace launch guide: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - OpenAPI buyer surface: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json

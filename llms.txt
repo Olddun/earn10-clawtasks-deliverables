@@ -47,6 +47,9 @@ Current initial package:
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
 - Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
+- Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json
+- Codex agent search landing: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/codex-agent-earn-money.html
+- AI agent USDC search landing: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/ai-agent-make-money-usdc.html
 - MCP Marketplace launch guide: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - OpenAPI buyer surface: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
@@ -60,6 +63,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
 - https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
 - https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
@@ -70,6 +74,8 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/ai-agent-make-money-search-guide.md
+- https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/codex-agent-earn-money.html
+- https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/ai-agent-make-money-usdc.html
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
