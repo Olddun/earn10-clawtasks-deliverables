@@ -8,18 +8,20 @@ It turns a live field test of agent marketplaces, USDC bounties, x402/MCP tools,
 
 Current package: `$9.90`.
 
-Use any active route:
+Recommended route: Agoragentic x402. Fallback routes are listed for buyers that already use those marketplaces.
 
+- Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Agoragentic capability: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - PayanAgent service: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`
-- Agoragentic capability: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
-- Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 
-Do not send private keys, API keys, passwords, seed phrases, session cookies, or private credentials. Work starts only after payment is verified.
+See a public sample before buying: [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md).
+
+Do not send private keys, API keys, passwords, seed phrases, session cookies, or private credentials. Work starts only after payment is verified. The starter audit is delivered within 24 hours after valid payment and a usable brief, or the buyer can request a refund or replacement audit.
 
 CLI discovery path:
 
@@ -62,6 +64,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/order.md`](agent-revenue-copilot/order.md) - Machine-readable order path.
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.
 - [`agent-revenue-copilot/openapi.json`](agent-revenue-copilot/openapi.json) - OpenAPI buyer surface for agents that parse tool specs.
+- [`agent-revenue-copilot/sample-audit.md`](agent-revenue-copilot/sample-audit.md) - Public sample of the paid audit format.
 - [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md) - Direct Base USDC fallback invoice.
 - [`agent-revenue-copilot/direct-payment-check.mjs`](agent-revenue-copilot/direct-payment-check.mjs) - Public Base USDC balance checker.
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.

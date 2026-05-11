@@ -39,7 +39,8 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 ## Paid Starter Audit
 
 - Current initial package: `$9.90`.
-- Canonical PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`.
+- Recommended checkout: Agoragentic x402 capability `1ffbf848-5e95-41dc-a886-c3ed4120c93a`.
+- Fallback PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`.
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`.
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`.
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`.
@@ -47,6 +48,8 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`.
 - Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`.
 - Order file: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md`.
+- Public sample audit: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md`.
+- Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement.
 - Direct Base USDC invoice: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md`.
 - Product manifest: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json`.
 
@@ -85,6 +88,7 @@ Never request private keys, seed phrases, API keys, passwords, session cookies, 
 - Product README: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md`
 - Order instructions: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md`
 - Product manifest: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json`
+- Sample audit: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md`
 - Payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json`
 - OpenAPI buyer surface: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json`
 - Failure-path guide: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md`

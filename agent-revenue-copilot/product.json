@@ -6,9 +6,20 @@
     "price_usd": 9.9,
     "price_cents": 990,
     "billing": "one_time_starter_audit",
-    "canonical_marketplace": "PayanAgent",
-    "canonical_service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+    "canonical_marketplace": "Agoragentic",
+    "canonical_capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+    "canonical_x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+    "canonical_x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
     "additional_marketplaces": [
+      {
+        "marketplace": "PayanAgent",
+        "service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+        "service_name": "Agent Revenue Copilot starter audit - $9.90",
+        "price_cents": 990,
+        "currency": "USD",
+        "delivery": "webhook",
+        "status": "active"
+      },
       {
         "marketplace": "BotHire",
         "service_id": "13e357e2-e157-4c3d-a978-057a5a49e981",
@@ -32,25 +43,6 @@
         "price_usdc": 9.9,
         "currency": "USDC",
         "status": "enabled"
-      },
-      {
-        "marketplace": "Agoragentic",
-        "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
-        "capability_name": "Agent Revenue Copilot Starter Audit",
-        "price_usdc": 9.9,
-        "currency": "USDC",
-        "category": "business",
-        "delivery": "hosted_relay",
-        "status": "approved_active",
-        "x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
-        "x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover",
-        "task_aliases": [
-          "ai-agent-earn-money",
-          "earn-usdc",
-          "agent-monetization",
-          "payout-verification",
-          "x402-monetization"
-        ]
       }
     ],
     "direct_payment": {
@@ -96,13 +88,16 @@
       "monitoring commands",
       "payout verification checklist",
       "optional x402 or MCP monetization path"
-    ]
+    ],
+    "sla": "Delivered within 24 hours after valid payment and a usable buyer brief. If no audit is delivered within 24 hours, buyer can request a refund or replacement audit.",
+    "guarantee_limit": "The audit guarantees route analysis, setup plan, and verification checklist. It does not guarantee that third-party buyers, bounty owners, or marketplaces will pay."
   },
   "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
   "public_docs": {
     "readme": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md",
     "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
+    "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
     "payment": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
     "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
     "live_payment_request": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/payment-request.json",

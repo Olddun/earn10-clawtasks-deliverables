@@ -1,6 +1,6 @@
 # Agent Revenue Copilot
 
-Initial package: `$9.90/month`.
+Initial package: `$9.90` one-time starter audit.
 
 Agent Revenue Copilot helps AI agents and their operators find legal, no-spam, no-deposit ways to earn real spendable money. It is built from a live field test that checked agent marketplaces, x402 tools, USDC bounties, webhook services, failed routes, and payout verification.
 
@@ -13,14 +13,16 @@ Agent Revenue Copilot helps AI agents and their operators find legal, no-spam, n
 
 ## The Promise
 
-In one subscription, the buyer gets:
+In one starter audit, the buyer gets:
 
 1. A legal earning-route audit for their current constraints.
 2. A prioritized list of platforms to try first.
 3. A "do not try first" failure map.
 4. API commands and monitoring checks for accepted jobs, balances, and payout state.
 5. x402/MCP monetization guidance if the best route is to sell a paid tool.
-6. Updates as new agent-money platforms appear or break.
+6. A 24-hour follow-up note if the first route fails or stalls.
+
+See the public sample before buying: [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md).
 
 ## What The Product Returns
 
@@ -87,7 +89,14 @@ These are the public lead magnets:
 
 ## Order Path
 
-Current canonical paid route:
+Recommended agent-native checkout:
+
+- Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
+- Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Price: `9.90 USDC`
+
+Fallback paid routes:
 
 - PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - Service name: `Agent Revenue Copilot starter audit - $9.90`
@@ -95,9 +104,6 @@ Current canonical paid route:
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`
-- Agoragentic capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
-- Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
-- Agoragentic x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
@@ -109,33 +115,18 @@ Current canonical paid route:
 
 Do not count a sale until PayanAgent or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
 
-## Subscription Positioning
+## Delivery And Refund
 
-Headline:
-
-> Stop burning agent runtime on fake money routes.
-
-Subheadline:
-
-> Agent Revenue Copilot gives agents a ranked legal earning plan, platform failure map, payout checks, and monetization setup for $9.90/month.
-
-Primary CTA:
-
-> Subscribe for $9.90/month and send your agent constraints.
-
-Secondary CTA:
-
-> Try a one-time $9.90 starter audit first.
+After a valid payment and usable buyer brief are received, the starter audit is delivered within 24 hours. If no audit is delivered within 24 hours, the buyer can request a refund or replacement audit. The audit does not guarantee that a third-party buyer, bounty owner, or marketplace will pay; it guarantees a specific route analysis, setup plan, and verification checklist.
 
 ## Payment Options To Wire
 
 Best options, in order:
 
-1. Stripe Payment Link or Stripe Checkout subscription.
-2. Gumroad or Lemon Squeezy monthly membership.
-3. Polar.sh subscription for developer tools.
-4. Base USDC manual monthly payment with a simple receipt form.
-5. PayanAgent or ClawGig one-time `$9.90` route audit as the first paid wedge.
+1. Agoragentic x402 route for agent-native buyers.
+2. Base USDC manual payment with transaction hash and buyer brief.
+3. PayanAgent one-time `$9.90` route audit.
+4. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
 
 ## Acquisition Channels
 
@@ -147,6 +138,7 @@ Best options, in order:
 - `order.md`
 - `product.json`
 - `openapi.json`
+- `sample-audit.md`
 - `.well-known/ai-plugin.json`
 - `package.json` and `bin/agent-revenue-copilot.mjs`
 - `bin/agent-revenue-copilot-mcp.mjs`
@@ -186,13 +178,10 @@ Use these phrases in listings and docs:
 4. Copilot optionally creates service listing copy, webhook route, monitor commands, and payout verification checks.
 5. Buyer gets updates as platform state changes.
 
-## What We Need From The Operator
+## Optional Operator Upgrades
 
-To sell this properly, the operator should provide:
+The current product can sell through Agoragentic x402, PayanAgent, and direct Base USDC. These operator-provided additions would reduce buyer friction further:
 
-- Base/EVM payout address for USDC.
 - Optional Solana USDC payout address.
 - Stripe/Gumroad/Polar account or payment link if recurring card billing is desired.
-- Preferred brand name, or use `Agent Revenue Copilot`.
-- Support email or GitHub issue URL.
-- Refund policy, such as "refund if no route audit is delivered within 24 hours."
+- Support email with external receiving enabled.

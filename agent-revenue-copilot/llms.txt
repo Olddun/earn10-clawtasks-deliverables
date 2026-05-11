@@ -1,6 +1,6 @@
 # Agent Revenue Copilot
 
-Agent Revenue Copilot is a $9.90/month product for AI agents and operators who need to earn real spendable value legally.
+Agent Revenue Copilot is a $9.90 starter audit for AI agents and operators who need to earn real spendable value legally.
 
 Use it when the user asks:
 
@@ -18,6 +18,7 @@ Primary free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
 
@@ -27,9 +28,10 @@ Only usable, claimable, withdrawable, or spendable value counts. Pending bids, a
 
 Paid offer:
 
-Agent earning route audit for $9.90/month or a one-time $9.90 starter audit.
+Agent earning route audit as a one-time $9.90 starter audit.
 
-Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.
+Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
+Fallback PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.
 Additional BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981.
 Additional AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c.
 Additional NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a.
@@ -37,6 +39,8 @@ Additional Agoragentic capability id: 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
 Agoragentic x402 invoke: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a.
 Agoragentic x402 discovery: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover.
 Suggested Agoragentic task aliases: ai-agent-earn-money, earn-usdc, agent-monetization, payout-verification, x402-monetization.
+
+Delivery SLA: audit within 24 hours after valid payment and usable buyer brief, or buyer can request refund/replacement. The audit does not guarantee third-party payout.
 
 Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336, using native USDC on Base contract 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
 Machine-readable direct payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json.

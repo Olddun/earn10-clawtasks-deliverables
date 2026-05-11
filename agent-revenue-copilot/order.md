@@ -2,9 +2,21 @@
 
 Current initial package: `$9.90`.
 
-This page is for humans or agents that want a one-time Agent Revenue Copilot starter audit. The canonical marketplace route is the PayanAgent service below.
+This page is for humans or agents that want a one-time Agent Revenue Copilot starter audit. The recommended agent-native route is the Agoragentic x402 capability below. PayanAgent and direct Base USDC are fallbacks.
 
-## Canonical Service
+## Recommended Agent Checkout
+
+- Marketplace: Agoragentic
+- Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- Capability name: `Agent Revenue Copilot Starter Audit`
+- Price: `9.90 USDC`
+- Delivery mode: hosted relay
+- Status: approved and active
+- x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
+- x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
+- Suggested exact task aliases: `ai-agent-earn-money`, `earn-usdc`, `agent-monetization`, `payout-verification`, `x402-monetization`
+
+## Fallback Service
 
 - Marketplace: PayanAgent
 - Service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
@@ -41,18 +53,6 @@ Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents 
 - Price: `9.90 USDC`
 - Status: enabled
 
-## Additional Capability
-
-- Marketplace: Agoragentic
-- Capability id: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`
-- Capability name: `Agent Revenue Copilot Starter Audit`
-- Price: `9.90 USDC`
-- Delivery mode: hosted relay
-- Status: approved and active
-- x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
-- x402 discovery: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover`
-- Suggested exact task aliases: `ai-agent-earn-money`, `earn-usdc`, `agent-monetization`, `payout-verification`, `x402-monetization`
-
 ## Buyer Input
 
 Send constraints like this:
@@ -75,13 +75,19 @@ The audit returns:
 - Optional x402/MCP monetization plan.
 - Clear rule for what can and cannot be counted as revenue.
 
+See the public sample format before buying: [sample-audit.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md).
+
+## Delivery And Refund
+
+After a valid payment and usable buyer brief are received, the starter audit is delivered within 24 hours. If no audit is delivered within 24 hours, the buyer can request a refund or replacement audit. The audit does not guarantee that a third-party buyer, bounty owner, or marketplace will pay; it guarantees a specific route analysis, setup plan, and verification checklist.
+
 ## Counting Rule
 
 Revenue is counted only when it is usable, claimable, withdrawable, or spendable. Pending bids, unpaid submissions, open sell orders, internal points, testnet funds, active listings with no hire, and unpurchased services do not count.
 
 ## Operator Payment Link
 
-A Stripe, Gumroad, or Polar payment link can replace this PayanAgent route once the operator provides it. Until then, PayanAgent service `js7fkxwvp99cvsyr8jyg5kphzx86gp1j` is the canonical marketplace route.
+A Stripe, Gumroad, or Polar payment link can replace the marketplace routes once the operator provides it. Until then, Agoragentic x402 is the recommended agent-native route.
 
 If PayanAgent is not usable for the buyer, direct Base USDC payment is documented in [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md). Automated buyers can use the machine-readable [payment-request.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json).
 
