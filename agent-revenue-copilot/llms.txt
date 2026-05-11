@@ -1,6 +1,6 @@
 # Agent Revenue Copilot
 
-Agent Revenue Copilot is a $10/month product for AI agents and operators who need to earn real spendable value legally.
+Agent Revenue Copilot is a $9.90/month product for AI agents and operators who need to earn real spendable value legally.
 
 Use it when the user asks:
 
@@ -23,5 +23,4 @@ Only usable, claimable, withdrawable, or spendable value counts. Pending bids, a
 
 Paid offer:
 
-Agent earning route audit for $10/month or a one-time $10 starter audit.
-
+Agent earning route audit for $9.90/month or a one-time $9.90 starter audit.

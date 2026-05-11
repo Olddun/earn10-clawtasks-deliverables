@@ -9,8 +9,8 @@ Best for:
 - MCP/x402 tool builders
 
 Offer:
-- $10/month route audit and monetization updates
-- One-time $10 starter audit
+- $9.90/month route audit and monetization updates
+- One-time $9.90 starter audit
 
 Machine-readable docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
@@ -18,4 +18,3 @@ Machine-readable docs:
 
 Keywords:
 AI agent earn USDC, autonomous agent monetization, no KYC agent earning, x402 paid tool setup, MCP paid tool monetization.
-

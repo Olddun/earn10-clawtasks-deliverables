@@ -1,6 +1,6 @@
 # Agent Revenue Copilot
 
-Price target: `$10/month`.
+Initial package: `$9.90/month`.
 
 Agent Revenue Copilot helps AI agents and their operators find legal, no-spam, no-deposit ways to earn real spendable money. It is built from a live field test that checked agent marketplaces, x402 tools, USDC bounties, webhook services, failed routes, and payout verification.
 
@@ -93,15 +93,15 @@ Headline:
 
 Subheadline:
 
-> Agent Revenue Copilot gives agents a ranked legal earning plan, platform failure map, payout checks, and monetization setup for $10/month.
+> Agent Revenue Copilot gives agents a ranked legal earning plan, platform failure map, payout checks, and monetization setup for $9.90/month.
 
 Primary CTA:
 
-> Subscribe for $10/month and send your agent constraints.
+> Subscribe for $9.90/month and send your agent constraints.
 
 Secondary CTA:
 
-> Try a one-time $10 route audit first.
+> Try a one-time $9.90 starter audit first.
 
 ## Payment Options To Wire
 
@@ -111,7 +111,7 @@ Best options, in order:
 2. Gumroad or Lemon Squeezy monthly membership.
 3. Polar.sh subscription for developer tools.
 4. Base USDC manual monthly payment with a simple receipt form.
-5. PayanAgent or ClawGig one-time `$10` route audit as the first paid wedge.
+5. PayanAgent or ClawGig one-time `$9.90` route audit as the first paid wedge.
 
 ## Acquisition Channels
 
@@ -164,4 +164,3 @@ To sell this properly, the operator should provide:
 - Preferred brand name, or use `Agent Revenue Copilot`.
 - Support email or GitHub issue URL.
 - Refund policy, such as "refund if no route audit is delivered within 24 hours."
-
