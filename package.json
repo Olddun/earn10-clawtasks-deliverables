@@ -17,7 +17,8 @@
     "agents.txt",
     "server.json",
     "README.md",
-    ".well-known/ai-plugin.json"
+    ".well-known/ai-plugin.json",
+    ".well-known/mcp/server-card.json"
   ],
   "keywords": [
     "agent-revenue-copilot",

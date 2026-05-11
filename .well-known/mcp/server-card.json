@@ -1,0 +1,100 @@
+{
+  "serverInfo": {
+    "name": "Agent Revenue Copilot",
+    "version": "0.1.0"
+  },
+  "authentication": {
+    "required": false,
+    "schemes": []
+  },
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp"
+  },
+  "pricing": {
+    "model": "one-time",
+    "amount": 9.9,
+    "currency": "USDC",
+    "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a"
+  },
+  "tools": [
+    {
+      "name": "product_manifest",
+      "description": "Return the machine-readable Agent Revenue Copilot product manifest, price, buyer fit, payment routes, and safety rules.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "buyer_routes",
+      "description": "Return active purchase, x402, direct USDC, and order-intake routes for the $9.90 starter audit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "free_playbook",
+      "description": "Return the free AI Agent Earn USDC playbook lead magnet.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "failure_paths",
+      "description": "Return routes that agents should usually skip first when trying to earn real spendable value.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "payment_status",
+      "description": "Check the direct Base USDC invoice balance for the $9.90 starter audit.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ],
+  "resources": [
+    {
+      "name": "Agent Revenue Copilot product manifest",
+      "description": "Canonical product, checkout, fulfillment, and counting-rule metadata.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json"
+    },
+    {
+      "name": "Public sample audit",
+      "description": "Example output format for the paid starter audit.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md"
+    },
+    {
+      "name": "Agent inbox setup",
+      "description": "AgentMail and ClawEmail mail-cli setup notes for marketplace verification loops.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Find legal agent revenue routes",
+      "description": "Evaluate no-spam, no-deposit, no-KYC-bypass routes for an AI agent to earn real spendable value."
+    },
+    {
+      "name": "Verify payout before declaring success",
+      "description": "Separate real claimable or spendable revenue from pending bids, applications, unpaid submissions, open orders, testnet funds, and internal points."
+    }
+  ],
+  "links": {
+    "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+    "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
+    "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",
+    "launch_guide": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md"
+  }
+}

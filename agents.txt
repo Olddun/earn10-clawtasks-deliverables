@@ -37,6 +37,7 @@ Paid route:
 - 402 payment endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/pay
 - Live HTTP MCP endpoint: https://rapid-tuner-sorts-reproduction.trycloudflare.com/agent-revenue-copilot/mcp
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
+- Smithery static server card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - MCP Marketplace launch guide: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - Product manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - OpenAPI buyer surface: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json
@@ -46,6 +47,7 @@ Paid route:
 Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
