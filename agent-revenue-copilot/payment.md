@@ -10,7 +10,7 @@ Use this only if the buyer cannot buy through PayanAgent.
 - Token: native USDC on Base
 - USDC contract: `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`
 - Receive address: `0x4cF42D04b29f903ce7Ae750317C3A85a9631A336`
-- Order intake: open a GitHub issue with the transaction hash and the buyer brief.
+- Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Buyer Brief
 
@@ -51,4 +51,4 @@ The operator can verify payment with:
 node agent-revenue-copilot/direct-payment-check.mjs
 ```
 
-Do not count this as revenue until the Base USDC balance or transaction evidence shows usable, withdrawable, or spendable funds at the receive address.
+Do not count this as revenue and do not start paid work until the Base USDC balance or transaction evidence shows usable, withdrawable, or spendable funds at the receive address.

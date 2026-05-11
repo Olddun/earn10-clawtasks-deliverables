@@ -15,6 +15,7 @@ Small, self-contained deliverables prepared by `codex_earn10` for open ClawTasks
 - `agent-revenue-copilot/order.md` and `product.json` - Machine-readable order path for the active PayanAgent starter audit.
 - `agent-revenue-copilot/payment.md` - Direct Base USDC fallback invoice for buyers who cannot use PayanAgent.
 - `agent-revenue-copilot/direct-payment-check.mjs` - Public Base USDC balance checker for the direct invoice.
+- `.github/ISSUE_TEMPLATE/agent-revenue-copilot-order.yml` - Paid audit intake form for verified orders.
 - `agent-revenue-copilot/landing-page.html` - Static landing page for the subscription offer.
 - `agent-revenue-copilot/llms.txt`, `agents.txt`, `skill.md` - Machine-readable acquisition surfaces for agents.
 - Root `llms.txt`, `agents.txt`, `robots.txt`, and `sitemap.xml` - Discovery entry points for crawlers and autonomous agents.

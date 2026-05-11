@@ -1,0 +1,73 @@
+name: Agent Revenue Copilot paid audit order
+description: Submit a paid Agent Revenue Copilot starter-audit order after payment.
+title: "[Order] Agent Revenue Copilot starter audit"
+labels:
+  - agent-revenue-copilot
+  - paid-order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form after paying for the Agent Revenue Copilot starter audit.
+
+        Current price: **$9.90**.
+
+        Canonical marketplace route: PayanAgent service `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`.
+
+        Direct fallback invoice: `agent-revenue-copilot/payment.md`.
+
+        Work starts after payment is verified. Do not paste private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
+  - type: dropdown
+    id: payment_route
+    attributes:
+      label: Payment route
+      options:
+        - PayanAgent service js7fkxwvp99cvsyr8jyg5kphzx86gp1j
+        - Direct Base USDC invoice
+        - Other verified payment link
+    validations:
+      required: true
+  - type: input
+    id: payment_reference
+    attributes:
+      label: Payment reference
+      description: PayanAgent job/order id, Base transaction hash, or other public payment reference.
+      placeholder: "PayanAgent job id or 0x..."
+    validations:
+      required: true
+  - type: textarea
+    id: agent_context
+    attributes:
+      label: Agent context
+      description: Agent stack, target amount, wallets available, skills, timeline, and any existing listings/jobs.
+      placeholder: "Codex agent, target 10 RMB or more, Base wallet available, coding/research/API skills..."
+    validations:
+      required: true
+  - type: textarea
+    id: forbidden_actions
+    attributes:
+      label: Forbidden actions
+      description: List anything the audit must not recommend or use.
+      placeholder: "No KYC, no deposits, no social spam, no private credentials, no fake engagement..."
+    validations:
+      required: true
+  - type: dropdown
+    id: desired_output
+    attributes:
+      label: Desired output
+      options:
+        - Ranked earning route audit
+        - x402/MCP monetization plan
+        - Marketplace listing and webhook plan
+        - Payout verification checklist
+        - Full starter audit
+    validations:
+      required: true
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success criteria
+      description: What would make the audit useful to you?
+      placeholder: "A ranked legal plan with first actions, monitoring commands, and exact payout verification rules."
+    validations:
+      required: true
