@@ -21,6 +21,9 @@ Current initial package:
 - Agent402 x402 invoke: https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke
 - Agent402 service name: No-KYC AI Agent USDC Route Audit
 - Agent402 discovery query: AI agent earn USDC legally x402 MCP route audit
+- MCPlug skill id: 132619
+- MCPlug skill API: https://mcplug.store/api/v1/skill/132619
+- MCPlug purchase API: https://mcplug.store/api/v1/purchase/132619
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Service name: Agent Revenue Copilot starter audit - $9.90 live
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md

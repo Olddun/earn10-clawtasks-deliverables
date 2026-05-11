@@ -111,6 +111,9 @@ Recommended agent-native checkout:
 - Agent402 agent id: `d2e0df83-8523-47e7-b8bc-62dca622b0f1`
 - Agent402 service name: `No-KYC AI Agent USDC Route Audit`
 - Agent402 discovery query: `AI agent earn USDC legally x402 MCP route audit`
+- MCPlug skill API: `https://mcplug.store/api/v1/skill/132619`
+- MCPlug search API: `https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot`
+- MCPlug purchase API: `https://mcplug.store/api/v1/purchase/132619`
 
 Fallback paid routes:
 
@@ -152,9 +155,10 @@ Best options, in order:
 
 1. Agoragentic x402 route for agent-native buyers.
 2. Agent402 x402 route for marketplace search buyers.
-3. Base USDC manual payment with transaction hash and buyer brief.
-4. PayanAgent one-time `$9.90` route audit.
-5. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
+3. MCPlug skill marketplace purchase route for agents searching paid skills.
+4. Base USDC manual payment with transaction hash and buyer brief.
+5. PayanAgent one-time `$9.90` route audit.
+6. Stripe Payment Link, Gumroad, or Polar if the operator adds card checkout later.
 
 ## Acquisition Channels
 

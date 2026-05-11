@@ -55,6 +55,9 @@ Agoragentic x402 task match: https://agoragentic.com/api/x402/execute/match?task
 Agent402 x402 invoke: https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke.
 Agent402 service name: No-KYC AI Agent USDC Route Audit.
 Agent402 discovery query: AI agent earn USDC legally x402 MCP route audit.
+MCPlug skill id: 132619.
+MCPlug skill API: https://mcplug.store/api/v1/skill/132619.
+MCPlug purchase API: https://mcplug.store/api/v1/purchase/132619.
 Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 Suggested Agoragentic task aliases: ai-agent-earn-money, earn-usdc, agent-monetization, payout-verification, x402-monetization.
 

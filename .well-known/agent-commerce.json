@@ -48,6 +48,15 @@
         "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
       },
       {
+        "marketplace": "MCPlug",
+        "skill_id": 132619,
+        "slug": "agent-revenue-copilot",
+        "price_cents": 990,
+        "skill_api": "https://mcplug.store/api/v1/skill/132619",
+        "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132619"
+      },
+      {
         "marketplace": "PayanAgent",
         "service_id": "js72sqcyb1bkxy8crkxcg0hf1d86hxr2"
       },

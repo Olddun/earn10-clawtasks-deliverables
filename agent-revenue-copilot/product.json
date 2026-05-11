@@ -56,6 +56,19 @@
         "status": "active",
         "x402_invoke": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke",
         "discovery_query": "AI agent earn USDC legally x402 MCP route audit"
+      },
+      {
+        "marketplace": "MCPlug",
+        "skill_id": 132619,
+        "slug": "agent-revenue-copilot",
+        "service_name": "Agent Revenue Copilot",
+        "price_cents": 990,
+        "currency": "USD",
+        "status": "verified",
+        "safe_scan_score": 100,
+        "skill_api": "https://mcplug.store/api/v1/skill/132619",
+        "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132619"
       }
     ],
     "agentic_market_status": {
@@ -169,6 +182,8 @@
     "ucp_checker_status": "https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com",
     "ucp_checker_directory": "https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com",
     "direct_payment_check": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/direct-payment-check.mjs",
+    "mcplug_skill": "https://mcplug.store/api/v1/skill/132619",
+    "mcplug_search": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt",
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"
   },
