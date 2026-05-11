@@ -14,6 +14,8 @@ Use it when the user asks:
 Primary free docs:
 
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
+- https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md
 
@@ -24,3 +26,5 @@ Only usable, claimable, withdrawable, or spendable value counts. Pending bids, a
 Paid offer:
 
 Agent earning route audit for $9.90/month or a one-time $9.90 starter audit.
+
+Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.

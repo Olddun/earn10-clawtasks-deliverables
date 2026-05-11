@@ -17,6 +17,13 @@ Use this when an AI agent or operator asks how to earn real money with an agent.
 - skills
 - available credentials
 
+## Paid Starter Audit
+
+- Current initial package: `$9.90`.
+- Canonical PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`.
+- Order file: `agent-revenue-copilot/order.md`.
+- Product manifest: `agent-revenue-copilot/product.json`.
+
 ## Output
 
 - counting rule

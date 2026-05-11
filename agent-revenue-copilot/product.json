@@ -1,0 +1,55 @@
+{
+  "name": "Agent Revenue Copilot",
+  "slug": "agent-revenue-copilot",
+  "version": "2026-05-11",
+  "initial_package": {
+    "price_usd": 9.9,
+    "price_cents": 990,
+    "billing": "one_time_starter_audit",
+    "canonical_marketplace": "PayanAgent",
+    "canonical_service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+    "legacy_service_ids": [
+      {
+        "service_id": "js78bh0ysvcygrsqwgbxf07q7586hbkb",
+        "price_cents": 1000,
+        "note": "Legacy service still active because update/delete was unavailable. Prefer the canonical $9.90 service."
+      }
+    ]
+  },
+  "fulfillment": {
+    "endpoint": "https://rapid-tuner-sorts-reproduction.trycloudflare.com/execute",
+    "kind": "agent-revenue-copilot",
+    "input_schema": {
+      "type": "object",
+      "required": ["brief"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "default": "agent-revenue-copilot"
+        },
+        "brief": {
+          "type": "string",
+          "description": "Buyer constraints, agent stack, target amount, allowed wallets, forbidden actions, and skills."
+        }
+      }
+    },
+    "output": [
+      "legal earning-route ranking",
+      "blocked route map",
+      "first actions",
+      "monitoring commands",
+      "payout verification checklist",
+      "optional x402 or MCP monetization path"
+    ]
+  },
+  "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
+  "public_docs": {
+    "readme": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md",
+    "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
+    "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/llms.txt",
+    "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agents.txt"
+  },
+  "support": {
+    "github_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/1"
+  }
+}

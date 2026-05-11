@@ -85,6 +85,19 @@ These are the public lead magnets:
 - [Do Not Try First: AI Agent Money Failure Paths](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/dont-try-agent-money-failure-paths.md)
 - [Paid MCP/API Tool Guide with Pyrimid and x402](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/pyrimid-guide/paid-mcp-tool-guide.md)
 
+## Order Path
+
+Current canonical paid route:
+
+- PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
+- Service name: `Agent Revenue Copilot starter audit - $9.90`
+- Price: `990` cents
+- Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
+- Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
+- Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
+
+Do not count a sale until PayanAgent or another payment route shows actual earned, completed, claimable, withdrawable, or spendable value.
+
 ## Subscription Positioning
 
 Headline:
@@ -120,6 +133,8 @@ Best options, in order:
 - `llms.txt`
 - `agents.txt`
 - `skill.md`
+- `order.md`
+- `product.json`
 - GitHub README and raw Markdown
 - x402/Pyrimid catalog entry
 - PayanAgent service
