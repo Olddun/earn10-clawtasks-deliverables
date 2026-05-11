@@ -22,6 +22,9 @@
     <loc>https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot</loc>
   </url>
   <url>
+    <loc>https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot</loc>
+  </url>
+  <url>
     <loc>https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json</loc>
   </url>
   <url>
