@@ -92,6 +92,7 @@ Current canonical paid route:
 - PayanAgent service id: `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`
 - Service name: `Agent Revenue Copilot starter audit - $9.90`
 - Price: `990` cents
+- BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)

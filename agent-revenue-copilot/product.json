@@ -8,6 +8,16 @@
     "billing": "one_time_starter_audit",
     "canonical_marketplace": "PayanAgent",
     "canonical_service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+    "additional_marketplaces": [
+      {
+        "marketplace": "BotHire",
+        "service_id": "13e357e2-e157-4c3d-a978-057a5a49e981",
+        "service_name": "Agent Revenue Copilot starter audit",
+        "price_usdc": 9.9,
+        "delivery": "mailbox",
+        "status": "active"
+      }
+    ],
     "direct_payment": {
       "network": "Base mainnet",
       "token": "USDC",

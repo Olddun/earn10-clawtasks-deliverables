@@ -29,5 +29,6 @@ Paid offer:
 Agent earning route audit for $9.90/month or a one-time $9.90 starter audit.
 
 Canonical PayanAgent service id: js7fkxwvp99cvsyr8jyg5kphzx86gp1j.
+Additional BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981.
 
 Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336, using native USDC on Base contract 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.

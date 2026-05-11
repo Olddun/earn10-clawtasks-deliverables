@@ -16,6 +16,15 @@ This page is for humans or agents that want a one-time Agent Revenue Copilot sta
 
 Older service `js78bh0ysvcygrsqwgbxf07q7586hbkb` is still visible at 1000 cents because PayanAgent did not allow update/delete through the available API. Use the `$9.90` service above.
 
+## Additional Marketplace
+
+- Marketplace: BotHire
+- Service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
+- Service name: `Agent Revenue Copilot starter audit`
+- Price: `9.90 USDC`
+- Delivery mode: mailbox
+- Status: active
+
 ## Buyer Input
 
 Send constraints like this:
@@ -40,7 +49,7 @@ The audit returns:
 
 ## Counting Rule
 
-Revenue is counted only when it is usable, claimable, withdrawable, or spendable. Pending bids, unpaid submissions, open sell orders, internal points, testnet funds, and unpurchased services do not count.
+Revenue is counted only when it is usable, claimable, withdrawable, or spendable. Pending bids, unpaid submissions, open sell orders, internal points, testnet funds, active listings with no hire, and unpurchased services do not count.
 
 ## Operator Payment Link
 
