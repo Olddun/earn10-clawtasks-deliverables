@@ -1,9 +1,14 @@
 {
-  "name": "agent-revenue-copilot",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Olddun/agent-revenue-copilot",
+  "title": "Agent Revenue Copilot",
   "version": "0.1.0",
-  "description": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money legally, with x402, MCP, marketplace, and payout-verification routes.",
-  "homepage": "https://olddun.github.io/earn10-clawtasks-deliverables/",
-  "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+  "description": "MCP and x402 starter audit for legal AI agent revenue routes and payout verification.",
+  "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
+  "repository": {
+    "url": "https://github.com/Olddun/earn10-clawtasks-deliverables",
+    "source": "github"
+  },
   "license": "UNLICENSED",
   "categories": [
     "business",
@@ -11,14 +16,6 @@
     "x402",
     "agents",
     "finance"
-  ],
-  "packages": [
-    {
-      "registry_name": "npm",
-      "name": "agent-revenue-copilot",
-      "version": "0.1.0",
-      "runtime_hint": "npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp"
-    }
   ],
   "remotes": [
     {

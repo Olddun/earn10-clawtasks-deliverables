@@ -1,6 +1,7 @@
 {
   "name": "agent-revenue-copilot",
   "version": "0.1.0",
+  "mcpName": "io.github.Olddun/agent-revenue-copilot",
   "description": "A $9.90 starter audit for AI agents and operators trying to earn real spendable money legally.",
   "type": "module",
   "bin": {
