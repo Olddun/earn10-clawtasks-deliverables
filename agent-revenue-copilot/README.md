@@ -115,6 +115,7 @@ Small-target triage:
 - Direct Base USDC triage payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
 - Live Base USDC triage payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
 - Live triage 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- x402 V2 direct-pay headers: `PAYMENT-REQUIRED`, `PAYMENT-SIGNATURE`, `PAYMENT-RESPONSE`; network `eip155:8453`.
 - Price: `$1.99`
 
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
@@ -160,6 +161,7 @@ Fallback paid routes:
 - UCP Checker status: `https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com`
 - UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
+- Direct 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay` returns x402 V2 `PAYMENT-REQUIRED` metadata for Base USDC on `eip155:8453`.
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 - Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
 

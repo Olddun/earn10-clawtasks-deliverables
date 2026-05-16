@@ -36,7 +36,17 @@
       "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json",
       "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-json",
       "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-json",
-      "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json"
+      "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json",
+      "x402_v2": {
+        "x402_version": 2,
+        "payment_required_header": "PAYMENT-REQUIRED",
+        "payment_signature_header": "PAYMENT-SIGNATURE",
+        "payment_response_header": "PAYMENT-RESPONSE",
+        "legacy_signature_header": "X-PAYMENT",
+        "network": "eip155:8453",
+        "facilitator": "https://x402.org/facilitator",
+        "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
+      }
     },
     "additional_marketplaces": [
       {
@@ -104,7 +114,17 @@
         "safe_scan_score": 100,
         "skill_api": "https://mcplug.store/api/v1/skill/132619",
         "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot",
-        "purchase_api": "https://mcplug.store/api/v1/purchase/132619"
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132619",
+        "x402_v2": {
+          "x402_version": 2,
+          "payment_required_header": "PAYMENT-REQUIRED",
+          "payment_signature_header": "PAYMENT-SIGNATURE",
+          "payment_response_header": "PAYMENT-RESPONSE",
+          "legacy_signature_header": "X-PAYMENT",
+          "network": "eip155:8453",
+          "facilitator": "https://x402.org/facilitator",
+          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+        }
       },
       {
         "marketplace": "MCPlug",
@@ -117,7 +137,17 @@
         "safe_scan_score": 100,
         "skill_api": "https://mcplug.store/api/v1/skill/132640",
         "search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
-        "purchase_api": "https://mcplug.store/api/v1/purchase/132640"
+        "purchase_api": "https://mcplug.store/api/v1/purchase/132640",
+        "x402_v2": {
+          "x402_version": 2,
+          "payment_required_header": "PAYMENT-REQUIRED",
+          "payment_signature_header": "PAYMENT-SIGNATURE",
+          "payment_response_header": "PAYMENT-RESPONSE",
+          "legacy_signature_header": "X-PAYMENT",
+          "network": "eip155:8453",
+          "facilitator": "https://x402.org/facilitator",
+          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
+        }
       }
     ],
     "payanagent_routing": {
@@ -200,7 +230,17 @@
     "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json",
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-json",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-json",
-    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json"
+    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json",
+    "x402_v2": {
+      "x402_version": 2,
+      "payment_required_header": "PAYMENT-REQUIRED",
+      "payment_signature_header": "PAYMENT-SIGNATURE",
+      "payment_response_header": "PAYMENT-RESPONSE",
+      "legacy_signature_header": "X-PAYMENT",
+      "network": "eip155:8453",
+      "facilitator": "https://x402.org/facilitator",
+      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+    }
   },
   "buyer_fit": {
     "best_for": [
@@ -352,5 +392,15 @@
   "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-json-top",
   "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json-top",
   "agent_native_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-json-top",
-  "card_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json-top"
+  "card_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json-top",
+  "x402_v2": {
+    "x402_version": 2,
+    "payment_required_header": "PAYMENT-REQUIRED",
+    "payment_signature_header": "PAYMENT-SIGNATURE",
+    "payment_response_header": "PAYMENT-RESPONSE",
+    "legacy_signature_header": "X-PAYMENT",
+    "network": "eip155:8453",
+    "facilitator": "https://x402.org/facilitator",
+    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+  }
 }

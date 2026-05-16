@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot First-Dollar Triage",
   "slug": "agent-revenue-copilot-first-dollar-triage",
-  "version": "2026-05-11",
+  "version": "0.1.17",
   "price": {
     "amount": "1.99",
     "currency": "USDC",
@@ -61,6 +61,73 @@
       "private credential misuse",
       "deposit-funded tasks",
       "social/referral manipulation"
+    ]
+  },
+  "x402Version": 2,
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "amount": "1990000",
+      "maxAmountRequired": "1990000",
+      "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+      "resource": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "description": "Agent Revenue Copilot first-dollar triage paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
+      "mimeType": "application/json",
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "ok",
+          "paid",
+          "product",
+          "next_steps"
+        ]
+      },
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      }
+    }
+  ],
+  "resource": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+  "x402_v2": {
+    "x402_version": 2,
+    "payment_required_header": "PAYMENT-REQUIRED",
+    "payment_signature_header": "PAYMENT-SIGNATURE",
+    "payment_response_header": "PAYMENT-RESPONSE",
+    "legacy_signature_header": "X-PAYMENT",
+    "network": "eip155:8453",
+    "facilitator": "https://x402.org/facilitator",
+    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
+  },
+  "x402_payment_required": {
+    "x402Version": 2,
+    "accepts": [
+      {
+        "scheme": "exact",
+        "network": "eip155:8453",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "amount": "1990000",
+        "maxAmountRequired": "1990000",
+        "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "resource": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+        "description": "Agent Revenue Copilot first-dollar triage paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
+        "mimeType": "application/json",
+        "outputSchema": {
+          "type": "object",
+          "required": [
+            "ok",
+            "paid",
+            "product",
+            "next_steps"
+          ]
+        },
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      }
     ]
   }
 }

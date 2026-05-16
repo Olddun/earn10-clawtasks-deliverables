@@ -12,7 +12,8 @@ Use this only if the buyer cannot buy through PayanAgent.
 - Receive address: `0x4cF42D04b29f903ce7Ae750317C3A85a9631A336`
 - Machine-readable request: [`triage-payment-request.json`](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json)
 - Live payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- 402-style payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- x402 V2 payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- x402 V2 headers: read `PAYMENT-REQUIRED`, send `PAYMENT-SIGNATURE`, read `PAYMENT-RESPONSE`; network `eip155:8453`.
 - Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Invoice
@@ -25,7 +26,8 @@ Use this only if the buyer cannot buy through PayanAgent.
 - Receive address: `0x4cF42D04b29f903ce7Ae750317C3A85a9631A336`
 - Machine-readable request: [`payment-request.json`](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json)
 - Live payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json`
-- 402-style payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay`
+- x402 V2 payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay`
+- x402 V2 headers: read `PAYMENT-REQUIRED`, send `PAYMENT-SIGNATURE`, read `PAYMENT-RESPONSE`; network `eip155:8453`.
 - Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Buyer Brief

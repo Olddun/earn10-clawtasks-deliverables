@@ -67,6 +67,7 @@ Paid route:
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
+- Direct x402 V2 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay returns PAYMENT-REQUIRED for Base USDC on eip155:8453.
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
 - Live payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json

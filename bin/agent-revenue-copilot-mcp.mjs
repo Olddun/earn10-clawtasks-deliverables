@@ -15,6 +15,8 @@ const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.co
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
+const X402_FACILITATOR_URL = "https://x402.org/facilitator";
+const BASE_CHAIN_CAIP2 = "eip155:8453";
 
 let inputBuffer = "";
 
@@ -238,10 +240,26 @@ function agentNativePaymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=agent_native_payment&source=${encodeURIComponent(source)}`;
 }
 
+function x402V2Config(offer) {
+  const isTriage = offer === "first_dollar_triage";
+  return {
+    x402_version: 2,
+    payment_required_header: "PAYMENT-REQUIRED",
+    payment_signature_header: "PAYMENT-SIGNATURE",
+    payment_response_header: "PAYMENT-RESPONSE",
+    legacy_signature_header: "X-PAYMENT",
+    network: BASE_CHAIN_CAIP2,
+    facilitator: X402_FACILITATOR_URL,
+    payment_required_endpoint: isTriage
+      ? `${LIVE_ORIGIN}/agent-revenue-copilot/triage/pay`
+      : `${LIVE_ORIGIN}/agent-revenue-copilot/pay`,
+  };
+}
+
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.16",
+    version: "0.1.17",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
     first_action: "Payment-ready buyer agents should call buy_now first and open agent_native_payment_action_url. Human/card buyers can use card_payment_action_url or purchase_bridge.",
@@ -260,6 +278,7 @@ function primaryPurchaseChoices() {
         recommended_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
+        x402_v2: x402V2Config("first_dollar_triage"),
         tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
         tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
         if_agent_cannot_pay: {
@@ -279,6 +298,7 @@ function primaryPurchaseChoices() {
         recommended_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
+        x402_v2: x402V2Config("starter_audit"),
         tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
         tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
         human_checkout: "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
@@ -331,6 +351,7 @@ function buyNow(product, input = {}) {
     agent_native_payment_action_url: agentNativePaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    x402_v2: x402V2Config(isTriage ? "first_dollar_triage" : "starter_audit"),
     use_this_first: true,
     fallback_only_if_unavailable: isTriage
       ? tracked("triage_mcplug", source)
@@ -673,7 +694,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.16",
+          version: "0.1.17",
         },
       },
     };
