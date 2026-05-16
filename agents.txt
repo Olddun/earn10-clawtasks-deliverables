@@ -55,6 +55,7 @@ Paid route:
 - 402 payment endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay
 - Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
 - Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse
+- MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_type, and constraints to choose free playbook, $1.99 triage, or $9.90 starter audit.
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json

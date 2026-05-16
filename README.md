@@ -59,7 +59,7 @@ MCP discovery path:
 }
 ```
 
-The MCP server exposes `product_manifest`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio.
+The MCP server exposes `product_manifest`, `route_triage`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit.
 
 Live HTTP MCP endpoint for directories and agent crawlers:
 

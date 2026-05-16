@@ -77,6 +77,7 @@ Live payment request: https://doctors-lighting-facial-admissions.trycloudflare.c
 402-style payment endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay.
 Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp.
 Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse.
+MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_type, and constraints to choose free playbook, $1.99 triage, or $9.90 starter audit.
 Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json.
 UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp.
 UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com.

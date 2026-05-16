@@ -30,6 +30,35 @@
       }
     },
     {
+      "name": "route_triage",
+      "description": "Recommend free playbook, $1.99 triage, or $9.90 starter audit based on the buyer's target and route type.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "target_usd": {
+            "type": "number",
+            "description": "Approximate target earning amount in USD, if known."
+          },
+          "goal": {
+            "type": "string",
+            "description": "Short description of the earning or monetization goal."
+          },
+          "route_type": {
+            "type": "string",
+            "description": "Examples: one_off, repeated_income, x402, mcp, marketplace, unknown."
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Known constraints such as no_kyc, no_deposit, no_social, no_user_funds."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
       "name": "buyer_routes",
       "description": "Return active purchase, x402, direct USDC, and order-intake routes for the $9.90 starter audit.",
       "inputSchema": {
