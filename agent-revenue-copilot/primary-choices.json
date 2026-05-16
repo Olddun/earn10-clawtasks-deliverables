@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
@@ -36,7 +36,7 @@
         "payment_response_header": "PAYMENT-RESPONSE",
         "legacy_signature_header": "X-PAYMENT",
         "network": "eip155:8453",
-        "facilitator": "https://x402.org/facilitator",
+        "facilitator": "https://facilitator.payai.network",
         "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
       }
     },
@@ -65,7 +65,7 @@
         "payment_response_header": "PAYMENT-RESPONSE",
         "legacy_signature_header": "X-PAYMENT",
         "network": "eip155:8453",
-        "facilitator": "https://x402.org/facilitator",
+        "facilitator": "https://facilitator.payai.network",
         "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
       }
     },

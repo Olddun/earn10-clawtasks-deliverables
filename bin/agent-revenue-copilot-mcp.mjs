@@ -15,7 +15,7 @@ const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.co
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
-const X402_FACILITATOR_URL = "https://x402.org/facilitator";
+const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
 
 let inputBuffer = "";
@@ -259,7 +259,7 @@ function x402V2Config(offer) {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.17",
+    version: "0.1.18",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
     first_action: "Payment-ready buyer agents should call buy_now first and open agent_native_payment_action_url. Human/card buyers can use card_payment_action_url or purchase_bridge.",
@@ -694,7 +694,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.17",
+          version: "0.1.18",
         },
       },
     };

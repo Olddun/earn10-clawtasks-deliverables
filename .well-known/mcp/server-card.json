@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.17"
+    "version": "0.1.18"
   },
   "authentication": {
     "required": false,
@@ -31,7 +31,7 @@
       "payment_response_header": "PAYMENT-RESPONSE",
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
-      "facilitator": "https://x402.org/facilitator",
+      "facilitator": "https://facilitator.payai.network",
       "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
     }
   },
@@ -354,7 +354,7 @@
     "payment_response_header": "PAYMENT-RESPONSE",
     "legacy_signature_header": "X-PAYMENT",
     "network": "eip155:8453",
-    "facilitator": "https://x402.org/facilitator",
+    "facilitator": "https://facilitator.payai.network",
     "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
   }
 }

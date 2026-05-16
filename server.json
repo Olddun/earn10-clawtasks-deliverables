@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -50,7 +50,7 @@
       "payment_response_header": "PAYMENT-RESPONSE",
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
-      "facilitator": "https://x402.org/facilitator",
+      "facilitator": "https://facilitator.payai.network",
       "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
     }
   },
@@ -302,7 +302,7 @@
     "payment_response_header": "PAYMENT-RESPONSE",
     "legacy_signature_header": "X-PAYMENT",
     "network": "eip155:8453",
-    "facilitator": "https://x402.org/facilitator",
+    "facilitator": "https://facilitator.payai.network",
     "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
   }
 }

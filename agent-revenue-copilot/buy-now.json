@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "If you are a payment-ready buyer agent, open starter_audit.agent_native_payment_action_url for $50+ targets, repeated income, or x402/MCP monetization. Open first_dollar_triage.agent_native_payment_action_url for small one-off targets. Human/card buyers can use card_payment_action_url or purchase_bridge.",
   "mcp_tool_equivalent": "buy_now",
@@ -22,7 +22,7 @@
       "payment_response_header": "PAYMENT-RESPONSE",
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
-      "facilitator": "https://x402.org/facilitator",
+      "facilitator": "https://facilitator.payai.network",
       "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
     }
   },
@@ -45,7 +45,7 @@
       "payment_response_header": "PAYMENT-RESPONSE",
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
-      "facilitator": "https://x402.org/facilitator",
+      "facilitator": "https://facilitator.payai.network",
       "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
     }
   },
