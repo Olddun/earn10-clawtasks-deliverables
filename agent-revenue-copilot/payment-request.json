@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
@@ -173,7 +173,7 @@
         }
       }
     ],
-    "buyer_instructions": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
+    "buyer_instructions": "Includes TypeScript and Python x402 SDK examples plus no-secrets rules.",
     "buyer_instruction_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
   },
   "buyer_instructions": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
@@ -241,6 +241,70 @@
       "KYC documents",
       "user funds"
     ],
-    "counting_rule": "Only a completed sale, x402 settlement, Base USDC transaction, marketplace receipt, assignment payout, or confirmed usable balance counts as revenue."
+    "counting_rule": "Only a completed sale, x402 settlement, Base USDC transaction, marketplace receipt, assignment payout, or confirmed usable balance counts as revenue.",
+    "sdk_quickstart": {
+      "typescript_fetch": {
+        "packages": [
+          "@x402/fetch",
+          "@x402/core",
+          "@x402/evm",
+          "viem"
+        ],
+        "env": [
+          "EVM_PRIVATE_KEY"
+        ],
+        "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+        "code": [
+          "import { wrapFetchWithPayment } from \"@x402/fetch\";",
+          "import { x402Client, x402HTTPClient } from \"@x402/core/client\";",
+          "import { ExactEvmScheme } from \"@x402/evm/exact/client\";",
+          "import { privateKeyToAccount } from \"viem/accounts\";",
+          "",
+          "const signer = privateKeyToAccount(process.env.EVM_PRIVATE_KEY);",
+          "const client = new x402Client();",
+          "client.register(\"eip155:*\", new ExactEvmScheme(signer));",
+          "const paidFetch = wrapFetchWithPayment(fetch, client);",
+          "const response = await paidFetch(\"https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay\", { method: \"GET\" });",
+          "const body = await response.json();",
+          "const payment = new x402HTTPClient(client).getPaymentSettleResponse((name) => response.headers.get(name));",
+          "console.log({ status: response.status, body, payment });"
+        ]
+      },
+      "python_httpx": {
+        "packages": [
+          "x402[httpx]",
+          "eth-account"
+        ],
+        "env": [
+          "EVM_PRIVATE_KEY"
+        ],
+        "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+        "code": [
+          "import asyncio, os",
+          "from eth_account import Account",
+          "from x402 import x402Client",
+          "from x402.http import x402HTTPClient",
+          "from x402.http.clients import x402HttpxClient",
+          "from x402.mechanisms.evm import EthAccountSigner",
+          "from x402.mechanisms.evm.exact.register import register_exact_evm_client",
+          "",
+          "async def main():",
+          "    client = x402Client()",
+          "    register_exact_evm_client(client, EthAccountSigner(Account.from_key(os.environ[\"EVM_PRIVATE_KEY\"])))",
+          "    async with x402HttpxClient(client) as http:",
+          "        response = await http.get(\"https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay\")",
+          "        await response.aread()",
+          "        payment = x402HTTPClient(client).get_payment_settle_response(lambda name: response.headers.get(name))",
+          "        print({\"status\": response.status_code, \"body\": response.text, \"payment\": payment})",
+          "",
+          "asyncio.run(main())"
+        ]
+      },
+      "rules": [
+        "Use only an explicitly authorized buyer wallet.",
+        "Do not paste or transmit private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or user funds.",
+        "Count revenue only after a settlement, receipt, transaction hash, marketplace receipt, assignment payout, or usable balance is verified."
+      ]
+    }
   }
 }

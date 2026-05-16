@@ -17,7 +17,7 @@ const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-delivera
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.19";
+const PRODUCT_VERSION = "0.1.20";
 
 let inputBuffer = "";
 
