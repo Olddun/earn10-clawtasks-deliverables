@@ -38,6 +38,8 @@ Paid route:
 - Live first-dollar triage 402 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay.
 - First-dollar triage sample: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md.
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
+- Static buy-now manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json
+- Live buy-now manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json
 - Static primary choices manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json
 - Live primary choices manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json
 - Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents

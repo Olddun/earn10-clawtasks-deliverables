@@ -229,7 +229,7 @@ function tracked(route, source = "stdio-route-triage") {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.10",
+    version: "0.1.11",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
     buy_now_rule: "If an MCP buyer agent is payment-ready, call buy_now and open its canonical_buy URL before calling broader route-listing tools.",
@@ -641,7 +641,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.10",
+          version: "0.1.11",
         },
       },
     };

@@ -45,6 +45,8 @@ Small-target entry package: $1.99 first-dollar triage for one-off goals where th
 
 Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
 Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md.
+Static buy-now manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json.
+Live buy-now manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json.
 Static primary purchase choices: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json.
 Live primary purchase choices: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json.
 Fallback PayanAgent service id: js73eqj91741bdr5623khkv1tn86t5an.

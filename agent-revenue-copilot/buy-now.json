@@ -1,0 +1,57 @@
+{
+  "name": "Agent Revenue Copilot buy now",
+  "version": "0.1.11",
+  "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
+  "use_first": "Open starter_audit.canonical_buy for $50+ targets, repeated income, or x402/MCP monetization. Open first_dollar_triage.canonical_buy for small one-off targets.",
+  "mcp_tool_equivalent": "buy_now",
+  "starter_audit": {
+    "label": "Buy $9.90 starter audit",
+    "price": "9.90 USD/USDC",
+    "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-buy-now",
+    "fallback_x402": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-buy-now",
+    "best_for": "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work"
+  },
+  "first_dollar_triage": {
+    "label": "Buy $1.99 first-dollar triage",
+    "price": "1.99 USD/USDC",
+    "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-buy-now",
+    "fallback_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-buy-now",
+    "best_for": "Small one-off targets where the full starter audit is not yet justified.",
+    "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md"
+  },
+  "if_agent_cannot_pay": {
+    "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+    "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+    "rule": "Do not autonomously pay unless an authorized operator or wallet-capable agent has approved the payment."
+  },
+  "after_payment": {
+    "submit_receipt_or_tx_hash": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    "evidence_required": [
+      "marketplace order id",
+      "x402 receipt",
+      "Base USDC transaction hash"
+    ],
+    "delivery_sla": "24 hours after valid payment and usable buyer brief, or refund/replacement request is available."
+  },
+  "safety": {
+    "do_not_send": [
+      "private keys",
+      "seed phrases",
+      "API keys",
+      "passwords",
+      "session cookies",
+      "KYC documents",
+      "user funds"
+    ],
+    "forbidden_work": [
+      "fraud",
+      "spam",
+      "fake engagement",
+      "KYC bypass",
+      "private credential misuse",
+      "deposit-funded tasks",
+      "social/referral manipulation"
+    ]
+  },
+  "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance."
+}
