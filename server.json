@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.11",
-  "description": "MCP and x402 starter audit for legal AI agent revenue routes and payout verification.",
+  "version": "0.1.12",
+  "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
     "url": "https://github.com/Olddun/earn10-clawtasks-deliverables",
@@ -40,6 +40,7 @@
     "fallback_checkout": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
   },
   "conversion": {
+    "first_action": "Payment-ready buyer agents should call buy_now first or open canonical_buy_starter_audit / canonical_buy_triage.",
     "buy_now_tool": "buy_now",
     "buy_now_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json",
     "live_buy_now_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json",
@@ -47,6 +48,8 @@
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "canonical_buy_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=server-json",
     "canonical_buy_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=server-json",
+    "next_mcp_tool": "buy_now",
+    "diagnostic_tool": "checkout_diagnostics",
     "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
     "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
     "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
