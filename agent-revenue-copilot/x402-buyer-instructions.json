@@ -1,0 +1,142 @@
+{
+  "name": "Agent Revenue Copilot x402 buyer instructions",
+  "version": "0.1.19",
+  "purpose": "Machine-readable payment steps for authorized wallet-capable buyer agents.",
+  "starter_audit": {
+    "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+    "summary": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
+    "authorized_payment_only": true,
+    "do_not_use_user_funds_without_authorization": true,
+    "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+    "offer": "starter_audit",
+    "amount": "9.90",
+    "payment_requirement": {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "amount": "9900000",
+      "maxAmountRequired": "9900000",
+      "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+      "resource": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+      "description": "Agent Revenue Copilot starter audit paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
+      "mimeType": "application/json",
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "ok",
+          "paid",
+          "product",
+          "next_steps"
+        ]
+      },
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      }
+    },
+    "steps": [
+      {
+        "step": "request_payment_requirements",
+        "action": "GET https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+        "expect": "HTTP 402 with PAYMENT-REQUIRED header containing base64 JSON."
+      },
+      {
+        "step": "create_payment_payload",
+        "action": "Decode PAYMENT-REQUIRED. Use an x402 client SDK with an authorized buyer wallet, EVM exact scheme, network eip155:8453, and the returned accepts[0] requirement.",
+        "require_operator_authorization": true
+      },
+      {
+        "step": "retry_with_signature",
+        "action": "GET https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
+        "expect": "HTTP 200 with PAYMENT-RESPONSE after facilitator verify/settle, or HTTP 402 with structured error details.",
+        "header": "PAYMENT-SIGNATURE"
+      },
+      {
+        "step": "submit_order_context",
+        "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
+        "url": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+      }
+    ],
+    "no_secrets": [
+      "private keys",
+      "seed phrases",
+      "API keys",
+      "passwords",
+      "session cookies",
+      "KYC documents",
+      "user funds"
+    ],
+    "counting_rule": "Only a completed sale, x402 settlement, Base USDC transaction, marketplace receipt, assignment payout, or confirmed usable balance counts as revenue."
+  },
+  "first_dollar_triage": {
+    "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+    "summary": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
+    "authorized_payment_only": true,
+    "do_not_use_user_funds_without_authorization": true,
+    "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+    "offer": "first_dollar_triage",
+    "amount": "1.99",
+    "payment_requirement": {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "amount": "1990000",
+      "maxAmountRequired": "1990000",
+      "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+      "resource": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "description": "Agent Revenue Copilot first-dollar triage paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
+      "mimeType": "application/json",
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "ok",
+          "paid",
+          "product",
+          "next_steps"
+        ]
+      },
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      }
+    },
+    "steps": [
+      {
+        "step": "request_payment_requirements",
+        "action": "GET https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+        "expect": "HTTP 402 with PAYMENT-REQUIRED header containing base64 JSON."
+      },
+      {
+        "step": "create_payment_payload",
+        "action": "Decode PAYMENT-REQUIRED. Use an x402 client SDK with an authorized buyer wallet, EVM exact scheme, network eip155:8453, and the returned accepts[0] requirement.",
+        "require_operator_authorization": true
+      },
+      {
+        "step": "retry_with_signature",
+        "action": "GET https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
+        "expect": "HTTP 200 with PAYMENT-RESPONSE after facilitator verify/settle, or HTTP 402 with structured error details.",
+        "header": "PAYMENT-SIGNATURE"
+      },
+      {
+        "step": "submit_order_context",
+        "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
+        "url": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+      }
+    ],
+    "no_secrets": [
+      "private keys",
+      "seed phrases",
+      "API keys",
+      "passwords",
+      "session cookies",
+      "KYC documents",
+      "user funds"
+    ],
+    "counting_rule": "Only a completed sale, x402 settlement, Base USDC transaction, marketplace receipt, assignment payout, or confirmed usable balance counts as revenue."
+  },
+  "source_docs": [
+    "https://docs.x402.org/core-concepts/http-402",
+    "https://docs.x402.org/guides/mcp-server-with-x402",
+    "https://docs.x402.org/getting-started/quickstart-for-buyers"
+  ]
+}

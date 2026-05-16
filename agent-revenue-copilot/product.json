@@ -45,7 +45,8 @@
         "legacy_signature_header": "X-PAYMENT",
         "network": "eip155:8453",
         "facilitator": "https://facilitator.payai.network",
-        "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
+        "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+        "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
       }
     },
     "additional_marketplaces": [
@@ -123,7 +124,8 @@
           "legacy_signature_header": "X-PAYMENT",
           "network": "eip155:8453",
           "facilitator": "https://facilitator.payai.network",
-          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+          "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
         }
       },
       {
@@ -146,7 +148,8 @@
           "legacy_signature_header": "X-PAYMENT",
           "network": "eip155:8453",
           "facilitator": "https://facilitator.payai.network",
-          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay"
+          "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+          "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
         }
       }
     ],
@@ -239,7 +242,8 @@
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
       "facilitator": "https://facilitator.payai.network",
-      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+      "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
     }
   },
   "buyer_fit": {
@@ -401,6 +405,7 @@
     "legacy_signature_header": "X-PAYMENT",
     "network": "eip155:8453",
     "facilitator": "https://facilitator.payai.network",
-    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+    "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
   }
 }

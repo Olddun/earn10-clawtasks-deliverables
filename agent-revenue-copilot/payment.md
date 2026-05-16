@@ -15,6 +15,7 @@ Use this only if the buyer cannot buy through PayanAgent.
 - x402 V2 payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - x402 V2 headers: read `PAYMENT-REQUIRED`, send `PAYMENT-SIGNATURE`, read `PAYMENT-RESPONSE`; network `eip155:8453`.
 - Production facilitator: `https://facilitator.payai.network`.
+- Buyer-agent instructions: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json`
 - Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Invoice
@@ -30,6 +31,7 @@ Use this only if the buyer cannot buy through PayanAgent.
 - x402 V2 payment endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay`
 - x402 V2 headers: read `PAYMENT-REQUIRED`, send `PAYMENT-SIGNATURE`, read `PAYMENT-RESPONSE`; network `eip155:8453`.
 - Production facilitator: `https://facilitator.payai.network`.
+- Buyer-agent instructions: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json`
 - Order intake: open the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml) with the transaction hash and buyer brief.
 
 ## Buyer Brief

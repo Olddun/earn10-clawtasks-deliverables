@@ -239,6 +239,24 @@
           }
         }
       }
+    },
+    "/agent-revenue-copilot/x402-buyer-instructions.json": {
+      "get": {
+        "summary": "Get x402 buyer instructions for authorized payment-ready agents",
+        "operationId": "getX402BuyerInstructions",
+        "responses": {
+          "200": {
+            "description": "Machine-readable x402 payment steps and safety constraints",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {

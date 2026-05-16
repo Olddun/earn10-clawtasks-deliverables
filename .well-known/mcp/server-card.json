@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.18"
+    "version": "0.1.19"
   },
   "authentication": {
     "required": false,
@@ -32,7 +32,8 @@
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
       "facilitator": "https://facilitator.payai.network",
-      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+      "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
     }
   },
   "first_action": "Payment-ready buyer agents should call buy_now first and open agent_native_payment_action_url. Human/card buyers can use card_payment_action_url or purchase_bridge.",
@@ -355,6 +356,7 @@
     "legacy_signature_header": "X-PAYMENT",
     "network": "eip155:8453",
     "facilitator": "https://facilitator.payai.network",
-    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay"
+    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+    "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json"
   }
 }

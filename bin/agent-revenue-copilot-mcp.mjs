@@ -17,6 +17,7 @@ const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-delivera
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
+const PRODUCT_VERSION = "0.1.19";
 
 let inputBuffer = "";
 
@@ -253,13 +254,14 @@ function x402V2Config(offer) {
     payment_required_endpoint: isTriage
       ? `${LIVE_ORIGIN}/agent-revenue-copilot/triage/pay`
       : `${LIVE_ORIGIN}/agent-revenue-copilot/pay`,
+    buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
   };
 }
 
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.18",
+    version: PRODUCT_VERSION,
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
     first_action: "Payment-ready buyer agents should call buy_now first and open agent_native_payment_action_url. Human/card buyers can use card_payment_action_url or purchase_bridge.",
@@ -352,6 +354,7 @@ function buyNow(product, input = {}) {
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     x402_v2: x402V2Config(isTriage ? "first_dollar_triage" : "starter_audit"),
+    x402_buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
     use_this_first: true,
     fallback_only_if_unavailable: isTriage
       ? tracked("triage_mcplug", source)
@@ -694,7 +697,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.18",
+          version: PRODUCT_VERSION,
         },
       },
     };

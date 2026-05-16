@@ -84,6 +84,7 @@ Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to addr
 
 Direct Base USDC fallback: 9.90 USDC to 0x4cF42D04b29f903ce7Ae750317C3A85a9631A336, using native USDC on Base contract 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
 Direct x402 V2 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay returns PAYMENT-REQUIRED for Base USDC on eip155:8453.
+x402 buyer instructions: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json.
 Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html.
 Machine-readable direct payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json.
 Live payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json.
