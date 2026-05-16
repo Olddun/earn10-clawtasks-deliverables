@@ -62,6 +62,12 @@
       "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
       "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html"
     },
+    "operator_handoff": {
+      "checkout_diagnostics": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=agent-commerce",
+      "docs": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
+      "use_when": "Buyer agent can inspect checkout but needs an authorized operator or wallet-capable agent to approve exactly one payment path.",
+      "one_path_rule": "Do not pay both marketplace/x402 and direct Base USDC for the same buyer brief."
+    },
     "alternates": [
       {
         "marketplace": "Agent402",

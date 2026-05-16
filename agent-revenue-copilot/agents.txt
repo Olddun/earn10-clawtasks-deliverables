@@ -43,6 +43,7 @@ Offer:
 - MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_type, and constraints to choose free playbook, $1.99 triage, or $9.90 starter audit.
 - MCP checkout tool: checkout_diagnostics. Call it after route_triage when a buyer agent can see checkout routes but needs exactly one payment path, operator handoff text, and payment evidence requirements.
 - Checkout diagnostics doc: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md
+- Tracked checkout diagnostics handoff: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-agents
 - UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp
 - UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
 - UCP Checker directory search: https://ucpchecker.com/directory?search=doctors-lighting-facial-admissions.trycloudflare.com

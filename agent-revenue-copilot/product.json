@@ -171,6 +171,12 @@
       "sse_mcp_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse",
       "sse_mcp_message_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/messages"
     },
+    "operator_handoff": {
+      "checkout_diagnostics": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-json",
+      "docs": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
+      "use_when": "Buyer agent can inspect checkout but needs an authorized operator or wallet-capable agent to approve exactly one payment path.",
+      "one_path_rule": "Do not pay both marketplace/x402 and direct Base USDC for the same buyer brief."
+    },
     "legacy_service_ids": [
       {
         "service_id": "js78bh0ysvcygrsqwgbxf07q7586hbkb",
