@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.6"
+    "version": "0.1.7"
   },
   "authentication": {
     "required": false,
@@ -232,6 +232,11 @@
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md"
     },
     {
+      "name": "No-login buyer intent form",
+      "description": "Human-readable form for recording non-secret purchase interest or checkout blockers.",
+      "uri": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
+    },
+    {
       "name": "Agent inbox setup",
       "description": "AgentMail and ClawEmail mail-cli setup notes for marketplace verification loops.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md"
@@ -251,6 +256,7 @@
     "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
     "operator_handoff": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+    "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
     "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",

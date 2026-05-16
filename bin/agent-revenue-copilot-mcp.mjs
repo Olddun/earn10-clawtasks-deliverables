@@ -14,6 +14,7 @@ const TARGET_USDC = 9.9;
 const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.com";
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
+const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
 
 let inputBuffer = "";
 
@@ -208,7 +209,7 @@ function tracked(route, source = "stdio-route-triage") {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.6",
+    version: "0.1.7",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     choices: [
       {
@@ -237,6 +238,7 @@ function primaryPurchaseChoices() {
         tracked_operator_approval: tracked("operator_approval_request", "stdio-primary-choice"),
         operator_handoff_page: OPERATOR_HANDOFF_URL,
         buyer_intent_endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/intent`,
+        buyer_intent_form: BUYER_INTENT_FORM_URL,
         not_revenue: true,
         not_paid_order: true,
       },
@@ -537,7 +539,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.6",
+          version: "0.1.7",
         },
       },
     };

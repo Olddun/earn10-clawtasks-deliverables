@@ -65,6 +65,7 @@ Current initial package:
 - No-login operator handoff page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=llms
 - GitHub operator approval issue: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=llms
 - Buyer intent intake: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent
+- No-login buyer intent form: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html
 - Buyer intent docs: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
@@ -95,6 +96,7 @@ Useful docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md
 - https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md
+- https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json

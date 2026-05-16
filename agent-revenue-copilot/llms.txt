@@ -90,6 +90,7 @@ No-login operator handoff page: https://doctors-lighting-facial-admissions.trycl
 GitHub operator approval issue: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=product-llms
 Operator handoff page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html
 Buyer intent intake: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent
+No-login buyer intent form: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html
 Buyer intent docs: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md
 Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json.
 UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp.
