@@ -20,8 +20,8 @@
     "payanagent_service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
     "payanagent_price_cents": 199,
     "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
-    "live_direct_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-    "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
+    "live_direct_payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+    "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
     "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
     "details": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md"
   },
@@ -53,12 +53,12 @@
     },
     "direct_base_usdc": {
       "payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json",
-      "live_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json",
-      "payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay",
+      "live_payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+      "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
       "triage_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
-      "live_triage_payment_request": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-      "triage_payment_required_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay",
-      "sse_mcp_endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
+      "live_triage_payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "triage_payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "sse_mcp_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse",
       "instructions": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md",
       "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html"
     },
@@ -115,7 +115,7 @@
   "case_study": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
   "free_alternative": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md",
   "fulfillment": {
-    "endpoint": "https://defining-maps-accomplished-test.trycloudflare.com/execute",
+    "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",
     "requires_payment_evidence": true,
     "delivery_sla": "24 hours after valid payment and a usable buyer brief",

@@ -9,9 +9,9 @@
   },
   "transport": {
     "type": "streamable-http",
-    "url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp",
-    "sse_compatible_url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse",
-    "sse_message_url": "https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/messages"
+    "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp",
+    "sse_compatible_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse",
+    "sse_message_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/messages"
   },
   "pricing": {
     "model": "one-time",
