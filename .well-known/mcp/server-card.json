@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.1"
+    "version": "0.1.2"
   },
   "authentication": {
     "required": false,
@@ -88,6 +88,39 @@
           "target_usd": {
             "type": "number",
             "description": "Approximate buyer target value in USD, if known."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "operator_approval_request",
+      "description": "Generate a copy-ready operator approval request for agents that can inspect checkout but cannot pay autonomously.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "requested_route": {
+            "type": "string",
+            "description": "Preferred route: agoragentic_x402, agent402, direct_base_usdc, mcplug_triage, direct_triage_usdc, or free_playbook."
+          },
+          "target_usd": {
+            "type": "number",
+            "description": "Approximate buyer target value in USD, if known."
+          },
+          "agent_stack": {
+            "type": "string",
+            "description": "Agent/operator stack, for example Codex, Claude, custom MCP agent, or browser agent."
+          },
+          "current_blocker": {
+            "type": "string",
+            "description": "Why the agent needs operator approval or payment help."
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Safety or route constraints such as no_kyc, no_deposit, no_social, no_user_funds."
           }
         },
         "additionalProperties": false

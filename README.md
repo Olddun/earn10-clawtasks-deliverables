@@ -59,7 +59,7 @@ MCP discovery path:
 }
 ```
 
-The MCP server exposes `product_manifest`, `route_triage`, `checkout_diagnostics`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit. Use `checkout_diagnostics` next when the agent can see checkout routes but needs a one-path payment recommendation, operator handoff text, and evidence requirements. If the agent cannot pay, send the operator approval request before any payment and submit the paid-order form only after a receipt or transaction hash exists.
+The MCP server exposes `product_manifest`, `route_triage`, `checkout_diagnostics`, `operator_approval_request`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit. Use `checkout_diagnostics` next when the agent can see checkout routes but needs a one-path payment recommendation, operator handoff text, and evidence requirements. If the agent cannot pay, call `operator_approval_request` to generate a copy-ready prepayment approval request, then submit the paid-order form only after a receipt or transaction hash exists.
 
 Live HTTP MCP endpoint for directories and agent crawlers:
 

@@ -151,6 +151,21 @@ const tools = [
     },
   },
   {
+    name: "operator_approval_request",
+    description: "Generate a copy-ready operator approval request for agents that can inspect checkout but cannot pay autonomously.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        requested_route: { type: "string", description: "Preferred route: agoragentic_x402, agent402, direct_base_usdc, mcplug_triage, direct_triage_usdc, or free_playbook." },
+        target_usd: { type: "number", description: "Approximate buyer target value in USD, if known." },
+        agent_stack: { type: "string", description: "Agent/operator stack, for example Codex, Claude, custom MCP agent, or browser agent." },
+        current_blocker: { type: "string", description: "Why the agent needs operator approval or payment help." },
+        constraints: { type: "array", items: { type: "string" }, description: "Safety or route constraints such as no_kyc, no_deposit, no_social, no_user_funds." },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
     name: "free_playbook",
     description: "Return the free AI Agent Earn USDC playbook lead magnet.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
@@ -329,6 +344,71 @@ function checkoutDiagnostics(product, input = {}) {
   };
 }
 
+function operatorApprovalRequest(input = {}) {
+  const routes = {
+    agoragentic_x402: {
+      label: "Agoragentic x402 starter audit - 9.90 USD",
+      tracked_url: tracked("audit_agoragentic", "stdio-operator-approval"),
+    },
+    agent402: {
+      label: "Agent402 starter audit - 9.90 USD",
+      tracked_url: tracked("audit_agent402", "stdio-operator-approval"),
+    },
+    direct_base_usdc: {
+      label: "Direct Base USDC starter audit - 9.90 USDC",
+      tracked_url: tracked("audit_payment_json", "stdio-operator-approval"),
+    },
+    mcplug_triage: {
+      label: "MCPlug first-dollar triage - 1.99 USD",
+      tracked_url: tracked("triage_mcplug", "stdio-operator-approval"),
+    },
+    direct_triage_usdc: {
+      label: "Direct Base USDC first-dollar triage - 1.99 USDC",
+      tracked_url: tracked("triage_payment_json", "stdio-operator-approval"),
+    },
+    free_playbook: {
+      label: "Use free playbook first",
+      tracked_url: "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-money/README.md",
+    },
+  };
+  const routeKey = routes[input.requested_route] ? input.requested_route : "agoragentic_x402";
+  const route = routes[routeKey];
+  const constraints = Array.isArray(input.constraints) && input.constraints.length
+    ? input.constraints.join(", ")
+    : "no KYC bypass, no deposits, no social spam, no private credentials, no user funds";
+  const target = input.target_usd ? `$${input.target_usd}` : "not specified";
+  const stack = String(input.agent_stack || "not specified").replace(/\s+/g, " ").slice(0, 160);
+  const blocker = String(input.current_blocker || "agent can inspect checkout routes but cannot autonomously pay").replace(/\s+/g, " ").slice(0, 240);
+
+  return {
+    ok: true,
+    type: "prepayment_operator_approval_request",
+    not_a_paid_order: true,
+    recommended_route: {
+      key: routeKey,
+      label: route.label,
+      tracked_url: route.tracked_url,
+    },
+    tracked_approval_form: tracked("operator_approval_request", "stdio-tool"),
+    approval_template: OPERATOR_APPROVAL_URL,
+    paid_order_after_payment: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    copy_text: [
+      "Please approve exactly one Agent Revenue Copilot payment route.",
+      "",
+      `Recommended route: ${route.label}`,
+      `Route URL: ${route.tracked_url}`,
+      `Target amount: ${target}`,
+      `Agent/operator stack: ${stack}`,
+      `Current blocker: ${blocker}`,
+      `Constraints: ${constraints}`,
+      "",
+      "Safety: the operator, not the agent, must approve any real payment. Do not include private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or user funds.",
+      "After payment, submit the marketplace order id, x402 receipt, or Base transaction hash through the paid-order form.",
+    ].join("\n"),
+    counting_rule: "Approval requests, unpaid issues, checkout reads, and crawler visits do not count as revenue. Count only confirmed usable, claimable, withdrawable, or spendable value.",
+  };
+}
+
 async function callTool(name, input = {}) {
   if (name === "product_manifest") {
     return textResult(jsonText(await loadJson(PRODUCT_PATH)));
@@ -338,6 +418,9 @@ async function callTool(name, input = {}) {
   }
   if (name === "checkout_diagnostics") {
     return textResult(jsonText(checkoutDiagnostics(await loadJson(PRODUCT_PATH), input)));
+  }
+  if (name === "operator_approval_request") {
+    return textResult(jsonText(operatorApprovalRequest(input)));
   }
   if (name === "buyer_routes") {
     return textResult(jsonText(routesFromProduct(await loadJson(PRODUCT_PATH))));
@@ -365,7 +448,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.1",
+          version: "0.1.2",
         },
       },
     };
