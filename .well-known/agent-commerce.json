@@ -157,6 +157,7 @@
   "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
   "support": {
     "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
+    "buyer_intent_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent",
     "github_operator_approval_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
     "github_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   }

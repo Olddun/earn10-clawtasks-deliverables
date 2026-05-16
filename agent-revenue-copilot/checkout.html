@@ -77,12 +77,14 @@
       <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=checkout">Agent x402 checkout</a>
       <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=checkout">Agent/operator handoff</a>
       <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=checkout">Ask operator to approve</a>
+      <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent?source=checkout">Record buyer intent</a>
     </div>
 
     <section class="panel">
       <h2>Agent/operator handoff</h2>
       <p>If an agent can inspect this checkout but cannot pay autonomously, use checkout diagnostics to choose exactly one payment path, prepare the operator approval request, and list the evidence needed after payment. Do not pay both x402 and direct Base USDC for the same brief.</p>
       <p>The approval form is for prepayment authorization only. It does not start fulfillment until the paid-order form receives valid payment evidence.</p>
+      <p>If GitHub issue forms are too much friction, the buyer intent endpoint records a non-secret lead only. It is not payment and does not unlock the paid audit.</p>
     </section>
 
     <section class="panel">

@@ -252,6 +252,8 @@
     "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
     "checkout_diagnostics": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
     "operator_approval_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
+    "buyer_intent_intake": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md",
+    "live_buyer_intent_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent",
     "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
@@ -283,6 +285,7 @@
   "support": {
     "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
     "github_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/1",
+    "buyer_intent_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent",
     "operator_approval_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
     "paid_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   }

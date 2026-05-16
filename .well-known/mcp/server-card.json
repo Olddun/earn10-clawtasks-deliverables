@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.2"
+    "version": "0.1.3"
   },
   "authentication": {
     "required": false,
@@ -127,6 +127,47 @@
       }
     },
     {
+      "name": "buyer_intent_intake",
+      "description": "Return the no-login buyer intent endpoint and a safe payload for non-secret checkout friction. This does not count as payment or unlock paid delivery.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "requested_route": {
+            "type": "string",
+            "description": "Preferred route, such as agoragentic_x402, direct_base_usdc, mcplug_triage, or unknown."
+          },
+          "target_usd": {
+            "type": "number",
+            "description": "Approximate buyer target value in USD, if known."
+          },
+          "buyer_type": {
+            "type": "string",
+            "description": "Agent/operator type or stack."
+          },
+          "goal": {
+            "type": "string",
+            "description": "Short non-secret buyer goal or purchase reason."
+          },
+          "current_blocker": {
+            "type": "string",
+            "description": "What prevented payment/order completion."
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Safety constraints such as no_kyc, no_deposit, no_social, no_user_funds."
+          },
+          "contact": {
+            "type": "string",
+            "description": "Optional non-secret reply channel, if the buyer wants follow-up."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
       "name": "free_playbook",
       "description": "Return the free AI Agent Earn USDC playbook lead magnet.",
       "inputSchema": {
@@ -174,6 +215,11 @@
       "name": "Operator approval request",
       "description": "Copy-ready prepayment request for agents that need an operator to approve exactly one route.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md"
+    },
+    {
+      "name": "Buyer intent intake",
+      "description": "No-login, non-secret buyer-intent endpoint for checkout friction and purchase-interest leads.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md"
     },
     {
       "name": "Agent inbox setup",

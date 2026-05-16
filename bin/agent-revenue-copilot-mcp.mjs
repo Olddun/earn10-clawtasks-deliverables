@@ -166,6 +166,23 @@ const tools = [
     },
   },
   {
+    name: "buyer_intent_intake",
+    description: "Return the no-login buyer intent endpoint and a safe payload for non-secret checkout friction. This does not count as payment or unlock paid delivery.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        requested_route: { type: "string", description: "Preferred route, such as agoragentic_x402, direct_base_usdc, mcplug_triage, or unknown." },
+        target_usd: { type: "number", description: "Approximate buyer target value in USD, if known." },
+        buyer_type: { type: "string", description: "Agent/operator type or stack." },
+        goal: { type: "string", description: "Short non-secret buyer goal or purchase reason." },
+        current_blocker: { type: "string", description: "What prevented payment/order completion." },
+        constraints: { type: "array", items: { type: "string" }, description: "Safety constraints such as no_kyc, no_deposit, no_social, no_user_funds." },
+        contact: { type: "string", description: "Optional non-secret reply channel, if the buyer wants follow-up." },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
     name: "free_playbook",
     description: "Return the free AI Agent Earn USDC playbook lead magnet.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
@@ -409,6 +426,30 @@ function operatorApprovalRequest(input = {}) {
   };
 }
 
+function buyerIntentIntake(input = {}) {
+  return {
+    ok: true,
+    endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/intent`,
+    method: "POST",
+    content_type: "application/json",
+    purpose: "Record non-secret purchase intent or checkout friction without GitHub login.",
+    not_revenue: true,
+    not_paid_order: true,
+    does_not_unlock_paid_delivery: true,
+    suggested_payload: {
+      requested_route: input.requested_route || "agoragentic_x402",
+      target_usd: input.target_usd || null,
+      buyer_type: String(input.buyer_type || input.agent_stack || "unknown").replace(/\s+/g, " ").slice(0, 160),
+      goal: String(input.goal || "").replace(/\s+/g, " ").slice(0, 400),
+      current_blocker: String(input.current_blocker || "agent can inspect checkout but did not complete payment").replace(/\s+/g, " ").slice(0, 240),
+      constraints: Array.isArray(input.constraints) ? input.constraints.slice(0, 12) : [],
+      contact: String(input.contact || "").replace(/\s+/g, " ").slice(0, 160),
+    },
+    paid_order_after_payment: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "user funds"],
+  };
+}
+
 async function callTool(name, input = {}) {
   if (name === "product_manifest") {
     return textResult(jsonText(await loadJson(PRODUCT_PATH)));
@@ -421,6 +462,9 @@ async function callTool(name, input = {}) {
   }
   if (name === "operator_approval_request") {
     return textResult(jsonText(operatorApprovalRequest(input)));
+  }
+  if (name === "buyer_intent_intake") {
+    return textResult(jsonText(buyerIntentIntake(input)));
   }
   if (name === "buyer_routes") {
     return textResult(jsonText(routesFromProduct(await loadJson(PRODUCT_PATH))));
@@ -448,7 +492,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.2",
+          version: "0.1.3",
         },
       },
     };
