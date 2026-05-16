@@ -99,7 +99,7 @@ Recommended agent-native checkout:
 
 Fallback routes:
 
-- PayanAgent service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- PayanAgent service id: `js73eqj91741bdr5623khkv1tn86t5an`
 - BotHire service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`

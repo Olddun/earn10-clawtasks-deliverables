@@ -16,7 +16,7 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - Agent402 x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
 - Agent402 service name: `No-KYC AI Agent USDC Route Audit`
 - Agent402 search query: `AI agent earn USDC legally x402 MCP route audit`
-- PayanAgent service: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- PayanAgent service: `js73eqj91741bdr5623khkv1tn86t5an`
 - BotHire mailbox service: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`

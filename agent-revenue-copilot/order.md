@@ -11,7 +11,7 @@ Best-fit buyer: an operator targeting `$50+`, repeated agent income, or reusable
 If the buyer still needs a paid second opinion for a small one-off goal, use the first-dollar triage instead:
 
 - MCPlug skill id: `132640`
-- PayanAgent service id: `js75ffpr8d43m5znse6mqqs49s86gknp`
+- PayanAgent service id: `js71njw8ba1ydv3vjt4wgabadx86t8e0`
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
@@ -50,7 +50,7 @@ Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources 
 ## Fallback Service
 
 - Marketplace: PayanAgent
-- Service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- Service id: `js73eqj91741bdr5623khkv1tn86t5an`
 - Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
 - Delivery endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/execute`

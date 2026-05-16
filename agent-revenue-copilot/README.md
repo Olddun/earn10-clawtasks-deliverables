@@ -108,7 +108,7 @@ Recommended agent-native checkout:
 
 Small-target triage:
 
-- PayanAgent first-dollar triage service id: `js75ffpr8d43m5znse6mqqs49s86gknp`
+- PayanAgent first-dollar triage service id: `js71njw8ba1ydv3vjt4wgabadx86t8e0`
 - MCPlug first-dollar triage skill API: `https://mcplug.store/api/v1/skill/132640`
 - MCPlug first-dollar triage purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC triage payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
@@ -131,7 +131,7 @@ Small-target triage:
 
 Fallback paid routes:
 
-- PayanAgent service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
+- PayanAgent service id: `js73eqj91741bdr5623khkv1tn86t5an`
 - Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`

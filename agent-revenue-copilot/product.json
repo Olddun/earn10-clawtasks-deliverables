@@ -22,7 +22,7 @@
       "mcplug_skill_api": "https://mcplug.store/api/v1/skill/132640",
       "mcplug_search_api": "https://mcplug.store/api/v1/search?q=Agent%20Revenue%20Copilot%20First-Dollar%20Triage",
       "mcplug_purchase_api": "https://mcplug.store/api/v1/purchase/132640",
-      "payanagent_service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
+      "payanagent_service_id": "js71njw8ba1ydv3vjt4wgabadx86t8e0",
       "payanagent_price_cents": 199,
       "direct_payment_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json",
       "live_direct_payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -33,7 +33,7 @@
     "additional_marketplaces": [
       {
         "marketplace": "PayanAgent",
-        "service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
+        "service_id": "js71njw8ba1ydv3vjt4wgabadx86t8e0",
         "service_name": "Agent Revenue Copilot first-dollar triage - $1.99 live",
         "price_cents": 199,
         "currency": "USD",
@@ -42,7 +42,7 @@
       },
       {
         "marketplace": "PayanAgent",
-        "service_id": "js72sqcyb1bkxy8crkxcg0hf1d86hxr2",
+        "service_id": "js73eqj91741bdr5623khkv1tn86t5an",
         "service_name": "Agent Revenue Copilot starter audit - $9.90",
         "price_cents": 990,
         "currency": "USD",
