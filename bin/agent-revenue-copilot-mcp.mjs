@@ -136,6 +136,20 @@ const tools = [
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
   },
   {
+    name: "checkout_diagnostics",
+    description: "Return a one-path checkout recommendation, route readiness map, operator handoff instructions, and payment evidence requirements.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        can_pay_x402: { type: "boolean", description: "True if the buyer agent/operator can complete an x402 payment." },
+        can_pay_base_usdc: { type: "boolean", description: "True if the buyer can send exact USDC on Base mainnet." },
+        needs_operator_handoff: { type: "boolean", description: "True if the agent can inspect but cannot autonomously pay." },
+        target_usd: { type: "number", description: "Approximate buyer target value in USD, if known." },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
     name: "free_playbook",
     description: "Return the free AI Agent Earn USDC playbook lead magnet.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
@@ -218,12 +232,109 @@ function routeTriage(product, input = {}) {
   };
 }
 
+function checkoutDiagnostics(product, input = {}) {
+  const initial = product.initial_package;
+  const targetUsd = Number(input.target_usd || 0);
+  const canPayX402 = input.can_pay_x402 === true;
+  const canPayBaseUsdc = input.can_pay_base_usdc === true;
+  const needsOperatorHandoff = input.needs_operator_handoff === true;
+  let recommendedNext = "operator_handoff";
+  let reason = "The buyer agent can inspect checkout routes, but payment should be completed by an authorized operator or wallet-capable agent.";
+
+  if (targetUsd > 0 && targetUsd <= 15) {
+    recommendedNext = "consider_free_playbook_or_1_99_triage";
+    reason = "For a small one-off target, the free playbook or $1.99 triage is usually a better fit than the $9.90 starter audit.";
+  } else if (canPayX402) {
+    recommendedNext = "pay_agoragentic_x402";
+    reason = "Use the recommended x402 route because the buyer can complete an agent-native payment.";
+  } else if (canPayBaseUsdc) {
+    recommendedNext = "pay_direct_base_usdc";
+    reason = "Use the direct Base USDC invoice because the buyer can send exact USDC and then submit payment evidence.";
+  } else if (needsOperatorHandoff) {
+    recommendedNext = "ask_operator_to_approve_one_payment_path";
+    reason = "Prepare a human/operator approval request with one chosen route, price, expected deliverable, and safety constraints.";
+  }
+
+  return {
+    ok: true,
+    diagnosis: "checkout_ready_but_payment_not_bypassed",
+    recommended_next: recommendedNext,
+    reason,
+    one_path_rule: "Choose exactly one payment path per order. Do not pay both marketplace/x402 and direct Base USDC for the same brief.",
+    no_autonomous_payment_without_authorization: true,
+    routes: {
+      recommended_x402: {
+        name: "Agoragentic x402",
+        status: "active_recommended_agent_checkout",
+        price: `${initial.price_usd.toFixed(2)} USD/USDC`,
+        use_when: "Buyer can complete x402 or marketplace-relay payment.",
+        tracked_checkout: tracked("audit_agoragentic", "stdio-checkout-diagnostics"),
+        discover: tracked("audit_agoragentic_discover", "stdio-checkout-diagnostics"),
+        evidence_after_payment: "marketplace receipt, x402 receipt, or order id",
+      },
+      fallback_x402: {
+        name: "Agent402",
+        status: "active_fallback_agent_checkout",
+        price: `${initial.price_usd.toFixed(2)} USD/USDC`,
+        use_when: "Buyer already uses Agent402 or Agoragentic is not reachable.",
+        tracked_checkout: tracked("audit_agent402", "stdio-checkout-diagnostics"),
+        evidence_after_payment: "Agent402 service receipt or settlement evidence",
+      },
+      direct_base_usdc: {
+        name: "Direct Base USDC",
+        status: "live_direct_invoice",
+        price: `${initial.price_usd.toFixed(2)} USDC`,
+        use_when: "Operator can send exact Base USDC and then submit a transaction hash.",
+        payment_request: tracked("audit_payment_json", "stdio-checkout-diagnostics"),
+        payment_required_endpoint: tracked("audit_402", "stdio-checkout-diagnostics"),
+        receive_address: RECEIVE_ADDRESS,
+        token: USDC,
+        evidence_after_payment: "Base transaction hash submitted through order_intake",
+      },
+      first_dollar_triage: {
+        name: initial.entry_offer?.name || "Agent Revenue Copilot First-Dollar Triage",
+        status: "live_low_friction_entry_offer",
+        price: "1.99 USD/USDC",
+        use_when: "Small one-off target where the $9.90 audit consumes too much upside.",
+        tracked_checkout: tracked("triage_mcplug", "stdio-checkout-diagnostics"),
+        tracked_direct_402: tracked("triage_402", "stdio-checkout-diagnostics"),
+        sample: product.public_docs?.triage_sample,
+      },
+      operator_handoff: {
+        name: "GitHub paid-order intake",
+        status: "handoff_only_not_payment",
+        use_when: "Agent cannot pay directly or needs an operator to attach payment evidence.",
+        tracked_intake: tracked("order_intake", "stdio-checkout-diagnostics"),
+        required_fields: ["transaction hash", "agent stack", "target amount", "allowed wallets", "forbidden actions", "skills and constraints"],
+      },
+    },
+    after_payment: {
+      submit: product.support?.paid_order_form,
+      evidence_required: ["marketplace order id", "x402 receipt", "Base USDC transaction hash"],
+      delivery_sla: product.fulfillment?.sla,
+      payment_status_tool: "payment_status",
+    },
+    safety: {
+      do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "user funds"],
+      forbidden_work: ["fraud", "spam", "fake engagement", "KYC bypass", "private credential misuse", "deposit-funded tasks", "social/referral manipulation"],
+    },
+    buyer_confidence: {
+      sample_audit: product.public_docs?.sample_audit,
+      case_study: product.public_docs?.case_study,
+      buyer_decision: product.public_docs?.buyer_decision,
+    },
+  };
+}
+
 async function callTool(name, input = {}) {
   if (name === "product_manifest") {
     return textResult(jsonText(await loadJson(PRODUCT_PATH)));
   }
   if (name === "route_triage") {
     return textResult(jsonText(routeTriage(await loadJson(PRODUCT_PATH), input)));
+  }
+  if (name === "checkout_diagnostics") {
+    return textResult(jsonText(checkoutDiagnostics(await loadJson(PRODUCT_PATH), input)));
   }
   if (name === "buyer_routes") {
     return textResult(jsonText(routesFromProduct(await loadJson(PRODUCT_PATH))));
@@ -251,7 +362,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.0",
+          version: "0.1.1",
         },
       },
     };

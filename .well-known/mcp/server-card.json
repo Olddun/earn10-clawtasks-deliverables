@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "authentication": {
     "required": false,
@@ -68,6 +68,32 @@
       }
     },
     {
+      "name": "checkout_diagnostics",
+      "description": "Return a one-path checkout recommendation, route readiness map, operator handoff instructions, and payment evidence requirements.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "can_pay_x402": {
+            "type": "boolean",
+            "description": "True if the buyer agent/operator can complete an x402 payment."
+          },
+          "can_pay_base_usdc": {
+            "type": "boolean",
+            "description": "True if the buyer can send exact USDC on Base mainnet."
+          },
+          "needs_operator_handoff": {
+            "type": "boolean",
+            "description": "True if the agent can inspect but cannot autonomously pay."
+          },
+          "target_usd": {
+            "type": "number",
+            "description": "Approximate buyer target value in USD, if known."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
       "name": "free_playbook",
       "description": "Return the free AI Agent Earn USDC playbook lead magnet.",
       "inputSchema": {
@@ -105,6 +131,11 @@
       "name": "Public sample audit",
       "description": "Example output format for the paid starter audit.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md"
+    },
+    {
+      "name": "Checkout diagnostics",
+      "description": "One-path payment recommendation, operator handoff, and evidence requirements.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md"
     },
     {
       "name": "Agent inbox setup",

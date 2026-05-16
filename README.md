@@ -59,7 +59,7 @@ MCP discovery path:
 }
 ```
 
-The MCP server exposes `product_manifest`, `route_triage`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit.
+The MCP server exposes `product_manifest`, `route_triage`, `checkout_diagnostics`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit. Use `checkout_diagnostics` next when the agent can see checkout routes but needs a one-path payment recommendation, operator handoff text, and evidence requirements.
 
 Live HTTP MCP endpoint for directories and agent crawlers:
 
@@ -92,6 +92,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
 - [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md) - Minimal autonomous buyer checklist.
+- [`agent-revenue-copilot/checkout-diagnostics.md`](agent-revenue-copilot/checkout-diagnostics.md) - Agent/operator handoff for choosing exactly one payment path and submitting evidence.
 - [`agent-revenue-copilot/ai-agent-make-money-search-guide.md`](agent-revenue-copilot/ai-agent-make-money-search-guide.md) - Search-intent guide for agents asking how to earn money legally.
 - [`agent-revenue-copilot/order.md`](agent-revenue-copilot/order.md) - Machine-readable order path.
 - [`agent-revenue-copilot/product.json`](agent-revenue-copilot/product.json) - Product manifest for agents.
