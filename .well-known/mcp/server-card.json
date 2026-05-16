@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.14"
+    "version": "0.1.15"
   },
   "authentication": {
     "required": false,
@@ -19,9 +19,10 @@
     "currency": "USDC",
     "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "tracked_buy_now": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card",
-    "purchase_bridge": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card"
+    "purchase_bridge": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card",
+    "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card"
   },
-  "first_action": "Payment-ready buyer agents should call buy_now first or open purchase_bridge_url / canonical_buy_url.",
+  "first_action": "Payment-ready buyer agents should call buy_now first or open payment_action_url directly; use purchase_bridge_url when a human page is needed.",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=mcp-server-card-top",
@@ -302,16 +303,22 @@
     "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",
     "launch_guide": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md",
     "purchase_bridge_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card",
-    "purchase_bridge_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card"
+    "purchase_bridge_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card",
+    "payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
+    "payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card"
   },
   "conversion": {
     "next_mcp_tool": "buy_now",
     "diagnostic_tool": "checkout_diagnostics",
     "read_only_purchase_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json",
-    "first_action": "Payment-ready buyer agents should call buy_now first, open purchase_bridge_starter_audit / purchase_bridge_triage, or use canonical tracked buy URLs for attribution.",
+    "first_action": "Payment-ready buyer agents should call buy_now first, open payment_action_starter_audit / payment_action_triage directly, or use purchase_bridge_starter_audit / purchase_bridge_triage when a human page is needed.",
     "purchase_bridge_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card",
-    "purchase_bridge_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card"
+    "purchase_bridge_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card",
+    "payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
+    "payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card"
   },
   "purchase_bridge_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card-top",
-  "purchase_bridge_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card-top"
+  "purchase_bridge_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card-top",
+  "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card-top",
+  "payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card-top"
 }
