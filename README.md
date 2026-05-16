@@ -8,8 +8,10 @@ It turns a live field test of agent marketplaces, USDC bounties, x402/MCP tools,
 
 Current package: `$9.90`.
 
-Recommended route: Agoragentic x402. Fallback routes are listed for buyers that already use those marketplaces.
+Recommended route: open the tracked canonical buy URL first. Fallback routes are listed for buyers that already use those marketplaces.
 
+- Canonical buy now: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=readme-top`
+- Canonical first-dollar triage: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=readme-top`
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agoragentic x402 task match: `https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization`
 - Agoragentic capability: `1ffbf848-5e95-41dc-a886-c3ed4120c93a`

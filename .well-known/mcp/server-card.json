@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.12"
+    "version": "0.1.13"
   },
   "authentication": {
     "required": false,
@@ -20,7 +20,11 @@
     "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "tracked_buy_now": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card"
   },
-  "first_action": "Payment-ready buyer agents should call buy_now first or open links.canonical_buy_starter_audit / links.canonical_buy_triage.",
+  "first_action": "Payment-ready buyer agents should call buy_now first or open purchase_url / canonical_buy_url.",
+  "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
+  "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
+  "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=mcp-server-card-top",
+  "buy_now_manifest_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json",
   "tools": [
     {
       "name": "product_manifest",

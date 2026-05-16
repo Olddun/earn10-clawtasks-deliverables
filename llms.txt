@@ -9,6 +9,8 @@ Best-fit buyers target materially more than the audit price, such as $50+ payout
 Current initial package:
 
 - Price: $9.90
+- Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=llms-top
+- Canonical first-dollar triage route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=llms-top
 - Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a
 - Small-target triage: $1.99 via MCPlug skill id 132640, for one-off first-dollar goals where the full audit is not yet justified
 - PayanAgent first-dollar triage service id: js71njw8ba1ydv3vjt4wgabadx86t8e0

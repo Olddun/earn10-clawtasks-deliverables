@@ -2,6 +2,9 @@
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
   "version": "2026-05-11",
+  "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
+  "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
+  "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
   "initial_package": {
     "price_usd": 9.9,
     "price_cents": 990,
@@ -248,7 +251,7 @@
     "payment_path_note": "Agoragentic x402 may use a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address. Use one path per order; do not pay both."
   },
   "primary_choices": {
-    "first_action": "Payment-ready buyer agents should call MCP buy_now first or open canonical_buy_starter_audit / canonical_buy_triage.",
+    "first_action": "Payment-ready buyer agents should call MCP buy_now first or open top-level purchase_url / canonical_buy_url.",
     "manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "rule": "Show these three choices first: $1.99 triage, $9.90 starter audit, or operator handoff / buyer intent when the agent cannot pay.",

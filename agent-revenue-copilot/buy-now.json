@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "If you are a payment-ready buyer agent, open starter_audit.canonical_buy for $50+ targets, repeated income, or x402/MCP monetization. Open first_dollar_triage.canonical_buy for small one-off targets. Use this before checkout diagnostics.",
   "mcp_tool_equivalent": "buy_now",
