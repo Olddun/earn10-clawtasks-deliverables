@@ -112,6 +112,41 @@
         "purchase_api": "https://mcplug.store/api/v1/purchase/132640"
       }
     ],
+    "payanagent_routing": {
+      "rule": "Use only the canonical PayanAgent service IDs listed here. Ignore any Agent Revenue Copilot PayanAgent search result whose service_id is not in canonical_service_ids or whose endpoint host is not doctors-lighting-facial-admissions.trycloudflare.com.",
+      "current_endpoint_host": "doctors-lighting-facial-admissions.trycloudflare.com",
+      "canonical_service_ids": {
+        "first_dollar_triage_199_cents": "js71njw8ba1ydv3vjt4wgabadx86t8e0",
+        "starter_audit_990_cents": "js73eqj91741bdr5623khkv1tn86t5an"
+      },
+      "ignore_service_ids": [
+        {
+          "service_id": "js78bh0ysvcygrsqwgbxf07q7586hbkb",
+          "reason": "legacy 1000-cent service with an expired quick-tunnel endpoint"
+        },
+        {
+          "service_id": "js7fkxwvp99cvsyr8jyg5kphzx86gp1j",
+          "reason": "legacy 990-cent service with an expired quick-tunnel endpoint"
+        },
+        {
+          "service_id": "js72sqcyb1bkxy8crkxcg0hf1d86hxr2",
+          "reason": "legacy 990-cent service with an expired quick-tunnel endpoint"
+        },
+        {
+          "service_id": "js75ffpr8d43m5znse6mqqs49s86gknp",
+          "reason": "legacy 199-cent triage service with an expired quick-tunnel endpoint"
+        },
+        {
+          "service_id": "js78q1ryrefh5shv7d1jrx5hkx86vn6e",
+          "reason": "accidentally malformed duplicate current service; use the canonical starter-audit ID instead"
+        },
+        {
+          "service_id": "js7167rftc4e8zm9x2fq5vg01d86v6j6",
+          "reason": "accidentally malformed duplicate current triage service; use the canonical triage ID instead"
+        }
+      ],
+      "service_update_delete_status": "PayanAgent service PATCH, DELETE, and deactivate probes returned 405/404, so stale public services cannot currently be removed through the available API."
+    },
     "agentic_market_status": {
       "status": "not_indexed",
       "agentic_market_search": "https://api.agentic.market/v1/services/search?q=Agent%20Revenue%20Copilot",

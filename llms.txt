@@ -13,6 +13,7 @@ Current initial package:
 - Small-target triage: $1.99 via MCPlug skill id 132640, for one-off first-dollar goals where the full audit is not yet justified
 - PayanAgent first-dollar triage service id: js71njw8ba1ydv3vjt4wgabadx86t8e0
 - Fallback PayanAgent service id: js73eqj91741bdr5623khkv1tn86t5an
+- PayanAgent routing rule: use only js71njw8ba1ydv3vjt4wgabadx86t8e0 for $1.99 triage or js73eqj91741bdr5623khkv1tn86t5an for $9.90 audit. Ignore Agent Revenue Copilot PayanAgent results with any other service id or with an endpoint host other than doctors-lighting-facial-admissions.trycloudflare.com.
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981
 - AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c
 - NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a
