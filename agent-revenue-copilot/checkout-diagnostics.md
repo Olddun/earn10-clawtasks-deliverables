@@ -41,6 +41,14 @@ If the agent cannot pay automatically, it should ask the operator to approve one
 - no-secrets rule;
 - payment evidence needed after payment.
 
+Tracked operator approval form:
+
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=checkout-diagnostics`
+
+Copy-ready approval request:
+
+`https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md`
+
 Order intake after payment:
 
 `https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml`

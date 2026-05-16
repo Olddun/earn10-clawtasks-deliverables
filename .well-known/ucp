@@ -31,6 +31,7 @@
           "config": {
             "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
             "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+            "operator_approval": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
             "order_intake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
           }
         }

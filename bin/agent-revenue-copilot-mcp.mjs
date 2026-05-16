@@ -12,6 +12,7 @@ const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
 const TARGET_USDC = 9.9;
 const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.com";
+const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 
 let inputBuffer = "";
 
@@ -304,7 +305,9 @@ function checkoutDiagnostics(product, input = {}) {
         name: "GitHub paid-order intake",
         status: "handoff_only_not_payment",
         use_when: "Agent cannot pay directly or needs an operator to attach payment evidence.",
+        tracked_approval_request: tracked("operator_approval_request", "stdio-checkout-diagnostics"),
         tracked_intake: tracked("order_intake", "stdio-checkout-diagnostics"),
+        approval_template: OPERATOR_APPROVAL_URL,
         required_fields: ["transaction hash", "agent stack", "target amount", "allowed wallets", "forbidden actions", "skills and constraints"],
       },
     },

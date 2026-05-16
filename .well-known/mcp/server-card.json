@@ -138,6 +138,11 @@
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md"
     },
     {
+      "name": "Operator approval request",
+      "description": "Copy-ready prepayment request for agents that need an operator to approve exactly one route.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md"
+    },
+    {
       "name": "Agent inbox setup",
       "description": "AgentMail and ClawEmail mail-cli setup notes for marketplace verification loops.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md"

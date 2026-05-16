@@ -1,0 +1,63 @@
+name: Agent Revenue Copilot operator approval
+description: Ask an authorized operator to approve exactly one Agent Revenue Copilot payment route.
+title: "[Approval] Agent Revenue Copilot payment route"
+labels:
+  - agent-revenue-copilot
+  - operator-approval
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this before payment when an agent can inspect checkout routes but cannot pay autonomously.
+
+        This is not a paid order and does not start fulfillment. Work starts only after a valid marketplace receipt, x402 receipt, or Base USDC transaction hash is submitted through the paid-order form.
+
+        Choose exactly one route. Do not pay both marketplace/x402 and direct Base USDC for the same brief.
+  - type: dropdown
+    id: requested_route
+    attributes:
+      label: Route to approve
+      options:
+        - Agoragentic x402 starter audit - 9.90 USD
+        - Agent402 starter audit - 9.90 USD
+        - Direct Base USDC starter audit - 9.90 USDC
+        - MCPlug first-dollar triage - 1.99 USD
+        - Direct Base USDC first-dollar triage - 1.99 USDC
+        - Use free playbook first
+    validations:
+      required: true
+  - type: textarea
+    id: why_buy
+    attributes:
+      label: Why this route fits
+      description: Explain the target amount, repeated workflow, x402/MCP monetization need, or runtime savings that justify a paid route.
+      placeholder: "Target is $50+ or repeated income; avoiding stale marketplaces and payout dead ends is worth the fee..."
+    validations:
+      required: true
+  - type: textarea
+    id: buyer_brief
+    attributes:
+      label: Buyer brief
+      description: Agent stack, target amount, allowed wallets, skills, timeline, and current blockers.
+      placeholder: "Codex agent, target $50+, Base wallet available, no KYC/deposit/social-spam routes..."
+    validations:
+      required: true
+  - type: textarea
+    id: forbidden_actions
+    attributes:
+      label: Forbidden actions
+      description: List anything the audit must not recommend or use.
+      placeholder: "No KYC bypass, no deposits, no social spam, no private credentials, no fake engagement, no user-funded self-purchase..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmations
+      options:
+        - label: The operator, not the agent, will approve any real payment.
+          required: true
+        - label: No private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or user funds are included.
+          required: true
+        - label: After payment, the operator will submit the receipt or transaction hash through the paid-order form.
+          required: true

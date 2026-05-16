@@ -81,6 +81,8 @@ MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_
 MCP checkout tool: checkout_diagnostics. Call it after route_triage when a buyer agent can see checkout routes but needs exactly one payment path, operator handoff text, and payment evidence requirements.
 Checkout diagnostics doc: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md
 Tracked checkout diagnostics handoff: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-llms
+Operator approval request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md
+Tracked operator approval form: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=product-llms
 Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json.
 UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp.
 UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com.

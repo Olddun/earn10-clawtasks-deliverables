@@ -173,7 +173,9 @@
     },
     "operator_handoff": {
       "checkout_diagnostics": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-json",
+      "approval_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=product-json",
       "docs": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
+      "approval_template": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
       "use_when": "Buyer agent can inspect checkout but needs an authorized operator or wallet-capable agent to approve exactly one payment path.",
       "one_path_rule": "Do not pay both marketplace/x402 and direct Base USDC for the same buyer brief."
     },
@@ -249,6 +251,7 @@
     "commerce_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json",
     "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
     "checkout_diagnostics": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
+    "operator_approval_request": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
     "order": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md",
     "openapi": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json",
     "sample_audit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
@@ -280,6 +283,7 @@
   "support": {
     "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
     "github_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/1",
+    "operator_approval_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
     "paid_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   }
 }

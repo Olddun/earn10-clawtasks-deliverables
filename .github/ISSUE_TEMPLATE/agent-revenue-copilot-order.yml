@@ -12,9 +12,13 @@ body:
 
         Current price: **$9.90**.
 
-        Canonical marketplace route: PayanAgent service `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`.
+        Recommended marketplace route: Agoragentic x402 capability `1ffbf848-5e95-41dc-a886-c3ed4120c93a`.
+
+        Canonical PayanAgent service: `js73eqj91741bdr5623khkv1tn86t5an` for the $9.90 starter audit, or `js71njw8ba1ydv3vjt4wgabadx86t8e0` for the $1.99 first-dollar triage.
 
         Direct fallback invoice: `agent-revenue-copilot/payment.md`.
+
+        If an agent can inspect checkout but cannot pay, use the operator approval form first. This paid-order form is only for after payment evidence exists.
 
         Work starts after payment is verified. Do not paste private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
   - type: dropdown
@@ -22,9 +26,14 @@ body:
     attributes:
       label: Payment route
       options:
-        - PayanAgent service js7fkxwvp99cvsyr8jyg5kphzx86gp1j
-        - Direct Base USDC invoice
-        - Other verified payment link
+        - Agoragentic x402 starter audit - 9.90 USD
+        - Agent402 starter audit - 9.90 USD
+        - Direct Base USDC starter audit - 9.90 USDC
+        - PayanAgent service js73eqj91741bdr5623khkv1tn86t5an - 9.90 USD
+        - MCPlug first-dollar triage - 1.99 USD
+        - PayanAgent service js71njw8ba1ydv3vjt4wgabadx86t8e0 - 1.99 USD
+        - Direct Base USDC first-dollar triage - 1.99 USDC
+        - Other verified payment link or receipt
     validations:
       required: true
   - type: input

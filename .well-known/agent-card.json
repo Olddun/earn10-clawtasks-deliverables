@@ -33,6 +33,7 @@
         "paymentRequired": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
         "paymentRequest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
         "fulfillment": "https://doctors-lighting-facial-admissions.trycloudflare.com/execute",
+        "operatorApproval": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
         "orderIntake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
       }
     },
@@ -97,6 +98,7 @@
     "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
     "sampleAudit": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md",
     "caseStudy": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md",
+    "operatorApprovalRequest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
     "agentInboxSetup": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/llms.txt",
     "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agents.txt"

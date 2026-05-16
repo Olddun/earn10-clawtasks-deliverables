@@ -64,7 +64,9 @@
     },
     "operator_handoff": {
       "checkout_diagnostics": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=agent-commerce",
+      "approval_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=agent-commerce",
       "docs": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
+      "approval_template": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
       "use_when": "Buyer agent can inspect checkout but needs an authorized operator or wallet-capable agent to approve exactly one payment path.",
       "one_path_rule": "Do not pay both marketplace/x402 and direct Base USDC for the same buyer brief."
     },
@@ -155,6 +157,7 @@
   "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
   "support": {
     "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
+    "github_operator_approval_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
     "github_order_form": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   }
 }
