@@ -209,8 +209,9 @@ function tracked(route, source = "stdio-route-triage") {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.7",
+    version: "0.1.8",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
+    agent_cannot_pay_rule: "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
     choices: [
       {
         key: "first_dollar_triage",
@@ -219,6 +220,10 @@ function primaryPurchaseChoices() {
         best_for: "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
         tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
         tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
+        if_agent_cannot_pay: {
+          operator_handoff_page: OPERATOR_HANDOFF_URL,
+          buyer_intent_form: BUYER_INTENT_FORM_URL,
+        },
         sample: "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
       },
       {
@@ -229,6 +234,10 @@ function primaryPurchaseChoices() {
         tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
         tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
         human_checkout: "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
+        if_agent_cannot_pay: {
+          operator_handoff_page: OPERATOR_HANDOFF_URL,
+          buyer_intent_form: BUYER_INTENT_FORM_URL,
+        },
       },
       {
         key: "operator_handoff_or_intent",
@@ -239,6 +248,7 @@ function primaryPurchaseChoices() {
         operator_handoff_page: OPERATOR_HANDOFF_URL,
         buyer_intent_endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/intent`,
         buyer_intent_form: BUYER_INTENT_FORM_URL,
+        preferred_before_github_issue: true,
         not_revenue: true,
         not_paid_order: true,
       },
@@ -278,6 +288,10 @@ function routeTriage(product, input = {}) {
         price: "1.99 USDC",
         tracked_checkout: tracked("triage_mcplug"),
         tracked_direct_402: tracked("triage_402"),
+        if_agent_cannot_pay: {
+          operator_handoff_page: OPERATOR_HANDOFF_URL,
+          buyer_intent_form: BUYER_INTENT_FORM_URL,
+        },
         sample: product.links?.triage_sample,
       },
     };
@@ -292,6 +306,10 @@ function routeTriage(product, input = {}) {
         tracked_x402: tracked("audit_agoragentic"),
         tracked_agent402_fallback: tracked("audit_agent402"),
         tracked_direct_402: tracked("audit_402"),
+        if_agent_cannot_pay: {
+          operator_handoff_page: OPERATOR_HANDOFF_URL,
+          buyer_intent_form: BUYER_INTENT_FORM_URL,
+        },
         buyer_decision: product.links?.buyer_decision,
       },
     };
@@ -305,6 +323,10 @@ function routeTriage(product, input = {}) {
       price: "1.99 USDC",
       tracked_checkout: tracked("triage_mcplug"),
       tracked_direct_402: tracked("triage_402"),
+      if_agent_cannot_pay: {
+        operator_handoff_page: OPERATOR_HANDOFF_URL,
+        buyer_intent_form: BUYER_INTENT_FORM_URL,
+      },
       sample: product.links?.triage_sample,
     },
     escalation_rule: "Escalate to the 9.90 starter audit only for $50+ targets, repeated-income workflows, or x402/MCP/API monetization work.",
@@ -380,10 +402,13 @@ function checkoutDiagnostics(product, input = {}) {
         sample: product.public_docs?.triage_sample,
       },
       operator_handoff: {
-        name: "GitHub paid-order intake",
+        name: "No-login operator handoff",
         status: "handoff_only_not_payment",
         use_when: "Agent cannot pay directly or needs an operator to attach payment evidence.",
         tracked_approval_request: tracked("operator_approval_request", "stdio-checkout-diagnostics"),
+        operator_handoff_page: OPERATOR_HANDOFF_URL,
+        buyer_intent_form: BUYER_INTENT_FORM_URL,
+        tracked_approval_issue: tracked("operator_approval_issue", "stdio-checkout-diagnostics"),
         tracked_intake: tracked("order_intake", "stdio-checkout-diagnostics"),
         approval_template: OPERATOR_APPROVAL_URL,
         required_fields: ["transaction hash", "agent stack", "target amount", "allowed wallets", "forbidden actions", "skills and constraints"],
@@ -539,7 +564,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.7",
+          version: "0.1.8",
         },
       },
     };

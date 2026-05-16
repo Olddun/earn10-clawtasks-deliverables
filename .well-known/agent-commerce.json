@@ -37,7 +37,8 @@
   "primary_choices": {
     "manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
-    "rule": "Show these three choices first: $1.99 triage, $9.90 starter audit, or operator handoff / buyer intent when the agent cannot pay."
+    "rule": "Show these three choices first: $1.99 triage, $9.90 starter audit, or operator handoff / buyer intent when the agent cannot pay.",
+    "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms."
   },
   "agent_search_queries": [
     "codex agent earn money",

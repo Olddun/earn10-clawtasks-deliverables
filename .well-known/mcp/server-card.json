@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.7"
+    "version": "0.1.8"
   },
   "authentication": {
     "required": false,
@@ -257,6 +257,7 @@
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
     "operator_handoff": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
     "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+    "agent_cannot_pay_rule": "Show the no-login operator handoff page and buyer intent form before GitHub issue forms when a buyer agent cannot pay.",
     "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",

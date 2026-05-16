@@ -1,8 +1,9 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
+  "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
   "choices": [
     {
       "key": "first_dollar_triage",
@@ -11,6 +12,10 @@
       "best_for": "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
       "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-primary-choice",
       "tracked_direct_402": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_402&source=static-primary-choice",
+      "if_agent_cannot_pay": {
+        "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+        "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
+      },
       "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md"
     },
     {
@@ -20,7 +25,11 @@
       "best_for": "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work.",
       "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-primary-choice",
       "tracked_agent402_fallback": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agent402&source=static-primary-choice",
-      "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html"
+      "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
+      "if_agent_cannot_pay": {
+        "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+        "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
+      }
     },
     {
       "key": "operator_handoff_or_intent",
@@ -31,6 +40,7 @@
       "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
       "buyer_intent_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent",
       "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+      "preferred_before_github_issue": true,
       "not_revenue": true,
       "not_paid_order": true
     }
