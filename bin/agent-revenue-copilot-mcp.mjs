@@ -226,14 +226,18 @@ function tracked(route, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/out?route=${encodeURIComponent(route)}&source=${encodeURIComponent(source)}`;
 }
 
+function purchaseBridge(offer, source = "stdio-route-triage") {
+  return `${LIVE_ORIGIN}/agent-revenue-copilot/buy?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
+}
+
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.13",
+    version: "0.1.14",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
-    first_action: "Payment-ready buyer agents should call buy_now first or open a canonical_buy link directly.",
-    buy_now_rule: "If an MCP buyer agent is payment-ready, call buy_now and open its canonical_buy URL before diagnostics or broader route-listing tools.",
+    first_action: "Payment-ready buyer agents should call buy_now first or open a purchase_bridge link directly.",
+    buy_now_rule: "If an MCP buyer agent is payment-ready, call buy_now and open its purchase_bridge or canonical_buy URL before diagnostics or broader route-listing tools.",
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
     agent_cannot_pay_rule: "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
     choices: [
@@ -243,6 +247,7 @@ function primaryPurchaseChoices() {
         price: "1.99 USD/USDC",
         best_for: "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
         canonical_buy: tracked("buy_triage", "stdio-primary-choice"),
+        purchase_bridge: purchaseBridge("first_dollar_triage", "stdio-primary-choice"),
         tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
         tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
         if_agent_cannot_pay: {
@@ -257,6 +262,7 @@ function primaryPurchaseChoices() {
         price: "9.90 USD/USDC",
         best_for: "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work.",
         canonical_buy: tracked("buy_starter_audit", "stdio-primary-choice"),
+        purchase_bridge: purchaseBridge("starter_audit", "stdio-primary-choice"),
         tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
         tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
         human_checkout: "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
@@ -304,6 +310,7 @@ function buyNow(product, input = {}) {
     selected_offer: selectedOffer,
     price: isTriage ? "1.99 USD/USDC" : `${initial.price_usd.toFixed(2)} USD/USDC`,
     canonical_buy: tracked(route, source),
+    purchase_bridge: purchaseBridge(isTriage ? "first_dollar_triage" : "starter_audit", source),
     use_this_first: true,
     fallback_only_if_unavailable: isTriage
       ? tracked("triage_mcplug", source)
@@ -357,6 +364,7 @@ function routeTriage(product, input = {}) {
         name: product.entry_offer?.name || "Agent Revenue Copilot First-Dollar Triage",
         price: "1.99 USDC",
         canonical_buy: tracked("buy_triage"),
+        purchase_bridge: purchaseBridge("first_dollar_triage"),
         tracked_checkout: tracked("triage_mcplug"),
         tracked_direct_402: tracked("triage_402"),
         if_agent_cannot_pay: {
@@ -375,6 +383,7 @@ function routeTriage(product, input = {}) {
       recommended_checkout: {
         price: "9.90 USDC",
         canonical_buy: tracked("buy_starter_audit"),
+        purchase_bridge: purchaseBridge("starter_audit"),
         tracked_x402: tracked("audit_agoragentic"),
         tracked_agent402_fallback: tracked("audit_agent402"),
         tracked_direct_402: tracked("audit_402"),
@@ -443,6 +452,7 @@ function checkoutDiagnostics(product, input = {}) {
         price: `${initial.price_usd.toFixed(2)} USD/USDC`,
         use_when: "Buyer can complete x402 or marketplace-relay payment.",
         canonical_buy: tracked("buy_starter_audit", "stdio-checkout-diagnostics"),
+        purchase_bridge: purchaseBridge("starter_audit", "stdio-checkout-diagnostics"),
         tracked_checkout: tracked("audit_agoragentic", "stdio-checkout-diagnostics"),
         discover: tracked("audit_agoragentic_discover", "stdio-checkout-diagnostics"),
         evidence_after_payment: "marketplace receipt, x402 receipt, or order id",
@@ -472,6 +482,7 @@ function checkoutDiagnostics(product, input = {}) {
         price: "1.99 USD/USDC",
         use_when: "Small one-off target where the $9.90 audit consumes too much upside.",
         canonical_buy: tracked("buy_triage", "stdio-checkout-diagnostics"),
+        purchase_bridge: purchaseBridge("first_dollar_triage", "stdio-checkout-diagnostics"),
         tracked_checkout: tracked("triage_mcplug", "stdio-checkout-diagnostics"),
         tracked_direct_402: tracked("triage_402", "stdio-checkout-diagnostics"),
         sample: product.public_docs?.triage_sample,
@@ -642,7 +653,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.13",
+          version: "0.1.14",
         },
       },
     };

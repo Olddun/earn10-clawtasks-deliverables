@@ -20,6 +20,8 @@ Offer:
 - NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a
 - Agoragentic capability id: 1ffbf848-5e95-41dc-a886-c3ed4120c93a
 - Agoragentic x402 invoke: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a
+- Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=product-agents
+- First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=product-agents
 - Agoragentic x402 discovery: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover
 - Agoragentic x402 task match: https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization
 - Agent402 x402 invoke: https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke
@@ -44,7 +46,7 @@ Offer:
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
 - Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse
-- MCP buy-now tool: buy_now. If a buyer agent is payment-ready, call it first and open canonical_buy for the $9.90 audit or $1.99 triage.
+- MCP buy-now tool: buy_now. If a buyer agent is payment-ready, call it first and open purchase_bridge or canonical_buy for the $9.90 audit or $1.99 triage.
 - MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_type, and constraints to choose free playbook, $1.99 triage, or $9.90 starter audit.
 - MCP checkout tool: checkout_diagnostics. Call it after route_triage when a buyer agent can see checkout routes but needs exactly one payment path, operator handoff text, and payment evidence requirements.
 - MCP approval tool: operator_approval_request. Call it when the buyer agent cannot pay autonomously and needs copy-ready text for an authorized operator.
