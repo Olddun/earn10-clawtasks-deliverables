@@ -112,8 +112,8 @@ Small-target triage:
 - MCPlug first-dollar triage skill API: `https://mcplug.store/api/v1/skill/132640`
 - MCPlug first-dollar triage purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC triage payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
-- Live Base USDC triage payment request: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- Live triage 402 endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- Live Base USDC triage payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Live triage 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - Price: `$1.99`
 
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
@@ -144,10 +144,10 @@ Fallback paid routes:
 - OpenAPI buyer surface: [openapi.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json)
 - CLI discovery path: `npx github:Olddun/earn10-clawtasks-deliverables -- --json`
 - MCP discovery path: `npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp`
-- Live HTTP MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp`
-- Live SSE-compatible MCP endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse`
-- UCP discovery profile: `https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp`
-- UCP Checker status: `https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com`
+- Live HTTP MCP endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp`
+- Live SSE-compatible MCP endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse`
+- UCP discovery profile: `https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp`
+- UCP Checker status: `https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com`
 - UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)

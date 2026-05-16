@@ -33,8 +33,8 @@ Paid route:
 - MCPlug first-dollar triage skill API: https://mcplug.store/api/v1/skill/132640.
 - MCPlug first-dollar triage purchase API: https://mcplug.store/api/v1/purchase/132640.
 - Direct first-dollar triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json.
-- Live first-dollar triage payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
-- Live first-dollar triage 402 endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay.
+- Live first-dollar triage payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
+- Live first-dollar triage 402 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay.
 - First-dollar triage sample: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md.
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
@@ -48,19 +48,19 @@ Paid route:
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
-- Live payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/payment-request.json
+- Live payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json
 - Static triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json
-- Live triage payment request: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json
-- 402 payment endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/pay
-- Live HTTP MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
-- Live SSE-compatible MCP endpoint: https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp/sse
+- Live triage payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json
+- 402 payment endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay
+- Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
+- Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
 - UCP discovery profile: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
-- Live UCP discovery profile: https://defining-maps-accomplished-test.trycloudflare.com/.well-known/ucp
-- UCP Checker status: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
-- UCP Checker directory search: https://ucpchecker.com/directory?search=defining-maps-accomplished-test.trycloudflare.com
+- Live UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp
+- UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
+- UCP Checker directory search: https://ucpchecker.com/directory?search=doctors-lighting-facial-admissions.trycloudflare.com
 - UCP Checker result: verified, Grade A, score 86/100, with MCP, A2A, and payment metadata detected.
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
@@ -80,7 +80,7 @@ Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
-- https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
+- https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md

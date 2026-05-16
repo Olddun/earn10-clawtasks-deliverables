@@ -64,13 +64,13 @@ The MCP server exposes `product_manifest`, `buyer_routes`, `free_playbook`, `fai
 Live HTTP MCP endpoint for directories and agent crawlers:
 
 ```text
-https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/mcp
+https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
 ```
 
 MCP directory metadata:
 
 - [`.well-known/ucp`](.well-known/ucp) and [`.well-known/ucp.json`](.well-known/ucp.json) - UCP discovery profile for shopping/commerce agents, pointing to MCP, A2A, x402, product, and payment surfaces.
-- UCP Checker verification: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker verification: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
   - Current public check: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - [`server.json`](server.json) - Static MCP server metadata for directory crawlers and submission tools.
 - [`.well-known/agent.json`](.well-known/agent.json) and [`.well-known/agent-card.json`](.well-known/agent-card.json) - A2A-style agent discovery cards with MCP, x402, checkout, buyer-fit, and safety metadata.
@@ -104,7 +104,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/llms.txt`](agent-revenue-copilot/llms.txt), [`agent-revenue-copilot/agents.txt`](agent-revenue-copilot/agents.txt), [`agent-revenue-copilot/skill.md`](agent-revenue-copilot/skill.md) - Agent-readable acquisition surfaces.
 - [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) - Plugin-style discovery manifest pointing at the OpenAPI spec.
 - [`.well-known/ucp`](.well-known/ucp) and [`.well-known/ucp.json`](.well-known/ucp.json) - UCP discovery profile for commerce-oriented agents.
-- UCP Checker status: https://ucpchecker.com/status/defining-maps-accomplished-test.trycloudflare.com
+- UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
 - [`.well-known/agent.json`](.well-known/agent.json) - A2A-style agent card for agent-to-agent product discovery.
 - [`.well-known/agent-card.json`](.well-known/agent-card.json) - Alias for clients that probe the agent-card path first.
 - [`.well-known/mcp/server-card.json`](.well-known/mcp/server-card.json) - Smithery-compatible static server card for MCP scanners.

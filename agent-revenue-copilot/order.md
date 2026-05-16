@@ -15,8 +15,8 @@ If the buyer still needs a paid second opinion for a small one-off goal, use the
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
-- Live Base USDC payment request: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- Live triage 402 endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- Live Base USDC payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Live triage 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - Details: [first-dollar-triage.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md)
 
 ## Recommended Agent Checkout
@@ -53,7 +53,7 @@ Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources 
 - Service id: `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`
 - Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
-- Delivery endpoint: `https://defining-maps-accomplished-test.trycloudflare.com/execute`
+- Delivery endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/execute`
 - Delivery kind: `agent-revenue-copilot`
 - Status: active
 

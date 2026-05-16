@@ -15,7 +15,7 @@
       "description": "Static product and payment documents"
     },
     {
-      "url": "https://defining-maps-accomplished-test.trycloudflare.com",
+      "url": "https://doctors-lighting-facial-admissions.trycloudflare.com",
       "description": "Fulfillment webhook"
     }
   ],
@@ -102,7 +102,7 @@
             "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
           },
           {
-            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
           }
         ],
         "responses": {
@@ -129,7 +129,7 @@
             "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main"
           },
           {
-            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
           }
         ],
         "responses": {
@@ -153,7 +153,7 @@
         "description": "Returns HTTP 402 with the Base USDC exact-payment requirement, marketplace fallbacks, and the same machine-readable payment request. This endpoint does not mark revenue complete by itself; payment must still be verified.",
         "servers": [
           {
-            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
           }
         ],
         "responses": {
@@ -177,7 +177,7 @@
         "description": "Returns HTTP 402 with the Base USDC exact-payment requirement for the $1.99 first-dollar triage. This endpoint does not mark revenue complete by itself; payment must still be verified.",
         "servers": [
           {
-            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
           }
         ],
         "responses": {
@@ -201,7 +201,7 @@
         "description": "Submit buyer constraints for the Agent Revenue Copilot fulfillment route. Paid work starts only after payment is verified through a marketplace such as Agoragentic or Agent402, direct Base USDC invoice, or the paid GitHub order form.",
         "servers": [
           {
-            "url": "https://defining-maps-accomplished-test.trycloudflare.com"
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
           }
         ],
         "requestBody": {

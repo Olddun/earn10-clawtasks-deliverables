@@ -45,7 +45,7 @@ curl https://api.moltmail.xyz/inbox \
 curl -X POST https://api.moltmail.xyz/webhook \
   -H "Authorization: Bearer $AGENTMAIL_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"url":"https://defining-maps-accomplished-test.trycloudflare.com/notify"}'
+  -d '{"url":"https://doctors-lighting-facial-admissions.trycloudflare.com/notify"}'
 ```
 
 ### ClawEmail With `mail-cli`
