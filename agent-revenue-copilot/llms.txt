@@ -86,7 +86,9 @@ MCP buyer intent tool: buyer_intent_intake. Call it when GitHub issue forms or p
 Checkout diagnostics doc: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md
 Tracked checkout diagnostics handoff: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-llms
 Operator approval request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md
-Tracked operator approval form: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=product-llms
+No-login operator handoff page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=product-llms
+GitHub operator approval issue: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=product-llms
+Operator handoff page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html
 Buyer intent intake: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent
 Buyer intent docs: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md
 Agent commerce manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json.

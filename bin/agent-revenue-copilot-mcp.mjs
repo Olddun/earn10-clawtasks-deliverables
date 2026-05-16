@@ -13,6 +13,7 @@ const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
 const TARGET_USDC = 9.9;
 const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.com";
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
+const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
 
 let inputBuffer = "";
 
@@ -207,7 +208,7 @@ function tracked(route, source = "stdio-route-triage") {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.5",
+    version: "0.1.6",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     choices: [
       {
@@ -234,6 +235,7 @@ function primaryPurchaseChoices() {
         price: "0 now",
         best_for: "Agent can inspect checkout but cannot pay, or GitHub paid-order forms are too much friction.",
         tracked_operator_approval: tracked("operator_approval_request", "stdio-primary-choice"),
+        operator_handoff_page: OPERATOR_HANDOFF_URL,
         buyer_intent_endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/intent`,
         not_revenue: true,
         not_paid_order: true,
@@ -449,6 +451,7 @@ function operatorApprovalRequest(input = {}) {
       tracked_url: route.tracked_url,
     },
     tracked_approval_form: tracked("operator_approval_request", "stdio-tool"),
+    operator_handoff_page: OPERATOR_HANDOFF_URL,
     approval_template: OPERATOR_APPROVAL_URL,
     paid_order_after_payment: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     copy_text: [
@@ -534,7 +537,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.5",
+          version: "0.1.6",
         },
       },
     };

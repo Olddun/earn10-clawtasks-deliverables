@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.5"
+    "version": "0.1.6"
   },
   "authentication": {
     "required": false,
@@ -222,6 +222,11 @@
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md"
     },
     {
+      "name": "No-login operator handoff page",
+      "description": "Human-readable approval and payment page for authorized operators before paid fulfillment.",
+      "uri": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html"
+    },
+    {
       "name": "Buyer intent intake",
       "description": "No-login, non-secret buyer-intent endpoint for checkout friction and purchase-interest leads.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md"
@@ -245,6 +250,7 @@
   "links": {
     "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
+    "operator_handoff": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
     "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",

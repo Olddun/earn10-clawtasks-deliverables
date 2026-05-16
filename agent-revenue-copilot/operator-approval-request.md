@@ -36,9 +36,13 @@ After payment:
 
 ## Approval Form
 
-Tracked operator approval form:
+No-login operator handoff page:
 
 `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=approval-doc`
+
+GitHub approval issue if a public approval trail is needed:
+
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=approval-doc`
 
 Paid-order form after payment:
 
