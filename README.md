@@ -21,6 +21,7 @@ Recommended route: Agoragentic x402. Fallback routes are listed for buyers that 
 - AgentPact offer: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service: `03839e5a-3c35-4220-9033-dfafff81925a`
 - Fast agent buyer decision: [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md)
+- Primary purchase choices manifest: [`agent-revenue-copilot/primary-choices.json`](agent-revenue-copilot/primary-choices.json)
 - Direct Base USDC invoice: [`agent-revenue-copilot/payment.md`](agent-revenue-copilot/payment.md)
 - Paid order form after payment: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
 - Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
@@ -59,7 +60,7 @@ MCP discovery path:
 }
 ```
 
-The MCP server exposes `product_manifest`, `route_triage`, `checkout_diagnostics`, `operator_approval_request`, `buyer_intent_intake`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit. Use `buyer_routes` when an agent needs the three primary purchase choices before opening checkout: buy `$1.99` triage, buy `$9.90` audit, or ask an operator / record intent when the agent cannot pay. Use `checkout_diagnostics` next when the agent can see checkout routes but needs a one-path payment recommendation, operator handoff text, and evidence requirements. If the agent cannot pay, call `operator_approval_request` to generate a copy-ready prepayment approval request. If GitHub issue forms are too much friction, use `buyer_intent_intake` or `POST /agent-revenue-copilot/intent` to record a non-secret lead. Submit the paid-order form only after a receipt or transaction hash exists.
+The MCP server exposes `product_manifest`, `route_triage`, `checkout_diagnostics`, `operator_approval_request`, `buyer_intent_intake`, `buyer_routes`, `free_playbook`, `failure_paths`, and `payment_status` tools over stdio. Use `route_triage` first when an agent needs a buy/no-buy recommendation for free playbook vs. `$1.99` triage vs. `$9.90` starter audit. Use `buyer_routes` when an agent needs the three primary purchase choices before opening checkout: buy `$1.99` triage, buy `$9.90` audit, or ask an operator / record intent when the agent cannot pay. Static crawlers can read [`agent-revenue-copilot/primary-choices.json`](agent-revenue-copilot/primary-choices.json), and live crawlers can read `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json`; both use tracked sources so access logs can distinguish readers from checkout attempts. Use `checkout_diagnostics` next when the agent can see checkout routes but needs a one-path payment recommendation, operator handoff text, and evidence requirements. If the agent cannot pay, call `operator_approval_request` to generate a copy-ready prepayment approval request. If GitHub issue forms are too much friction, use `buyer_intent_intake` or `POST /agent-revenue-copilot/intent` to record a non-secret lead. Submit the paid-order form only after a receipt or transaction hash exists.
 
 Live HTTP MCP endpoint for directories and agent crawlers:
 
@@ -92,6 +93,7 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
 - [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md) - Minimal autonomous buyer checklist.
+- [`agent-revenue-copilot/primary-choices.json`](agent-revenue-copilot/primary-choices.json) - Three tracked first actions for static crawlers and buyer agents.
 - [`agent-revenue-copilot/checkout-diagnostics.md`](agent-revenue-copilot/checkout-diagnostics.md) - Agent/operator handoff for choosing exactly one payment path and submitting evidence.
 - [`agent-revenue-copilot/operator-approval-request.md`](agent-revenue-copilot/operator-approval-request.md) - Copy-ready prepayment approval request for agents that need an authorized operator.
 - [`agent-revenue-copilot/buyer-intent-intake.md`](agent-revenue-copilot/buyer-intent-intake.md) - No-login non-secret buyer-intent endpoint for checkout friction leads.

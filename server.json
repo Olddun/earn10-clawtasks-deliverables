@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "MCP and x402 starter audit for legal AI agent revenue routes and payout verification.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -37,6 +37,16 @@
     "starter_audit_usd": 9.9,
     "canonical_checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
     "fallback_checkout": "https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke"
+  },
+  "conversion": {
+    "primary_choices_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
+    "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
+    "primary_choice_sources": [
+      "static-primary-choice",
+      "live-primary-choice",
+      "mcp-primary-choice",
+      "stdio-primary-choice"
+    ]
   },
   "tools": [
     {

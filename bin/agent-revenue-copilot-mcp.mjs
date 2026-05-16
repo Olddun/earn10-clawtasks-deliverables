@@ -206,6 +206,8 @@ function tracked(route, source = "stdio-route-triage") {
 
 function primaryPurchaseChoices() {
   return {
+    name: "Agent Revenue Copilot primary purchase choices",
+    version: "0.1.5",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     choices: [
       {
@@ -238,6 +240,8 @@ function primaryPurchaseChoices() {
       },
     ],
     paid_delivery_rule: "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
+    static_primary_choices: "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
+    live_primary_choices: `${LIVE_ORIGIN}/agent-revenue-copilot/primary-choices.json`,
   };
 }
 
@@ -530,7 +534,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.4",
+          version: "0.1.5",
         },
       },
     };

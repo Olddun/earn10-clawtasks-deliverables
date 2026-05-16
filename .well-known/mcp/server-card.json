@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.4"
+    "version": "0.1.5"
   },
   "authentication": {
     "required": false,
@@ -202,6 +202,11 @@
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json"
     },
     {
+      "name": "Primary purchase choices",
+      "description": "Three first actions for crawlers and buyer agents before advanced checkout routes.",
+      "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json"
+    },
+    {
       "name": "Public sample audit",
       "description": "Example output format for the paid starter audit.",
       "uri": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md"
@@ -240,6 +245,8 @@
   "links": {
     "repository": "https://github.com/Olddun/earn10-clawtasks-deliverables",
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
+    "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
+    "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "server_json": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json",
     "launch_guide": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md"
   }
