@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.8"
+    "version": "0.1.9"
   },
   "authentication": {
     "required": false,
@@ -17,7 +17,8 @@
     "model": "one-time",
     "amount": 9.9,
     "currency": "USDC",
-    "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a"
+    "checkout": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+    "tracked_buy_now": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card"
   },
   "tools": [
     {
@@ -257,6 +258,8 @@
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
     "operator_handoff": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
     "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+    "canonical_buy_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card",
+    "canonical_buy_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=mcp-server-card",
     "agent_cannot_pay_rule": "Show the no-login operator handoff page and buyer intent form before GitHub issue forms when a buyer agent cannot pay.",
     "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",

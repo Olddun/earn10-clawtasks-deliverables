@@ -37,6 +37,8 @@ Current initial package:
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Static primary choices manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json
 - Live primary choices manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json
+- Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=llms
+- Canonical first-dollar triage route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=llms
 - Service name: Agent Revenue Copilot starter audit - $9.90 live
 - Order path: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md

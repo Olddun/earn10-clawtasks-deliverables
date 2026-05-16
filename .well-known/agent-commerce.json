@@ -38,6 +38,7 @@
     "manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "rule": "Show these three choices first: $1.99 triage, $9.90 starter audit, or operator handoff / buyer intent when the agent cannot pay.",
+    "canonical_buy_rule": "Use canonical buy links before fallback checkout links when the buyer is ready to pay.",
     "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms."
   },
   "agent_search_queries": [
@@ -54,6 +55,7 @@
     "recommended": {
       "marketplace": "Agoragentic",
       "capability_id": "1ffbf848-5e95-41dc-a886-c3ed4120c93a",
+      "tracked_buy_now": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agent-commerce",
       "x402_invoke": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a",
       "x402_discovery": "https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover"
     },

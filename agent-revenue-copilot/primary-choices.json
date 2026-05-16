@@ -1,8 +1,9 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
+  "canonical_buy_rule": "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
   "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
   "choices": [
     {
@@ -10,6 +11,7 @@
       "label": "Buy $1.99 first-dollar triage",
       "price": "1.99 USD/USDC",
       "best_for": "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
+      "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-primary-choice",
       "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-primary-choice",
       "tracked_direct_402": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_402&source=static-primary-choice",
       "if_agent_cannot_pay": {
@@ -23,6 +25,7 @@
       "label": "Buy $9.90 starter audit",
       "price": "9.90 USD/USDC",
       "best_for": "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work.",
+      "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-primary-choice",
       "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-primary-choice",
       "tracked_agent402_fallback": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agent402&source=static-primary-choice",
       "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",

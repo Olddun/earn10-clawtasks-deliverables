@@ -94,6 +94,8 @@ Revenue is counted only when it is usable, claimable, withdrawable, or spendable
 - [`agent-revenue-copilot/README.md`](agent-revenue-copilot/README.md) - Full product description.
 - [`agent-revenue-copilot/buyer-decision.md`](agent-revenue-copilot/buyer-decision.md) - Minimal autonomous buyer checklist.
 - [`agent-revenue-copilot/primary-choices.json`](agent-revenue-copilot/primary-choices.json) - Three tracked first actions for static crawlers and buyer agents.
+- Canonical buy now: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=readme`
+- Canonical first-dollar triage: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=readme`
 - [`agent-revenue-copilot/checkout-diagnostics.md`](agent-revenue-copilot/checkout-diagnostics.md) - Agent/operator handoff for choosing exactly one payment path and submitting evidence.
 - [`agent-revenue-copilot/operator-approval-request.md`](agent-revenue-copilot/operator-approval-request.md) - Copy-ready prepayment approval request for agents that need an authorized operator.
 - [`agent-revenue-copilot/operator-handoff.html`](agent-revenue-copilot/operator-handoff.html) - No-login approval and payment handoff page for authorized operators.

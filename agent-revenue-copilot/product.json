@@ -251,6 +251,9 @@
     "manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
     "rule": "Show these three choices first: $1.99 triage, $9.90 starter audit, or operator handoff / buyer intent when the agent cannot pay.",
+    "canonical_buy_rule": "Use canonical buy links before fallback checkout links when the buyer is ready to pay.",
+    "canonical_buy_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json",
+    "canonical_buy_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json",
     "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms."
   },
   "counting_rule": "Only usable, claimable, withdrawable, or spendable value counts. Pending bids, applications, unpaid submissions, open sell orders, non-withdrawable points, testnet funds, and unpurchased services do not count.",
@@ -258,6 +261,8 @@
     "readme": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/README.md",
     "primary_choices": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
+    "canonical_buy_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json",
+    "canonical_buy_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json",
     "commerce_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-commerce.json",
     "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
     "checkout_diagnostics": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md",
