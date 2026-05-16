@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.3"
+    "version": "0.1.4"
   },
   "authentication": {
     "required": false,
@@ -60,7 +60,7 @@
     },
     {
       "name": "buyer_routes",
-      "description": "Return active purchase, x402, direct USDC, and order-intake routes for the $9.90 starter audit.",
+      "description": "Return primary purchase choices plus active x402, direct USDC, and order-intake routes.",
       "inputSchema": {
         "type": "object",
         "properties": {},

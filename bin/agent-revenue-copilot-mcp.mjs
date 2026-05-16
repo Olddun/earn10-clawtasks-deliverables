@@ -82,6 +82,7 @@ async function checkPayment() {
 function routesFromProduct(product) {
   const initial = product.initial_package;
   return {
+    primary_choices: primaryPurchaseChoices(),
     price_usd: initial.price_usd,
     canonical: {
       marketplace: initial.canonical_marketplace,
@@ -201,6 +202,43 @@ const tools = [
 
 function tracked(route, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/out?route=${encodeURIComponent(route)}&source=${encodeURIComponent(source)}`;
+}
+
+function primaryPurchaseChoices() {
+  return {
+    rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
+    choices: [
+      {
+        key: "first_dollar_triage",
+        label: "Buy $1.99 first-dollar triage",
+        price: "1.99 USD/USDC",
+        best_for: "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
+        tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
+        tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
+        sample: "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
+      },
+      {
+        key: "starter_audit",
+        label: "Buy $9.90 starter audit",
+        price: "9.90 USD/USDC",
+        best_for: "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work.",
+        tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
+        tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
+        human_checkout: "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
+      },
+      {
+        key: "operator_handoff_or_intent",
+        label: "Ask operator to approve or record buyer intent",
+        price: "0 now",
+        best_for: "Agent can inspect checkout but cannot pay, or GitHub paid-order forms are too much friction.",
+        tracked_operator_approval: tracked("operator_approval_request", "stdio-primary-choice"),
+        buyer_intent_endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/intent`,
+        not_revenue: true,
+        not_paid_order: true,
+      },
+    ],
+    paid_delivery_rule: "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
+  };
 }
 
 function routeTriage(product, input = {}) {
@@ -492,7 +530,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.3",
+          version: "0.1.4",
         },
       },
     };

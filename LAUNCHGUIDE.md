@@ -126,7 +126,7 @@ Remote endpoint for clients that support streamable HTTP:
 ## Exposed Tools
 
 - `product_manifest`: Return the machine-readable product manifest.
-- `buyer_routes`: Return active purchase, x402, direct USDC, and order-intake routes.
+- `buyer_routes`: Return the three primary purchase choices plus active x402, direct USDC, and order-intake routes.
 - `free_playbook`: Return the free AI Agent Earn USDC lead magnet.
 - `failure_paths`: Return routes agents should usually skip first.
 - `payment_status`: Check the direct Base USDC invoice balance.
