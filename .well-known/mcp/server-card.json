@@ -1,7 +1,7 @@
 {
   "serverInfo": {
     "name": "Agent Revenue Copilot",
-    "version": "0.1.9"
+    "version": "0.1.10"
   },
   "authentication": {
     "required": false,
@@ -27,6 +27,28 @@
       "inputSchema": {
         "type": "object",
         "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "buy_now",
+      "description": "Return one canonical tracked checkout URL for the $9.90 starter audit or $1.99 triage, plus operator handoff if the agent cannot pay.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "offer": {
+            "type": "string",
+            "description": "starter_audit or first_dollar_triage. Defaults to starter_audit unless target_usd is 15 or less."
+          },
+          "target_usd": {
+            "type": "number",
+            "description": "Approximate buyer target value in USD, if known."
+          },
+          "can_pay": {
+            "type": "boolean",
+            "description": "True if the caller is authorized and able to complete payment now."
+          }
+        },
         "additionalProperties": false
       }
     },
@@ -258,6 +280,7 @@
     "landing": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/landing-page.html",
     "operator_handoff": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
     "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+    "buy_now_tool": "buy_now",
     "canonical_buy_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card",
     "canonical_buy_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=mcp-server-card",
     "agent_cannot_pay_rule": "Show the no-login operator handoff page and buyer intent form before GitHub issue forms when a buyer agent cannot pay.",

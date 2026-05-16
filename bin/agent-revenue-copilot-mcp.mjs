@@ -84,6 +84,13 @@ async function checkPayment() {
 function routesFromProduct(product) {
   const initial = product.initial_package;
   return {
+    buy_now: {
+      tool: "buy_now",
+      starter_audit: tracked("buy_starter_audit", "stdio-buyer-routes"),
+      first_dollar_triage: tracked("buy_triage", "stdio-buyer-routes"),
+      operator_handoff_page: OPERATOR_HANDOFF_URL,
+      buyer_intent_form: BUYER_INTENT_FORM_URL,
+    },
     primary_choices: primaryPurchaseChoices(),
     price_usd: initial.price_usd,
     canonical: {
@@ -115,6 +122,19 @@ const tools = [
     name: "product_manifest",
     description: "Return the machine-readable Agent Revenue Copilot product manifest.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
+  },
+  {
+    name: "buy_now",
+    description: "Return one canonical tracked checkout URL for the $9.90 starter audit or $1.99 triage, plus operator handoff if the agent cannot pay.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        offer: { type: "string", description: "starter_audit or first_dollar_triage. Defaults to starter_audit unless target_usd is 15 or less." },
+        target_usd: { type: "number", description: "Approximate buyer target value in USD, if known." },
+        can_pay: { type: "boolean", description: "True if the caller is authorized and able to complete payment now." },
+      },
+      additionalProperties: false,
+    },
   },
   {
     name: "route_triage",
@@ -209,8 +229,10 @@ function tracked(route, source = "stdio-route-triage") {
 function primaryPurchaseChoices() {
   return {
     name: "Agent Revenue Copilot primary purchase choices",
-    version: "0.1.9",
+    version: "0.1.10",
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
+    mcp_buy_now_tool: "buy_now",
+    buy_now_rule: "If an MCP buyer agent is payment-ready, call buy_now and open its canonical_buy URL before calling broader route-listing tools.",
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
     agent_cannot_pay_rule: "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
     choices: [
@@ -259,6 +281,50 @@ function primaryPurchaseChoices() {
     paid_delivery_rule: "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
     static_primary_choices: "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json",
     live_primary_choices: `${LIVE_ORIGIN}/agent-revenue-copilot/primary-choices.json`,
+  };
+}
+
+function buyNow(product, input = {}) {
+  const targetUsd = Number(input.target_usd || 0);
+  const requestedOffer = String(input.offer || "").toLowerCase();
+  const selectedOffer = requestedOffer.includes("triage") || (targetUsd > 0 && targetUsd <= 15)
+    ? "first_dollar_triage"
+    : "starter_audit";
+  const canPay = input.can_pay === true;
+  const initial = product.initial_package;
+  const entry = initial.entry_offer || {};
+  const isTriage = selectedOffer === "first_dollar_triage";
+  const route = isTriage ? "buy_triage" : "buy_starter_audit";
+  const source = isTriage ? "stdio-buy-now-triage" : "stdio-buy-now";
+
+  return {
+    ok: true,
+    action: canPay ? "open_canonical_checkout" : "ask_operator_or_record_intent",
+    selected_offer: selectedOffer,
+    price: isTriage ? "1.99 USD/USDC" : `${initial.price_usd.toFixed(2)} USD/USDC`,
+    canonical_buy: tracked(route, source),
+    use_this_first: true,
+    fallback_only_if_unavailable: isTriage
+      ? tracked("triage_mcplug", source)
+      : tracked("audit_agoragentic", source),
+    if_agent_cannot_pay: {
+      operator_handoff_page: OPERATOR_HANDOFF_URL,
+      buyer_intent_form: BUYER_INTENT_FORM_URL,
+      operator_approval_tool: "operator_approval_request",
+      buyer_intent_tool: "buyer_intent_intake",
+      rule: "Do not autonomously pay unless an authorized operator or wallet-capable agent has approved the payment.",
+    },
+    after_payment: {
+      submit_receipt_or_tx_hash: product.support?.paid_order_form,
+      evidence_required: ["marketplace order id", "x402 receipt", "Base USDC transaction hash"],
+      delivery_sla: product.fulfillment?.sla,
+    },
+    sample: isTriage ? entry.sample : product.public_docs?.sample_audit,
+    safety: {
+      do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "user funds"],
+      forbidden_work: ["fraud", "spam", "fake engagement", "KYC bypass", "private credential misuse", "deposit-funded tasks", "social/referral manipulation"],
+    },
+    counting_rule: "This response is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
   };
 }
 
@@ -534,6 +600,9 @@ async function callTool(name, input = {}) {
   if (name === "product_manifest") {
     return textResult(jsonText(await loadJson(PRODUCT_PATH)));
   }
+  if (name === "buy_now") {
+    return textResult(jsonText(buyNow(await loadJson(PRODUCT_PATH), input)));
+  }
   if (name === "route_triage") {
     return textResult(jsonText(routeTriage(await loadJson(PRODUCT_PATH), input)));
   }
@@ -572,7 +641,7 @@ async function handleRequest(request) {
         capabilities: { tools: {} },
         serverInfo: {
           name: "agent-revenue-copilot",
-          version: "0.1.9",
+          version: "0.1.10",
         },
       },
     };
