@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.45";
+const PRODUCT_VERSION = "0.1.46";
 
 let inputBuffer = "";
 
@@ -386,9 +386,9 @@ function x402V2Config(offer) {
       ? `${LIVE_ORIGIN}/agent-revenue-copilot/triage/pay`
       : `${LIVE_ORIGIN}/agent-revenue-copilot/pay`,
     buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
-    browser_rescue: purchaseBridge(bridgeOffer, "stdio-x402-browser-rescue"),
-    human_first_checkout_url: paymentAction(bridgeOffer, "stdio-x402-browser-rescue"),
-    browser_rescue_note: "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
+    browser_rescue: directPaymentPage(bridgeOffer, "stdio-x402-browser-rescue"),
+    human_first_checkout_url: directPaymentPage(bridgeOffer, "stdio-x402-browser-rescue"),
+    browser_rescue_note: "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
   };
 }
 
@@ -398,8 +398,8 @@ function primaryPurchaseChoices() {
     version: PRODUCT_VERSION,
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
-    first_action: "Human/operator buyers can open purchase_bridge or card_payment_action_url; browser purchase_bridge opens first-party order context, then the concrete MCPlug product page before card/Stripe checkout. Receipt/order id is submitted only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
-    buy_now_rule: "Human/operator buyers should use card_payment_action_url or purchase_bridge first. Wallet-capable MCP buyer agents can call buy_now and use agent_native_payment_action_url.",
+    first_action: "Use seller_visible_direct_payment_url first for exact Base USDC and seller-verifiable receipt. Card payment remains available through card_payment_action_url as a fallback for buyers who cannot use a wallet.",
+    buy_now_rule: "Payment-ready buyer agents should call buy_now and open seller_visible_direct_payment_url or agent_native_payment_action_url first. Use card_payment_action_url only as a human card fallback.",
     first_dollar_proof_rule: "If the buyer is not ready for $9.90, show the $1.99 first-dollar triage as the smallest paid proof path before the starter audit.",
     first_dollar_proof_path: firstDollarProofPath("stdio-primary-choice-proof"),
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
@@ -413,9 +413,9 @@ function primaryPurchaseChoices() {
         canonical_buy: tracked("buy_triage", "stdio-primary-choice"),
         purchase_bridge: purchaseBridge("first_dollar_triage", "stdio-primary-choice"),
         payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
-        recommended_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
-        recommended_payment_path: "human_card_checkout_first",
-        human_first_checkout_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
+        recommended_payment_action_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
+        recommended_payment_path: "seller_visible_direct_base_first",
+        human_first_checkout_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
@@ -439,9 +439,9 @@ function primaryPurchaseChoices() {
         canonical_buy: tracked("buy_starter_audit", "stdio-primary-choice"),
         purchase_bridge: purchaseBridge("starter_audit", "stdio-primary-choice"),
         payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
-        recommended_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
-        recommended_payment_path: "human_card_checkout_first",
-        human_first_checkout_url: paymentAction("starter_audit", "stdio-primary-choice"),
+        recommended_payment_action_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
+        recommended_payment_path: "seller_visible_direct_base_first",
+        human_first_checkout_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
@@ -495,9 +495,9 @@ function buyNow(product, input = {}) {
     price: isTriage ? "1.99 USD/USDC" : `${initial.price_usd.toFixed(2)} USD/USDC`,
     canonical_buy: tracked(route, source),
     purchase_bridge: purchaseBridge(isTriage ? "first_dollar_triage" : "starter_audit", source),
-    recommended_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
-    recommended_payment_path: "human_card_checkout_first",
-    human_first_checkout_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    recommended_payment_action_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    recommended_payment_path: "seller_visible_direct_base_first",
+    human_first_checkout_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
     agent_native_payment_action_url: agentNativePaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     seller_visible_direct_payment_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
