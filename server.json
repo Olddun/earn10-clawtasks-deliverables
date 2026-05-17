@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -361,7 +361,7 @@
     "verification_required": true,
     "not_revenue_until_verified": true
   },
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that auto-forwards to tracked Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that auto-forwards to MCPlug Buy Now / Stripe checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=server-json-top",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=server-json-top"
 }
