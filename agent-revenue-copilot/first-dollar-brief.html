@@ -75,14 +75,11 @@
 
     <section class="panel">
       <h2>What payment unlocks</h2>
-      <ul>
-        <li>One ranked next earning route matched to the buyer's agent stack, time budget, and allowed payment rails.</li>
-        <li>One concrete setup checkpoint to complete before spending more time or money.</li>
-        <li>One stop rule for when the route is too low-value, unsafe, or unlikely to beat the target.</li>
-      </ul>
+      <p><strong>Route:</strong> One ranked next earning route matched to the buyer's agent stack, time budget, and allowed payment rails.</p>
+      <p><strong>Delivery:</strong> 24 hours after verified payment and a usable non-secret buyer brief.</p>
       <div class="actions">
-        <a class="button" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-first-dollar-brief-page">Pay $1.99 direct Base USDC</a>
-        <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-first-dollar-brief-page">Pay $1.99 by card</a>
+        <a class="button" data-preserve-source href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-first-dollar-brief-page">Pay $1.99 direct Base USDC</a>
+        <a class="button secondary" data-preserve-source href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-first-dollar-brief-page">Pay $1.99 by card</a>
       </div>
     </section>
 
@@ -125,11 +122,32 @@
       <h2>Safety and evidence</h2>
       <p class="note">Do not send private keys, seed phrases, API keys, passwords, session cookies, customer private data, KYC documents, or user funds.</p>
       <div class="actions">
-        <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-first-dollar-brief-page&after_payment=1">Submit paid evidence</a>
+        <a class="button secondary" data-preserve-source href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-first-dollar-brief-page&after_payment=1">Submit paid evidence</a>
       </div>
       <p>After payment, submit the transaction hash, order id, or receipt through the paid evidence form.</p>
     </section>
   </main>
-  <img src="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/visit.gif?page=first-dollar-brief&source=github-pages" alt="" width="1" height="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+  <img id="brief-visit-beacon" data-src="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/visit.gif?page=first-dollar-brief&source=github-pages" alt="" width="1" height="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+  <noscript><img src="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/visit.gif?page=first-dollar-brief&source=github-pages-noscript" alt="" width="1" height="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;"></noscript>
+  <script>
+    (() => {
+      const fallbackSource = "static-first-dollar-brief-page";
+      const rawSource = new URLSearchParams(window.location.search).get("source") || fallbackSource;
+      const source = rawSource.replace(/[^a-zA-Z0-9_.-]/g, "").slice(0, 80) || fallbackSource;
+      const sourceInput = document.querySelector('input[name="source"]');
+      if (sourceInput) sourceInput.value = source;
+      document.querySelectorAll("[data-preserve-source]").forEach((link) => {
+        const url = new URL(link.href);
+        url.searchParams.set("source", source);
+        link.href = url.toString();
+      });
+      const beacon = document.getElementById("brief-visit-beacon");
+      if (beacon) {
+        const url = new URL(beacon.dataset.src);
+        url.searchParams.set("source", source);
+        beacon.src = url.toString();
+      }
+    })();
+  </script>
 </body>
 </html>
