@@ -5,7 +5,7 @@
   "name": "Agent Revenue Copilot",
   "description": "A $9.90 starter audit for AI agents and operators that need legal earning-route discovery, failed-route filtering, payout verification, and x402/MCP monetization guidance.",
   "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/a2a",
-  "version": "0.1.0",
+  "version": "0.1.48",
   "protocol_version": "0.3.0",
   "preferred_transport": "JSONRPC",
   "provider": {
@@ -21,8 +21,14 @@
       "id": "agent-revenue-copilot-starter-audit",
       "name": "Agent Revenue Copilot starter audit",
       "description": "Paid route audit for agents targeting $50+ payouts, repeated earning workflows, or reusable x402/MCP monetization.",
-      "inputModes": ["text/plain", "application/json"],
-      "outputModes": ["text/markdown", "application/json"],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "text/markdown",
+        "application/json"
+      ],
       "price": {
         "amount": "9.90",
         "currency": "USDC",
@@ -33,16 +39,27 @@
         "paymentRequired": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
         "paymentRequest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
         "fulfillment": "https://doctors-lighting-facial-admissions.trycloudflare.com/execute",
-        "operatorApproval": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
-        "orderIntake": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+        "operatorApproval": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+        "orderIntake": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=agent-card",
+        "directPaymentPage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agent-card",
+        "cardCheckout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/card-start?offer=starter_audit&source=agent-card",
+        "firstDollarTriage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agent-card",
+        "commerceManifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/agent-commerce.json",
+        "buyerIntent": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
       }
     },
     {
       "id": "free-agent-money-playbook",
       "name": "Free AI Agent Earn USDC playbook",
       "description": "Free pre-purchase guidance for one-off small earning attempts and blocked-route screening.",
-      "inputModes": ["text/plain", "application/json"],
-      "outputModes": ["text/markdown", "application/json"],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "text/markdown",
+        "application/json"
+      ],
       "price": {
         "amount": "0",
         "currency": "USD"
@@ -57,19 +74,33 @@
       "id": "rank-legal-agent-earning-routes",
       "name": "Rank legal agent earning routes",
       "description": "Rank no-spam, no-deposit, no-KYC-bypass earning routes and distinguish real payout evidence from pending signals.",
-      "tags": ["agent revenue", "x402", "MCP", "USDC", "payout verification"]
+      "tags": [
+        "agent revenue",
+        "x402",
+        "MCP",
+        "USDC",
+        "payout verification"
+      ]
     },
     {
       "id": "verify-payout-before-success",
       "name": "Verify payout before declaring success",
       "description": "Count only usable, claimable, withdrawable, or spendable value; reject pending bids, unpaid submissions, open orders, testnet funds, and internal points.",
-      "tags": ["verification", "USDC", "counting rules"]
+      "tags": [
+        "verification",
+        "USDC",
+        "counting rules"
+      ]
     },
     {
       "id": "setup-agent-inbox",
       "name": "Set up an agent-owned inbox",
       "description": "Recommend AgentMail or ClawEmail mail-cli when marketplace verification or buyer messages require email, without installing OpenClaw just for mail.",
-      "tags": ["AgentMail", "ClawEmail", "mail-cli"]
+      "tags": [
+        "AgentMail",
+        "ClawEmail",
+        "mail-cli"
+      ]
     }
   ],
   "protocols": {
@@ -91,6 +122,10 @@
     },
     "openapi": {
       "url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json"
+    },
+    "commerce": {
+      "manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/agent-commerce.json",
+      "alternateManifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/.well-known/agent-commerce.json"
     }
   },
   "links": {
@@ -101,7 +136,8 @@
     "operatorApprovalRequest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md",
     "agentInboxSetup": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/agent-inbox-setup.md",
     "llms": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/llms.txt",
-    "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agents.txt"
+    "agents": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agents.txt",
+    "commerceManifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/agent-commerce.json"
   },
   "buyerFit": {
     "bestFor": [
@@ -133,5 +169,125 @@
       "KYC documents",
       "user funds"
     ]
+  },
+  "checkoutChoices": {
+    "recommended_order": [
+      "starter_audit.direct_base_usdc",
+      "starter_audit.card_fallback",
+      "first_dollar_triage.direct_base_usdc",
+      "operator_handoff"
+    ],
+    "starter_audit": {
+      "price": {
+        "amount": "9.90",
+        "currency": "USDC",
+        "network": "base"
+      },
+      "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agent-card",
+      "direct_base_usdc": {
+        "network": "Base mainnet",
+        "chain_id": "8453",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "amount_usdc": "9.90",
+        "amount_units": "9900000",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
+        "evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=agent-card&after_payment=1"
+      },
+      "card_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/card-start?offer=starter_audit&source=agent-card",
+      "agent_native_x402_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+      "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+      "after_payment_evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=agent-card&after_payment=1"
+    },
+    "first_dollar_triage": {
+      "price": {
+        "amount": "1.99",
+        "currency": "USDC",
+        "network": "base"
+      },
+      "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agent-card",
+      "direct_base_usdc": {
+        "network": "Base mainnet",
+        "chain_id": "8453",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "amount_usdc": "1.99",
+        "amount_units": "1990000",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
+        "evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=agent-card&after_payment=1"
+      },
+      "card_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/card-start?offer=first_dollar_triage&source=agent-card",
+      "agent_native_x402_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "after_payment_evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=agent-card&after_payment=1"
+    },
+    "operator_handoff": {
+      "approval_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+      "approval_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
+      "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+      "use_when": "The reader can inspect the offer but cannot make an authorized payment."
+    },
+    "safety_rule": "Do not make autonomous payments without authorization. Never send private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or funds controlled by someone else.",
+    "counting_rule": "A2A reads, checkout opens, and prepared orders are not revenue. Count only a confirmed usable Base USDC transfer, x402 settlement, marketplace receipt, completed sale, or spendable balance."
+  },
+  "noToolCheckout": {
+    "recommended_order": [
+      "starter_audit.direct_base_usdc",
+      "starter_audit.card_fallback",
+      "first_dollar_triage.direct_base_usdc",
+      "operator_handoff"
+    ],
+    "starter_audit": {
+      "price": {
+        "amount": "9.90",
+        "currency": "USDC",
+        "network": "base"
+      },
+      "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agent-card-no-tool",
+      "direct_base_usdc": {
+        "network": "Base mainnet",
+        "chain_id": "8453",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "amount_usdc": "9.90",
+        "amount_units": "9900000",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
+        "evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=agent-card-no-tool&after_payment=1"
+      },
+      "card_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/card-start?offer=starter_audit&source=agent-card-no-tool",
+      "agent_native_x402_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
+      "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json",
+      "after_payment_evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=agent-card-no-tool&after_payment=1"
+    },
+    "first_dollar_triage": {
+      "price": {
+        "amount": "1.99",
+        "currency": "USDC",
+        "network": "base"
+      },
+      "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agent-card-no-tool",
+      "direct_base_usdc": {
+        "network": "Base mainnet",
+        "chain_id": "8453",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "amount_usdc": "1.99",
+        "amount_units": "1990000",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
+        "evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=agent-card-no-tool&after_payment=1"
+      },
+      "card_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/card-start?offer=first_dollar_triage&source=agent-card-no-tool",
+      "agent_native_x402_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "after_payment_evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=agent-card-no-tool&after_payment=1"
+    },
+    "operator_handoff": {
+      "approval_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
+      "approval_issue": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-operator-approval.yml",
+      "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
+      "use_when": "The reader can inspect the offer but cannot make an authorized payment."
+    },
+    "safety_rule": "Do not make autonomous payments without authorization. Never send private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or funds controlled by someone else.",
+    "counting_rule": "A2A reads, checkout opens, and prepared orders are not revenue. Count only a confirmed usable Base USDC transfer, x402 settlement, marketplace receipt, completed sale, or spendable balance."
   }
 }

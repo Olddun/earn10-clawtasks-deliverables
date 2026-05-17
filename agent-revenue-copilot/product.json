@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.47",
+  "version": "0.1.48",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -735,7 +735,7 @@
     "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
   },
   "no_tool_checkout": {
-    "version": "0.1.47",
+    "version": "0.1.48",
     "why": "Fresh access showed many readers GET the MCP info document but do not call MCP tools. These URLs work directly for static crawlers and GET-only buyer agents.",
     "first_action": "If payment is authorized, open first_dollar_triage.direct_payment_url first for seller-visible Base USDC. Use first_dollar_triage.card_payment_action_url only as a card fallback. If the agent cannot pay, open operator_handoff_url or buyer_intent_url.",
     "no_tool_required": true,
@@ -827,7 +827,7 @@
     "completion_rule": "Only a verified receipt, Base USDC transaction hash, marketplace order, settlement, or usable balance counts as revenue."
   },
   "mcp_get_no_tool_checkout": {
-    "version": "0.1.47",
+    "version": "0.1.48",
     "live_mcp_info": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp",
     "rule": "GET-only MCP readers should follow no_tool_checkout directly instead of waiting for tools/list or tools/call.",
     "evidence_basis": "2026-05-17 1h access slice showed 162 external-ish MCP info reads and 0 MCP tool calls."
