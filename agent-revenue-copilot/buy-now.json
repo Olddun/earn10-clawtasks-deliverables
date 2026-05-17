@@ -1,8 +1,8 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
-  "use_first": "Human/operator buyers should open card_payment_action_url first, then submit receipt/order id. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
+  "use_first": "Human/operator buyers should open card_payment_action_url first, pay through final_card_checkout, then submit receipt/order id only after payment succeeds. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
   "starter_audit": {
     "label": "Buy $9.90 starter audit",
@@ -388,7 +388,7 @@
     ]
   },
   "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
-  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the final card/Stripe click is tracked separately as final_card_checkout.",
+  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the only primary action is final_card_checkout. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }

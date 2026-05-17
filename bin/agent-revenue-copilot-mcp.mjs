@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.24";
+const PRODUCT_VERSION = "0.1.25";
 
 let inputBuffer = "";
 
@@ -290,7 +290,7 @@ function primaryPurchaseChoices() {
     version: PRODUCT_VERSION,
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
-    first_action: "Human/operator buyers should use card_payment_action_url first, then submit receipt/order id. Wallet-capable agents can use agent_native_payment_action_url.",
+    first_action: "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
     buy_now_rule: "Human/operator buyers should use card_payment_action_url or purchase_bridge first. Wallet-capable MCP buyer agents can call buy_now and use agent_native_payment_action_url.",
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
     agent_cannot_pay_rule: "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
