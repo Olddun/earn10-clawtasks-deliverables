@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.37",
+  "version": "0.1.38",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -268,6 +268,54 @@
       }
     },
     {
+      "name": "first_dollar_brief_intake",
+      "description": "Return the no-login endpoint and suggested non-secret payload for a $1.99 first-dollar triage brief before payment. This records prepayment interest only.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "target_amount": {
+            "type": "string",
+            "description": "Target amount or payout range."
+          },
+          "agent_stack": {
+            "type": "string",
+            "description": "Agent/operator stack or runtime."
+          },
+          "allowed_routes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Allowed payment or marketplace routes."
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Safety constraints."
+          },
+          "current_assets": {
+            "type": "string",
+            "description": "Non-secret assets already available."
+          },
+          "current_blocker": {
+            "type": "string",
+            "description": "What is stopping the $1.99 payment."
+          },
+          "goal": {
+            "type": "string",
+            "description": "Short non-secret earning goal."
+          },
+          "contact": {
+            "type": "string",
+            "description": "Optional non-secret reply channel."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
       "name": "payment_evidence_intake",
       "description": "Return the no-login endpoint for submitting non-secret order id, receipt, or transaction hash after payment. Evidence requires verification before revenue is counted.",
       "inputSchema": {
@@ -418,7 +466,9 @@
           "KYC documents",
           "funds controlled by someone else"
         ]
-      }
+      },
+      "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
     "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=server-json-proof",
     "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -451,6 +501,10 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
-  }
+    },
+    "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+  },
+  "first_dollar_brief_intake_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=server-json-top",
+  "first_dollar_brief_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
 }

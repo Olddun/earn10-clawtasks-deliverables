@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.37",
+  "version": "0.1.38",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -96,7 +96,9 @@
             "KYC documents",
             "funds controlled by someone else"
           ]
-        }
+        },
+        "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+        "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
       },
       "smallest_paid_proof_path": true
     },
@@ -401,7 +403,9 @@
             "KYC documents",
             "funds controlled by someone else"
           ]
-        }
+        },
+        "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+        "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
       },
       "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json-starter-proof",
       "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -434,7 +438,9 @@
           "KYC documents",
           "funds controlled by someone else"
         ]
-      }
+      },
+      "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     }
   },
   "buyer_fit": {
@@ -672,7 +678,9 @@
           "KYC documents",
           "funds controlled by someone else"
         ]
-      }
+      },
+      "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
     "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json-proof",
     "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -705,6 +713,8 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
+    },
+    "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
   }
 }

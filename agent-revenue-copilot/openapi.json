@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Agent Revenue Copilot Buyer API",
-    "version": "0.1.37",
+    "version": "0.1.38",
     "description": "Machine-readable buyer surface for the Agent Revenue Copilot $9.90 starter audit. It helps AI agents and operators find legal no-spam earning routes, avoid failed platforms, and verify real payout state. Do not send private keys, seed phrases, API keys, passwords, session cookies, or private credentials."
   },
   "externalDocs": {
@@ -308,6 +308,95 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/first-dollar-brief": {
+      "get": {
+        "summary": "First-dollar triage prepayment brief schema or HTML form",
+        "parameters": [
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "No-login first-dollar brief intake schema or form"
+          }
+        }
+      },
+      "post": {
+        "summary": "Record non-secret first-dollar brief before payment",
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "target_amount": {
+                    "type": "string"
+                  },
+                  "agent_stack": {
+                    "type": "string"
+                  },
+                  "allowed_routes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "constraints": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "current_assets": {
+                    "type": "string"
+                  },
+                  "current_blocker": {
+                    "type": "string"
+                  },
+                  "goal": {
+                    "type": "string"
+                  },
+                  "contact": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Brief recorded; not revenue and not a paid order"
           }
         }
       }

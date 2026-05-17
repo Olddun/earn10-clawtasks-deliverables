@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot First-Dollar Triage",
   "slug": "agent-revenue-copilot-first-dollar-triage",
-  "version": "0.1.37",
+  "version": "0.1.38",
   "price": {
     "amount": "1.99",
     "currency": "USDC",
@@ -317,7 +317,9 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
+    },
+    "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
   },
   "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
   "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
@@ -374,7 +376,9 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
+    },
+    "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
   },
   "buyer_confidence_rule": "This is the smallest paid proof path. It should return one concrete next earning step after payment is verified.",
   "smallest_paid_proof_path": true,

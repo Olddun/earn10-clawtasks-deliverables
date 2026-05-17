@@ -86,6 +86,7 @@ Paid route:
 - MCP checkout tool: checkout_diagnostics. Call it after route_triage when a buyer agent can see checkout routes but needs exactly one payment path, operator handoff text, and payment evidence requirements.
 - MCP approval tool: operator_approval_request. Call it when the buyer agent cannot pay autonomously and needs copy-ready text for an authorized operator.
 - MCP buyer intent tool: buyer_intent_intake. Call it when GitHub issue forms or payment forms are too much friction and the buyer needs to record a non-secret lead; this is not revenue.
+- MCP first-dollar brief tool: first_dollar_brief_intake. Call it when the buyer is considering the $1.99 triage but has not paid; this records prepayment context only.
 - Checkout diagnostics doc: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md
 - Tracked checkout diagnostics handoff: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=agents
 - Operator approval request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md
