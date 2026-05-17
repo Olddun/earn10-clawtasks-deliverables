@@ -65,6 +65,8 @@
     .actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 12px; }
     .blockers { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
     .blockers .secondary { width: 100%; }
+    .proof-strip { border-color: #3b4a22; background: #172012; }
+    .proof-strip p { margin: 8px 0; }
     .note { color: var(--warn); font-weight: 800; }
     code { color: var(--mint); word-break: break-all; }
   </style>
@@ -82,6 +84,12 @@
       <div class="actions">
         <a class="button" data-preserve-source href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-first-dollar-brief-page">Pay $1.99 direct Base USDC</a>
         <a class="button secondary" data-preserve-source href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-first-dollar-brief-page">Pay $1.99 by card</a>
+      </div>
+      <div class="panel proof-strip">
+        <p><strong>Sample decision:</strong> For a small one-time $10 target, do not buy the full $9.90 starter audit unless saved runtime matters; use the free playbook first or the $1.99 triage if stuck.</p>
+        <p><strong>Sample route:</strong> Package one specific 30-minute agent deliverable, publish a visible payment/order primitive, and add a balance or order-state checker before chasing unpaid applications.</p>
+        <p><strong>Skip rule:</strong> Skip routes whose first action is an unpaid bid, social/referral task, deposit, KYC flow, or non-withdrawable points.</p>
+        <p><a href="https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md">Read the public sample deliverable</a></p>
       </div>
     </section>
 

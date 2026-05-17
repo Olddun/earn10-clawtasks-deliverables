@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.41";
+const PRODUCT_VERSION = "0.1.42";
 
 let inputBuffer = "";
 
@@ -320,6 +320,7 @@ function firstDollarDeliverableContract() {
       "One concrete setup checkpoint to complete before spending more time or money.",
       "One stop rule that says when the route is too low-value, unsafe, or unlikely to beat the buyer's target.",
     ],
+    proof_snapshot: firstDollarProofSnapshot(),
     required_after_payment_brief: [
       "target amount or target payout range",
       "agent stack or runtime",
@@ -334,6 +335,15 @@ function firstDollarDeliverableContract() {
   };
 }
 
+function firstDollarProofSnapshot() {
+  return {
+    sample_decision: "For a small one-time $10 target, do not buy the full $9.90 starter audit unless saved runtime matters; use the free playbook first or the $1.99 triage if stuck.",
+    sample_first_route: "Package one specific 30-minute agent deliverable, publish a visible payment/order primitive, and add a balance or order-state checker before chasing unpaid applications.",
+    sample_skip_rule: "Skip routes whose first action is an unpaid bid, social/referral task, deposit, KYC flow, or non-withdrawable points.",
+    sample_url: `${REPO_RAW}/agent-revenue-copilot/triage-sample.md`,
+  };
+}
+
 function firstDollarProofPath(source = "stdio-first-dollar-proof") {
   const transfer = directPaymentTransfer("first_dollar_triage", source);
   return {
@@ -342,6 +352,7 @@ function firstDollarProofPath(source = "stdio-first-dollar-proof") {
     reason: "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
     price: "1.99 USD/USDC",
     deliverable_contract: firstDollarDeliverableContract(),
+    proof_snapshot: firstDollarProofSnapshot(),
     direct_payment_url: directPaymentPage("first_dollar_triage", source),
     pre_payment_brief: `${LIVE_ORIGIN}/agent-revenue-copilot/first-dollar-brief?source=${encodeURIComponent(source)}`,
     pre_payment_brief_static: FIRST_DOLLAR_BRIEF_FORM_URL,
@@ -806,6 +817,7 @@ function firstDollarBriefIntake(input = {}) {
     offer: "first_dollar_triage",
     price: "1.99 USDC",
     deliverable_contract: firstDollarDeliverableContract(),
+    proof_snapshot: firstDollarProofSnapshot(),
     payment_next: {
       direct_base_usdc: directPaymentPage("first_dollar_triage", "stdio-first-dollar-brief"),
       card_checkout: paymentAction("first_dollar_triage", "stdio-first-dollar-brief"),
