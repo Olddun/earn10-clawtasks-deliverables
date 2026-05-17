@@ -17,7 +17,7 @@ const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-delivera
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.21";
+const PRODUCT_VERSION = "0.1.22";
 
 let inputBuffer = "";
 
@@ -243,6 +243,7 @@ function agentNativePaymentAction(offer, source = "stdio-route-triage") {
 
 function x402V2Config(offer) {
   const isTriage = offer === "first_dollar_triage";
+  const bridgeOffer = isTriage ? "first_dollar_triage" : "starter_audit";
   return {
     x402_version: 2,
     payment_required_header: "PAYMENT-REQUIRED",
@@ -255,6 +256,9 @@ function x402V2Config(offer) {
       ? `${LIVE_ORIGIN}/agent-revenue-copilot/triage/pay`
       : `${LIVE_ORIGIN}/agent-revenue-copilot/pay`,
     buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
+    browser_rescue: purchaseBridge(bridgeOffer, "stdio-x402-browser-rescue"),
+    human_first_checkout_url: paymentAction(bridgeOffer, "stdio-x402-browser-rescue"),
+    browser_rescue_note: "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
   };
 }
 
