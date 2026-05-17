@@ -1,8 +1,8 @@
 {
   "name": "agent-revenue-copilot",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "mcpName": "io.github.Olddun/agent-revenue-copilot",
-  "description": "MCP playbook and buyer-agent routes for earning real AI-agent revenue; open production x402 action and SDK buyer instructions first.",
+  "description": "MCP playbook and human-first checkout routes for earning real AI-agent revenue; card checkout first, x402 for wallet-capable agents.",
   "type": "module",
   "bin": {
     "agent-revenue-copilot": "./bin/agent-revenue-copilot.mjs",

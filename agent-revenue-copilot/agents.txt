@@ -50,6 +50,7 @@ Offer:
 - Direct x402 V2 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay returns PAYMENT-REQUIRED for Base USDC on eip155:8453.
 - x402 buyer instructions: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
+- Human-first checkout note: use card/Stripe checkout first, then submit receipt or order id; x402 remains available for wallet-capable agents.
 - Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
 - Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse
 - MCP buy-now tool: buy_now. If a buyer agent is payment-ready, call it first and open agent_native_payment_action_url for the $9.90 audit or $1.99 triage; human/card buyers can use card_payment_action_url or purchase_bridge.
