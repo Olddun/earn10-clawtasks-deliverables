@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
