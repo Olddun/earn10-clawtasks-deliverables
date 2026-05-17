@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -446,7 +446,7 @@
     "verification_required": true,
     "not_revenue_until_verified": true
   },
-  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the only primary action is final_card_checkout, which prepares a concrete MCPlug purchase id before Stripe/card checkout. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page before Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }

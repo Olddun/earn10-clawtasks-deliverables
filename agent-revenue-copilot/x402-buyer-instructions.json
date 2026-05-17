@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot x402 buyer instructions",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "purpose": "Executable buyer-agent instructions for authorized x402 payments, including TypeScript and Python examples plus no-secrets rules.",
   "starter_audit": {
     "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",

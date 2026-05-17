@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot First-Dollar Triage",
   "slug": "agent-revenue-copilot-first-dollar-triage",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "price": {
     "amount": "1.99",
     "currency": "USDC",
