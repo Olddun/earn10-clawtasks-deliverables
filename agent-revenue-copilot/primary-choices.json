@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.34",
+  "version": "0.1.35",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
@@ -47,7 +47,22 @@
       "recommended_payment_path": "human_card_checkout_first",
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-primary-choice",
       "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-primary-choice",
-      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice"
+      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice",
+      "direct_transfer": {
+        "offer": "first_dollar_triage",
+        "amount_usdc": "1.99",
+        "amount_units": "1990000",
+        "network": "Base mainnet",
+        "chain_id": 8453,
+        "chain_caip2": "eip155:8453",
+        "token": "USDC",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
+        "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice&after_payment=1"
+      }
     },
     {
       "key": "starter_audit",
@@ -85,7 +100,22 @@
       "recommended_payment_path": "human_card_checkout_first",
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-primary-choice",
       "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-primary-choice",
-      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice"
+      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice",
+      "direct_transfer": {
+        "offer": "starter_audit",
+        "amount_usdc": "9.90",
+        "amount_units": "9900000",
+        "network": "Base mainnet",
+        "chain_id": 8453,
+        "chain_caip2": "eip155:8453",
+        "token": "USDC",
+        "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "receive_address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
+        "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
+        "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-primary-choice&after_payment=1"
+      }
     },
     {
       "key": "operator_handoff_or_intent",

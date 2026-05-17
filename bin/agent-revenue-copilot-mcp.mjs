@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.34";
+const PRODUCT_VERSION = "0.1.35";
 
 let inputBuffer = "";
 
@@ -263,6 +263,34 @@ function directPaymentPage(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/direct-pay?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
 }
 
+function directPaymentAmountUnits(amount) {
+  const [whole = "0", fractional = ""] = String(amount).split(".");
+  return `${Number.parseInt(whole || "0", 10)}${fractional.padEnd(6, "0").slice(0, 6)}`.replace(/^0+(?=\d)/, "");
+}
+
+function directPaymentTransfer(offer, source = "stdio-route-triage") {
+  const isTriage = offer === "first_dollar_triage";
+  const amount = isTriage ? "1.99" : "9.90";
+  const amountUnits = directPaymentAmountUnits(amount);
+  const walletUri = `ethereum:${USDC}@8453/transfer?address=${RECEIVE_ADDRESS}&uint256=${amountUnits}`;
+  const evidenceUrl = paymentEvidence(isTriage ? "first_dollar_triage" : "starter_audit", source);
+  return {
+    offer: isTriage ? "first_dollar_triage" : "starter_audit",
+    amount_usdc: amount,
+    amount_units: amountUnits,
+    network: "Base mainnet",
+    chain_id: 8453,
+    chain_caip2: BASE_CHAIN_CAIP2,
+    token: "USDC",
+    token_contract: USDC,
+    receive_address: RECEIVE_ADDRESS,
+    wallet_uri: walletUri,
+    explorer_address: `https://basescan.org/address/${RECEIVE_ADDRESS}`,
+    token_balance_url: `https://basescan.org/token/${USDC}?a=${RECEIVE_ADDRESS}`,
+    after_payment_evidence: evidenceUrl,
+  };
+}
+
 function agentNativePaymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=agent_native_payment&source=${encodeURIComponent(source)}`;
 }
@@ -313,6 +341,7 @@ function primaryPurchaseChoices() {
         agent_native_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
+        direct_transfer: directPaymentTransfer("first_dollar_triage", "stdio-primary-choice"),
         x402_v2: x402V2Config("first_dollar_triage"),
         tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
         tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
@@ -336,6 +365,7 @@ function primaryPurchaseChoices() {
         agent_native_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
+        direct_transfer: directPaymentTransfer("starter_audit", "stdio-primary-choice"),
         x402_v2: x402V2Config("starter_audit"),
         tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
         tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
@@ -391,6 +421,7 @@ function buyNow(product, input = {}) {
     agent_native_payment_action_url: agentNativePaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     seller_visible_direct_payment_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    direct_transfer: directPaymentTransfer(isTriage ? "first_dollar_triage" : "starter_audit", source),
     payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     x402_v2: x402V2Config(isTriage ? "first_dollar_triage" : "starter_audit"),
     x402_buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
