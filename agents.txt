@@ -13,12 +13,12 @@ Not for:
 Paid route:
 - Price: $9.90 initial package.
 - Agent-native payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents-top
-- Card fallback action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents-top
+- Direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents-top
 - Seller-visible direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agents-top
 - Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents-top
 - Browser rescue rule: if a human/operator opens an x402 endpoint directly, the live endpoint serves a checkout page for `Accept: text/html`; wallet-capable agents should request without browser HTML Accept to receive raw `PAYMENT-REQUIRED`.
 - First-dollar triage agent-native action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents-top
-- First-dollar triage card fallback URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents-top
+- First-dollar triage direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents-top
 - First-dollar triage direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agents-top
 - First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents-top
 - Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents-top
@@ -54,10 +54,10 @@ Paid route:
 - Static primary choices manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json
 - Live primary choices manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json
 - Agent-native payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents
-- Card fallback action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents
+- Direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents
 - Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents
 - First-dollar triage agent-native action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents
-- First-dollar triage card fallback URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents
+- First-dollar triage direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents
 - First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents
 - Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents
 - Canonical first-dollar triage route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=agents

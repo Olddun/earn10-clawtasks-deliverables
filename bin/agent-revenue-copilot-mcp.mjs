@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.48";
+const PRODUCT_VERSION = "0.1.49";
 
 let inputBuffer = "";
 
@@ -281,6 +281,10 @@ function paymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=primary_browser_checkout&source=${encodeURIComponent(source)}`;
 }
 
+function cardPaymentAction(offer, source = "stdio-route-triage") {
+  return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=final_card_checkout&source=${encodeURIComponent(source)}`;
+}
+
 function directPaymentPage(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/direct-pay?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
 }
@@ -359,7 +363,7 @@ function firstDollarProofPath(source = "stdio-first-dollar-proof") {
     pre_payment_brief_static: FIRST_DOLLAR_BRIEF_FORM_URL,
     wallet_uri: transfer.wallet_uri,
     amount_units: transfer.amount_units,
-    card_checkout: paymentAction("first_dollar_triage", source),
+    card_checkout: cardPaymentAction("first_dollar_triage", source),
     payment_request: `${LIVE_ORIGIN}/agent-revenue-copilot/triage-payment-request.json`,
     after_payment_evidence: paymentEvidence("first_dollar_triage", source),
     not_free: true,
@@ -398,8 +402,8 @@ function primaryPurchaseChoices() {
     version: PRODUCT_VERSION,
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
-    first_action: "Use seller_visible_direct_payment_url first for exact Base USDC and seller-verifiable receipt. Card payment remains available through card_payment_action_url as a fallback for buyers who cannot use a wallet.",
-    buy_now_rule: "Payment-ready buyer agents should call buy_now and open seller_visible_direct_payment_url or agent_native_payment_action_url first. Use card_payment_action_url only as a human card fallback.",
+    first_action: "Use seller_visible_direct_payment_url first for exact Base USDC and seller-verifiable receipt. The primary browser payment action also opens direct Base USDC; card_payment_action_url is fallback only.",
+    buy_now_rule: "Payment-ready buyer agents should call buy_now and open seller_visible_direct_payment_url, payment_action_url, or agent_native_payment_action_url first. Use card_payment_action_url only as a human card fallback.",
     first_dollar_proof_rule: "If the buyer is not ready for $9.90, show the $1.99 first-dollar triage as the smallest paid proof path before the starter audit.",
     first_dollar_proof_path: firstDollarProofPath("stdio-primary-choice-proof"),
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
@@ -417,7 +421,7 @@ function primaryPurchaseChoices() {
         recommended_payment_path: "seller_visible_direct_base_first",
         human_first_checkout_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
-        card_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
+        card_payment_action_url: cardPaymentAction("first_dollar_triage", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
         pre_payment_brief_endpoint: `${LIVE_ORIGIN}/agent-revenue-copilot/first-dollar-brief?source=stdio-primary-choice`,
         pre_payment_brief_form: FIRST_DOLLAR_BRIEF_FORM_URL,
@@ -443,7 +447,7 @@ function primaryPurchaseChoices() {
         recommended_payment_path: "seller_visible_direct_base_first",
         human_first_checkout_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
-        card_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
+        card_payment_action_url: cardPaymentAction("starter_audit", "stdio-primary-choice"),
         seller_visible_direct_payment_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
         direct_transfer: directPaymentTransfer("starter_audit", "stdio-primary-choice"),
         x402_v2: x402V2Config("starter_audit"),
@@ -499,7 +503,7 @@ function buyNow(product, input = {}) {
     recommended_payment_path: "seller_visible_direct_base_first",
     human_first_checkout_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
     agent_native_payment_action_url: agentNativePaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
-    card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    card_payment_action_url: cardPaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     seller_visible_direct_payment_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
     direct_transfer: directPaymentTransfer(isTriage ? "first_dollar_triage" : "starter_audit", source),
     first_dollar_proof_path: isTriage ? null : firstDollarProofPath(`${source}-proof`),
@@ -821,7 +825,7 @@ function firstDollarBriefIntake(input = {}) {
     proof_snapshot: firstDollarProofSnapshot(),
     payment_next: {
       direct_base_usdc: directPaymentPage("first_dollar_triage", "stdio-first-dollar-brief"),
-      card_checkout: paymentAction("first_dollar_triage", "stdio-first-dollar-brief"),
+      card_checkout: cardPaymentAction("first_dollar_triage", "stdio-first-dollar-brief"),
       payment_request: `${LIVE_ORIGIN}/agent-revenue-copilot/triage-payment-request.json`,
       after_payment_evidence: paymentEvidence("first_dollar_triage", "stdio-first-dollar-brief"),
     },

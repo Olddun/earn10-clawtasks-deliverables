@@ -23,7 +23,7 @@
     "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=mcp-server-card",
-    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
+    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=mcp-server-card",
     "x402_v2": {
       "x402_version": 2,
       "payment_required_header": "PAYMENT-REQUIRED",
@@ -326,9 +326,9 @@
     "payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
     "payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card",
     "agent_native_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=mcp-server-card",
-    "card_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
+    "card_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=mcp-server-card",
     "agent_native_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=mcp-server-card",
-    "card_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card"
+    "card_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=mcp-server-card"
   },
   "conversion": {
     "next_mcp_tool": "buy_now",
@@ -340,9 +340,9 @@
     "payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
     "payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card",
     "agent_native_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=mcp-server-card",
-    "card_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
+    "card_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=mcp-server-card",
     "agent_native_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=mcp-server-card",
-    "card_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card"
+    "card_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=mcp-server-card"
   },
   "purchase_bridge_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card-top",
   "purchase_bridge_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card-top",
@@ -350,9 +350,9 @@
   "payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card-top",
   "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card-top",
   "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=mcp-server-card-top",
-  "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card-top",
+  "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=mcp-server-card-top",
   "agent_native_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=mcp-server-card-top",
-  "card_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=mcp-server-card-top",
+  "card_payment_action_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=mcp-server-card-top",
   "x402_v2": {
     "x402_version": 2,
     "payment_required_header": "PAYMENT-REQUIRED",

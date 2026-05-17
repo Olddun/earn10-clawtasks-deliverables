@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Payment-ready buyers should open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Wallet-capable buyer agents can also use agent_native_payment_action_url and the x402 SDK quickstarts. Use card_payment_action_url only as a human card fallback.",
   "mcp_tool_equivalent": "buy_now",
@@ -14,7 +14,7 @@
     "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-buy-now",
-    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
+    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
     "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
@@ -244,7 +244,7 @@
         "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
         "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
       },
-      "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now-starter-proof",
+      "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-starter-proof",
       "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
       "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-starter-proof&after_payment=1",
       "not_free": true,
@@ -292,7 +292,7 @@
     "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-buy-now",
-    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
+    "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
     "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
@@ -567,7 +567,7 @@
     ]
   },
   "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens MCPlug Stripe/card checkout directly; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/browser primary checkout actions now open seller-visible direct Base USDC first; card fallback opens a first-party concrete order-start page and then MCPlug Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
   "first_dollar_proof_rule": "If the buyer is not ready for the 9.90 USD/USDC starter audit, use first_dollar_proof_path to buy the 1.99 USD/USDC triage as a small paid proof.",
@@ -623,7 +623,7 @@
       "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
-    "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now-proof",
+    "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-proof",
     "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
     "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-proof&after_payment=1",
     "not_free": true,

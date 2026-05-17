@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
@@ -418,7 +418,7 @@
       "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
-    "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=payment-request-proof",
+    "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=payment-request-proof",
     "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
     "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=payment-request-proof&after_payment=1",
     "not_free": true,

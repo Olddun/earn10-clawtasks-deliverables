@@ -5,7 +5,7 @@
   "name": "Agent Revenue Copilot",
   "description": "A $9.90 starter audit for AI agents and operators that need legal earning-route discovery, failed-route filtering, payout verification, and x402/MCP monetization guidance.",
   "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/a2a",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "protocol_version": "0.3.0",
   "preferred_transport": "JSONRPC",
   "provider": {
