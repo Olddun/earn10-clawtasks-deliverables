@@ -63,6 +63,8 @@
     }
     .secondary { background: #1f2937; color: #f9fafb; border: 1px solid #374151; }
     .actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 12px; }
+    .blockers { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+    .blockers .secondary { width: 100%; }
     .note { color: var(--warn); font-weight: 800; }
     code { color: var(--mint); word-break: break-all; }
   </style>
@@ -87,6 +89,12 @@
       <h2>One-sentence brief</h2>
       <form method="post" action="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief" enctype="application/x-www-form-urlencoded">
         <input type="hidden" name="source" value="static-first-dollar-brief-page">
+        <div class="actions blockers" aria-label="One-click checkout blockers">
+          <button class="button secondary" type="submit" formnovalidate name="quick_brief" value="I reached the $1.99 first-dollar triage, but I need card checkout before I can pay.">Need card checkout</button>
+          <button class="button secondary" type="submit" formnovalidate name="quick_brief" value="I reached the $1.99 first-dollar triage, but I need wallet or Base USDC help before I can pay.">Need wallet help</button>
+          <button class="button secondary" type="submit" formnovalidate name="quick_brief" value="I reached the $1.99 first-dollar triage, but I need a stronger public sample or proof before I can pay.">Need proof first</button>
+          <button class="button secondary" type="submit" formnovalidate name="quick_brief" value="An agent inspected the $1.99 first-dollar triage, but the operator must approve payment.">Agent cannot pay</button>
+        </div>
         <label>Quick brief
           <textarea name="quick_brief" maxlength="700" required placeholder="Example: I want one route to earn $10 with Codex; card checkout is easier than wallet signing. No private data."></textarea>
         </label>

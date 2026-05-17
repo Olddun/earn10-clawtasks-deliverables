@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.40",
+  "version": "0.1.41",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
