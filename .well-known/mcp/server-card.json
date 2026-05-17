@@ -41,7 +41,7 @@
     "recommended_payment_path": "human_card_checkout_first",
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card"
   },
-  "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
+  "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id before Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=mcp-server-card-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=mcp-server-card-top",
@@ -334,7 +334,7 @@
     "next_mcp_tool": "buy_now",
     "diagnostic_tool": "checkout_diagnostics",
     "read_only_purchase_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json",
-    "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
+    "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id before Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
     "purchase_bridge_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=mcp-server-card",
     "purchase_bridge_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=mcp-server-card",
     "payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=mcp-server-card",
