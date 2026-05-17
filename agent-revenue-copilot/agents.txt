@@ -22,10 +22,12 @@ Offer:
 - Agoragentic x402 invoke: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a
 - Agent-native payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-agents
 - Card payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-agents
+- Seller-visible direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=product-agents
 - Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=product-agents auto-forwards browser users to primary checkout; agents should add format=json or Accept: application/json to parse options without auto-forward.
 - Browser rescue rule: if a human/operator opens an x402 endpoint directly, the live endpoint serves a checkout page for `Accept: text/html`; wallet-capable agents should request without browser HTML Accept to receive raw `PAYMENT-REQUIRED`.
 - First-dollar triage agent-native action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-agents
 - First-dollar triage card action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-agents
+- First-dollar triage direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=product-agents
 - First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=product-agents auto-forwards browser users to primary checkout; agents should add format=json or Accept: application/json to parse options without auto-forward.
 - Agoragentic x402 discovery: https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a/discover
 - Agoragentic x402 task match: https://agoragentic.com/api/x402/execute/match?task=AI%20agent%20earn%20USDC%20legally%20x402%20MCP%20monetization

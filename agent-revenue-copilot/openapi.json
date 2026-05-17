@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Agent Revenue Copilot Buyer API",
-    "version": "0.1.33",
+    "version": "0.1.34",
     "description": "Machine-readable buyer surface for the Agent Revenue Copilot $9.90 starter audit. It helps AI agents and operators find legal no-spam earning routes, avoid failed platforms, and verify real payout state. Do not send private keys, seed phrases, API keys, passwords, session cookies, or private credentials."
   },
   "externalDocs": {
@@ -139,6 +139,60 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TriagePaymentRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agent-revenue-copilot/direct-pay": {
+      "get": {
+        "operationId": "getAgentRevenueCopilotDirectPayPage",
+        "summary": "Get seller-visible direct Base USDC payment page",
+        "description": "Returns a human-readable or JSON direct Base USDC payment page for the $9.90 starter audit or $1.99 first-dollar triage. The page shows exact amount, Base USDC token, receive address, payment evidence route, and counting rules.",
+        "servers": [
+          {
+            "url": "https://doctors-lighting-facial-admissions.trycloudflare.com"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "offer",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "starter_audit",
+                "first_dollar_triage"
+              ]
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Direct Base USDC payment page or JSON payment details",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "object"
                 }
               }
             }

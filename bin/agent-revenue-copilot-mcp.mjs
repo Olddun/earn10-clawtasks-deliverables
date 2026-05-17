@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.33";
+const PRODUCT_VERSION = "0.1.34";
 
 let inputBuffer = "";
 
@@ -259,6 +259,10 @@ function paymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=primary_browser_checkout&source=${encodeURIComponent(source)}`;
 }
 
+function directPaymentPage(offer, source = "stdio-route-triage") {
+  return `${LIVE_ORIGIN}/agent-revenue-copilot/direct-pay?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
+}
+
 function agentNativePaymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=agent_native_payment&source=${encodeURIComponent(source)}`;
 }
@@ -308,6 +312,7 @@ function primaryPurchaseChoices() {
         human_first_checkout_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("first_dollar_triage", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("first_dollar_triage", "stdio-primary-choice"),
+        seller_visible_direct_payment_url: directPaymentPage("first_dollar_triage", "stdio-primary-choice"),
         x402_v2: x402V2Config("first_dollar_triage"),
         tracked_checkout: tracked("triage_mcplug", "stdio-primary-choice"),
         tracked_direct_402: tracked("triage_402", "stdio-primary-choice"),
@@ -330,6 +335,7 @@ function primaryPurchaseChoices() {
         human_first_checkout_url: paymentAction("starter_audit", "stdio-primary-choice"),
         agent_native_payment_action_url: agentNativePaymentAction("starter_audit", "stdio-primary-choice"),
         card_payment_action_url: paymentAction("starter_audit", "stdio-primary-choice"),
+        seller_visible_direct_payment_url: directPaymentPage("starter_audit", "stdio-primary-choice"),
         x402_v2: x402V2Config("starter_audit"),
         tracked_checkout: tracked("audit_agoragentic", "stdio-primary-choice"),
         tracked_agent402_fallback: tracked("audit_agent402", "stdio-primary-choice"),
@@ -384,6 +390,7 @@ function buyNow(product, input = {}) {
     human_first_checkout_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     agent_native_payment_action_url: agentNativePaymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    seller_visible_direct_payment_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
     payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     x402_v2: x402V2Config(isTriage ? "first_dollar_triage" : "starter_audit"),
     x402_buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,

@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.33",
+  "version": "0.1.34",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Human/operator buyers should open card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id and auto-forwards to tracked Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
@@ -15,6 +15,7 @@
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-buy-now",
     "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
+    "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
       "payment_required_header": "PAYMENT-REQUIRED",
@@ -189,6 +190,7 @@
     "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
     "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-buy-now",
     "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
+    "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
       "payment_required_header": "PAYMENT-REQUIRED",

@@ -12,9 +12,11 @@ Recommended route: open the tracked canonical buy URL first. Fallback routes are
 
 - Agent-native payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=readme-top`
 - Card payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=readme-top` opens a first-party order-start page, prepares a concrete purchase id, then auto-forwards to tracked Stripe/card checkout.
+- Seller-visible direct Base USDC page: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=readme-top`
 - Purchase bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=readme-top`
 - First-dollar triage agent-native action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=readme-top`
 - First-dollar triage card action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=readme-top` opens a first-party order-start page, prepares a concrete purchase id, then auto-forwards to tracked Stripe/card checkout.
+- First-dollar triage direct Base USDC page: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=readme-top`
 - First-dollar triage bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=readme-top`
 - Canonical buy now: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=readme-top`
 - Canonical first-dollar triage: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=readme-top`

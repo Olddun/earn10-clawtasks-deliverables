@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.33",
+  "version": "0.1.34",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
@@ -22,6 +22,7 @@
     "address": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
     "purpose": "Agent Revenue Copilot starter audit payment"
   },
+  "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=payment-request-static",
   "fulfillment": {
     "type": "post_payment_audit",
     "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/execute",
