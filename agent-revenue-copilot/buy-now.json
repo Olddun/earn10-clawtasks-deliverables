@@ -1,8 +1,8 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.44",
+  "version": "0.1.45",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
-  "use_first": "Human/operator buyers should open card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id and auto-forwards to tracked Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
+  "use_first": "Human/operator buyers should open card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id and opens the concrete MCPlug product page before card/Stripe checkout, then submit receipt/order id only after payment succeeds. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
   "starter_audit": {
     "label": "Buy $9.90 starter audit",
@@ -176,7 +176,7 @@
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
     "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-buy-now",
     "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
-    "human_first_note": "Open card_payment_action_url first to prepare a concrete MCPlug order and auto-forward to tracked Stripe/card checkout.",
+    "human_first_note": "Open card_payment_action_url first to prepare a concrete MCPlug order and open the concrete MCPlug product page before card/Stripe checkout.",
     "direct_transfer": {
       "offer": "starter_audit",
       "amount_usdc": "9.90",
@@ -483,7 +483,7 @@
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
     "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-buy-now",
     "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
-    "human_first_note": "Open card_payment_action_url first to prepare a concrete MCPlug order and auto-forward to tracked Stripe/card checkout.",
+    "human_first_note": "Open card_payment_action_url first to prepare a concrete MCPlug order and open the concrete MCPlug product page before card/Stripe checkout.",
     "direct_transfer": {
       "offer": "first_dollar_triage",
       "amount_usdc": "1.99",
@@ -567,7 +567,7 @@
     ]
   },
   "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that auto-forwards to tracked Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens the concrete MCPlug product page before card/Stripe checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
   "first_dollar_proof_rule": "If the buyer is not ready for the 9.90 USD/USDC starter audit, use first_dollar_proof_path to buy the 1.99 USD/USDC triage as a small paid proof.",

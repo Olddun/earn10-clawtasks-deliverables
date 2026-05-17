@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.44";
+const PRODUCT_VERSION = "0.1.45";
 
 let inputBuffer = "";
 
@@ -398,7 +398,7 @@ function primaryPurchaseChoices() {
     version: PRODUCT_VERSION,
     rule: "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
     mcp_buy_now_tool: "buy_now",
-    first_action: "Human/operator buyers can open purchase_bridge or card_payment_action_url; browser purchase_bridge auto-forwards to the primary card checkout, then receipt/order id is submitted only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
+    first_action: "Human/operator buyers can open purchase_bridge or card_payment_action_url; browser purchase_bridge opens first-party order context, then the concrete MCPlug product page before card/Stripe checkout. Receipt/order id is submitted only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
     buy_now_rule: "Human/operator buyers should use card_payment_action_url or purchase_bridge first. Wallet-capable MCP buyer agents can call buy_now and use agent_native_payment_action_url.",
     first_dollar_proof_rule: "If the buyer is not ready for $9.90, show the $1.99 first-dollar triage as the smallest paid proof path before the starter audit.",
     first_dollar_proof_path: firstDollarProofPath("stdio-primary-choice-proof"),
