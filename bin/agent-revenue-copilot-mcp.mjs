@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.28";
+const PRODUCT_VERSION = "0.1.29";
 
 let inputBuffer = "";
 
@@ -280,7 +280,7 @@ function x402V2Config(offer) {
     buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
     browser_rescue: purchaseBridge(bridgeOffer, "stdio-x402-browser-rescue"),
     human_first_checkout_url: paymentAction(bridgeOffer, "stdio-x402-browser-rescue"),
-    browser_rescue_note: "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
+    browser_rescue_note: "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
   };
 }
 

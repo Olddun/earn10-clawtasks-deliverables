@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.28",
+  "version": "0.1.29",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -47,14 +47,14 @@
         "facilitator": "https://facilitator.payai.network",
         "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
         "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-        "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=x402-browser-rescue-static",
+        "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
         "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
-        "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+        "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
       },
       "recommended_payment_path": "human_card_checkout_first",
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
-      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=x402-browser-rescue-static",
-      "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
+      "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
     },
     "additional_marketplaces": [
       {
@@ -133,9 +133,9 @@
           "facilitator": "https://facilitator.payai.network",
           "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
           "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-          "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=x402-browser-rescue-static",
+          "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
           "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
-          "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+          "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
         }
       },
       {
@@ -160,9 +160,9 @@
           "facilitator": "https://facilitator.payai.network",
           "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
           "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-          "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=x402-browser-rescue-static",
+          "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
           "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
-          "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+          "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
         }
       }
     ],
@@ -224,9 +224,9 @@
       "live_mcp_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp",
       "sse_mcp_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse",
       "sse_mcp_message_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/messages",
-      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=x402-browser-rescue-static",
+      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
-      "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+      "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
     },
     "operator_handoff": {
       "checkout_diagnostics": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=product-json",
@@ -260,9 +260,9 @@
       "facilitator": "https://facilitator.payai.network",
       "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
       "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=x402-browser-rescue-static",
+      "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
-      "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+      "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
     },
     "recommended_payment_path": "human_card_checkout_first",
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json"
@@ -401,9 +401,9 @@
     "card_payment_action_starter_audit": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json",
     "agent_native_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-json",
     "card_payment_action_triage": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-json",
-    "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=x402-browser-rescue-static",
+    "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static",
-    "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+    "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
   },
   "support": {
     "agentmail": "agent-revenue-copilot-olddun@agentmail.xyz",
@@ -433,9 +433,9 @@
     "facilitator": "https://facilitator.payai.network",
     "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
     "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-    "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=x402-browser-rescue-static",
+    "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
     "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static",
-    "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
+    "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to card checkout. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
   },
   "recommended_payment_path": "human_card_checkout_first",
   "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-json-top",
