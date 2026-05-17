@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Human/operator buyers should open card_payment_action_url first, then submit receipt/order id. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
@@ -83,7 +83,8 @@
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static",
+          "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
       "no_secrets": [
@@ -253,7 +254,8 @@
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
+          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=buy-now-static",
+          "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
       "no_secrets": [
@@ -349,13 +351,15 @@
     "rule": "Do not autonomously pay unless an authorized operator or wallet-capable agent has approved the payment."
   },
   "after_payment": {
-    "submit_receipt_or_tx_hash": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    "submit_receipt_or_tx_hash": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static",
     "evidence_required": [
       "marketplace order id",
       "x402 receipt",
       "Base USDC transaction hash"
     ],
-    "delivery_sla": "24 hours after valid payment and usable buyer brief, or refund/replacement request is available."
+    "delivery_sla": "24 hours after valid payment and usable buyer brief, or refund/replacement request is available.",
+    "no_login_payment_evidence_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html",
+    "github_order_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
   },
   "safety": {
     "do_not_send": [

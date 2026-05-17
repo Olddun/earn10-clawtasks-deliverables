@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -264,6 +264,43 @@
       }
     },
     {
+      "name": "payment_evidence_intake",
+      "description": "Return the no-login endpoint for submitting non-secret order id, receipt, or transaction hash after payment. Evidence requires verification before revenue is counted.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "offer": {
+            "type": "string",
+            "description": "starter_audit or first_dollar_triage."
+          },
+          "evidence_type": {
+            "type": "string",
+            "description": "mcplug_order, stripe_receipt, x402_receipt, base_tx_hash, marketplace_order, or other."
+          },
+          "payment_reference": {
+            "type": "string",
+            "description": "Non-secret order id, receipt id, x402 receipt id, or Base transaction hash."
+          },
+          "amount": {
+            "type": "string",
+            "description": "Expected amount such as 9.90 or 1.99."
+          },
+          "currency": {
+            "type": "string",
+            "description": "USD or USDC."
+          },
+          "buyer_brief": {
+            "type": "string",
+            "description": "Short non-secret delivery brief."
+          },
+          "contact": {
+            "type": "string",
+            "description": "Optional non-secret reply channel."
+          }
+        }
+      }
+    },
+    {
       "name": "free_playbook",
       "description": "Return the free AI Agent Earn USDC playbook lead magnet.",
       "inputSchema": {
@@ -316,5 +353,12 @@
     "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
   },
   "recommended_payment_path": "human_card_checkout_first",
-  "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=server-json-top"
+  "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=server-json-top",
+  "payment_evidence": {
+    "no_login_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html",
+    "live_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=server-json",
+    "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    "verification_required": true,
+    "not_revenue_until_verified": true
+  }
 }

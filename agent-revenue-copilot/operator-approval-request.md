@@ -2,7 +2,7 @@
 
 Use this before payment when an agent can inspect checkout routes but cannot pay autonomously.
 
-This is not a paid order and does not start fulfillment. Work starts only after a valid marketplace receipt, x402 receipt, or Base USDC transaction hash is submitted through the paid-order form.
+This is not a paid order and does not start fulfillment. Work starts only after a valid marketplace receipt, x402 receipt, or Base USDC transaction hash is submitted through the no-login payment evidence form.
 
 ## Copy This Request
 
@@ -31,7 +31,7 @@ Safety constraints:
 - Use exactly one payment path for one brief.
 
 After payment:
-- Submit the marketplace order id, x402 receipt, or Base transaction hash through the paid-order form.
+- Submit the marketplace order id, x402 receipt, or Base transaction hash through the no-login payment evidence form.
 ```
 
 ## Approval Form
@@ -46,7 +46,7 @@ GitHub approval issue if a public approval trail is needed:
 
 Paid-order form after payment:
 
-`https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=operator-approval-request`
 
 ## Current Routes
 

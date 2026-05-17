@@ -51,7 +51,7 @@ Copy-ready approval request:
 
 Order intake after payment:
 
-`https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=checkout-diagnostics`
 
 ## Buyer Confidence
 

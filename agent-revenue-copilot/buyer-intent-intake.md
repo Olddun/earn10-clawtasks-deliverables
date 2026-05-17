@@ -30,7 +30,7 @@ Content type: `application/json`
 
 A successful response means only that a buyer-intent lead was recorded. It does not mean payment happened.
 
-After payment, submit one of these through the paid-order form:
+After payment, submit one of these through the no-login payment evidence form:
 
 - marketplace order id;
 - x402 receipt;
@@ -38,7 +38,7 @@ After payment, submit one of these through the paid-order form:
 
 Paid-order form:
 
-`https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buyer-intent-intake`
 
 ## Safety
 

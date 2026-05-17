@@ -15,9 +15,10 @@ const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.co
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
+const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.22";
+const PRODUCT_VERSION = "0.1.23";
 
 let inputBuffer = "";
 
@@ -209,6 +210,23 @@ const tools = [
     },
   },
   {
+    name: "payment_evidence_intake",
+    description: "Return the no-login endpoint for submitting non-secret order id, receipt, or transaction hash after payment. Evidence requires verification before revenue is counted.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        offer: { type: "string", description: "starter_audit or first_dollar_triage." },
+        evidence_type: { type: "string", description: "mcplug_order, stripe_receipt, x402_receipt, base_tx_hash, marketplace_order, or other." },
+        payment_reference: { type: "string", description: "Non-secret order id, receipt id, x402 receipt id, or Base transaction hash." },
+        amount: { type: "string", description: "Expected amount such as 9.90 or 1.99." },
+        currency: { type: "string", description: "USD or USDC." },
+        buyer_brief: { type: "string", description: "Short non-secret delivery brief." },
+        contact: { type: "string", description: "Optional non-secret reply channel." },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
     name: "free_playbook",
     description: "Return the free AI Agent Earn USDC playbook lead magnet.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
@@ -231,6 +249,10 @@ function tracked(route, source = "stdio-route-triage") {
 
 function purchaseBridge(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/buy?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
+}
+
+function paymentEvidence(offer = "starter_audit", source = "stdio-payment-evidence") {
+  return `${LIVE_ORIGIN}/agent-revenue-copilot/evidence?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
 }
 
 function paymentAction(offer, source = "stdio-route-triage") {
@@ -620,7 +642,8 @@ function operatorApprovalRequest(input = {}) {
     tracked_approval_form: tracked("operator_approval_request", "stdio-tool"),
     operator_handoff_page: OPERATOR_HANDOFF_URL,
     approval_template: OPERATOR_APPROVAL_URL,
-    paid_order_after_payment: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    paid_order_after_payment: paymentEvidence("starter_audit", "stdio-operator-approval"),
+    github_order_fallback: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     copy_text: [
       "Please approve exactly one Agent Revenue Copilot payment route.",
       "",
@@ -632,7 +655,7 @@ function operatorApprovalRequest(input = {}) {
       `Constraints: ${constraints}`,
       "",
       "Safety: the operator, not the agent, must approve any real payment. Do not include private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or user funds.",
-      "After payment, submit the marketplace order id, x402 receipt, or Base transaction hash through the paid-order form.",
+      "After payment, submit the marketplace order id, x402 receipt, or Base transaction hash through the no-login payment evidence form.",
     ].join("\n"),
     counting_rule: "Approval requests, unpaid issues, checkout reads, and crawler visits do not count as revenue. Count only confirmed usable, claimable, withdrawable, or spendable value.",
   };
@@ -657,7 +680,34 @@ function buyerIntentIntake(input = {}) {
       constraints: Array.isArray(input.constraints) ? input.constraints.slice(0, 12) : [],
       contact: String(input.contact || "").replace(/\s+/g, " ").slice(0, 160),
     },
-    paid_order_after_payment: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    paid_order_after_payment: paymentEvidence("starter_audit", "stdio-buyer-intent"),
+    payment_evidence_form: PAYMENT_EVIDENCE_FORM_URL,
+    github_order_fallback: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "user funds"],
+  };
+}
+
+function paymentEvidenceIntake(input = {}) {
+  const offer = input.offer === "first_dollar_triage" || input.offer === "triage" ? "first_dollar_triage" : "starter_audit";
+  return {
+    ok: true,
+    endpoint: paymentEvidence(offer, "stdio-payment-evidence"),
+    form: PAYMENT_EVIDENCE_FORM_URL,
+    method: "POST",
+    content_type: "application/json",
+    verification_required: true,
+    not_revenue_until_verified: true,
+    suggested_payload: {
+      offer,
+      evidence_type: String(input.evidence_type || "unknown").replace(/\s+/g, " ").slice(0, 80),
+      payment_reference: String(input.payment_reference || input.order_id || input.tx_hash || input.receipt_id || "").replace(/\s+/g, " ").slice(0, 240),
+      amount: String(input.amount || (offer === "first_dollar_triage" ? "1.99" : "9.90")).replace(/\s+/g, " ").slice(0, 40),
+      currency: String(input.currency || (offer === "first_dollar_triage" ? "USD" : "USDC")).replace(/\s+/g, " ").slice(0, 20),
+      buyer_brief: String(input.buyer_brief || input.brief || "").replace(/\s+/g, " ").slice(0, 800),
+      contact: String(input.contact || "").replace(/\s+/g, " ").slice(0, 160),
+    },
+    github_order_fallback: "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
+    counting_rule: "This is not revenue until usable, claimable, withdrawable, or spendable value is verified.",
     do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "user funds"],
   };
 }
@@ -680,6 +730,9 @@ async function callTool(name, input = {}) {
   }
   if (name === "buyer_intent_intake") {
     return textResult(jsonText(buyerIntentIntake(input)));
+  }
+  if (name === "payment_evidence_intake") {
+    return textResult(jsonText(paymentEvidenceIntake(input)));
   }
   if (name === "buyer_routes") {
     return textResult(jsonText(routesFromProduct(await loadJson(PRODUCT_PATH))));

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit Payment Evidence - Agent Revenue Copilot</title>
+  <meta name="description" content="No-login payment evidence form for Agent Revenue Copilot orders. Submit only non-secret order ids, receipts, or transaction hashes after payment.">
+  <style>
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0d1117; color: #eef5f7; }
+    main { max-width: 760px; margin: 0 auto; padding: 38px 20px 70px; }
+    h1 { font-size: clamp(32px, 6vw, 54px); line-height: 1.04; margin: 0 0 14px; letter-spacing: 0; }
+    p, label { color: #b8c5cf; font-size: 16px; line-height: 1.55; }
+    form { display: grid; gap: 14px; margin-top: 22px; }
+    label { display: grid; gap: 6px; font-weight: 700; }
+    input, select, textarea { width: 100%; box-sizing: border-box; border: 1px solid #334155; border-radius: 8px; background: #111821; color: #eef5f7; padding: 11px 12px; font: inherit; }
+    textarea { min-height: 120px; resize: vertical; }
+    button { min-height: 48px; border: 0; border-radius: 8px; background: #34d399; color: #062016; font-weight: 900; font: inherit; cursor: pointer; }
+    .panel { border: 1px solid #293647; border-radius: 8px; background: #111821; padding: 16px; margin: 18px 0; }
+    code, a { color: #8bd3ff; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Submit payment evidence</h1>
+    <p>This records a non-secret order id, receipt, x402 reference, or Base transaction hash after payment. It does not count as revenue or unlock paid delivery until usable value is verified.</p>
+    <section class="panel">
+      <p>Do not send private keys, seed phrases, API keys, passwords, session cookies, KYC documents, or funds controlled by someone else.</p>
+      <p>Machine endpoint: <code>https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence</code></p>
+    </section>
+    <form method="post" action="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence">
+      <input type="hidden" name="source" value="static-payment-evidence-page">
+      <label>Offer
+        <select name="offer">
+          <option value="starter_audit">$9.90 starter audit</option>
+          <option value="first_dollar_triage">$1.99 first-dollar triage</option>
+        </select>
+      </label>
+      <label>Evidence type
+        <select name="evidence_type">
+          <option value="mcplug_order">MCPlug order</option>
+          <option value="stripe_receipt">Stripe receipt</option>
+          <option value="x402_receipt">x402 receipt</option>
+          <option value="base_tx_hash">Base transaction hash</option>
+          <option value="marketplace_order">Marketplace order</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label>Order id, receipt id, or transaction hash
+        <input name="payment_reference" required maxlength="240" autocomplete="off">
+      </label>
+      <label>Amount
+        <input name="amount" maxlength="40" value="9.90">
+      </label>
+      <label>Currency
+        <input name="currency" maxlength="20" value="USDC">
+      </label>
+      <label>Non-secret buyer brief
+        <textarea name="buyer_brief" maxlength="800" placeholder="Goal, target amount, allowed routes, constraints. No secrets."></textarea>
+      </label>
+      <label>Reply channel, optional
+        <input name="contact" maxlength="160" autocomplete="off">
+      </label>
+      <button type="submit">Record evidence for verification</button>
+    </form>
+    <section class="panel">
+      <p>GitHub fallback: <a href="https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml">paid-order issue template</a></p>
+      <p>Counting rule: only confirmed usable, claimable, withdrawable, or spendable value counts as revenue.</p>
+    </section>
+  </main>
+</body>
+</html>

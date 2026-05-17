@@ -165,7 +165,7 @@ Fallback paid routes:
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
 - Direct 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay` returns x402 V2 `PAYMENT-REQUIRED` metadata for Base USDC on `eip155:8453`.
 - x402 buyer instructions: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)`
-- Paid order intake form: [GitHub issue form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml)
+- Paid evidence intake: [no-login evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or [live evidence endpoint](https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=product-readme). GitHub issue forms remain a fallback only.
 - Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.

@@ -126,6 +126,6 @@ If PayanAgent is not usable for the buyer, direct Base USDC payment is documente
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
 
-After payment, submit the order through the [paid audit order form](https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
+After payment, submit the order through the [no-login payment evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or the [live evidence endpoint](https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=order-md). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
 
 Support inbox for buyer questions and marketplace review: `agent-revenue-copilot-olddun@agentmail.xyz`.
