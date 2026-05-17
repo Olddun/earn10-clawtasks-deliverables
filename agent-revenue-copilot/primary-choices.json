@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
@@ -44,7 +44,9 @@
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
       },
       "recommended_payment_path": "human_card_checkout_first",
-      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-primary-choice"
+      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-primary-choice",
+      "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-primary-choice",
+      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice"
     },
     {
       "key": "starter_audit",
@@ -79,7 +81,9 @@
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, use browser_rescue or human_first_checkout_url. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
       },
       "recommended_payment_path": "human_card_checkout_first",
-      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-primary-choice"
+      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-primary-choice",
+      "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-primary-choice",
+      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice"
     },
     {
       "key": "operator_handoff_or_intent",
@@ -97,5 +101,8 @@
   ],
   "paid_delivery_rule": "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
   "full_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json",
-  "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json"
+  "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
+  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the final card/Stripe click is tracked separately as final_card_checkout.",
+  "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
+  "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }

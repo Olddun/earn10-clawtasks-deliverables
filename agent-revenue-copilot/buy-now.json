@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Human/operator buyers should open card_payment_action_url first, then submit receipt/order id. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
@@ -172,7 +172,10 @@
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=x402-browser-rescue-static"
     },
     "recommended_payment_path": "human_card_checkout_first",
-    "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now"
+    "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
+    "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-buy-now",
+    "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
+    "human_first_note": "Open card_payment_action_url first to reach the first-party confirmation page, then continue to final_card_checkout."
   },
   "first_dollar_triage": {
     "label": "Buy $1.99 first-dollar triage",
@@ -343,7 +346,10 @@
       "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=x402-browser-rescue-static"
     },
     "recommended_payment_path": "human_card_checkout_first",
-    "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now"
+    "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
+    "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-buy-now",
+    "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
+    "human_first_note": "Open card_payment_action_url first to reach the first-party confirmation page, then continue to final_card_checkout."
   },
   "if_agent_cannot_pay": {
     "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
@@ -381,5 +387,8 @@
       "social/referral manipulation"
     ]
   },
-  "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance."
+  "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
+  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the final card/Stripe click is tracked separately as final_card_checkout.",
+  "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
+  "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }

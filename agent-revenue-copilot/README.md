@@ -146,10 +146,10 @@ Fallback paid routes:
 - Static buy-now manifest: [buy-now.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json)
 - Live buy-now manifest: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json`
 - Agent-native payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-readme`
-- Card payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-readme`
+- Card payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-readme` opens a first-party checkout confirmation before final Stripe/card checkout.
 - Purchase bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=product-readme`
 - First-dollar triage agent-native action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-readme`
-- First-dollar triage card action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-readme`
+- First-dollar triage card action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-readme` opens a first-party checkout confirmation before final checkout.
 - First-dollar triage bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=product-readme`
 - Fast agent buyer decision: [buyer-decision.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md)
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)

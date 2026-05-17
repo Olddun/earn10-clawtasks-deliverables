@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -445,5 +445,8 @@
     "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     "verification_required": true,
     "not_revenue_until_verified": true
-  }
+  },
+  "checkout_confirmation_note": "Human/card checkout actions first open a first-party confirmation page; the final card/Stripe click is tracked separately as final_card_checkout.",
+  "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
+  "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }
