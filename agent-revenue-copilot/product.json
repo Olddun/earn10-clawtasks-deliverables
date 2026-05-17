@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.42",
+  "version": "0.1.43",
   "purchase_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=product-json-top",
   "canonical_buy_triage_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=product-json-top",
@@ -641,6 +641,11 @@
     "sample_first_route": "Package one specific 30-minute agent deliverable, publish a visible payment/order primitive, and add a balance or order-state checker before chasing unpaid applications.",
     "sample_skip_rule": "Skip routes whose first action is an unpaid bid, social/referral task, deposit, KYC flow, or non-withdrawable points.",
     "sample_url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md"
+  },
+  "direct_pay_in_place_blocker_capture": {
+    "version": "0.1.43",
+    "applies_to": "first_dollar_triage",
+    "rule": "The live direct-pay page now shows card checkout, wallet transfer, paid-evidence submission, and one-click non-secret blocker buttons in-place."
   },
   "first_dollar_proof_path": {
     "offer": "first_dollar_triage",
