@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.38";
+const PRODUCT_VERSION = "0.1.39";
 
 let inputBuffer = "";
 
@@ -218,6 +218,7 @@ const tools = [
       type: "object",
       properties: {
         target_amount: { type: "string", description: "Target amount or payout range." },
+        quick_brief: { type: "string", description: "One-sentence non-secret earning goal or payment blocker; enough to start the prepayment record." },
         agent_stack: { type: "string", description: "Agent/operator stack or runtime." },
         allowed_routes: { type: "array", items: { type: "string" }, description: "Allowed payment or marketplace routes." },
         constraints: { type: "array", items: { type: "string" }, description: "Safety constraints." },
@@ -801,6 +802,7 @@ function firstDollarBriefIntake(input = {}) {
     method: "POST",
     content_type: "application/json or application/x-www-form-urlencoded",
     purpose: "Capture the minimum non-secret brief before the $1.99 first-dollar triage payment.",
+    recommended_first_action: "Pay $1.99 now, or submit only quick_brief so the seller can distinguish checkout hesitation from no audience.",
     offer: "first_dollar_triage",
     price: "1.99 USDC",
     deliverable_contract: firstDollarDeliverableContract(),
@@ -813,14 +815,16 @@ function firstDollarBriefIntake(input = {}) {
     not_revenue: true,
     not_paid_order: true,
     does_not_unlock_paid_delivery: true,
+    minimum_fields: ["quick_brief"],
     suggested_payload: {
+      quick_brief: String(input.quick_brief || input.goal || "I want one route to earn about $10, but I have not completed checkout yet.").replace(/\s+/g, " ").slice(0, 700),
       target_amount: String(input.target_amount || input.target_usd || "about 10 USD").replace(/\s+/g, " ").slice(0, 80),
       agent_stack: String(input.agent_stack || input.buyer_type || "unknown").replace(/\s+/g, " ").slice(0, 180),
       allowed_routes: Array.isArray(input.allowed_routes) ? input.allowed_routes.slice(0, 12) : ["x402", "direct Base USDC", "MCPlug/card"],
       constraints: Array.isArray(input.constraints) ? input.constraints.slice(0, 12) : ["no KYC bypass", "no deposits", "no social spam", "no fake engagement", "no private credentials", "no user funds"],
       current_assets: String(input.current_assets || "").replace(/\s+/g, " ").slice(0, 500),
       current_blocker: String(input.current_blocker || "buyer reached first-dollar payment decision but has not paid yet").replace(/\s+/g, " ").slice(0, 360),
-      goal: String(input.goal || "").replace(/\s+/g, " ").slice(0, 700),
+      goal: String(input.quick_brief || input.goal || "").replace(/\s+/g, " ").slice(0, 700),
       contact: String(input.contact || "").replace(/\s+/g, " ").slice(0, 160),
     },
     do_not_send: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "customer private data", "KYC documents", "user funds"],

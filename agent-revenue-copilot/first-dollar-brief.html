@@ -33,6 +33,8 @@
     .panel { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 18px; margin: 16px 0; }
     form { display: grid; gap: 14px; }
     label { display: grid; gap: 7px; font-weight: 750; }
+    details { display: grid; gap: 14px; }
+    summary { color: var(--text); cursor: pointer; font-weight: 850; margin-bottom: 12px; }
     input, textarea {
       width: 100%;
       border: 1px solid var(--line);
@@ -68,8 +70,8 @@
 <body>
   <main>
     <div class="eyebrow">Prepayment brief for $1.99 triage</div>
-    <h1>Prepare the first-dollar brief</h1>
-    <p>This form captures the minimum non-secret context before payment. It does not count as revenue, does not create a paid order, and does not unlock delivery. Use it when a buyer or agent has reached the payment decision but wants the brief ready first.</p>
+    <h1>Pay or leave one sentence</h1>
+    <p>Use the buttons if you are ready. If checkout is blocked, send one non-secret sentence so the seller can tell the difference between browsing, agent-only inspection, and real purchase hesitation.</p>
 
     <section class="panel">
       <h2>What payment unlocks</h2>
@@ -78,48 +80,54 @@
         <li>One concrete setup checkpoint to complete before spending more time or money.</li>
         <li>One stop rule for when the route is too low-value, unsafe, or unlikely to beat the target.</li>
       </ul>
-    </section>
-
-    <section class="panel">
-      <h2>Brief</h2>
-      <form method="post" action="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief" enctype="application/x-www-form-urlencoded">
-        <input type="hidden" name="source" value="static-first-dollar-brief-page">
-        <label>Target amount or payout range
-          <input name="target_amount" maxlength="80" placeholder="Example: earn $10 once, or test a $1.99 paid proof">
-        </label>
-        <label>Agent stack or runtime
-          <input name="agent_stack" maxlength="180" placeholder="Example: Codex, Claude MCP, x402 buyer agent, solo operator">
-        </label>
-        <label>Allowed routes
-          <input name="allowed_routes" maxlength="240" value="x402, direct Base USDC, MCPlug/card, GitHub issue, marketplace">
-        </label>
-        <label>Constraints
-          <input name="constraints" maxlength="300" value="no KYC bypass, no deposits, no social spam, no fake engagement, no private credentials, no user funds">
-        </label>
-        <label>Current assets available
-          <textarea name="current_assets" maxlength="500" placeholder="Accounts, listings, wallet capability, docs, code, or marketplace access. No secrets."></textarea>
-        </label>
-        <label>Current payment blocker
-          <textarea name="current_blocker" maxlength="360" placeholder="Wallet unsure, card checkout friction, agent cannot pay, needs operator approval, wants proof first..."></textarea>
-        </label>
-        <label>Goal
-          <textarea name="goal" maxlength="700" placeholder="What should the $1.99 triage decide? No private data."></textarea>
-        </label>
-        <label>Optional contact
-          <input name="contact" maxlength="160" autocomplete="off" placeholder="Email, GitHub handle, or marketplace handle">
-        </label>
-        <button class="button" type="submit">Record brief before payment</button>
-      </form>
-    </section>
-
-    <section class="panel">
-      <h2>Pay after the brief</h2>
-      <p class="note">Do not send private keys, seed phrases, API keys, passwords, session cookies, customer private data, KYC documents, or user funds.</p>
       <div class="actions">
         <a class="button" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-first-dollar-brief-page">Pay $1.99 direct Base USDC</a>
         <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-first-dollar-brief-page">Pay $1.99 by card</a>
       </div>
-      <p>After payment, submit the transaction hash, order id, or receipt through the <a href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-first-dollar-brief-page&after_payment=1">paid evidence form</a>.</p>
+    </section>
+
+    <section class="panel">
+      <h2>One-sentence brief</h2>
+      <form method="post" action="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="source" value="static-first-dollar-brief-page">
+        <label>Quick brief
+          <textarea name="quick_brief" maxlength="700" required placeholder="Example: I want one route to earn $10 with Codex; card checkout is easier than wallet signing. No private data."></textarea>
+        </label>
+        <button class="button" type="submit">Record one-sentence brief</button>
+        <details class="panel">
+          <summary>Optional details</summary>
+          <label>Target amount or payout range
+            <input name="target_amount" maxlength="80" placeholder="Example: earn $10 once, or test a $1.99 paid proof">
+          </label>
+          <label>Agent stack or runtime
+            <input name="agent_stack" maxlength="180" placeholder="Example: Codex, Claude MCP, x402 buyer agent, solo operator">
+          </label>
+          <label>Allowed routes
+            <input name="allowed_routes" maxlength="240" value="x402, direct Base USDC, MCPlug/card, GitHub issue, marketplace">
+          </label>
+          <label>Constraints
+            <input name="constraints" maxlength="300" value="no KYC bypass, no deposits, no social spam, no fake engagement, no private credentials, no user funds">
+          </label>
+          <label>Current assets available
+            <textarea name="current_assets" maxlength="500" placeholder="Accounts, listings, wallet capability, docs, code, or marketplace access. No secrets."></textarea>
+          </label>
+          <label>Current payment blocker
+            <textarea name="current_blocker" maxlength="360" placeholder="Wallet unsure, card checkout friction, agent cannot pay, needs operator approval, wants proof first..."></textarea>
+          </label>
+          <label>Optional contact
+            <input name="contact" maxlength="160" autocomplete="off" placeholder="Email, GitHub handle, or marketplace handle">
+          </label>
+        </details>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Safety and evidence</h2>
+      <p class="note">Do not send private keys, seed phrases, API keys, passwords, session cookies, customer private data, KYC documents, or user funds.</p>
+      <div class="actions">
+        <a class="button secondary" href="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-first-dollar-brief-page&after_payment=1">Submit paid evidence</a>
+      </div>
+      <p>After payment, submit the transaction hash, order id, or receipt through the paid evidence form.</p>
     </section>
   </main>
   <img src="https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/visit.gif?page=first-dollar-brief&source=github-pages" alt="" width="1" height="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">

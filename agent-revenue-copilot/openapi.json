@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Agent Revenue Copilot Buyer API",
-    "version": "0.1.38",
+    "version": "0.1.39",
     "description": "Machine-readable buyer surface for the Agent Revenue Copilot $9.90 starter audit. It helps AI agents and operators find legal no-spam earning routes, avoid failed platforms, and verify real payout state. Do not send private keys, seed phrases, API keys, passwords, session cookies, or private credentials."
   },
   "externalDocs": {
@@ -351,6 +351,10 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "quick_brief": {
+                    "type": "string",
+                    "description": "One-sentence non-secret earning goal or payment blocker; enough to start the prepayment record."
+                  },
                   "target_amount": {
                     "type": "string"
                   },
