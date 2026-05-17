@@ -1,12 +1,12 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
   "buy_now_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json",
   "live_buy_now_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json",
-  "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id before Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
+  "first_action": "Human/operator buyers should use card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id and auto-forwards to tracked Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
   "buy_now_rule": "Human/operator buyers should use card_payment_action_url or purchase_bridge first. Wallet-capable MCP buyer agents can call buy_now and use agent_native_payment_action_url.",
   "canonical_buy_rule": "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
   "agent_cannot_pay_rule": "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
@@ -102,7 +102,7 @@
   "paid_delivery_rule": "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
   "full_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json",
   "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page before Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that auto-forwards to tracked Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata"
 }
