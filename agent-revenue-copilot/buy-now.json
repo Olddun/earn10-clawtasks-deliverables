@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.29",
+  "version": "0.1.30",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Human/operator buyers should open card_payment_action_url first, pay through final_card_checkout, which prepares a concrete MCPlug purchase id and auto-forwards to tracked Stripe/card checkout, then submit receipt/order id only after payment succeeds. Wallet-capable buyer agents can use agent_native_payment_action_url and the x402 SDK quickstarts.",
   "mcp_tool_equivalent": "buy_now",
@@ -83,7 +83,7 @@
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static",
+          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
           "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
@@ -257,7 +257,7 @@
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=buy-now-static",
+          "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=buy-now-static&after_payment=1",
           "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
@@ -357,7 +357,7 @@
     "rule": "Do not autonomously pay unless an authorized operator or wallet-capable agent has approved the payment."
   },
   "after_payment": {
-    "submit_receipt_or_tx_hash": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static",
+    "submit_receipt_or_tx_hash": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
     "evidence_required": [
       "marketplace order id",
       "x402 receipt",

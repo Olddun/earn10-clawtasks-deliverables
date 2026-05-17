@@ -46,7 +46,7 @@ GitHub approval issue if a public approval trail is needed:
 
 Paid-order form after payment:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=operator-approval-request`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=operator-approval-request&after_payment=1`
 
 ## Current Routes
 

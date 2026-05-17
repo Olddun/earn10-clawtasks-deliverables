@@ -38,7 +38,7 @@ After payment, submit one of these through the no-login payment evidence form:
 
 Paid-order form:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buyer-intent-intake`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buyer-intent-intake&after_payment=1`
 
 ## Safety
 

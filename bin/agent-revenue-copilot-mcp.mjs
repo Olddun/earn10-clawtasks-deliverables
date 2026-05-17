@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.29";
+const PRODUCT_VERSION = "0.1.30";
 
 let inputBuffer = "";
 
@@ -252,7 +252,7 @@ function purchaseBridge(offer, source = "stdio-route-triage") {
 }
 
 function paymentEvidence(offer = "starter_audit", source = "stdio-payment-evidence") {
-  return `${LIVE_ORIGIN}/agent-revenue-copilot/evidence?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}`;
+  return `${LIVE_ORIGIN}/agent-revenue-copilot/evidence?offer=${encodeURIComponent(offer)}&source=${encodeURIComponent(source)}&after_payment=1`;
 }
 
 function paymentAction(offer, source = "stdio-route-triage") {

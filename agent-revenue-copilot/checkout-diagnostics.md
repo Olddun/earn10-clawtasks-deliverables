@@ -51,7 +51,7 @@ Copy-ready approval request:
 
 Order intake after payment:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=checkout-diagnostics`
+`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=checkout-diagnostics&after_payment=1`
 
 ## Buyer Confidence
 

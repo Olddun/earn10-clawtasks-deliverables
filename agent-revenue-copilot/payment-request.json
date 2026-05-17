@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.29",
+  "version": "0.1.30",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
@@ -27,7 +27,7 @@
     "endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/execute",
     "kind": "agent-revenue-copilot",
     "buyer_decision": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md",
-    "intake": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=payment-request-static",
+    "intake": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=payment-request-static&after_payment=1",
     "required_buyer_fields": [
       "transaction hash",
       "agent stack",
@@ -246,7 +246,7 @@
       {
         "step": "submit_order_context",
         "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-        "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-paid-order",
+        "url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-paid-order&after_payment=1",
         "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
       }
     ],

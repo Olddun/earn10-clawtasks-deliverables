@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.29",
+  "version": "0.1.30",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -356,7 +356,7 @@
   "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=server-json-top",
   "payment_evidence": {
     "no_login_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html",
-    "live_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=server-json",
+    "live_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=server-json&after_payment=1",
     "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml",
     "verification_required": true,
     "not_revenue_until_verified": true
