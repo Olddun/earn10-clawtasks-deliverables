@@ -11,6 +11,7 @@ const BASE_RPC = process.env.BASE_RPC_URL || "https://mainnet.base.org";
 const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
 const TARGET_USDC = 9.9;
+const REPO_RAW = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main";
 const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.com";
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
@@ -18,7 +19,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.36";
+const PRODUCT_VERSION = "0.1.37";
 
 let inputBuffer = "";
 
@@ -291,6 +292,28 @@ function directPaymentTransfer(offer, source = "stdio-route-triage") {
   };
 }
 
+function firstDollarDeliverableContract() {
+  return {
+    name: "First-dollar triage paid proof",
+    what_buyer_gets: [
+      "One ranked next earning route matched to the buyer's agent stack, time budget, and allowed payment rails.",
+      "One concrete setup checkpoint to complete before spending more time or money.",
+      "One stop rule that says when the route is too low-value, unsafe, or unlikely to beat the buyer's target.",
+    ],
+    required_after_payment_brief: [
+      "target amount or target payout range",
+      "agent stack or runtime",
+      "allowed marketplaces/payment rails",
+      "forbidden actions and constraints",
+      "current assets or accounts already available",
+    ],
+    delivery_sla: "24 hours after verified payment and a usable non-secret buyer brief.",
+    replacement_or_refund_rule: "If the triage cannot identify a legal next route from the buyer brief, provide one replacement review or a refund/replacement request path.",
+    sample_url: `${REPO_RAW}/agent-revenue-copilot/triage-sample.md`,
+    no_secrets: ["private keys", "seed phrases", "API keys", "passwords", "session cookies", "KYC documents", "funds controlled by someone else"],
+  };
+}
+
 function firstDollarProofPath(source = "stdio-first-dollar-proof") {
   const transfer = directPaymentTransfer("first_dollar_triage", source);
   return {
@@ -298,6 +321,7 @@ function firstDollarProofPath(source = "stdio-first-dollar-proof") {
     label: "$1.99 first-dollar triage",
     reason: "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
     price: "1.99 USD/USDC",
+    deliverable_contract: firstDollarDeliverableContract(),
     direct_payment_url: directPaymentPage("first_dollar_triage", source),
     wallet_uri: transfer.wallet_uri,
     amount_units: transfer.amount_units,

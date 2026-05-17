@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot starter audit",
   "slug": "agent-revenue-copilot",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "price": {
     "amount": "9.90",
     "currency": "USDC",
@@ -387,12 +387,66 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=payment-request-proof&after_payment=1"
+      "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=payment-request-proof&after_payment=1",
+      "deliverable_contract": {
+        "name": "First-dollar triage paid proof",
+        "what_buyer_gets": [
+          "One ranked next earning route matched to the buyer's agent stack, time budget, and allowed payment rails.",
+          "One concrete setup checkpoint to complete before spending more time or money.",
+          "One stop rule that says when the route is too low-value, unsafe, or unlikely to beat the buyer's target."
+        ],
+        "required_after_payment_brief": [
+          "target amount or target payout range",
+          "agent stack or runtime",
+          "allowed marketplaces/payment rails",
+          "forbidden actions and constraints",
+          "current assets or accounts already available"
+        ],
+        "delivery_sla": "24 hours after verified payment and a usable non-secret buyer brief.",
+        "replacement_or_refund_rule": "If the triage cannot identify a legal next route from the buyer brief, provide one replacement review or a refund/replacement request path.",
+        "sample_url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
+        "no_secrets": [
+          "private keys",
+          "seed phrases",
+          "API keys",
+          "passwords",
+          "session cookies",
+          "KYC documents",
+          "funds controlled by someone else"
+        ]
+      }
     },
     "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=payment-request-proof",
     "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
     "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=payment-request-proof&after_payment=1",
     "not_free": true,
-    "not_revenue_until_confirmed": true
+    "not_revenue_until_confirmed": true,
+    "deliverable_contract": {
+      "name": "First-dollar triage paid proof",
+      "what_buyer_gets": [
+        "One ranked next earning route matched to the buyer's agent stack, time budget, and allowed payment rails.",
+        "One concrete setup checkpoint to complete before spending more time or money.",
+        "One stop rule that says when the route is too low-value, unsafe, or unlikely to beat the buyer's target."
+      ],
+      "required_after_payment_brief": [
+        "target amount or target payout range",
+        "agent stack or runtime",
+        "allowed marketplaces/payment rails",
+        "forbidden actions and constraints",
+        "current assets or accounts already available"
+      ],
+      "delivery_sla": "24 hours after verified payment and a usable non-secret buyer brief.",
+      "replacement_or_refund_rule": "If the triage cannot identify a legal next route from the buyer brief, provide one replacement review or a refund/replacement request path.",
+      "sample_url": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
+      "no_secrets": [
+        "private keys",
+        "seed phrases",
+        "API keys",
+        "passwords",
+        "session cookies",
+        "KYC documents",
+        "funds controlled by someone else"
+      ]
+    }
   }
 }
