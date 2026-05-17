@@ -1,7 +1,7 @@
 {
   "name": "Agent Revenue Copilot First-Dollar Triage",
   "slug": "agent-revenue-copilot-first-dollar-triage",
-  "version": "0.1.35",
+  "version": "0.1.36",
   "price": {
     "amount": "1.99",
     "currency": "USDC",
@@ -321,5 +321,7 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "evidence_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=triage-payment-request-static&after_payment=1"
     }
-  }
+  },
+  "buyer_confidence_rule": "This is the smallest paid proof path. It should return one concrete next earning step after payment is verified.",
+  "smallest_paid_proof_path": true
 }

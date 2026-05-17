@@ -18,7 +18,7 @@ const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliver
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.35";
+const PRODUCT_VERSION = "0.1.36";
 
 let inputBuffer = "";
 
@@ -291,6 +291,24 @@ function directPaymentTransfer(offer, source = "stdio-route-triage") {
   };
 }
 
+function firstDollarProofPath(source = "stdio-first-dollar-proof") {
+  const transfer = directPaymentTransfer("first_dollar_triage", source);
+  return {
+    offer: "first_dollar_triage",
+    label: "$1.99 first-dollar triage",
+    reason: "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
+    price: "1.99 USD/USDC",
+    direct_payment_url: directPaymentPage("first_dollar_triage", source),
+    wallet_uri: transfer.wallet_uri,
+    amount_units: transfer.amount_units,
+    card_checkout: paymentAction("first_dollar_triage", source),
+    payment_request: `${LIVE_ORIGIN}/agent-revenue-copilot/triage-payment-request.json`,
+    after_payment_evidence: paymentEvidence("first_dollar_triage", source),
+    not_free: true,
+    not_revenue_until_confirmed: true,
+  };
+}
+
 function agentNativePaymentAction(offer, source = "stdio-route-triage") {
   return `${LIVE_ORIGIN}/agent-revenue-copilot/bridge-out?offer=${encodeURIComponent(offer)}&action=agent_native_payment&source=${encodeURIComponent(source)}`;
 }
@@ -324,6 +342,8 @@ function primaryPurchaseChoices() {
     mcp_buy_now_tool: "buy_now",
     first_action: "Human/operator buyers can open purchase_bridge or card_payment_action_url; browser purchase_bridge auto-forwards to the primary card checkout, then receipt/order id is submitted only after payment succeeds. Wallet-capable agents can use agent_native_payment_action_url.",
     buy_now_rule: "Human/operator buyers should use card_payment_action_url or purchase_bridge first. Wallet-capable MCP buyer agents can call buy_now and use agent_native_payment_action_url.",
+    first_dollar_proof_rule: "If the buyer is not ready for $9.90, show the $1.99 first-dollar triage as the smallest paid proof path before the starter audit.",
+    first_dollar_proof_path: firstDollarProofPath("stdio-primary-choice-proof"),
     canonical_buy_rule: "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
     agent_cannot_pay_rule: "If the buyer agent cannot make an authorized payment, show the no-login operator handoff page and buyer intent form before exposing GitHub issue forms.",
     choices: [
@@ -422,6 +442,7 @@ function buyNow(product, input = {}) {
     card_payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     seller_visible_direct_payment_url: directPaymentPage(isTriage ? "first_dollar_triage" : "starter_audit", source),
     direct_transfer: directPaymentTransfer(isTriage ? "first_dollar_triage" : "starter_audit", source),
+    first_dollar_proof_path: isTriage ? null : firstDollarProofPath(`${source}-proof`),
     payment_action_url: paymentAction(isTriage ? "first_dollar_triage" : "starter_audit", source),
     x402_v2: x402V2Config(isTriage ? "first_dollar_triage" : "starter_audit"),
     x402_buyer_instructions: `${LIVE_ORIGIN}/agent-revenue-copilot/x402-buyer-instructions.json`,
