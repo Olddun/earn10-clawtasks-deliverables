@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Olddun/agent-revenue-copilot",
   "title": "Agent Revenue Copilot",
-  "version": "0.1.46",
+  "version": "0.1.47",
   "description": "MCP/x402 starter audit; payment-ready buyers call buy_now first.",
   "websiteUrl": "https://olddun.github.io/earn10-clawtasks-deliverables/",
   "repository": {
@@ -418,7 +418,7 @@
     "verification_required": true,
     "not_revenue_until_verified": true
   },
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens the concrete MCPlug product page before card/Stripe checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens MCPlug Stripe/card checkout directly; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=server-json-top",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=server-json-top",
   "first_dollar_proof_rule": "If the buyer is not ready for $9.90, show the $1.99 first-dollar triage as the smallest paid proof path before the starter audit.",
@@ -527,7 +527,7 @@
     "rule": "The live direct-pay page now shows card checkout, wallet transfer, paid-evidence submission, and one-click non-secret blocker buttons in-place."
   },
   "no_tool_checkout": {
-    "version": "0.1.46",
+    "version": "0.1.47",
     "why": "Fresh access showed many readers GET the MCP info document but do not call MCP tools. These URLs work directly for static crawlers and GET-only buyer agents.",
     "first_action": "If payment is authorized, open first_dollar_triage.direct_payment_url first for seller-visible Base USDC. Use first_dollar_triage.card_payment_action_url only as a card fallback. If the agent cannot pay, open operator_handoff_url or buyer_intent_url.",
     "no_tool_required": true,
@@ -619,7 +619,7 @@
     "completion_rule": "Only a verified receipt, Base USDC transaction hash, marketplace order, settlement, or usable balance counts as revenue."
   },
   "mcp_get_no_tool_checkout": {
-    "version": "0.1.46",
+    "version": "0.1.47",
     "live_mcp_info": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp",
     "rule": "GET-only MCP readers should follow no_tool_checkout directly instead of waiting for tools/list or tools/call.",
     "evidence_basis": "2026-05-17 1h access slice showed 162 external-ish MCP info reads and 0 MCP tool calls."

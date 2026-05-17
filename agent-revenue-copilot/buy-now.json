@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.46",
+  "version": "0.1.47",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Payment-ready buyers should open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Wallet-capable buyer agents can also use agent_native_payment_action_url and the x402 SDK quickstarts. Use card_payment_action_url only as a human card fallback.",
   "mcp_tool_equivalent": "buy_now",
@@ -567,7 +567,7 @@
     ]
   },
   "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
-  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens the concrete MCPlug product page before card/Stripe checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
+  "checkout_confirmation_note": "Human/card checkout actions now open a first-party concrete order-start page that opens MCPlug Stripe/card checkout directly; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
   "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
   "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
   "first_dollar_proof_rule": "If the buyer is not ready for the 9.90 USD/USDC starter audit, use first_dollar_proof_path to buy the 1.99 USD/USDC triage as a small paid proof.",
