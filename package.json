@@ -1,6 +1,6 @@
 {
   "name": "agent-revenue-copilot",
-  "version": "0.1.50",
+  "version": "0.1.51",
   "mcpName": "io.github.Olddun/agent-revenue-copilot",
   "description": "MCP playbook and seller-visible checkout routes for earning real AI-agent revenue; direct Base USDC first, card fallback for humans.",
   "type": "module",

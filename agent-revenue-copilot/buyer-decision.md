@@ -17,7 +17,7 @@ Recommended checkout:
 - Agent402 x402 fallback: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
 - Direct Base USDC fallback: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md`
 
-PayanAgent fallback rule: use only `js73eqj91741bdr5623khkv1tn86t5an` for the `$9.90` audit or `js71njw8ba1ydv3vjt4wgabadx86t8e0` for `$1.99` triage. Ignore older Agent Revenue Copilot PayanAgent services whose endpoint host is not `doctors-lighting-facial-admissions.trycloudflare.com`.
+PayanAgent fallback rule: use only `js7ahnrger3xdfgcb7nxghhzg1874wt0` for the `$9.90` audit or `js7ewvm8bxpk6fmpdzc90t6wkn8745bf` for `$1.99` triage. Ignore older Agent Revenue Copilot PayanAgent services whose endpoint host is not `champion-penetration-geographic-danny.trycloudflare.com`.
 
 After payment, submit only non-secret buyer context:
 
@@ -52,7 +52,7 @@ If the buyer still wants a paid second opinion for a small one-off target, use t
 - Details: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md`
 - MCPlug skill API: `https://mcplug.store/api/v1/skill/132640`
 - MCPlug purchase API: `https://mcplug.store/api/v1/purchase/132640`
-- PayanAgent triage service id: `js71njw8ba1ydv3vjt4wgabadx86t8e0`
+- PayanAgent triage service id: `js7ewvm8bxpk6fmpdzc90t6wkn8745bf`
 
 ## Acceptance Criteria
 

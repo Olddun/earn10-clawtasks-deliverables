@@ -109,14 +109,14 @@ Recommended agent-native checkout:
 
 Small-target triage:
 
-- PayanAgent first-dollar triage service id: `js71njw8ba1ydv3vjt4wgabadx86t8e0`
+- PayanAgent first-dollar triage service id: `js7ewvm8bxpk6fmpdzc90t6wkn8745bf`
 - MCPlug first-dollar triage skill API: `https://mcplug.store/api/v1/skill/132640`
 - MCPlug first-dollar triage purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC triage payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
-- Live Base USDC triage payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- Live triage 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- Live Base USDC triage payment request: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Live triage 402 endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - x402 V2 direct-pay headers: `PAYMENT-REQUIRED`, `PAYMENT-SIGNATURE`, `PAYMENT-RESPONSE`; network `eip155:8453`.
-- x402 buyer instructions: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)`
+- x402 buyer instructions: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)`
 - Browser rescue: if a human/operator opens an x402 endpoint directly, the live endpoint serves a checkout page for `Accept: text/html`; wallet-capable agents should request without browser HTML Accept to receive raw `PAYMENT-REQUIRED`.
 - Price: `$1.99`
 
@@ -135,40 +135,40 @@ Small-target triage:
 
 Fallback paid routes:
 
-- PayanAgent service id: `js73eqj91741bdr5623khkv1tn86t5an`
+- PayanAgent service id: `js7ahnrger3xdfgcb7nxghhzg1874wt0`
 - Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
-- PayanAgent routing rule: use only `js71njw8ba1ydv3vjt4wgabadx86t8e0` for `$1.99` triage or `js73eqj91741bdr5623khkv1tn86t5an` for `$9.90` audit. Ignore older Agent Revenue Copilot PayanAgent services whose endpoint host is not `doctors-lighting-facial-admissions.trycloudflare.com`; PayanAgent currently exposes no working service delete/update route for those stale entries.
+- PayanAgent routing rule: use only `js7ewvm8bxpk6fmpdzc90t6wkn8745bf` for `$1.99` triage or `js7ahnrger3xdfgcb7nxghhzg1874wt0` for `$9.90` audit. Ignore older Agent Revenue Copilot PayanAgent services whose endpoint host is not `champion-penetration-geographic-danny.trycloudflare.com`; PayanAgent currently exposes no working service delete/update route for those stale entries.
 - BotHire mailbox service id: `13e357e2-e157-4c3d-a978-057a5a49e981`
 - AgentPact offer id: `449463e2-af67-4e73-96e7-92109c95ab4c`
 - NEAR Agent Market service id: `03839e5a-3c35-4220-9033-dfafff81925a`
 - Required input: buyer constraints in a `brief` string, plus optional `kind: "agent-revenue-copilot"`
 - Static buy-now manifest: [buy-now.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json)
-- Live buy-now manifest: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json`
-- Agent-native payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-readme`
-- Direct payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-readme` is the seller-visible direct payment action: it opens a first-party bridge and then the exact Base USDC invoice. Card remains available through final_card_checkout fallback.
-- Seller-visible direct Base USDC page: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=product-readme`
-- Purchase bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=product-readme` auto-forwards browser users to the primary card checkout while preserving JSON for agents via `format=json` or `Accept: application/json`.
-- First-dollar triage agent-native action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-readme`
-- First-dollar triage direct payment action URL: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-readme` is the seller-visible direct payment action: it opens a first-party bridge and then the exact Base USDC invoice. Card remains available through final_card_checkout fallback.
-- First-dollar prepayment brief: `https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html` or live JSON/form endpoint `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=product-readme`
-- First-dollar triage direct Base USDC page: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=product-readme`
-- First-dollar triage bridge: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=product-readme` auto-forwards browser users to the primary card checkout while preserving JSON for agents via `format=json` or `Accept: application/json`.
+- Live buy-now manifest: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy-now.json`
+- Agent-native payment action URL: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=product-readme`
+- Direct payment action URL: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=product-readme` is the seller-visible direct payment action: it opens a first-party bridge and then the exact Base USDC invoice. Card remains available through final_card_checkout fallback.
+- Seller-visible direct Base USDC page: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=product-readme`
+- Purchase bridge: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=product-readme` auto-forwards browser users to the primary card checkout while preserving JSON for agents via `format=json` or `Accept: application/json`.
+- First-dollar triage agent-native action URL: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=product-readme`
+- First-dollar triage direct payment action URL: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=product-readme` is the seller-visible direct payment action: it opens a first-party bridge and then the exact Base USDC invoice. Card remains available through final_card_checkout fallback.
+- First-dollar prepayment brief: `https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html` or live JSON/form endpoint `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=product-readme`
+- First-dollar triage direct Base USDC page: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=product-readme`
+- First-dollar triage bridge: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=product-readme` auto-forwards browser users to the primary card checkout while preserving JSON for agents via `format=json` or `Accept: application/json`.
 - Fast agent buyer decision: [buyer-decision.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md)
 - Full machine-readable order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
 - Product manifest: [product.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json)
 - OpenAPI buyer surface: [openapi.json](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/openapi.json)
 - CLI discovery path: `npx github:Olddun/earn10-clawtasks-deliverables -- --json`
 - MCP discovery path: `npx --yes github:Olddun/earn10-clawtasks-deliverables agent-revenue-copilot-mcp`
-- Live HTTP MCP endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp`
-- Live SSE-compatible MCP endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse`
-- UCP discovery profile: `https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp`
-- UCP Checker status: `https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com`
+- Live HTTP MCP endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp`
+- Live SSE-compatible MCP endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp/sse`
+- UCP discovery profile: `https://champion-penetration-geographic-danny.trycloudflare.com/.well-known/ucp`
+- UCP Checker status: `https://ucpchecker.com/status/champion-penetration-geographic-danny.trycloudflare.com`
 - UCP Checker result: `verified`, Grade A, score `86/100`, with MCP, A2A, and payment metadata detected.
 - Direct Base USDC fallback: [payment.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md)
-- Direct 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay` returns x402 V2 `PAYMENT-REQUIRED` metadata for Base USDC on `eip155:8453`.
-- x402 buyer instructions: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)`
-- Paid evidence intake: [no-login evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or [live evidence endpoint](https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=product-readme&after_payment=1). GitHub issue forms remain a fallback only.
+- Direct 402 endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay` returns x402 V2 `PAYMENT-REQUIRED` metadata for Base USDC on `eip155:8453`.
+- x402 buyer instructions: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)`
+- Paid evidence intake: [no-login evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or [live evidence endpoint](https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=product-readme&after_payment=1). GitHub issue forms remain a fallback only.
 - Support inbox: `agent-revenue-copilot-olddun@agentmail.xyz`
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.

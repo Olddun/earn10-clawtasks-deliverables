@@ -1,11 +1,11 @@
 {
   "name": "Agent Revenue Copilot primary purchase choices",
-  "version": "0.1.50",
+  "version": "0.1.51",
   "purpose": "Give crawlers and buyer agents the three first actions before exposing the full checkout route list.",
   "rule": "Show these three choices first. Use advanced checkout links only after one primary choice is selected.",
   "mcp_buy_now_tool": "buy_now",
   "buy_now_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json",
-  "live_buy_now_manifest": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json",
+  "live_buy_now_manifest": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy-now.json",
   "first_action": "Use seller_visible_direct_payment_url or payment_action_url first for exact Base USDC and seller-verifiable receipt. Card payment remains available through card_payment_action_url as a fallback for buyers who cannot use a wallet.",
   "buy_now_rule": "Payment-ready buyer agents should call buy_now and open seller_visible_direct_payment_url, payment_action_url, or agent_native_payment_action_url first. Use card_payment_action_url only as a human card fallback.",
   "canonical_buy_rule": "Use canonical_buy first for a payment-ready buyer. Use fallback links only if the canonical route is unavailable or the agent cannot pay.",
@@ -16,20 +16,20 @@
       "label": "Buy $1.99 first-dollar triage",
       "price": "1.99 USD/USDC",
       "best_for": "Uncertain buyer, small one-off target, or agent stuck at checkout before committing to the full audit.",
-      "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-primary-choice",
-      "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-primary-choice",
-      "tracked_direct_402": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=triage_402&source=static-primary-choice",
+      "canonical_buy": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-primary-choice",
+      "tracked_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-primary-choice",
+      "tracked_direct_402": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=triage_402&source=static-primary-choice",
       "if_agent_cannot_pay": {
         "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
         "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
       },
       "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
-      "purchase_bridge": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=static-primary-choice",
-      "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-primary-choice",
-      "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
-      "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-primary-choice",
-      "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice",
-      "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
+      "purchase_bridge": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=static-primary-choice",
+      "payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-primary-choice",
+      "recommended_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
+      "agent_native_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-primary-choice",
+      "card_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice",
+      "seller_visible_direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
       "x402_v2": {
         "x402_version": 2,
         "payment_required_header": "PAYMENT-REQUIRED",
@@ -38,16 +38,16 @@
         "legacy_signature_header": "X-PAYMENT",
         "network": "eip155:8453",
         "facilitator": "https://facilitator.payai.network",
-        "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay",
-        "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-        "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
-        "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+        "payment_required_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+        "buyer_instructions": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+        "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+        "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
       },
       "recommended_payment_path": "seller_visible_direct_base_first",
-      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
-      "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-primary-choice",
-      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice",
+      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice",
+      "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-primary-choice",
+      "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice",
       "direct_transfer": {
         "offer": "first_dollar_triage",
         "amount_usdc": "1.99",
@@ -61,7 +61,7 @@
         "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
         "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
         "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-        "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice&after_payment=1",
+        "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice&after_payment=1",
         "deliverable_contract": {
           "name": "First-dollar triage paid proof",
           "what_buyer_gets": [
@@ -89,7 +89,7 @@
             "funds controlled by someone else"
           ]
         },
-        "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+        "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
         "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
       },
       "smallest_paid_proof_path": true,
@@ -120,7 +120,7 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-primary-choice",
+      "pre_payment_brief_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-primary-choice",
       "pre_payment_brief_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
     {
@@ -128,20 +128,20 @@
       "label": "Buy $9.90 starter audit",
       "price": "9.90 USD/USDC",
       "best_for": "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work.",
-      "canonical_buy": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-primary-choice",
-      "tracked_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-primary-choice",
-      "tracked_agent402_fallback": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=audit_agent402&source=static-primary-choice",
+      "canonical_buy": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-primary-choice",
+      "tracked_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-primary-choice",
+      "tracked_agent402_fallback": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=audit_agent402&source=static-primary-choice",
       "human_checkout": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html",
       "if_agent_cannot_pay": {
         "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
         "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html"
       },
-      "purchase_bridge": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=static-primary-choice",
-      "payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-primary-choice",
-      "recommended_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
-      "agent_native_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-primary-choice",
-      "card_payment_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice",
-      "seller_visible_direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
+      "purchase_bridge": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=static-primary-choice",
+      "payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-primary-choice",
+      "recommended_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
+      "agent_native_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-primary-choice",
+      "card_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice",
+      "seller_visible_direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
       "x402_v2": {
         "x402_version": 2,
         "payment_required_header": "PAYMENT-REQUIRED",
@@ -150,16 +150,16 @@
         "legacy_signature_header": "X-PAYMENT",
         "network": "eip155:8453",
         "facilitator": "https://facilitator.payai.network",
-        "payment_required_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay",
-        "buyer_instructions": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-        "browser_rescue": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
-        "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+        "payment_required_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+        "buyer_instructions": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+        "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+        "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
       },
       "recommended_payment_path": "seller_visible_direct_base_first",
-      "human_first_checkout_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
-      "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-primary-choice",
-      "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice",
+      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-primary-choice",
+      "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-primary-choice",
+      "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-primary-choice",
       "direct_transfer": {
         "offer": "starter_audit",
         "amount_usdc": "9.90",
@@ -173,14 +173,14 @@
         "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
         "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
         "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-        "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-primary-choice&after_payment=1"
+        "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-primary-choice&after_payment=1"
       },
       "first_dollar_proof_path": {
         "offer": "first_dollar_triage",
         "label": "$1.99 first-dollar triage",
         "reason": "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
         "price": "1.99 USD/USDC",
-        "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice-starter-proof",
+        "direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice-starter-proof",
         "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
         "amount_units": "1990000",
         "direct_transfer": {
@@ -196,7 +196,7 @@
           "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
           "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
           "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-          "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-starter-proof&after_payment=1",
+          "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-starter-proof&after_payment=1",
           "deliverable_contract": {
             "name": "First-dollar triage paid proof",
             "what_buyer_gets": [
@@ -224,12 +224,12 @@
               "funds controlled by someone else"
             ]
           },
-          "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+          "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
           "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
         },
-        "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice-starter-proof",
-        "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-        "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-starter-proof&after_payment=1",
+        "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice-starter-proof",
+        "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+        "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-starter-proof&after_payment=1",
         "not_free": true,
         "not_revenue_until_confirmed": true,
         "deliverable_contract": {
@@ -259,7 +259,7 @@
             "funds controlled by someone else"
           ]
         },
-        "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+        "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
         "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
       }
     },
@@ -268,9 +268,9 @@
       "label": "Ask operator to approve or record buyer intent",
       "price": "0 now",
       "best_for": "Agent can inspect checkout but cannot pay, or GitHub paid-order forms are too much friction.",
-      "tracked_operator_approval": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=static-primary-choice",
+      "tracked_operator_approval": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=static-primary-choice",
       "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
-      "buyer_intent_endpoint": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent",
+      "buyer_intent_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/intent",
       "buyer_intent_form": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html",
       "preferred_before_github_issue": true,
       "not_revenue": true,
@@ -279,17 +279,17 @@
   ],
   "paid_delivery_rule": "Only a marketplace receipt, x402 receipt, Base USDC transaction hash, paid order, hire, deal, assignment, settlement, or confirmed usable balance can unlock paid delivery.",
   "full_manifest": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/product.json",
-  "live_primary_choices": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
+  "live_primary_choices": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/primary-choices.json",
   "checkout_confirmation_note": "Human/browser primary checkout actions now open seller-visible direct Base USDC first; card fallback opens a first-party concrete order-start page and then MCPlug Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
-  "checkout_confirmation_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
-  "final_card_checkout_action_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
+  "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
+  "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
   "first_dollar_proof_rule": "Show the 1.99 USD/USDC first-dollar triage when a buyer is hesitant to commit to the 9.90 USD/USDC starter audit.",
   "first_dollar_proof_path": {
     "offer": "first_dollar_triage",
     "label": "$1.99 first-dollar triage",
     "reason": "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
     "price": "1.99 USD/USDC",
-    "direct_payment_url": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice-proof",
+    "direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-primary-choice-proof",
     "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
     "amount_units": "1990000",
     "direct_transfer": {
@@ -305,7 +305,7 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-proof&after_payment=1",
+      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-proof&after_payment=1",
       "deliverable_contract": {
         "name": "First-dollar triage paid proof",
         "what_buyer_gets": [
@@ -333,12 +333,12 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
-    "card_checkout": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice-proof",
-    "payment_request": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-    "after_payment_evidence": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-proof&after_payment=1",
+    "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-primary-choice-proof",
+    "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+    "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-primary-choice-proof&after_payment=1",
     "not_free": true,
     "not_revenue_until_confirmed": true,
     "deliverable_contract": {
@@ -368,7 +368,7 @@
         "funds controlled by someone else"
       ]
     },
-    "pre_payment_brief": "https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
     "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
   }
 }

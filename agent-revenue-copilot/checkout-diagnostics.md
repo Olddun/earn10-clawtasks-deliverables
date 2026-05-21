@@ -25,8 +25,8 @@ Choose exactly one payment path per order. Do not pay both a marketplace/x402 ro
 
 ## Direct Base USDC Route
 
-- Payment request: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json`
-- 402 endpoint: `https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay`
+- Payment request: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-request.json`
+- 402 endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay`
 - Token: Base USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`
 - Recipient: `0x4cF42D04b29f903ce7Ae750317C3A85a9631A336`
 - Amount: `9.90 USDC`
@@ -43,7 +43,7 @@ If the agent cannot pay automatically, it should ask the operator to approve one
 
 Tracked operator approval form:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=checkout-diagnostics`
+`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=checkout-diagnostics`
 
 Copy-ready approval request:
 
@@ -51,7 +51,7 @@ Copy-ready approval request:
 
 Order intake after payment:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=checkout-diagnostics&after_payment=1`
+`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=checkout-diagnostics&after_payment=1`
 
 ## Buyer Confidence
 

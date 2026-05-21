@@ -12,7 +12,7 @@ const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 const RECEIVE_ADDRESS = "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336";
 const TARGET_USDC = 9.9;
 const REPO_RAW = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main";
-const LIVE_ORIGIN = "https://doctors-lighting-facial-admissions.trycloudflare.com";
+const LIVE_ORIGIN = "https://champion-penetration-geographic-danny.trycloudflare.com";
 const OPERATOR_APPROVAL_URL = "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md";
 const OPERATOR_HANDOFF_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html";
 const BUYER_INTENT_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html";
@@ -20,7 +20,7 @@ const FIRST_DOLLAR_BRIEF_FORM_URL = "https://olddun.github.io/earn10-clawtasks-d
 const PAYMENT_EVIDENCE_FORM_URL = "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html";
 const X402_FACILITATOR_URL = "https://facilitator.payai.network";
 const BASE_CHAIN_CAIP2 = "eip155:8453";
-const PRODUCT_VERSION = "0.1.50";
+const PRODUCT_VERSION = "0.1.51";
 
 let inputBuffer = "";
 

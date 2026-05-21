@@ -6,7 +6,7 @@ This is not a paid order, not revenue, and does not unlock the paid audit.
 
 ## Live Endpoint
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent`
+`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/intent`
 
 Method: `POST`
 
@@ -38,7 +38,7 @@ After payment, submit one of these through the no-login payment evidence form:
 
 Paid-order form:
 
-`https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buyer-intent-intake&after_payment=1`
+`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buyer-intent-intake&after_payment=1`
 
 ## Safety
 

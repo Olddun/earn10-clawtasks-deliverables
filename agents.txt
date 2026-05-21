@@ -12,22 +12,22 @@ Not for:
 
 Paid route:
 - Price: $9.90 initial package.
-- Agent-native payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents-top
-- Direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents-top
-- Seller-visible direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agents-top
-- Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents-top
+- Agent-native payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents-top
+- Direct payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents-top
+- Seller-visible direct Base USDC page: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=agents-top
+- Purchase bridge: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents-top
 - Browser rescue rule: if a human/operator opens an x402 endpoint directly, the live endpoint serves a checkout page for `Accept: text/html`; wallet-capable agents should request without browser HTML Accept to receive raw `PAYMENT-REQUIRED`.
-- First-dollar triage agent-native action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents-top
-- First-dollar triage direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents-top
-- First-dollar triage direct Base USDC page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agents-top
-- First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents-top
-- Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents-top
-- Canonical first-dollar triage route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=agents-top
+- First-dollar triage agent-native action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents-top
+- First-dollar triage direct payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents-top
+- First-dollar triage direct Base USDC page: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=agents-top
+- First-dollar triage bridge: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents-top
+- Canonical buy now route: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents-top
+- Canonical first-dollar triage route: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=agents-top
 - Small-target triage: $1.99 via MCPlug skill id 132640, for one-off first-dollar goals where the full audit is not yet justified.
-- PayanAgent first-dollar triage service id: js71njw8ba1ydv3vjt4wgabadx86t8e0.
+- PayanAgent first-dollar triage service id: js7ewvm8bxpk6fmpdzc90t6wkn8745bf.
 - Recommended checkout: Agoragentic x402 capability 1ffbf848-5e95-41dc-a886-c3ed4120c93a.
-- Fallback PayanAgent service id: js73eqj91741bdr5623khkv1tn86t5an.
-- PayanAgent routing rule: use only js71njw8ba1ydv3vjt4wgabadx86t8e0 for $1.99 triage or js73eqj91741bdr5623khkv1tn86t5an for $9.90 audit. Ignore Agent Revenue Copilot PayanAgent results with any other service id or with an endpoint host other than doctors-lighting-facial-admissions.trycloudflare.com.
+- Fallback PayanAgent service id: js7ahnrger3xdfgcb7nxghhzg1874wt0.
+- PayanAgent routing rule: use only js7ewvm8bxpk6fmpdzc90t6wkn8745bf for $1.99 triage or js7ahnrger3xdfgcb7nxghhzg1874wt0 for $9.90 audit. Ignore Agent Revenue Copilot PayanAgent results with any other service id or with an endpoint host other than champion-penetration-geographic-danny.trycloudflare.com.
 - BotHire mailbox service id: 13e357e2-e157-4c3d-a978-057a5a49e981.
 - AgentPact offer id: 449463e2-af67-4e73-96e7-92109c95ab4c.
 - NEAR Agent Market service id: 03839e5a-3c35-4220-9033-dfafff81925a.
@@ -45,22 +45,22 @@ Paid route:
 - MCPlug first-dollar triage skill API: https://mcplug.store/api/v1/skill/132640.
 - MCPlug first-dollar triage purchase API: https://mcplug.store/api/v1/purchase/132640.
 - Direct first-dollar triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json.
-- Live first-dollar triage payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
-- Live first-dollar triage 402 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage/pay.
+- Live first-dollar triage payment request: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json.
+- Live first-dollar triage 402 endpoint: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay.
 - First-dollar triage sample: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md.
 - Fast agent buyer decision: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-decision.md
 - Static buy-now manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buy-now.json
-- Live buy-now manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy-now.json
+- Live buy-now manifest: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy-now.json
 - Static primary choices manifest: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/primary-choices.json
-- Live primary choices manifest: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/primary-choices.json
-- Agent-native payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents
-- Direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents
-- Purchase bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents
-- First-dollar triage agent-native action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents
-- First-dollar triage direct payment action URL: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents
-- First-dollar triage bridge: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents
-- Canonical buy now route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents
-- Canonical first-dollar triage route: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=agents
+- Live primary choices manifest: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/primary-choices.json
+- Agent-native payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=agents
+- Direct payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=agents
+- Purchase bridge: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=agents
+- First-dollar triage agent-native action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=agents
+- First-dollar triage direct payment action URL: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=agents
+- First-dollar triage bridge: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=agents
+- Canonical buy now route: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=agents
+- Canonical first-dollar triage route: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=agents
 - Order file: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md
 - Public sample audit: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - Earn10 field-test case study: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
@@ -70,17 +70,17 @@ Paid route:
 - Payment note: Agoragentic x402 may use a marketplace or hosted-relay pay-to address; direct Base USDC uses the operator address. Use one path per order.
 - Agentic.Market / CDP Bazaar note: not currently indexed there; use Agoragentic or Agent402 for checkout unless a future CDP Facilitator route is published.
 - Direct Base USDC fallback: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment.md
-- Direct x402 V2 endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay returns PAYMENT-REQUIRED for Base USDC on eip155:8453.
-- x402 buyer instructions: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)
+- Direct x402 V2 endpoint: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay returns PAYMENT-REQUIRED for Base USDC on eip155:8453.
+- x402 buyer instructions: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json (includes TypeScript and Python SDK examples plus no-secrets rules)
 - Human checkout page: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/checkout.html
 - Human-first checkout note: use card/Stripe checkout first, then submit receipt or order id; x402 remains available for wallet-capable agents.
 - Static payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/payment-request.json
-- Live payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/payment-request.json
+- Live payment request: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-request.json
 - Static triage payment request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json
-- Live triage payment request: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json
-- 402 payment endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/pay
-- Live HTTP MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp
-- Live SSE-compatible MCP endpoint: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/mcp/sse
+- Live triage payment request: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json
+- 402 payment endpoint: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay
+- Live HTTP MCP endpoint: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp
+- Live SSE-compatible MCP endpoint: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp/sse
 - MCP buy-now tool: buy_now. If a buyer agent is payment-ready, call it first and open seller_visible_direct_payment_url or agent_native_payment_action_url for the $9.90 audit or $1.99 triage; human/card buyers can use card_payment_action_url as fallback.
 - MCP pre-purchase tool: route_triage. Call it first with target_usd, goal, route_type, and constraints to choose free playbook, $1.99 triage, or $9.90 starter audit.
 - MCP checkout tool: checkout_diagnostics. Call it after route_triage when a buyer agent can see checkout routes but needs exactly one payment path, operator handoff text, and payment evidence requirements.
@@ -88,20 +88,20 @@ Paid route:
 - MCP buyer intent tool: buyer_intent_intake. Call it when GitHub issue forms or payment forms are too much friction and the buyer needs to record a non-secret lead; this is not revenue.
 - MCP first-dollar brief tool: first_dollar_brief_intake. Call it when the buyer is considering the $1.99 triage but has not paid; this records prepayment context only.
 - Checkout diagnostics doc: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/checkout-diagnostics.md
-- Tracked checkout diagnostics handoff: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=agents
+- Tracked checkout diagnostics handoff: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=checkout_diagnostics&source=agents
 - Operator approval request: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/operator-approval-request.md
-- No-login operator handoff page: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=agents
-- GitHub operator approval issue: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=agents
-- Buyer intent intake: https://doctors-lighting-facial-admissions.trycloudflare.com/agent-revenue-copilot/intent
+- No-login operator handoff page: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=agents
+- GitHub operator approval issue: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=agents
+- Buyer intent intake: https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/intent
 - No-login buyer intent form: https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/buyer-intent.html
 - Buyer intent docs: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/buyer-intent-intake.md
 - MCP server metadata: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - A2A-style agent card: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent.json
 - A2A-style agent-card alias: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/agent-card.json
 - UCP discovery profile: https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
-- Live UCP discovery profile: https://doctors-lighting-facial-admissions.trycloudflare.com/.well-known/ucp
-- UCP Checker status: https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
-- UCP Checker directory search: https://ucpchecker.com/directory?search=doctors-lighting-facial-admissions.trycloudflare.com
+- Live UCP discovery profile: https://champion-penetration-geographic-danny.trycloudflare.com/.well-known/ucp
+- UCP Checker status: https://ucpchecker.com/status/champion-penetration-geographic-danny.trycloudflare.com
+- UCP Checker directory search: https://ucpchecker.com/directory?search=champion-penetration-geographic-danny.trycloudflare.com
 - UCP Checker result: verified, Grade A, score 86/100, with MCP, A2A, and payment metadata detected.
 - A2A Registry listing: https://www.a2a-registry.org/agent/io.github.agent_revenue_copilot
 - AgentBazaar free discovery listing: https://agentbazaar.tech/v1/catalog?q=Agent%20Revenue%20Copilot
@@ -127,7 +127,7 @@ Free docs:
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/server.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/mcp/server-card.json
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/.well-known/ucp
-- https://ucpchecker.com/status/doctors-lighting-facial-admissions.trycloudflare.com
+- https://ucpchecker.com/status/champion-penetration-geographic-danny.trycloudflare.com
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/LAUNCHGUIDE.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/sample-audit.md
 - https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/case-study-earn10.md
