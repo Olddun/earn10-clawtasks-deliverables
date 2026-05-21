@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.51",
+  "version": "0.1.52",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Payment-ready buyers should open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Wallet-capable buyer agents can also use agent_native_payment_action_url and the x402 SDK quickstarts. Use card_payment_action_url only as a human card fallback.",
   "mcp_tool_equivalent": "buy_now",
@@ -190,7 +190,9 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-buy-now&after_payment=1"
+      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-buy-now&after_payment=1",
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D9900000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
     },
     "first_dollar_proof_path": {
       "offer": "first_dollar_triage",
@@ -242,7 +244,9 @@
           ]
         },
         "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
-        "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+        "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
+        "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+        "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
       },
       "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-starter-proof",
       "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -277,9 +281,13 @@
         ]
       },
       "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
-      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
     },
-    "buyer_confidence_rule": "Use first_dollar_proof_path if the operator wants proof of receipt/delivery before buying the full starter audit."
+    "buyer_confidence_rule": "Use first_dollar_proof_path if the operator wants proof of receipt/delivery before buying the full starter audit.",
+    "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D9900000",
+    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
   },
   "first_dollar_triage": {
     "label": "Buy $1.99 first-dollar triage",
@@ -526,9 +534,13 @@
         ]
       },
       "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
-      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
     },
-    "smallest_paid_proof_path": true
+    "smallest_paid_proof_path": true,
+    "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
   },
   "if_agent_cannot_pay": {
     "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
@@ -621,7 +633,9 @@
         ]
       },
       "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
-      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+      "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
     },
     "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-proof",
     "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -656,6 +670,8 @@
       ]
     },
     "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
-    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
+    "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
+    "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
   }
 }

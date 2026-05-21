@@ -1,6 +1,6 @@
 {
   "name": "Agent Revenue Copilot x402 buyer instructions",
-  "version": "0.1.51",
+  "version": "0.1.52",
   "purpose": "Executable buyer-agent instructions for authorized x402 payments, including TypeScript and Python examples plus no-secrets rules.",
   "starter_audit": {
     "url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
@@ -369,7 +369,9 @@
           "KYC documents",
           "funds controlled by someone else"
         ]
-      }
+      },
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=x402-instructions-proof"
     },
     "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=x402-instructions-proof",
     "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -402,6 +404,8 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
+    },
+    "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=x402-instructions-proof"
   }
 }

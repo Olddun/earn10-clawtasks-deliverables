@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Agent Revenue Copilot Buyer API",
-    "version": "0.1.51",
+    "version": "0.1.52",
     "description": "Machine-readable buyer surface for the Agent Revenue Copilot $9.90 starter audit. It helps AI agents and operators find legal no-spam earning routes, avoid failed platforms, and verify real payout state. Do not send private keys, seed phrases, API keys, passwords, session cookies, or private credentials."
   },
   "externalDocs": {
@@ -866,7 +866,9 @@
           "KYC documents",
           "funds controlled by someone else"
         ]
-      }
+      },
+      "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=openapi-proof"
     },
     "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=openapi-proof",
     "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
@@ -899,6 +901,8 @@
         "KYC documents",
         "funds controlled by someone else"
       ]
-    }
+    },
+    "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
+    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=openapi-proof"
   }
 }
