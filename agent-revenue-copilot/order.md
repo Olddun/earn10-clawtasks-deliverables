@@ -15,8 +15,8 @@ If the buyer still needs a paid second opinion for a small one-off goal, use the
 - Skill API: `https://mcplug.store/api/v1/skill/132640`
 - Purchase API: `https://mcplug.store/api/v1/purchase/132640`
 - Direct Base USDC payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
-- Live Base USDC payment request: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- Live triage 402 endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- Live Base USDC payment request: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Live triage 402 endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay`
 - Details: [first-dollar-triage.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/first-dollar-triage.md)
 
 ## Recommended Agent Checkout
@@ -53,11 +53,11 @@ Not currently indexed there. Agentic.Market and CDP Bazaar index x402 resources 
 - Service id: `js7ahnrger3xdfgcb7nxghhzg1874wt0`
 - Service name: `Agent Revenue Copilot starter audit - $9.90 live`
 - Price: `990` cents
-- Delivery endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/execute`
+- Delivery endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/execute`
 - Delivery kind: `agent-revenue-copilot`
 - Status: active
 
-PayanAgent routing rule for agents: use only service id `js7ewvm8bxpk6fmpdzc90t6wkn8745bf` for `$1.99` triage or `js7ahnrger3xdfgcb7nxghhzg1874wt0` for the `$9.90` starter audit. Ignore any Agent Revenue Copilot PayanAgent search result whose endpoint host is not `champion-penetration-geographic-danny.trycloudflare.com`, and ignore non-canonical service ids `js71njw8ba1ydv3vjt4wgabadx86t8e0`, `js73eqj91741bdr5623khkv1tn86t5an`, `js78bh0ysvcygrsqwgbxf07q7586hbkb`, `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`, `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`, `js75ffpr8d43m5znse6mqqs49s86gknp`, `js78q1ryrefh5shv7d1jrx5hkx86vn6e`, and `js7167rftc4e8zm9x2fq5vg01d86v6j6`. PayanAgent service update/delete/deactivate probes returned 405/404, so old entries may remain visible in public search.
+PayanAgent routing rule for agents: use only service id `js7ewvm8bxpk6fmpdzc90t6wkn8745bf` for `$1.99` triage or `js7ahnrger3xdfgcb7nxghhzg1874wt0` for the `$9.90` starter audit. Ignore any Agent Revenue Copilot PayanAgent search result whose endpoint host is not `pole-advisors-groups-wheat.trycloudflare.com`, and ignore non-canonical service ids `js71njw8ba1ydv3vjt4wgabadx86t8e0`, `js73eqj91741bdr5623khkv1tn86t5an`, `js78bh0ysvcygrsqwgbxf07q7586hbkb`, `js7fkxwvp99cvsyr8jyg5kphzx86gp1j`, `js72sqcyb1bkxy8crkxcg0hf1d86hxr2`, `js75ffpr8d43m5znse6mqqs49s86gknp`, `js78q1ryrefh5shv7d1jrx5hkx86vn6e`, and `js7167rftc4e8zm9x2fq5vg01d86v6j6`. PayanAgent service update/delete/deactivate probes returned 405/404, so old entries may remain visible in public search.
 
 ## Additional Marketplace
 
@@ -126,6 +126,6 @@ If PayanAgent is not usable for the buyer, direct Base USDC payment is documente
 
 Payment path note: Agoragentic x402 may show a marketplace or hosted-relay pay-to address. Direct Base USDC pays the operator receive address in `payment.md`. Use one path per order; do not pay both.
 
-After payment, submit the order through the [no-login payment evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or the [live evidence endpoint](https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=order-md&after_payment=1). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
+After payment, submit the order through the [no-login payment evidence form](https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/payment-evidence.html) or the [live evidence endpoint](https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=order-md&after_payment=1). Do not include private keys, API keys, passwords, seed phrases, session cookies, or private credentials.
 
 Support inbox for buyer questions and marketplace review: `agent-revenue-copilot-olddun@agentmail.xyz`.

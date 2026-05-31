@@ -1,21 +1,21 @@
 {
   "name": "Agent Revenue Copilot buy now",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "purpose": "Static GET-friendly purchase action for crawlers and buyer agents that read resources but do not call MCP tools.",
   "use_first": "Payment-ready buyers should open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Wallet-capable buyer agents can also use agent_native_payment_action_url and the x402 SDK quickstarts. Use card_payment_action_url only as a human card fallback.",
   "mcp_tool_equivalent": "buy_now",
   "starter_audit": {
     "label": "Buy $9.90 starter audit",
     "price": "9.90 USD/USDC",
-    "canonical_buy": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-buy-now",
-    "fallback_x402": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-buy-now",
+    "canonical_buy": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=buy_starter_audit&source=static-buy-now",
+    "fallback_x402": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=audit_agoragentic&source=static-buy-now",
     "best_for": "$50+ targets, repeated agent earning workflows, or x402/MCP/API monetization work",
-    "purchase_bridge": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=static-buy-now",
-    "payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
-    "recommended_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
-    "agent_native_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-buy-now",
-    "card_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
-    "seller_visible_direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
+    "purchase_bridge": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/buy?offer=starter_audit&source=static-buy-now",
+    "payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=primary_browser_checkout&source=static-buy-now",
+    "recommended_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
+    "agent_native_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=agent_native_payment&source=static-buy-now",
+    "card_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
+    "seller_visible_direct_payment_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
       "payment_required_header": "PAYMENT-REQUIRED",
@@ -24,18 +24,18 @@
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
       "facilitator": "https://facilitator.payai.network",
-      "payment_required_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
-      "buyer_instructions": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-      "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
-      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+      "payment_required_endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
+      "buyer_instructions": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+      "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+      "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
       "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
     },
     "x402_buyer_instructions": {
-      "url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+      "url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
       "summary": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
       "authorized_payment_only": true,
       "do_not_use_user_funds_without_authorization": true,
-      "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+      "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
       "offer": "starter_audit",
       "amount": "9.90",
       "payment_requirement": {
@@ -45,7 +45,7 @@
         "amount": "9900000",
         "maxAmountRequired": "9900000",
         "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-        "resource": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+        "resource": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
         "description": "Agent Revenue Copilot starter audit paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
         "mimeType": "application/json",
         "outputSchema": {
@@ -61,14 +61,14 @@
           "name": "USD Coin",
           "version": "2"
         },
-        "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+        "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment instead of raw 402 JSON. Wallet-capable agents should still request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-        "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
+        "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
       },
       "steps": [
         {
           "step": "request_payment_requirements",
-          "action": "GET https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+          "action": "GET https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
           "expect": "HTTP 402 with PAYMENT-REQUIRED header containing base64 JSON."
         },
         {
@@ -78,13 +78,13 @@
         },
         {
           "step": "retry_with_signature",
-          "action": "GET https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
+          "action": "GET https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
           "expect": "HTTP 200 with PAYMENT-RESPONSE after facilitator verify/settle, or HTTP 402 with structured error details."
         },
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
+          "url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
           "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
@@ -109,7 +109,7 @@
           "env": [
             "EVM_PRIVATE_KEY"
           ],
-          "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+          "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
           "code": [
             "import { wrapFetchWithPayment } from \"@x402/fetch\";",
             "import { x402Client, x402HTTPClient } from \"@x402/core/client\";",
@@ -120,14 +120,14 @@
             "const client = new x402Client();",
             "client.register(\"eip155:*\", new ExactEvmScheme(signer));",
             "const paidFetch = wrapFetchWithPayment(fetch, client);",
-            "const response = await paidFetch(\"https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay\", { method: \"GET\" });",
+            "const response = await paidFetch(\"https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay\", { method: \"GET\" });",
             "const body = await response.json();",
             "const payment = new x402HTTPClient(client).getPaymentSettleResponse((name) => response.headers.get(name));",
             "console.log({ status: response.status, body, payment });"
           ],
-          "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+          "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
           "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-          "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
+          "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
         },
         "python_httpx": {
           "packages": [
@@ -137,7 +137,7 @@
           "env": [
             "EVM_PRIVATE_KEY"
           ],
-          "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay",
+          "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay",
           "code": [
             "import asyncio, os",
             "from eth_account import Account",
@@ -151,16 +151,16 @@
             "    client = x402Client()",
             "    register_exact_evm_client(client, EthAccountSigner(Account.from_key(os.environ[\"EVM_PRIVATE_KEY\"])))",
             "    async with x402HttpxClient(client) as http:",
-            "        response = await http.get(\"https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/pay\")",
+            "        response = await http.get(\"https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/pay\")",
             "        await response.aread()",
             "        payment = x402HTTPClient(client).get_payment_settle_response(lambda name: response.headers.get(name))",
             "        print({\"status\": response.status_code, \"body\": response.text, \"payment\": payment})",
             "",
             "asyncio.run(main())"
           ],
-          "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+          "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
           "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-          "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
+          "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
         },
         "rules": [
           "Use only an explicitly authorized buyer wallet.",
@@ -168,14 +168,14 @@
           "Count revenue only after a settlement, receipt, transaction hash, marketplace receipt, assignment payout, or usable balance is verified."
         ]
       },
-      "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
+      "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static",
       "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
+      "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=x402-browser-rescue-static"
     },
     "recommended_payment_path": "seller_visible_direct_base_first",
-    "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
-    "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-buy-now",
-    "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
+    "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=starter_audit&source=static-buy-now",
+    "checkout_confirmation_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-buy-now",
+    "final_card_checkout_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-buy-now",
     "human_first_note": "Open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Use card_payment_action_url only as a human card fallback.",
     "direct_transfer": {
       "offer": "starter_audit",
@@ -190,16 +190,16 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=9900000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-buy-now&after_payment=1",
+      "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=static-buy-now&after_payment=1",
       "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D9900000",
-      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
+      "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
     },
     "first_dollar_proof_path": {
       "offer": "first_dollar_triage",
       "label": "$1.99 first-dollar triage",
       "reason": "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
       "price": "1.99 USD/USDC",
-      "direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now-starter-proof",
+      "direct_payment_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now-starter-proof",
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "amount_units": "1990000",
       "direct_transfer": {
@@ -215,7 +215,7 @@
         "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
         "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
         "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-        "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-starter-proof&after_payment=1",
+        "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-starter-proof&after_payment=1",
         "deliverable_contract": {
           "name": "First-dollar triage paid proof",
           "what_buyer_gets": [
@@ -243,14 +243,14 @@
             "funds controlled by someone else"
           ]
         },
-        "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+        "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
         "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
         "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-        "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
+        "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
       },
-      "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-starter-proof",
-      "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-starter-proof&after_payment=1",
+      "card_checkout": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-starter-proof",
+      "payment_request": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+      "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-starter-proof&after_payment=1",
       "not_free": true,
       "not_revenue_until_confirmed": true,
       "deliverable_contract": {
@@ -280,28 +280,28 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
       "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
+      "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-starter-proof"
     },
     "buyer_confidence_rule": "Use first_dollar_proof_path if the operator wants proof of receipt/delivery before buying the full starter audit.",
     "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D9900000",
-    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
+    "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=starter_audit&source=static-buy-now"
   },
   "first_dollar_triage": {
     "label": "Buy $1.99 first-dollar triage",
     "price": "1.99 USD/USDC",
-    "canonical_buy": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-buy-now",
-    "fallback_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-buy-now",
+    "canonical_buy": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=buy_triage&source=static-buy-now",
+    "fallback_checkout": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=triage_mcplug&source=static-buy-now",
     "best_for": "Small one-off targets where the full starter audit is not yet justified.",
     "sample": "https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-sample.md",
-    "purchase_bridge": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=static-buy-now",
-    "payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
-    "recommended_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
-    "agent_native_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-buy-now",
-    "card_payment_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
-    "seller_visible_direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
+    "purchase_bridge": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/buy?offer=first_dollar_triage&source=static-buy-now",
+    "payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=primary_browser_checkout&source=static-buy-now",
+    "recommended_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
+    "agent_native_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=agent_native_payment&source=static-buy-now",
+    "card_payment_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
+    "seller_visible_direct_payment_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
     "x402_v2": {
       "x402_version": 2,
       "payment_required_header": "PAYMENT-REQUIRED",
@@ -310,18 +310,18 @@
       "legacy_signature_header": "X-PAYMENT",
       "network": "eip155:8453",
       "facilitator": "https://facilitator.payai.network",
-      "payment_required_endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
-      "buyer_instructions": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
-      "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
-      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+      "payment_required_endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "buyer_instructions": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+      "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+      "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
       "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED."
     },
     "x402_buyer_instructions": {
-      "url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
+      "url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/x402-buyer-instructions.json",
       "summary": "Authorized wallet-capable buyer agents should GET the endpoint, decode PAYMENT-REQUIRED, create an x402 exact EVM payment for eip155:8453/Base USDC, retry with PAYMENT-SIGNATURE, then read PAYMENT-RESPONSE and submit the receipt or transaction hash with the buyer brief.",
       "authorized_payment_only": true,
       "do_not_use_user_funds_without_authorization": true,
-      "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+      "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
       "offer": "first_dollar_triage",
       "amount": "1.99",
       "payment_requirement": {
@@ -331,7 +331,7 @@
         "amount": "1990000",
         "maxAmountRequired": "1990000",
         "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-        "resource": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+        "resource": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
         "description": "Agent Revenue Copilot first-dollar triage paid delivery. Payment unlocks the order evidence path; do not include secrets or user funds in the request.",
         "mimeType": "application/json",
         "outputSchema": {
@@ -347,14 +347,14 @@
           "name": "USD Coin",
           "version": "2"
         },
-        "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+        "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
         "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment instead of raw 402 JSON. Wallet-capable agents should still request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-        "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
+        "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
       },
       "steps": [
         {
           "step": "request_payment_requirements",
-          "action": "GET https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+          "action": "GET https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
           "expect": "HTTP 402 with PAYMENT-REQUIRED header containing base64 JSON."
         },
         {
@@ -364,13 +364,13 @@
         },
         {
           "step": "retry_with_signature",
-          "action": "GET https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
+          "action": "GET https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay with PAYMENT-SIGNATURE: <base64 PaymentPayload>",
           "expect": "HTTP 200 with PAYMENT-RESPONSE after facilitator verify/settle, or HTTP 402 with structured error details."
         },
         {
           "step": "submit_order_context",
           "action": "Submit the x402 receipt, settlement transaction hash, or marketplace receipt plus a non-secret buyer brief.",
-          "url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=buy-now-static&after_payment=1",
+          "url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=buy-now-static&after_payment=1",
           "github_fallback": "https://github.com/Olddun/earn10-clawtasks-deliverables/issues/new?template=agent-revenue-copilot-order.yml"
         }
       ],
@@ -395,7 +395,7 @@
           "env": [
             "EVM_PRIVATE_KEY"
           ],
-          "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+          "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
           "code": [
             "import { wrapFetchWithPayment } from \"@x402/fetch\";",
             "import { x402Client, x402HTTPClient } from \"@x402/core/client\";",
@@ -406,14 +406,14 @@
             "const client = new x402Client();",
             "client.register(\"eip155:*\", new ExactEvmScheme(signer));",
             "const paidFetch = wrapFetchWithPayment(fetch, client);",
-            "const response = await paidFetch(\"https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay\", { method: \"GET\" });",
+            "const response = await paidFetch(\"https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay\", { method: \"GET\" });",
             "const body = await response.json();",
             "const payment = new x402HTTPClient(client).getPaymentSettleResponse((name) => response.headers.get(name));",
             "console.log({ status: response.status, body, payment });"
           ],
-          "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+          "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
           "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-          "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
+          "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
         },
         "python_httpx": {
           "packages": [
@@ -423,7 +423,7 @@
           "env": [
             "EVM_PRIVATE_KEY"
           ],
-          "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay",
+          "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay",
           "code": [
             "import asyncio, os",
             "from eth_account import Account",
@@ -437,16 +437,16 @@
             "    client = x402Client()",
             "    register_exact_evm_client(client, EthAccountSigner(Account.from_key(os.environ[\"EVM_PRIVATE_KEY\"])))",
             "    async with x402HttpxClient(client) as http:",
-            "        response = await http.get(\"https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay\")",
+            "        response = await http.get(\"https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay\")",
             "        await response.aread()",
             "        payment = x402HTTPClient(client).get_payment_settle_response(lambda name: response.headers.get(name))",
             "        print({\"status\": response.status_code, \"body\": response.text, \"payment\": payment})",
             "",
             "asyncio.run(main())"
           ],
-          "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+          "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
           "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-          "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
+          "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static"
         },
         "rules": [
           "Use only an explicitly authorized buyer wallet.",
@@ -454,9 +454,9 @@
           "Count revenue only after a settlement, receipt, transaction hash, marketplace receipt, assignment payout, or usable balance is verified."
         ]
       },
-      "browser_rescue": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+      "browser_rescue": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
       "browser_rescue_note": "If a normal browser opened the x402 endpoint, browser_rescue and human_first_checkout_url continue to seller-visible direct payment. Wallet-capable agents should request the endpoint without Accept: text/html to receive PAYMENT-REQUIRED.",
-      "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
+      "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=x402-browser-rescue-static",
       "deliverable_contract": {
         "name": "First-dollar triage paid proof",
         "what_buyer_gets": [
@@ -484,13 +484,13 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html"
     },
     "recommended_payment_path": "seller_visible_direct_base_first",
-    "human_first_checkout_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
-    "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-buy-now",
-    "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
+    "human_first_checkout_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now",
+    "checkout_confirmation_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=first_dollar_triage&source=static-buy-now",
+    "final_card_checkout_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now",
     "human_first_note": "Open seller_visible_direct_payment_url first for exact Base USDC and a seller-verifiable transaction hash. Use card_payment_action_url only as a human card fallback.",
     "direct_transfer": {
       "offer": "first_dollar_triage",
@@ -505,7 +505,7 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now&after_payment=1",
+      "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now&after_payment=1",
       "deliverable_contract": {
         "name": "First-dollar triage paid proof",
         "what_buyer_gets": [
@@ -533,14 +533,14 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
       "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
+      "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
     },
     "smallest_paid_proof_path": true,
     "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
+    "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now"
   },
   "if_agent_cannot_pay": {
     "operator_handoff_page": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/operator-handoff.html",
@@ -548,7 +548,7 @@
     "rule": "Do not autonomously pay unless an authorized operator or wallet-capable agent has approved the payment."
   },
   "after_payment": {
-    "submit_receipt_or_tx_hash": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
+    "submit_receipt_or_tx_hash": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=buy-now-static&after_payment=1",
     "evidence_required": [
       "marketplace order id",
       "x402 receipt",
@@ -580,15 +580,15 @@
   },
   "counting_rule": "This manifest is not revenue. Count only a completed sale, receipt, settlement, assignment payout, or confirmed usable balance.",
   "checkout_confirmation_note": "Human/browser primary checkout actions now open seller-visible direct Base USDC first; card fallback opens a first-party concrete order-start page and then MCPlug Stripe/card checkout; checkout confirmation remains available as a secondary inspection URL. Submit payment evidence only after payment succeeds.",
-  "checkout_confirmation_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
-  "final_card_checkout_action_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
+  "checkout_confirmation_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/checkout-confirm?offer=starter_audit&source=static-metadata",
+  "final_card_checkout_action_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=starter_audit&action=final_card_checkout&source=static-metadata",
   "first_dollar_proof_rule": "If the buyer is not ready for the 9.90 USD/USDC starter audit, use first_dollar_proof_path to buy the 1.99 USD/USDC triage as a small paid proof.",
   "first_dollar_proof_path": {
     "offer": "first_dollar_triage",
     "label": "$1.99 first-dollar triage",
     "reason": "Use this as a lower-commitment paid proof before the $9.90 starter audit. It verifies payment and receipt before a larger purchase.",
     "price": "1.99 USD/USDC",
-    "direct_payment_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now-proof",
+    "direct_payment_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/direct-pay?offer=first_dollar_triage&source=static-buy-now-proof",
     "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
     "amount_units": "1990000",
     "direct_transfer": {
@@ -604,7 +604,7 @@
       "wallet_uri": "ethereum:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913@8453/transfer?address=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336&uint256=1990000",
       "explorer_address": "https://basescan.org/address/0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
       "token_balance_url": "https://basescan.org/token/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913?a=0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-proof&after_payment=1",
+      "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-proof&after_payment=1",
       "deliverable_contract": {
         "name": "First-dollar triage paid proof",
         "what_buyer_gets": [
@@ -632,14 +632,14 @@
           "funds controlled by someone else"
         ]
       },
-      "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+      "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
       "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
       "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-      "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
+      "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
     },
-    "card_checkout": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-proof",
-    "payment_request": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
-    "after_payment_evidence": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-proof&after_payment=1",
+    "card_checkout": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/bridge-out?offer=first_dollar_triage&action=final_card_checkout&source=static-buy-now-proof",
+    "payment_request": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json",
+    "after_payment_evidence": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=first_dollar_triage&source=static-buy-now-proof&after_payment=1",
     "not_free": true,
     "not_revenue_until_confirmed": true,
     "deliverable_contract": {
@@ -669,9 +669,9 @@
         "funds controlled by someone else"
       ]
     },
-    "pre_payment_brief": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
+    "pre_payment_brief": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/first-dollar-brief?source=static-first-dollar-proof",
     "pre_payment_brief_static": "https://olddun.github.io/earn10-clawtasks-deliverables/agent-revenue-copilot/first-dollar-brief.html",
     "wallet_qr_code_url": "https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=ethereum%3A0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913%408453%2Ftransfer%3Faddress%3D0x4cF42D04b29f903ce7Ae750317C3A85a9631A336%26uint256%3D1990000",
-    "payment_status_url": "https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
+    "payment_status_url": "https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-status?offer=first_dollar_triage&source=static-buy-now-proof"
   }
 }

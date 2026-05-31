@@ -50,8 +50,8 @@ Use this route when the buyer needs a transparent, machine-readable payment requ
 
 - Price: `1.99 USDC`
 - Payment request: `https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/triage-payment-request.json`
-- Live payment request: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
-- 402-style endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage/pay`
+- Live payment request: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- 402-style endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage/pay`
 
 ## Escalate To The Starter Audit
 

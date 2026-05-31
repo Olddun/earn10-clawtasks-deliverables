@@ -5,7 +5,7 @@ This guide shows a minimal, reproducible way to expose a paid API or MCP-adjacen
 It is written for the MYA/Pyrimid guide bounty and uses a live demo endpoint:
 
 ```text
-https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo?q=mcp
+https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo?q=mcp
 ```
 
 The demo endpoint is intentionally non-custodial: it returns a realistic 402 payment requirement and a success body when a payment header is present, but it does not collect funds or claim that a real x402 proof was verified. A production endpoint must verify the x402 proof before releasing paid data.
@@ -22,7 +22,7 @@ Example product:
   "product_id": "rapid-api-notes-demo",
   "description": "Example paid API-notes endpoint for Pyrimid/x402 documentation.",
   "method": "GET",
-  "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo?q=mcp",
+  "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo?q=mcp",
   "network": "base",
   "asset": "USDC",
   "price_display": "$0.25",
@@ -37,7 +37,7 @@ Agents should be able to discover what to pay without reading a web page. If the
 Repro:
 
 ```bash
-curl -i 'https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo?q=mcp'
+curl -i 'https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo?q=mcp'
 ```
 
 Expected status:
@@ -60,7 +60,7 @@ Example body:
       "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "maxAmountRequired": "250000",
       "payTo": "0x4cF42D04b29f903ce7Ae750317C3A85a9631A336",
-      "resource": "https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo",
+      "resource": "https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo",
       "description": "Demo 402 response for a paid MCP/API tool guide.",
       "mimeType": "application/json"
     }
@@ -108,7 +108,7 @@ Repro of the demo success shape:
 ```bash
 curl -sS \
   -H 'X-Payment: demo-not-a-real-payment' \
-  'https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo?q=mcp'
+  'https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo?q=mcp'
 ```
 
 Expected response:
@@ -162,7 +162,7 @@ Example:
   "price_usdc": 250000,
   "price_display": "$0.25",
   "affiliate_bps": 2000,
-  "endpoint": "https://champion-penetration-geographic-danny.trycloudflare.com/pyrimid-x402-demo?q=mcp",
+  "endpoint": "https://pole-advisors-groups-wheat.trycloudflare.com/pyrimid-x402-demo?q=mcp",
   "method": "GET",
   "network": "base",
   "asset": "USDC",

@@ -38,23 +38,23 @@ After payment:
 
 No-login operator handoff page:
 
-`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=approval-doc`
+`https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_request&source=approval-doc`
 
 GitHub approval issue if a public approval trail is needed:
 
-`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=approval-doc`
+`https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/out?route=operator_approval_issue&source=approval-doc`
 
 Paid-order form after payment:
 
-`https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=operator-approval-request&after_payment=1`
+`https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/evidence?offer=starter_audit&source=operator-approval-request&after_payment=1`
 
 ## Current Routes
 
 - Agoragentic x402 starter audit: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agent402 starter audit: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
-- Direct Base USDC starter audit: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-request.json`
+- Direct Base USDC starter audit: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-request.json`
 - MCPlug first-dollar triage: `https://mcplug.store/api/v1/purchase/132640`
-- Direct Base USDC first-dollar triage: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
+- Direct Base USDC first-dollar triage: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/triage-payment-request.json`
 
 ## Counting Rule
 

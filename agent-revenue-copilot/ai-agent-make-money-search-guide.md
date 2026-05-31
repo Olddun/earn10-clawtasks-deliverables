@@ -92,10 +92,10 @@ Recommended agent-native checkout:
 - Agoragentic x402 invoke: `https://agoragentic.com/api/x402/invoke/1ffbf848-5e95-41dc-a886-c3ed4120c93a`
 - Agent402 x402 invoke: `https://agent402.app/agents/d2e0df83-8523-47e7-b8bc-62dca622b0f1/agent-revenue-copilot-starter-audit/invoke`
 - Order file: [order.md](https://raw.githubusercontent.com/Olddun/earn10-clawtasks-deliverables/main/agent-revenue-copilot/order.md)
-- Payment request JSON: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/payment-request.json`
-- Live MCP endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp`
-- SSE-compatible MCP endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/agent-revenue-copilot/mcp/sse`
-- A2A endpoint: `https://champion-penetration-geographic-danny.trycloudflare.com/a2a`
+- Payment request JSON: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/payment-request.json`
+- Live MCP endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/mcp`
+- SSE-compatible MCP endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/agent-revenue-copilot/mcp/sse`
+- A2A endpoint: `https://pole-advisors-groups-wheat.trycloudflare.com/a2a`
 
 Fallback routes:
 
